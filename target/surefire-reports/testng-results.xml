@@ -1,0 +1,644 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="22" passed="22">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="1155720" started-at="2020-06-19T12:06:33Z" finished-at="2020-06-19T12:25:48Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="1155720" started-at="2020-06-19T12:06:33Z" finished-at="2020-06-19T12:25:48Z">
+      <class name="testcases.Test_Login">
+        <test-method status="PASS" signature="set()[pri:0, instance:testcases.Test_Login@18be83e4]" name="set" is-config="true" duration-ms="2624" started-at="2020-06-19T19:06:34Z" finished-at="2020-06-19T19:06:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- set -->
+        <test-method status="PASS" signature="login_alert_popup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:testcases.Test_Login@18be83e4]" name="login_alert_popup" duration-ms="26132" started-at="2020-06-19T19:06:36Z" data-provider="login_alert_popup" finished-at="2020-06-19T19:07:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/login]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[dixosgadpoyt@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[passwordslah]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[User has not been registered]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_alert_popup -->
+        <test-method status="PASS" signature="done()[pri:0, instance:testcases.Test_Login@18be83e4]" name="done" is-config="true" duration-ms="167" started-at="2020-06-19T19:07:02Z" finished-at="2020-06-19T19:07:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- done -->
+        <test-method status="PASS" signature="set()[pri:0, instance:testcases.Test_Login@18be83e4]" name="set" is-config="true" duration-ms="1511" started-at="2020-06-19T19:07:03Z" finished-at="2020-06-19T19:07:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- set -->
+        <test-method status="PASS" signature="login_alert_popup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:testcases.Test_Login@18be83e4]" name="login_alert_popup" duration-ms="24636" started-at="2020-06-19T19:07:04Z" data-provider="login_alert_popup" finished-at="2020-06-19T19:07:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/login]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[628229098776544]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[passwordslah]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[User has not been registered]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_alert_popup -->
+        <test-method status="PASS" signature="done()[pri:0, instance:testcases.Test_Login@18be83e4]" name="done" is-config="true" duration-ms="90" started-at="2020-06-19T19:07:29Z" finished-at="2020-06-19T19:07:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- done -->
+        <test-method status="PASS" signature="set()[pri:0, instance:testcases.Test_Login@18be83e4]" name="set" is-config="true" duration-ms="1507" started-at="2020-06-19T19:07:29Z" finished-at="2020-06-19T19:07:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- set -->
+        <test-method status="PASS" signature="login_logout(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:4, instance:testcases.Test_Login@18be83e4]" name="login_logout" duration-ms="70175" started-at="2020-06-19T19:07:30Z" data-provider="login_success" finished-at="2020-06-19T19:08:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/login]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[dikakoko04@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[dikakoko]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[dikakoko]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_logout -->
+        <test-method status="PASS" signature="done()[pri:0, instance:testcases.Test_Login@18be83e4]" name="done" is-config="true" duration-ms="81" started-at="2020-06-19T19:08:41Z" finished-at="2020-06-19T19:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- done -->
+        <test-method status="PASS" signature="set()[pri:0, instance:testcases.Test_Login@18be83e4]" name="set" is-config="true" duration-ms="1539" started-at="2020-06-19T19:08:41Z" finished-at="2020-06-19T19:08:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- set -->
+        <test-method status="PASS" signature="login_logout(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:4, instance:testcases.Test_Login@18be83e4]" name="login_logout" duration-ms="69594" started-at="2020-06-19T19:08:42Z" data-provider="login_success" finished-at="2020-06-19T19:09:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/login]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[082278843303]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[dikakoko]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[dikakokos]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_logout -->
+        <test-method status="PASS" signature="done()[pri:0, instance:testcases.Test_Login@18be83e4]" name="done" is-config="true" duration-ms="142" started-at="2020-06-19T19:09:52Z" finished-at="2020-06-19T19:09:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- done -->
+      </class> <!-- testcases.Test_Login -->
+      <class name="testcases.Test_Integration_Login">
+        <test-method status="PASS" signature="set()[pri:0, instance:testcases.Test_Integration_Login@4b9e13df]" name="set" is-config="true" duration-ms="1334" started-at="2020-06-19T19:13:45Z" finished-at="2020-06-19T19:13:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- set -->
+        <test-method status="PASS" signature="login_logout_from_Continue_Watching(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:testcases.Test_Integration_Login@4b9e13df]" name="login_logout_from_Continue_Watching" duration-ms="87292" started-at="2020-06-19T19:13:47Z" data-provider="login_success" finished-at="2020-06-19T19:15:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/login]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[dikakoko04@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[dikakoko]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[dikakoko]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_logout_from_Continue_Watching -->
+        <test-method status="PASS" signature="done()[pri:0, instance:testcases.Test_Integration_Login@4b9e13df]" name="done" is-config="true" duration-ms="236" started-at="2020-06-19T19:15:14Z" finished-at="2020-06-19T19:15:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- done -->
+        <test-method status="PASS" signature="set()[pri:0, instance:testcases.Test_Integration_Login@4b9e13df]" name="set" is-config="true" duration-ms="2125" started-at="2020-06-19T19:15:14Z" finished-at="2020-06-19T19:15:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- set -->
+        <test-method status="PASS" signature="login_logout_from_Continue_Watching(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:testcases.Test_Integration_Login@4b9e13df]" name="login_logout_from_Continue_Watching" duration-ms="86454" started-at="2020-06-19T19:15:16Z" data-provider="login_success" finished-at="2020-06-19T19:16:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/login]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[082278843303]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[dikakoko]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[dikakokos]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_logout_from_Continue_Watching -->
+        <test-method status="PASS" signature="done()[pri:0, instance:testcases.Test_Integration_Login@4b9e13df]" name="done" is-config="true" duration-ms="78" started-at="2020-06-19T19:16:43Z" finished-at="2020-06-19T19:16:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- done -->
+        <test-method status="PASS" signature="set()[pri:0, instance:testcases.Test_Integration_Login@4b9e13df]" name="set" is-config="true" duration-ms="1369" started-at="2020-06-19T19:16:43Z" finished-at="2020-06-19T19:16:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- set -->
+        <test-method status="PASS" signature="login_logout_from_account(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:testcases.Test_Integration_Login@4b9e13df]" name="login_logout_from_account" duration-ms="81132" started-at="2020-06-19T19:16:44Z" data-provider="login_success" finished-at="2020-06-19T19:18:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/login]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[dikakoko04@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[dikakoko]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[dikakoko]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_logout_from_account -->
+        <test-method status="PASS" signature="done()[pri:0, instance:testcases.Test_Integration_Login@4b9e13df]" name="done" is-config="true" duration-ms="143" started-at="2020-06-19T19:18:06Z" finished-at="2020-06-19T19:18:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- done -->
+        <test-method status="PASS" signature="set()[pri:0, instance:testcases.Test_Integration_Login@4b9e13df]" name="set" is-config="true" duration-ms="1348" started-at="2020-06-19T19:18:06Z" finished-at="2020-06-19T19:18:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- set -->
+        <test-method status="PASS" signature="login_logout_from_account(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:testcases.Test_Integration_Login@4b9e13df]" name="login_logout_from_account" duration-ms="82247" started-at="2020-06-19T19:18:07Z" data-provider="login_success" finished-at="2020-06-19T19:19:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/login]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[082278843303]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[dikakoko]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[dikakokos]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_logout_from_account -->
+        <test-method status="PASS" signature="done()[pri:0, instance:testcases.Test_Integration_Login@4b9e13df]" name="done" is-config="true" duration-ms="76" started-at="2020-06-19T19:19:29Z" finished-at="2020-06-19T19:19:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- done -->
+        <test-method status="PASS" signature="set()[pri:0, instance:testcases.Test_Integration_Login@4b9e13df]" name="set" is-config="true" duration-ms="1342" started-at="2020-06-19T19:19:29Z" finished-at="2020-06-19T19:19:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- set -->
+        <test-method status="PASS" signature="login_logout_from_history(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:testcases.Test_Integration_Login@4b9e13df]" name="login_logout_from_history" duration-ms="86338" started-at="2020-06-19T19:19:31Z" data-provider="login_success" finished-at="2020-06-19T19:20:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/login]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[dikakoko04@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[dikakoko]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[dikakoko]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_logout_from_history -->
+        <test-method status="PASS" signature="done()[pri:0, instance:testcases.Test_Integration_Login@4b9e13df]" name="done" is-config="true" duration-ms="79" started-at="2020-06-19T19:20:57Z" finished-at="2020-06-19T19:20:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- done -->
+        <test-method status="PASS" signature="set()[pri:0, instance:testcases.Test_Integration_Login@4b9e13df]" name="set" is-config="true" duration-ms="2465" started-at="2020-06-19T19:20:57Z" finished-at="2020-06-19T19:21:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- set -->
+        <test-method status="PASS" signature="login_logout_from_history(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:testcases.Test_Integration_Login@4b9e13df]" name="login_logout_from_history" duration-ms="86498" started-at="2020-06-19T19:21:00Z" data-provider="login_success" finished-at="2020-06-19T19:22:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/login]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[082278843303]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[dikakoko]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[dikakokos]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_logout_from_history -->
+        <test-method status="PASS" signature="done()[pri:0, instance:testcases.Test_Integration_Login@4b9e13df]" name="done" is-config="true" duration-ms="76" started-at="2020-06-19T19:22:26Z" finished-at="2020-06-19T19:22:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- done -->
+        <test-method status="PASS" signature="set()[pri:0, instance:testcases.Test_Integration_Login@4b9e13df]" name="set" is-config="true" duration-ms="1509" started-at="2020-06-19T19:22:26Z" finished-at="2020-06-19T19:22:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- set -->
+        <test-method status="PASS" signature="login_logout_from_mylist(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:testcases.Test_Integration_Login@4b9e13df]" name="login_logout_from_mylist" duration-ms="87754" started-at="2020-06-19T19:22:28Z" data-provider="login_success" finished-at="2020-06-19T19:23:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/login]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[dikakoko04@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[dikakoko]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[dikakoko]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_logout_from_mylist -->
+        <test-method status="PASS" signature="done()[pri:0, instance:testcases.Test_Integration_Login@4b9e13df]" name="done" is-config="true" duration-ms="76" started-at="2020-06-19T19:23:56Z" finished-at="2020-06-19T19:23:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- done -->
+        <test-method status="PASS" signature="set()[pri:0, instance:testcases.Test_Integration_Login@4b9e13df]" name="set" is-config="true" duration-ms="1558" started-at="2020-06-19T19:23:56Z" finished-at="2020-06-19T19:23:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- set -->
+        <test-method status="PASS" signature="login_logout_from_mylist(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:testcases.Test_Integration_Login@4b9e13df]" name="login_logout_from_mylist" duration-ms="111113" started-at="2020-06-19T19:23:57Z" data-provider="login_success" finished-at="2020-06-19T19:25:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/login]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[082278843303]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[dikakoko]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[dikakokos]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_logout_from_mylist -->
+        <test-method status="PASS" signature="done()[pri:0, instance:testcases.Test_Integration_Login@4b9e13df]" name="done" is-config="true" duration-ms="65" started-at="2020-06-19T19:25:48Z" finished-at="2020-06-19T19:25:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- done -->
+      </class> <!-- testcases.Test_Integration_Login -->
+      <class name="testcases.Test_List_Menu_Account">
+        <test-method status="PASS" signature="set()[pri:0, instance:testcases.Test_List_Menu_Account@cb5822]" name="set" is-config="true" duration-ms="1431" started-at="2020-06-19T19:09:52Z" finished-at="2020-06-19T19:09:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- set -->
+        <test-method status="PASS" signature="menu_account_not_login_button_login()[pri:0, instance:testcases.Test_List_Menu_Account@cb5822]" name="menu_account_not_login_button_login" duration-ms="29616" started-at="2020-06-19T19:09:53Z" finished-at="2020-06-19T19:10:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- menu_account_not_login_button_login -->
+        <test-method status="PASS" signature="done()[pri:0, instance:testcases.Test_List_Menu_Account@cb5822]" name="done" is-config="true" duration-ms="82" started-at="2020-06-19T19:10:23Z" finished-at="2020-06-19T19:10:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- done -->
+        <test-method status="PASS" signature="set()[pri:0, instance:testcases.Test_List_Menu_Account@cb5822]" name="set" is-config="true" duration-ms="1548" started-at="2020-06-19T19:10:23Z" finished-at="2020-06-19T19:10:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- set -->
+        <test-method status="PASS" signature="menu_account_not_login_button_scan_qrcode()[pri:1, instance:testcases.Test_List_Menu_Account@cb5822]" name="menu_account_not_login_button_scan_qrcode" duration-ms="8115" started-at="2020-06-19T19:10:25Z" finished-at="2020-06-19T19:10:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- menu_account_not_login_button_scan_qrcode -->
+        <test-method status="PASS" signature="done()[pri:0, instance:testcases.Test_List_Menu_Account@cb5822]" name="done" is-config="true" duration-ms="80" started-at="2020-06-19T19:10:33Z" finished-at="2020-06-19T19:10:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- done -->
+        <test-method status="PASS" signature="set()[pri:0, instance:testcases.Test_List_Menu_Account@cb5822]" name="set" is-config="true" duration-ms="1561" started-at="2020-06-19T19:10:33Z" finished-at="2020-06-19T19:10:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- set -->
+        <test-method status="PASS" signature="menu_account_not_login_popup_login(java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:testcases.Test_List_Menu_Account@cb5822]" name="menu_account_not_login_popup_login" duration-ms="24147" started-at="2020-06-19T19:10:34Z" data-provider="list_menu_account_popup_login" finished-at="2020-06-19T19:10:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[history]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Sign Up]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Sign In]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- menu_account_not_login_popup_login -->
+        <test-method status="PASS" signature="done()[pri:0, instance:testcases.Test_List_Menu_Account@cb5822]" name="done" is-config="true" duration-ms="281" started-at="2020-06-19T19:10:59Z" finished-at="2020-06-19T19:10:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- done -->
+        <test-method status="PASS" signature="set()[pri:0, instance:testcases.Test_List_Menu_Account@cb5822]" name="set" is-config="true" duration-ms="1526" started-at="2020-06-19T19:10:59Z" finished-at="2020-06-19T19:11:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- set -->
+        <test-method status="PASS" signature="menu_account_not_login_popup_login(java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:testcases.Test_List_Menu_Account@cb5822]" name="menu_account_not_login_popup_login" duration-ms="24446" started-at="2020-06-19T19:11:00Z" data-provider="list_menu_account_popup_login" finished-at="2020-06-19T19:11:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mylist]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Sign Up]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Sign In]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- menu_account_not_login_popup_login -->
+        <test-method status="PASS" signature="done()[pri:0, instance:testcases.Test_List_Menu_Account@cb5822]" name="done" is-config="true" duration-ms="134" started-at="2020-06-19T19:11:25Z" finished-at="2020-06-19T19:11:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- done -->
+        <test-method status="PASS" signature="set()[pri:0, instance:testcases.Test_List_Menu_Account@cb5822]" name="set" is-config="true" duration-ms="1280" started-at="2020-06-19T19:11:25Z" finished-at="2020-06-19T19:11:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- set -->
+        <test-method status="PASS" signature="menu_account_not_login_popup_login(java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:testcases.Test_List_Menu_Account@cb5822]" name="menu_account_not_login_popup_login" duration-ms="25598" started-at="2020-06-19T19:11:26Z" data-provider="list_menu_account_popup_login" finished-at="2020-06-19T19:11:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[continue-watching]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Sign Up]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Sign In]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- menu_account_not_login_popup_login -->
+        <test-method status="PASS" signature="done()[pri:0, instance:testcases.Test_List_Menu_Account@cb5822]" name="done" is-config="true" duration-ms="73" started-at="2020-06-19T19:11:52Z" finished-at="2020-06-19T19:11:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- done -->
+        <test-method status="PASS" signature="set()[pri:0, instance:testcases.Test_List_Menu_Account@cb5822]" name="set" is-config="true" duration-ms="1301" started-at="2020-06-19T19:11:52Z" finished-at="2020-06-19T19:11:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- set -->
+        <test-method status="PASS" signature="menu_account_not_login_button_menu_direct(java.lang.String, java.lang.String)[pri:3, instance:testcases.Test_List_Menu_Account@cb5822]" name="menu_account_not_login_button_menu_direct" duration-ms="20326" started-at="2020-06-19T19:11:53Z" data-provider="list_menu_account_direct" finished-at="2020-06-19T19:12:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tnc]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Terms and Conditions]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- menu_account_not_login_button_menu_direct -->
+        <test-method status="PASS" signature="done()[pri:0, instance:testcases.Test_List_Menu_Account@cb5822]" name="done" is-config="true" duration-ms="77" started-at="2020-06-19T19:12:14Z" finished-at="2020-06-19T19:12:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- done -->
+        <test-method status="PASS" signature="set()[pri:0, instance:testcases.Test_List_Menu_Account@cb5822]" name="set" is-config="true" duration-ms="1373" started-at="2020-06-19T19:12:14Z" finished-at="2020-06-19T19:12:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- set -->
+        <test-method status="PASS" signature="menu_account_not_login_button_menu_direct(java.lang.String, java.lang.String)[pri:3, instance:testcases.Test_List_Menu_Account@cb5822]" name="menu_account_not_login_button_menu_direct" duration-ms="20687" started-at="2020-06-19T19:12:15Z" data-provider="list_menu_account_direct" finished-at="2020-06-19T19:12:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[privacy-policy]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Privacy Policy]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- menu_account_not_login_button_menu_direct -->
+        <test-method status="PASS" signature="done()[pri:0, instance:testcases.Test_List_Menu_Account@cb5822]" name="done" is-config="true" duration-ms="84" started-at="2020-06-19T19:12:36Z" finished-at="2020-06-19T19:12:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- done -->
+        <test-method status="PASS" signature="set()[pri:0, instance:testcases.Test_List_Menu_Account@cb5822]" name="set" is-config="true" duration-ms="1489" started-at="2020-06-19T19:12:36Z" finished-at="2020-06-19T19:12:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- set -->
+        <test-method status="PASS" signature="menu_account_not_login_button_menu_direct(java.lang.String, java.lang.String)[pri:3, instance:testcases.Test_List_Menu_Account@cb5822]" name="menu_account_not_login_button_menu_direct" duration-ms="20485" started-at="2020-06-19T19:12:37Z" data-provider="list_menu_account_direct" finished-at="2020-06-19T19:12:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[contact-us]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Contact Us]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- menu_account_not_login_button_menu_direct -->
+        <test-method status="PASS" signature="done()[pri:0, instance:testcases.Test_List_Menu_Account@cb5822]" name="done" is-config="true" duration-ms="82" started-at="2020-06-19T19:12:58Z" finished-at="2020-06-19T19:12:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- done -->
+        <test-method status="PASS" signature="set()[pri:0, instance:testcases.Test_List_Menu_Account@cb5822]" name="set" is-config="true" duration-ms="1286" started-at="2020-06-19T19:12:58Z" finished-at="2020-06-19T19:12:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- set -->
+        <test-method status="PASS" signature="menu_account_not_login_button_menu_direct(java.lang.String, java.lang.String)[pri:3, instance:testcases.Test_List_Menu_Account@cb5822]" name="menu_account_not_login_button_menu_direct" duration-ms="20479" started-at="2020-06-19T19:12:59Z" data-provider="list_menu_account_direct" finished-at="2020-06-19T19:13:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[faq]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Faq]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- menu_account_not_login_button_menu_direct -->
+        <test-method status="PASS" signature="done()[pri:0, instance:testcases.Test_List_Menu_Account@cb5822]" name="done" is-config="true" duration-ms="202" started-at="2020-06-19T19:13:20Z" finished-at="2020-06-19T19:13:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- done -->
+        <test-method status="PASS" signature="set()[pri:0, instance:testcases.Test_List_Menu_Account@cb5822]" name="set" is-config="true" duration-ms="1394" started-at="2020-06-19T19:13:20Z" finished-at="2020-06-19T19:13:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- set -->
+        <test-method status="PASS" signature="menu_account_not_login_button_download()[pri:4, instance:testcases.Test_List_Menu_Account@cb5822]" name="menu_account_not_login_button_download" duration-ms="24007" started-at="2020-06-19T19:13:21Z" finished-at="2020-06-19T19:13:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- menu_account_not_login_button_download -->
+        <test-method status="PASS" signature="done()[pri:0, instance:testcases.Test_List_Menu_Account@cb5822]" name="done" is-config="true" duration-ms="127" started-at="2020-06-19T19:13:45Z" finished-at="2020-06-19T19:13:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- done -->
+      </class> <!-- testcases.Test_List_Menu_Account -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

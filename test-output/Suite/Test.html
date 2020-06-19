@@ -1,0 +1,546 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>1/1/20</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Jun 19 19:01:22 ICT 2020</td>
+</tr>
+<tr><td>Total time:</td><td>106 seconds (106506 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testcases.Test_Login.done()'><b>done</b><br>Test class: testcases.Test_Login</td>
+<td><div><pre>org.openqa.selenium.json.JsonException: Unable to determine type from: &lt;. Last 1 characters read: &lt;
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;MNCTVN05589&apos;, ip: &apos;192.168.43.28&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.json.JsonInput.peek(JsonInput.java:122)
+	at org.openqa.selenium.json.JsonTypeCoercer.lambda$null$6(JsonTypeCoercer.java:140)
+	at org.openqa.selenium.json.JsonTypeCoercer.coerce(JsonTypeCoercer.java:126)
+	at org.openqa.selenium.json.Json.toType(Json.java:69)
+	at org.openqa.selenium.json.Json.toType(Json.java:55)
+	at org.openqa.selenium.json.Json.toType(Json.java:50)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:87)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:452)
+	at config.Setup.done(Setup.java:43)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1533330615", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1533330615'><pre>org.openqa.selenium.json.JsonException: Unable to determine type from: &lt;. Last 1 characters read: &lt;
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;MNCTVN05589&apos;, ip: &apos;192.168.43.28&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.json.JsonInput.peek(JsonInput.java:122)
+	at org.openqa.selenium.json.JsonTypeCoercer.lambda$null$6(JsonTypeCoercer.java:140)
+	at org.openqa.selenium.json.JsonTypeCoercer.coerce(JsonTypeCoercer.java:126)
+	at org.openqa.selenium.json.Json.toType(Json.java:69)
+	at org.openqa.selenium.json.Json.toType(Json.java:55)
+	at org.openqa.selenium.json.Json.toType(Json.java:50)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:87)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:452)
+	at config.Setup.done(Setup.java:43)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div></td>
+<td>0</td>
+<td>testcases.Test_Login@20322d26</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testcases.Test_Login.set()'><b>set</b><br>Test class: testcases.Test_Login</td>
+<td></td>
+<td>0</td>
+<td>testcases.Test_Login@20322d26</td></tr>
+<tr>
+<td title='testcases.Test_Login.set()'><b>set</b><br>Test class: testcases.Test_Login</td>
+<td></td>
+<td>0</td>
+<td>testcases.Test_Login@20322d26</td></tr>
+<tr>
+<td title='testcases.Test_List_Menu_Account.set()'><b>set</b><br>Test class: testcases.Test_List_Menu_Account</td>
+<td></td>
+<td>0</td>
+<td>testcases.Test_List_Menu_Account@192b07fd</td></tr>
+<tr>
+<td title='testcases.Test_List_Menu_Account.set()'><b>set</b><br>Test class: testcases.Test_List_Menu_Account</td>
+<td></td>
+<td>0</td>
+<td>testcases.Test_List_Menu_Account@192b07fd</td></tr>
+<tr>
+<td title='testcases.Test_List_Menu_Account.set()'><b>set</b><br>Test class: testcases.Test_List_Menu_Account</td>
+<td></td>
+<td>0</td>
+<td>testcases.Test_List_Menu_Account@192b07fd</td></tr>
+<tr>
+<td title='testcases.Test_List_Menu_Account.set()'><b>set</b><br>Test class: testcases.Test_List_Menu_Account</td>
+<td></td>
+<td>0</td>
+<td>testcases.Test_List_Menu_Account@192b07fd</td></tr>
+<tr>
+<td title='testcases.Test_List_Menu_Account.set()'><b>set</b><br>Test class: testcases.Test_List_Menu_Account</td>
+<td></td>
+<td>0</td>
+<td>testcases.Test_List_Menu_Account@192b07fd</td></tr>
+<tr>
+<td title='testcases.Test_List_Menu_Account.set()'><b>set</b><br>Test class: testcases.Test_List_Menu_Account</td>
+<td></td>
+<td>0</td>
+<td>testcases.Test_List_Menu_Account@192b07fd</td></tr>
+<tr>
+<td title='testcases.Test_List_Menu_Account.set()'><b>set</b><br>Test class: testcases.Test_List_Menu_Account</td>
+<td></td>
+<td>0</td>
+<td>testcases.Test_List_Menu_Account@192b07fd</td></tr>
+<tr>
+<td title='testcases.Test_List_Menu_Account.set()'><b>set</b><br>Test class: testcases.Test_List_Menu_Account</td>
+<td></td>
+<td>0</td>
+<td>testcases.Test_List_Menu_Account@192b07fd</td></tr>
+<tr>
+<td title='testcases.Test_List_Menu_Account.set()'><b>set</b><br>Test class: testcases.Test_List_Menu_Account</td>
+<td></td>
+<td>0</td>
+<td>testcases.Test_List_Menu_Account@192b07fd</td></tr>
+<tr>
+<td title='testcases.Test_List_Menu_Account.set()'><b>set</b><br>Test class: testcases.Test_List_Menu_Account</td>
+<td></td>
+<td>0</td>
+<td>testcases.Test_List_Menu_Account@192b07fd</td></tr>
+<tr>
+<td title='testcases.Test_Integration_Login.set()'><b>set</b><br>Test class: testcases.Test_Integration_Login</td>
+<td></td>
+<td>0</td>
+<td>testcases.Test_Integration_Login@64bfbc86</td></tr>
+<tr>
+<td title='testcases.Test_Integration_Login.set()'><b>set</b><br>Test class: testcases.Test_Integration_Login</td>
+<td></td>
+<td>0</td>
+<td>testcases.Test_Integration_Login@64bfbc86</td></tr>
+<tr>
+<td title='testcases.Test_Integration_Login.set()'><b>set</b><br>Test class: testcases.Test_Integration_Login</td>
+<td></td>
+<td>0</td>
+<td>testcases.Test_Integration_Login@64bfbc86</td></tr>
+<tr>
+<td title='testcases.Test_Integration_Login.set()'><b>set</b><br>Test class: testcases.Test_Integration_Login</td>
+<td></td>
+<td>0</td>
+<td>testcases.Test_Integration_Login@64bfbc86</td></tr>
+<tr>
+<td title='testcases.Test_Integration_Login.set()'><b>set</b><br>Test class: testcases.Test_Integration_Login</td>
+<td></td>
+<td>0</td>
+<td>testcases.Test_Integration_Login@64bfbc86</td></tr>
+<tr>
+<td title='testcases.Test_Integration_Login.set()'><b>set</b><br>Test class: testcases.Test_Integration_Login</td>
+<td></td>
+<td>0</td>
+<td>testcases.Test_Integration_Login@64bfbc86</td></tr>
+<tr>
+<td title='testcases.Test_Integration_Login.set()'><b>set</b><br>Test class: testcases.Test_Integration_Login</td>
+<td></td>
+<td>0</td>
+<td>testcases.Test_Integration_Login@64bfbc86</td></tr>
+<tr>
+<td title='testcases.Test_Integration_Login.set()'><b>set</b><br>Test class: testcases.Test_Integration_Login</td>
+<td></td>
+<td>0</td>
+<td>testcases.Test_Integration_Login@64bfbc86</td></tr>
+<tr>
+<td title='testcases.Test_Login.done()'><b>done</b><br>Test class: testcases.Test_Login</td>
+<td></td>
+<td>0</td>
+<td>testcases.Test_Login@20322d26</td></tr>
+<tr>
+<td title='testcases.Test_Login.done()'><b>done</b><br>Test class: testcases.Test_Login</td>
+<td></td>
+<td>0</td>
+<td>testcases.Test_Login@20322d26</td></tr>
+<tr>
+<td title='testcases.Test_List_Menu_Account.done()'><b>done</b><br>Test class: testcases.Test_List_Menu_Account</td>
+<td></td>
+<td>0</td>
+<td>testcases.Test_List_Menu_Account@192b07fd</td></tr>
+<tr>
+<td title='testcases.Test_List_Menu_Account.done()'><b>done</b><br>Test class: testcases.Test_List_Menu_Account</td>
+<td></td>
+<td>0</td>
+<td>testcases.Test_List_Menu_Account@192b07fd</td></tr>
+<tr>
+<td title='testcases.Test_List_Menu_Account.done()'><b>done</b><br>Test class: testcases.Test_List_Menu_Account</td>
+<td></td>
+<td>0</td>
+<td>testcases.Test_List_Menu_Account@192b07fd</td></tr>
+<tr>
+<td title='testcases.Test_List_Menu_Account.done()'><b>done</b><br>Test class: testcases.Test_List_Menu_Account</td>
+<td></td>
+<td>0</td>
+<td>testcases.Test_List_Menu_Account@192b07fd</td></tr>
+<tr>
+<td title='testcases.Test_List_Menu_Account.done()'><b>done</b><br>Test class: testcases.Test_List_Menu_Account</td>
+<td></td>
+<td>0</td>
+<td>testcases.Test_List_Menu_Account@192b07fd</td></tr>
+<tr>
+<td title='testcases.Test_List_Menu_Account.done()'><b>done</b><br>Test class: testcases.Test_List_Menu_Account</td>
+<td></td>
+<td>0</td>
+<td>testcases.Test_List_Menu_Account@192b07fd</td></tr>
+<tr>
+<td title='testcases.Test_List_Menu_Account.done()'><b>done</b><br>Test class: testcases.Test_List_Menu_Account</td>
+<td></td>
+<td>0</td>
+<td>testcases.Test_List_Menu_Account@192b07fd</td></tr>
+<tr>
+<td title='testcases.Test_List_Menu_Account.done()'><b>done</b><br>Test class: testcases.Test_List_Menu_Account</td>
+<td></td>
+<td>0</td>
+<td>testcases.Test_List_Menu_Account@192b07fd</td></tr>
+<tr>
+<td title='testcases.Test_List_Menu_Account.done()'><b>done</b><br>Test class: testcases.Test_List_Menu_Account</td>
+<td></td>
+<td>0</td>
+<td>testcases.Test_List_Menu_Account@192b07fd</td></tr>
+<tr>
+<td title='testcases.Test_List_Menu_Account.done()'><b>done</b><br>Test class: testcases.Test_List_Menu_Account</td>
+<td></td>
+<td>0</td>
+<td>testcases.Test_List_Menu_Account@192b07fd</td></tr>
+<tr>
+<td title='testcases.Test_Integration_Login.done()'><b>done</b><br>Test class: testcases.Test_Integration_Login</td>
+<td></td>
+<td>0</td>
+<td>testcases.Test_Integration_Login@64bfbc86</td></tr>
+<tr>
+<td title='testcases.Test_Integration_Login.done()'><b>done</b><br>Test class: testcases.Test_Integration_Login</td>
+<td></td>
+<td>0</td>
+<td>testcases.Test_Integration_Login@64bfbc86</td></tr>
+<tr>
+<td title='testcases.Test_Integration_Login.done()'><b>done</b><br>Test class: testcases.Test_Integration_Login</td>
+<td></td>
+<td>0</td>
+<td>testcases.Test_Integration_Login@64bfbc86</td></tr>
+<tr>
+<td title='testcases.Test_Integration_Login.done()'><b>done</b><br>Test class: testcases.Test_Integration_Login</td>
+<td></td>
+<td>0</td>
+<td>testcases.Test_Integration_Login@64bfbc86</td></tr>
+<tr>
+<td title='testcases.Test_Integration_Login.done()'><b>done</b><br>Test class: testcases.Test_Integration_Login</td>
+<td></td>
+<td>0</td>
+<td>testcases.Test_Integration_Login@64bfbc86</td></tr>
+<tr>
+<td title='testcases.Test_Integration_Login.done()'><b>done</b><br>Test class: testcases.Test_Integration_Login</td>
+<td></td>
+<td>0</td>
+<td>testcases.Test_Integration_Login@64bfbc86</td></tr>
+<tr>
+<td title='testcases.Test_Integration_Login.done()'><b>done</b><br>Test class: testcases.Test_Integration_Login</td>
+<td></td>
+<td>0</td>
+<td>testcases.Test_Integration_Login@64bfbc86</td></tr>
+<tr>
+<td title='testcases.Test_Integration_Login.done()'><b>done</b><br>Test class: testcases.Test_Integration_Login</td>
+<td></td>
+<td>0</td>
+<td>testcases.Test_Integration_Login@64bfbc86</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testcases.Test_Login.login_alert_popup()'><b>login_alert_popup</b><br>Test class: testcases.Test_Login<br>Parameters: /login, 628229098776544, passwordslah, User has not been registered</td>
+<td><div><pre>org.openqa.selenium.json.JsonException: Unable to determine type from: &lt;. Last 1 characters read: &lt;
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;MNCTVN05589&apos;, ip: &apos;192.168.43.28&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.json.JsonInput.peek(JsonInput.java:122)
+	at org.openqa.selenium.json.JsonTypeCoercer.lambda$null$6(JsonTypeCoercer.java:140)
+	at org.openqa.selenium.json.JsonTypeCoercer.coerce(JsonTypeCoercer.java:126)
+	at org.openqa.selenium.json.Json.toType(Json.java:69)
+	at org.openqa.selenium.json.Json.toType(Json.java:55)
+	at org.openqa.selenium.json.Json.toType(Json.java:50)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:87)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at config.Url.urls(Url.java:21)
+	at testcases.Test_Login.login_alert_popup(Test_Login.java:52)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2015999862", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2015999862'><pre>org.openqa.selenium.json.JsonException: Unable to determine type from: &lt;. Last 1 characters read: &lt;
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;MNCTVN05589&apos;, ip: &apos;192.168.43.28&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.json.JsonInput.peek(JsonInput.java:122)
+	at org.openqa.selenium.json.JsonTypeCoercer.lambda$null$6(JsonTypeCoercer.java:140)
+	at org.openqa.selenium.json.JsonTypeCoercer.coerce(JsonTypeCoercer.java:126)
+	at org.openqa.selenium.json.Json.toType(Json.java:69)
+	at org.openqa.selenium.json.Json.toType(Json.java:55)
+	at org.openqa.selenium.json.Json.toType(Json.java:50)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:87)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at config.Url.urls(Url.java:21)
+	at testcases.Test_Login.login_alert_popup(Test_Login.java:52)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div></td>
+<td>32</td>
+<td>testcases.Test_Login@20322d26</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testcases.Test_Login.login_alert_popup()'><b>login_alert_popup</b><br>Test class: testcases.Test_Login<br>Parameters: /login, dixosgadpoyt@gmail.com, passwordslah, User has not been registered</td>
+<td></td>
+<td>29</td>
+<td>testcases.Test_Login@20322d26</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testcases.Test_Login.login_logout()'><b>login_logout</b><br>Test class: testcases.Test_Login<br>Parameters: /login, dikakoko04@gmail.com, dikakoko, dikakoko</td>
+<td></td>
+<td>0</td>
+<td>testcases.Test_Login@20322d26</td></tr>
+<tr>
+<td title='testcases.Test_Login.login_logout()'><b>login_logout</b><br>Test class: testcases.Test_Login<br>Parameters: /login, 082278843303, dikakoko, dikakokos</td>
+<td></td>
+<td>0</td>
+<td>testcases.Test_Login@20322d26</td></tr>
+<tr>
+<td title='testcases.Test_Integration_Login.login_logout_from_Continue_Watching()'><b>login_logout_from_Continue_Watching</b><br>Test class: testcases.Test_Integration_Login<br>Parameters: /login, dikakoko04@gmail.com, dikakoko, dikakoko</td>
+<td></td>
+<td>0</td>
+<td>testcases.Test_Integration_Login@64bfbc86</td></tr>
+<tr>
+<td title='testcases.Test_Integration_Login.login_logout_from_Continue_Watching()'><b>login_logout_from_Continue_Watching</b><br>Test class: testcases.Test_Integration_Login<br>Parameters: /login, 082278843303, dikakoko, dikakokos</td>
+<td></td>
+<td>0</td>
+<td>testcases.Test_Integration_Login@64bfbc86</td></tr>
+<tr>
+<td title='testcases.Test_Integration_Login.login_logout_from_account()'><b>login_logout_from_account</b><br>Test class: testcases.Test_Integration_Login<br>Parameters: /login, dikakoko04@gmail.com, dikakoko, dikakoko</td>
+<td></td>
+<td>0</td>
+<td>testcases.Test_Integration_Login@64bfbc86</td></tr>
+<tr>
+<td title='testcases.Test_Integration_Login.login_logout_from_account()'><b>login_logout_from_account</b><br>Test class: testcases.Test_Integration_Login<br>Parameters: /login, 082278843303, dikakoko, dikakokos</td>
+<td></td>
+<td>0</td>
+<td>testcases.Test_Integration_Login@64bfbc86</td></tr>
+<tr>
+<td title='testcases.Test_Integration_Login.login_logout_from_history()'><b>login_logout_from_history</b><br>Test class: testcases.Test_Integration_Login<br>Parameters: /login, dikakoko04@gmail.com, dikakoko, dikakoko</td>
+<td></td>
+<td>0</td>
+<td>testcases.Test_Integration_Login@64bfbc86</td></tr>
+<tr>
+<td title='testcases.Test_Integration_Login.login_logout_from_history()'><b>login_logout_from_history</b><br>Test class: testcases.Test_Integration_Login<br>Parameters: /login, 082278843303, dikakoko, dikakokos</td>
+<td></td>
+<td>0</td>
+<td>testcases.Test_Integration_Login@64bfbc86</td></tr>
+<tr>
+<td title='testcases.Test_Integration_Login.login_logout_from_mylist()'><b>login_logout_from_mylist</b><br>Test class: testcases.Test_Integration_Login<br>Parameters: /login, dikakoko04@gmail.com, dikakoko, dikakoko</td>
+<td></td>
+<td>0</td>
+<td>testcases.Test_Integration_Login@64bfbc86</td></tr>
+<tr>
+<td title='testcases.Test_Integration_Login.login_logout_from_mylist()'><b>login_logout_from_mylist</b><br>Test class: testcases.Test_Integration_Login<br>Parameters: /login, 082278843303, dikakoko, dikakokos</td>
+<td></td>
+<td>0</td>
+<td>testcases.Test_Integration_Login@64bfbc86</td></tr>
+<tr>
+<td title='testcases.Test_List_Menu_Account.menu_account_not_login_button_download()'><b>menu_account_not_login_button_download</b><br>Test class: testcases.Test_List_Menu_Account</td>
+<td></td>
+<td>0</td>
+<td>testcases.Test_List_Menu_Account@192b07fd</td></tr>
+<tr>
+<td title='testcases.Test_List_Menu_Account.menu_account_not_login_button_login()'><b>menu_account_not_login_button_login</b><br>Test class: testcases.Test_List_Menu_Account</td>
+<td></td>
+<td>0</td>
+<td>testcases.Test_List_Menu_Account@192b07fd</td></tr>
+<tr>
+<td title='testcases.Test_List_Menu_Account.menu_account_not_login_button_menu_direct()'><b>menu_account_not_login_button_menu_direct</b><br>Test class: testcases.Test_List_Menu_Account<br>Parameters: tnc, Terms and Conditions</td>
+<td></td>
+<td>0</td>
+<td>testcases.Test_List_Menu_Account@192b07fd</td></tr>
+<tr>
+<td title='testcases.Test_List_Menu_Account.menu_account_not_login_button_menu_direct()'><b>menu_account_not_login_button_menu_direct</b><br>Test class: testcases.Test_List_Menu_Account<br>Parameters: privacy-policy, Privacy Policy</td>
+<td></td>
+<td>0</td>
+<td>testcases.Test_List_Menu_Account@192b07fd</td></tr>
+<tr>
+<td title='testcases.Test_List_Menu_Account.menu_account_not_login_button_menu_direct()'><b>menu_account_not_login_button_menu_direct</b><br>Test class: testcases.Test_List_Menu_Account<br>Parameters: contact-us, Contact Us</td>
+<td></td>
+<td>0</td>
+<td>testcases.Test_List_Menu_Account@192b07fd</td></tr>
+<tr>
+<td title='testcases.Test_List_Menu_Account.menu_account_not_login_button_menu_direct()'><b>menu_account_not_login_button_menu_direct</b><br>Test class: testcases.Test_List_Menu_Account<br>Parameters: faq, Faq</td>
+<td></td>
+<td>0</td>
+<td>testcases.Test_List_Menu_Account@192b07fd</td></tr>
+<tr>
+<td title='testcases.Test_List_Menu_Account.menu_account_not_login_button_scan_qrcode()'><b>menu_account_not_login_button_scan_qrcode</b><br>Test class: testcases.Test_List_Menu_Account</td>
+<td></td>
+<td>0</td>
+<td>testcases.Test_List_Menu_Account@192b07fd</td></tr>
+<tr>
+<td title='testcases.Test_List_Menu_Account.menu_account_not_login_popup_login()'><b>menu_account_not_login_popup_login</b><br>Test class: testcases.Test_List_Menu_Account<br>Parameters: history, Sign Up, Sign In</td>
+<td></td>
+<td>0</td>
+<td>testcases.Test_List_Menu_Account@192b07fd</td></tr>
+<tr>
+<td title='testcases.Test_List_Menu_Account.menu_account_not_login_popup_login()'><b>menu_account_not_login_popup_login</b><br>Test class: testcases.Test_List_Menu_Account<br>Parameters: mylist, Sign Up, Sign In</td>
+<td></td>
+<td>0</td>
+<td>testcases.Test_List_Menu_Account@192b07fd</td></tr>
+<tr>
+<td title='testcases.Test_List_Menu_Account.menu_account_not_login_popup_login()'><b>menu_account_not_login_popup_login</b><br>Test class: testcases.Test_List_Menu_Account<br>Parameters: continue-watching, Sign Up, Sign In</td>
+<td></td>
+<td>0</td>
+<td>testcases.Test_List_Menu_Account@192b07fd</td></tr>
+</table><p>
+</body>
+</html>
