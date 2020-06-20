@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Default_suite">
-              <span class="suite-name border-skipped">Default suite</span>
+              <span class="suite-name border-passed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\fransiskus.setiawan\AppData\Local\Temp\testng-eclipse-902160103\testng-customsuite.xml</span>
+                    <span>C:\Users\fransiskus.setiawan\AppData\Local\Temp\testng-eclipse--1523069408\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,26 +91,36 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,  2 skipped,  </span>
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods skipped suite-Default_suite"> (hide)</a> <!-- hide-methods skipped suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods skipped suite-Default_suite"> (show)</a> <!-- show-methods skipped suite-Default_suite -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
                     </span>
-                    <div class="method-list-content skipped suite-Default_suite">
+                    <div class="method-list-content passed suite-Default_suite">
                       <span>
-                        <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="testcases.Test_Login" hash-for-method="login_alert_popup">login_alert_popup</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="testcases.Test_Register" hash-for-method="register_alert_email(rtgsfad.com, password, password, Please Try Again Email Is Incorrect)">register_alert_email(rtgsfad.com, password, password, Please Try Again Email Is Incorrect)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="testcases.Test_Login" hash-for-method="login_logout">login_logout</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="testcases.Test_Register" hash-for-method="register_alert_email(dikakoko04@gmail.com, password, password, please try again, email has been taken)">register_alert_email(dikakoko04@gmail.com, password, password, please try again, email has been taken)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content skipped suite-Default_suite -->
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="testcases.Test_Register" hash-for-method="register_alert_password1(nteamqcdfard@gmail.com, kurang, kurang, Password must at least 8 characters)">register_alert_password1(nteamqcdfard@gmail.com, kurang, kurang, Password must at least 8 characters)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="testcases.Test_Register" hash-for-method="register_alert_password2(nteamqcdfard@gmail.com, password, passwordBeda, Password must match)">register_alert_password2(nteamqcdfard@gmail.com, password, passwordBeda, Password must match)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Default_suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -122,108 +132,50 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-skipped">
+          <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">testcases.Test_Login</span>
+              <img src="passed.png"/>
+              <span class="class-name">testcases.Test_Register</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="login_alert_popup">
-                  </a> <!-- login_alert_popup -->
-                  <span class="method-name">login_alert_popup</span>
-                  <div class="stack-trace">java.lang.RuntimeException: java.io.FileNotFoundException: .\pwa\src\main\java\data\data_test.xlsx (The system cannot find the path specified)
-	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:163)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:430)
-	at org.testng.internal.Invoker.handleParameters(Invoker.java:1274)
-	at org.testng.internal.Invoker.createParameters(Invoker.java:989)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1079)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
-Caused by: java.io.FileNotFoundException: .\pwa\src\main\java\data\data_test.xlsx (The system cannot find the path specified)
-	at java.io.FileInputStream.open0(Native Method)
-	at java.io.FileInputStream.open(Unknown Source)
-	at java.io.FileInputStream.&lt;init&gt;(Unknown Source)
-	at java.io.FileInputStream.&lt;init&gt;(Unknown Source)
-	at utility.ReadExcel.getCellData(ReadExcel.java:17)
-	at testcases.Test_Login.login_alert_popup(Test_Login.java:40)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:137)
-	... 20 more
-
-</div> <!-- stack-trace -->
+                  <a name="register_alert_email(rtgsfad.com, password, password, Please Try Again Email Is Incorrect)">
+                  </a> <!-- register_alert_email(rtgsfad.com, password, password, Please Try Again Email Is Incorrect) -->
+                  <span class="method-name">register_alert_email</span>
+                  <span class="parameters">(rtgsfad.com, password, password, Please Try Again Email Is Incorrect)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="login_logout">
-                  </a> <!-- login_logout -->
-                  <span class="method-name">login_logout</span>
-                  <div class="stack-trace">java.lang.RuntimeException: java.io.FileNotFoundException: .\pwa\src\main\java\data\data_test.xlsx (The system cannot find the path specified)
-	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:163)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:430)
-	at org.testng.internal.Invoker.handleParameters(Invoker.java:1274)
-	at org.testng.internal.Invoker.createParameters(Invoker.java:989)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1079)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
-Caused by: java.io.FileNotFoundException: .\pwa\src\main\java\data\data_test.xlsx (The system cannot find the path specified)
-	at java.io.FileInputStream.open0(Native Method)
-	at java.io.FileInputStream.open(Unknown Source)
-	at java.io.FileInputStream.&lt;init&gt;(Unknown Source)
-	at java.io.FileInputStream.&lt;init&gt;(Unknown Source)
-	at utility.ReadExcel.getCellData(ReadExcel.java:17)
-	at testcases.Test_Login.login_success(Test_Login.java:22)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:137)
-	... 20 more
-
-</div> <!-- stack-trace -->
+                  <a name="register_alert_email(dikakoko04@gmail.com, password, password, please try again, email has been taken)">
+                  </a> <!-- register_alert_email(dikakoko04@gmail.com, password, password, please try again, email has been taken) -->
+                  <span class="method-name">register_alert_email</span>
+                  <span class="parameters">(dikakoko04@gmail.com, password, password, please try again, email has been taken)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="register_alert_password1(nteamqcdfard@gmail.com, kurang, kurang, Password must at least 8 characters)">
+                  </a> <!-- register_alert_password1(nteamqcdfard@gmail.com, kurang, kurang, Password must at least 8 characters) -->
+                  <span class="method-name">register_alert_password1</span>
+                  <span class="parameters">(nteamqcdfard@gmail.com, kurang, kurang, Password must at least 8 characters)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="register_alert_password2(nteamqcdfard@gmail.com, password, passwordBeda, Password must match)">
+                  </a> <!-- register_alert_password2(nteamqcdfard@gmail.com, password, passwordBeda, Password must match) -->
+                  <span class="method-name">register_alert_password2</span>
+                  <span class="parameters">(nteamqcdfard@gmail.com, password, passwordBeda, Password must match)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-skipped -->
+          </div> <!-- suite-Default_suite-class-passed -->
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\fransiskus.setiawan\AppData\Local\Temp\testng-eclipse-902160103\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\fransiskus.setiawan\AppData\Local\Temp\testng-eclipse--1523069408\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -232,7 +184,7 @@ Caused by: java.io.FileNotFoundException: .\pwa\src\main\java\data\data_test.xls
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
   &lt;test verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;testcases.Test_Login&quot;/&gt;
+      &lt;class name=&quot;testcases.Test_Register&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -272,20 +224,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'login_alert_popup')
-data.setCell(0, 2, 'testcases.Test_Login')
-data.setCell(0, 3, 0);
+data.setCell(0, 1, 'register_alert_password2')
+data.setCell(0, 2, 'testcases.Test_Register')
+data.setCell(0, 3, 30968);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'login_logout')
-data.setCell(1, 2, 'testcases.Test_Login')
-data.setCell(1, 3, 0);
+data.setCell(1, 1, 'register_alert_email')
+data.setCell(1, 2, 'testcases.Test_Register')
+data.setCell(1, 3, 30130);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'register_alert_password1')
+data.setCell(2, 2, 'testcases.Test_Register')
+data.setCell(2, 3, 29747);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'register_alert_email')
+data.setCell(3, 2, 'testcases.Test_Register')
+data.setCell(3, 3, 29550);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 0 ms</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -310,6 +270,56 @@ return data;
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.Test_Register</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">set</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">register_alert_email(dikakoko04@gmail.com, password, password, please try again, email has been taken)</span>
+                <span class="method-start">2039 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">done</span>
+                <span class="method-start">31590 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">set</span>
+                <span class="method-start">31656 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">register_alert_email(rtgsfad.com, password, password, Please Try Again Email Is Incorrect)</span>
+                <span class="method-start">32542 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">done</span>
+                <span class="method-start">62672 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">set</span>
+                <span class="method-start">62975 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">register_alert_password1(nteamqcdfard@gmail.com, kurang, kurang, Password must at least 8 characters)</span>
+                <span class="method-start">65660 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">done</span>
+                <span class="method-start">95408 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">set</span>
+                <span class="method-start">95588 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">register_alert_password2(nteamqcdfard@gmail.com, password, passwordBeda, Password must match)</span>
+                <span class="method-start">96538 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">done</span>
+                <span class="method-start">127507 ms</span>
+              </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
