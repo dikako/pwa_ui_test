@@ -35,7 +35,7 @@ public class Test_Integration_Login extends Setup {
 	}
 
 	@Test(priority = 2, testName = "Login Success From Account -> Login", dataProvider = "login_success")
-	public void login_logout_from_account(String visitUrl, String username, String password, String displayName)
+	public void login_logout_from_account(String username, String password, String displayName)
 			throws InterruptedException {
 		Url url = new Url(driver);
 		Input input = PageFactory.initElements(driver, Input.class);
@@ -43,7 +43,7 @@ public class Test_Integration_Login extends Setup {
 
 		System.out.println("Login Test Integration - Login Success From Account -> Login");
 
-		url.urls(visitUrl.replace(visitUrl, ""));
+		url.defaultUrl();
 		button.byId("action-account");
 		button.byId("button-login");
 		input.byId("email", username);
@@ -61,7 +61,7 @@ public class Test_Integration_Login extends Setup {
 	}
 
 	@Test(priority = 2, testName = "Login Success Account -> History", dataProvider = "login_success")
-	public void login_logout_from_history(String visitUrl, String username, String password, String displayName)
+	public void login_logout_from_history(String username, String password, String displayName)
 			throws InterruptedException {
 		Url url = new Url(driver);
 		Input input = PageFactory.initElements(driver, Input.class);
@@ -69,7 +69,7 @@ public class Test_Integration_Login extends Setup {
 
 		System.out.println("Login Test Integration - Login Success From Account -> History");
 
-		url.urls(visitUrl.replace(visitUrl, ""));
+		url.defaultUrl();
 		button.byId("action-account");
 		button.byId("action-history");
 		button.byId("pop-up-action-sign-in");
@@ -88,7 +88,7 @@ public class Test_Integration_Login extends Setup {
 	}
 
 	@Test(priority = 2, testName = "Login Success Account -> Mylist", dataProvider = "login_success")
-	public void login_logout_from_mylist(String visitUrl, String username, String password, String displayName)
+	public void login_logout_from_mylist(String username, String password, String displayName)
 			throws InterruptedException {
 		Url url = new Url(driver);
 		Input input = PageFactory.initElements(driver, Input.class);
@@ -96,7 +96,7 @@ public class Test_Integration_Login extends Setup {
 
 		System.out.println("Login Test Integration - Login Success From Account -> Mylist");
 
-		url.urls(visitUrl.replace(visitUrl, ""));
+		url.defaultUrl();
 		button.byId("action-account");
 		button.byId("action-mylist");
 		button.byId("pop-up-action-sign-in");
@@ -115,14 +115,14 @@ public class Test_Integration_Login extends Setup {
 	}
 
 	@Test(priority = 2, testName = "Login Success Account -> Continue Watching", dataProvider = "login_success")
-	public void login_logout_from_Continue_Watching(String visitUrl, String username, String password, String displayName) throws InterruptedException {
+	public void login_logout_from_Continue_Watching(String username, String password, String displayName) throws InterruptedException {
 		Url url = new Url(driver);
 		Input input = PageFactory.initElements(driver, Input.class);
 		Button button = PageFactory.initElements(driver, Button.class);
 
 		System.out.println("Login Test Integration - Login Success From Account -> Continue Watching");
 
-		url.urls(visitUrl.replace(visitUrl, ""));
+		url.defaultUrl();
 		button.byId("action-account");
 		button.byId("action-continue-watching");
 		button.byId("pop-up-action-sign-in");

@@ -21,6 +21,7 @@ public class Input {
 		Actions actions = new Actions(driver);
 		actions.moveToElement(element);
 		actions.click();
+		element.clear();
 		actions.sendKeys(value);
 		actions.build().perform();
 		System.out.println("Input Value: " + value);
@@ -32,6 +33,7 @@ public class Input {
 		Actions actions = new Actions(driver);
 		actions.moveToElement(element);
 		actions.click();
+		element.clear();
 		actions.sendKeys(value);
 		actions.build().perform();
 		System.out.println("Input Value: " + value);
@@ -43,6 +45,7 @@ public class Input {
 		Actions actions = new Actions(driver);
 		actions.moveToElement(element);
 		actions.click();
+		element.clear();
 		actions.sendKeys(value);
 		actions.build().perform();
 		System.out.println("Input Value: " + value);
@@ -54,6 +57,7 @@ public class Input {
 		Actions actions = new Actions(driver);
 		actions.moveToElement(element);
 		actions.click();
+		element.clear();
 		actions.sendKeys(value);
 		actions.build().perform();
 		System.out.println("Input Value: " + value);
@@ -65,6 +69,7 @@ public class Input {
 		Actions actions = new Actions(driver);
 		actions.moveToElement(element);
 		actions.click();
+		element.clear();
 		actions.sendKeys(value);
 		actions.build().perform();
 		System.out.println("Input Value: " + value);
@@ -76,6 +81,7 @@ public class Input {
 		Actions actions = new Actions(driver);
 		actions.moveToElement(element);
 		actions.click();
+		element.clear();
 		actions.sendKeys(value);
 		actions.build().perform();
 		System.out.println("Input Value: " + value);
