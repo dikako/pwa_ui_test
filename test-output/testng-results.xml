@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="128237" started-at="2020-06-20T08:27:07Z" finished-at="2020-06-20T08:29:15Z">
+  <suite name="Default suite" duration-ms="144798" started-at="2020-06-20T09:04:22Z" finished-at="2020-06-20T09:06:47Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="128237" started-at="2020-06-20T08:27:07Z" finished-at="2020-06-20T08:29:15Z">
+    <test name="Default test" duration-ms="144798" started-at="2020-06-20T09:04:22Z" finished-at="2020-06-20T09:06:47Z">
       <class name="testcases.Test_Register">
-        <test-method status="PASS" signature="set()[pri:0, instance:testcases.Test_Register@13805618]" name="set" is-config="true" duration-ms="2039" started-at="2020-06-20T15:27:08Z" finished-at="2020-06-20T15:27:10Z">
+        <test-method status="PASS" signature="set()[pri:0, instance:testcases.Test_Register@13805618]" name="set" is-config="true" duration-ms="1598" started-at="2020-06-20T16:04:23Z" finished-at="2020-06-20T16:04:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- set -->
-        <test-method status="PASS" signature="register_alert_email(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.Test_Register@13805618]" name="register_alert_email" duration-ms="29550" started-at="2020-06-20T15:27:10Z" data-provider="register_email_alert" finished-at="2020-06-20T15:27:39Z">
+        <test-method status="PASS" signature="register_alert_phone(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:testcases.Test_Register@13805618]" name="register_alert_phone" duration-ms="34577" started-at="2020-06-20T16:04:24Z" data-provider="register_phone_alert" finished-at="2020-06-20T16:04:59Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[dikakoko04@gmail.com]]>
+                <![CDATA[00909089897897]]>
               </value>
             </param>
             <param index="1">
@@ -30,26 +30,26 @@
             </param>
             <param index="3">
               <value>
-                <![CDATA[please try again, email has been taken]]>
+                <![CDATA[Please Try Again Phone Number Is Incorrect]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- register_alert_email -->
-        <test-method status="PASS" signature="done()[pri:0, instance:testcases.Test_Register@13805618]" name="done" is-config="true" duration-ms="66" started-at="2020-06-20T15:27:39Z" finished-at="2020-06-20T15:27:39Z">
+        </test-method> <!-- register_alert_phone -->
+        <test-method status="PASS" signature="done()[pri:0, instance:testcases.Test_Register@13805618]" name="done" is-config="true" duration-ms="66" started-at="2020-06-20T16:04:59Z" finished-at="2020-06-20T16:04:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- done -->
-        <test-method status="PASS" signature="set()[pri:0, instance:testcases.Test_Register@13805618]" name="set" is-config="true" duration-ms="886" started-at="2020-06-20T15:27:39Z" finished-at="2020-06-20T15:27:40Z">
+        <test-method status="PASS" signature="set()[pri:0, instance:testcases.Test_Register@13805618]" name="set" is-config="true" duration-ms="1234" started-at="2020-06-20T16:04:59Z" finished-at="2020-06-20T16:05:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- set -->
-        <test-method status="PASS" signature="register_alert_email(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.Test_Register@13805618]" name="register_alert_email" duration-ms="30130" started-at="2020-06-20T15:27:40Z" data-provider="register_email_alert" finished-at="2020-06-20T15:28:10Z">
+        <test-method status="PASS" signature="register_alert_phone(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:testcases.Test_Register@13805618]" name="register_alert_phone" duration-ms="34914" started-at="2020-06-20T16:05:00Z" data-provider="register_phone_alert" finished-at="2020-06-20T16:05:35Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[rtgsfad.com]]>
+                <![CDATA[82278843303]]>
               </value>
             </param>
             <param index="1">
@@ -64,26 +64,26 @@
             </param>
             <param index="3">
               <value>
-                <![CDATA[Please Try Again Email Is Incorrect]]>
+                <![CDATA[please try again, phone has been taken]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- register_alert_email -->
-        <test-method status="PASS" signature="done()[pri:0, instance:testcases.Test_Register@13805618]" name="done" is-config="true" duration-ms="241" started-at="2020-06-20T15:28:10Z" finished-at="2020-06-20T15:28:11Z">
+        </test-method> <!-- register_alert_phone -->
+        <test-method status="PASS" signature="done()[pri:0, instance:testcases.Test_Register@13805618]" name="done" is-config="true" duration-ms="94" started-at="2020-06-20T16:05:35Z" finished-at="2020-06-20T16:05:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- done -->
-        <test-method status="PASS" signature="set()[pri:0, instance:testcases.Test_Register@13805618]" name="set" is-config="true" duration-ms="2685" started-at="2020-06-20T15:28:11Z" finished-at="2020-06-20T15:28:13Z">
+        <test-method status="PASS" signature="set()[pri:0, instance:testcases.Test_Register@13805618]" name="set" is-config="true" duration-ms="1006" started-at="2020-06-20T16:05:35Z" finished-at="2020-06-20T16:05:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- set -->
-        <test-method status="PASS" signature="register_alert_password1(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.Test_Register@13805618]" name="register_alert_password1" duration-ms="29747" started-at="2020-06-20T15:28:13Z" data-provider="register_password1_alert" finished-at="2020-06-20T15:28:43Z">
+        <test-method status="PASS" signature="register_phone_alert_password1(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:testcases.Test_Register@13805618]" name="register_phone_alert_password1" duration-ms="34433" started-at="2020-06-20T16:05:36Z" data-provider="register_password1_alert_phone" finished-at="2020-06-20T16:06:11Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[nteamqcdfard@gmail.com]]>
+                <![CDATA[863436763543]]>
               </value>
             </param>
             <param index="1">
@@ -104,20 +104,20 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- register_alert_password1 -->
-        <test-method status="PASS" signature="done()[pri:0, instance:testcases.Test_Register@13805618]" name="done" is-config="true" duration-ms="136" started-at="2020-06-20T15:28:43Z" finished-at="2020-06-20T15:28:43Z">
+        </test-method> <!-- register_phone_alert_password1 -->
+        <test-method status="PASS" signature="done()[pri:0, instance:testcases.Test_Register@13805618]" name="done" is-config="true" duration-ms="65" started-at="2020-06-20T16:06:11Z" finished-at="2020-06-20T16:06:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- done -->
-        <test-method status="PASS" signature="set()[pri:0, instance:testcases.Test_Register@13805618]" name="set" is-config="true" duration-ms="950" started-at="2020-06-20T15:28:43Z" finished-at="2020-06-20T15:28:44Z">
+        <test-method status="PASS" signature="set()[pri:0, instance:testcases.Test_Register@13805618]" name="set" is-config="true" duration-ms="1311" started-at="2020-06-20T16:06:11Z" finished-at="2020-06-20T16:06:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- set -->
-        <test-method status="PASS" signature="register_alert_password2(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.Test_Register@13805618]" name="register_alert_password2" duration-ms="30968" started-at="2020-06-20T15:28:44Z" data-provider="register_password2_alert" finished-at="2020-06-20T15:29:15Z">
+        <test-method status="PASS" signature="register_phone_alert_password2(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:testcases.Test_Register@13805618]" name="register_phone_alert_password2" duration-ms="34610" started-at="2020-06-20T16:06:12Z" data-provider="register_password2_alert_phone" finished-at="2020-06-20T16:06:47Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[nteamqcdfard@gmail.com]]>
+                <![CDATA[84534343436]]>
               </value>
             </param>
             <param index="1">
@@ -138,8 +138,8 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- register_alert_password2 -->
-        <test-method status="PASS" signature="done()[pri:0, instance:testcases.Test_Register@13805618]" name="done" is-config="true" duration-ms="71" started-at="2020-06-20T15:29:15Z" finished-at="2020-06-20T15:29:15Z">
+        </test-method> <!-- register_phone_alert_password2 -->
+        <test-method status="PASS" signature="done()[pri:0, instance:testcases.Test_Register@13805618]" name="done" is-config="true" duration-ms="110" started-at="2020-06-20T16:06:47Z" finished-at="2020-06-20T16:06:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- done -->
