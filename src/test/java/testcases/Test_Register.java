@@ -1,59 +1,138 @@
 package testcases;
 
 import java.io.IOException;
+import java.util.Random;
 
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-
 import config.Setup;
 import config.Url;
 import object.Alert;
 import object.Button;
+import object.Dropdown;
 import object.Input;
 import utility.ReadExcel;
 
 public class Test_Register extends Setup {
-	
+
 	public String path = "../pwa_ui_test/src/main/java/data/data_test.xlsx";
-	
+
 	@DataProvider
 	public String[][] register_email_alert() throws InvalidFormatException, IOException {
 		ReadExcel read = new ReadExcel();
 		return read.getCellData(path, "Register_Email_Alert");
 	}
-	
+
 	@DataProvider
 	public String[][] register_phone_alert() throws InvalidFormatException, IOException {
 		ReadExcel read = new ReadExcel();
 		return read.getCellData(path, "Register_Phone_Alert");
 	}
-	
+
 	@DataProvider
 	public String[][] register_password1_alert_email() throws InvalidFormatException, IOException {
 		ReadExcel read = new ReadExcel();
 		return read.getCellData(path, "Register_Password1_Alert_Email");
 	}
-	
+
 	@DataProvider
 	public String[][] register_password2_alert_email() throws InvalidFormatException, IOException {
 		ReadExcel read = new ReadExcel();
 		return read.getCellData(path, "Register_Password2_Alert_Email");
 	}
-	
+
 	@DataProvider
 	public String[][] register_password1_alert_phone() throws InvalidFormatException, IOException {
 		ReadExcel read = new ReadExcel();
 		return read.getCellData(path, "Register_Password1_Alert_Phone");
 	}
-	
+
 	@DataProvider
 	public String[][] register_password2_alert_phone() throws InvalidFormatException, IOException {
 		ReadExcel read = new ReadExcel();
 		return read.getCellData(path, "Register_Password2_Alert_Phone");
 	}
 	
+	@DataProvider
+	public String[][] register_list_gender() throws InvalidFormatException, IOException {
+		ReadExcel read = new ReadExcel();
+		return read.getCellData(path, "Register_List_Gender");
+	}
+
+	@Test(priority = 4)
+	public void register_page2_validate_fullname() throws InterruptedException {
+		Url url = new Url(driver);
+		Input input = PageFactory.initElements(driver, Input.class);
+		Button button = PageFactory.initElements(driver, Button.class);
+		Alert alert = PageFactory.initElements(driver, Alert.class);
+
+		System.out.println("Register Test - Validate Register Page 2 Fullname");
+
+		Random random = new Random();
+		int randomInt = random.nextInt(10000);
+
+		url.urls("/register");
+		alert.byClass("header-nav-verif", "Register");
+		input.byId("email", "auieo" + randomInt + "@gmail.com");
+		input.byId("password", "password");
+		input.byId("password2", "password");
+		button.byId("button-next");
+		Thread.sleep(2000);
+		alert.byClass("header-nav-verif", "Verification");
+		input.byIdAttr("fullname", "maxlength", "25");
+	}
+
+	@Test(priority = 4)
+	public void register_page2_validate_birthday() throws InterruptedException {
+		Url url = new Url(driver);
+		Button button = PageFactory.initElements(driver, Button.class);
+		Alert alert = PageFactory.initElements(driver, Alert.class);
+		Input input = PageFactory.initElements(driver, Input.class);
+
+		System.out.println("Register Test - Validate Register Page 2 Birthday");
+
+		Random random = new Random();
+		int randomInt = random.nextInt(10000);
+
+		url.urls("/register");
+		alert.byClass("header-nav-verif", "Register");
+		input.byId("email", "auieo" + randomInt + "@gmail.com");
+		input.byId("password", "password");
+		input.byId("password2", "password");
+		button.byId("button-next");
+		Thread.sleep(2000);
+		alert.byClass("header-nav-verif", "Verification");
+		button.byId("BirthDate");
+		alert.byClassDisplay("datepicker-content", true);
+	}
+
+	@Test(priority = 4, testName = "Register Validate Gender", dataProvider = "register_list_gender")
+	public void register_page2_validate_gender_Male(String gender) throws InterruptedException {
+		Url url = new Url(driver);
+		Button button = PageFactory.initElements(driver, Button.class);
+		Alert alert = PageFactory.initElements(driver, Alert.class);
+		Input input = PageFactory.initElements(driver, Input.class);
+		Dropdown dropdown = PageFactory.initElements(driver, Dropdown.class);
+		
+		System.out.println("Register Test - Validate Register Page 2 Gender ");
+
+		Random random = new Random();
+		int randomInt = random.nextInt(10000);
+		
+		url.urls("/register");
+		alert.byClass("header-nav-verif", "Register");
+		input.byId("email", "auieo" + randomInt + "@gmail.com");
+		input.byId("password", "password");
+		input.byId("password2", "password");
+		button.byId("button-next");
+		Thread.sleep(2000);
+		alert.byClass("header-nav-verif", "Verification");
+		dropdown.dropdownByIdByVisibleText("gender", gender);
+	}
+	
+
 	@Test(priority = 3, testName = "Register Phone Number Alert", dataProvider = "register_phone_alert")
 	public void register_alert_phone(String phone, String password, String rePassword, String alertText) {
 		Url url = new Url(driver);
@@ -64,6 +143,7 @@ public class Test_Register extends Setup {
 		System.out.println("Register Test - Alert Phone Number");
 		
 		url.urls("/register");
+		alert.byClass("header-nav-verif", "Register");
 		button.byId("register-phone");
 		input.byId("phone_number", phone);
 		input.byId("password", password);
@@ -82,6 +162,7 @@ public class Test_Register extends Setup {
 		System.out.println("Register Test - Alert Phone Password Form 1");
 		
 		url.urls("/register");
+		alert.byClass("header-nav-verif", "Register");
 		button.byId("register-phone");
 		input.byId("phone_number", phone);
 		input.byId("password", password);
@@ -100,6 +181,7 @@ public class Test_Register extends Setup {
 		System.out.println("Register Test - Alert Phone Password Form 2");
 		
 		url.urls("/register");
+		alert.byClass("header-nav-verif", "Register");
 		button.byId("register-phone");
 		input.byId("phone_number", phone);
 		input.byId("password", password);
@@ -118,6 +200,7 @@ public class Test_Register extends Setup {
 		System.out.println("Register Test - Alert Email");
 		
 		url.urls("/register");
+		alert.byClass("header-nav-verif", "Register");
 		input.byId("email", email);
 		input.byId("password", password);
 		input.byId("password2", rePassword);
@@ -135,6 +218,7 @@ public class Test_Register extends Setup {
 		System.out.println("Register Test - Alert Password Form 1");
 		
 		url.urls("/register");
+		alert.byClass("header-nav-verif", "Register");
 		input.byId("email", email);
 		input.byId("password", password);
 		input.byId("password2", rePassword);
@@ -152,6 +236,7 @@ public class Test_Register extends Setup {
 		System.out.println("Register Test - Alert Password Form 2");
 		
 		url.urls("/register");
+		alert.byClass("header-nav-verif", "Register");
 		input.byId("email", email);
 		input.byId("password", password);
 		input.byId("password2", rePassword);
