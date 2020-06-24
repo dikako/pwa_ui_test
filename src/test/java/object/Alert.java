@@ -85,6 +85,8 @@ public class Alert {
 		System.out.println(element.getText());
 	}
 	
+	//Display 
+	
 	public void byIdDisplay(String selector, boolean display) {
 		WebElement element = driver.findElement(By.id(selector));
 		waitForVisible(driver, element);
@@ -134,6 +136,48 @@ public class Alert {
 		actions.build().perform();
 		System.out.println("Alert is Display");
 	}
+	
+	public void byClassDisplay(String selector, boolean display) {
+		WebElement element = driver.findElement(By.className(selector));
+		waitForVisible(driver, element);
+		Actions actions = new Actions(driver);
+		actions.moveToElement(element);
+		Assert.assertEquals(element.isDisplayed(), display);
+		actions.build().perform();
+		System.out.println("Alert is Display");
+	}
+	
+	//Get Text
+
+	public void byNameGetText(String selector) {
+		WebElement element = driver.findElement(By.name(selector));
+		waitForVisible(driver, element);
+		Actions actions = new Actions(driver);
+		actions.moveToElement(element);
+		String text = element.getText();
+		actions.build().perform();
+		System.out.println("Text : " + text);
+	}
+	
+	public void byIdGetText(String selector) {
+		WebElement element = driver.findElement(By.id(selector));
+		waitForVisible(driver, element);
+		Actions actions = new Actions(driver);
+		actions.moveToElement(element);
+		String text = element.getText();
+		actions.build().perform();
+		System.out.println("Text : " + text);
+	}
+	
+	public String byClassGetText(String selector) {
+		WebElement element = driver.findElement(By.className(selector));
+		waitForVisible(driver, element);
+		Actions actions = new Actions(driver);
+		actions.moveToElement(element);
+		String text = element.getText();
+		return text;
+	}
+
 	
 	private void waitForVisible(WebDriver driver, WebElement element) {
 		try {

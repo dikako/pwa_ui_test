@@ -1,149 +1,661 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" total="28" passed="28">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="144798" started-at="2020-06-20T09:04:22Z" finished-at="2020-06-20T09:06:47Z">
+  <suite name="Default suite" duration-ms="532245" started-at="2020-06-24T09:01:54Z" finished-at="2020-06-24T09:10:46Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="144798" started-at="2020-06-20T09:04:22Z" finished-at="2020-06-20T09:06:47Z">
-      <class name="testcases.Test_Register">
-        <test-method status="PASS" signature="set()[pri:0, instance:testcases.Test_Register@13805618]" name="set" is-config="true" duration-ms="1598" started-at="2020-06-20T16:04:23Z" finished-at="2020-06-20T16:04:24Z">
+    <test name="Default test" duration-ms="532245" started-at="2020-06-24T09:01:54Z" finished-at="2020-06-24T09:10:46Z">
+      <class name="testcases.Test_Exclusive">
+        <test-method status="PASS" signature="set()[pri:0, instance:testcases.Test_Exclusive@13805618]" name="set" is-config="true" duration-ms="2484" started-at="2020-06-24T16:01:54Z" finished-at="2020-06-24T16:01:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- set -->
-        <test-method status="PASS" signature="register_alert_phone(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:testcases.Test_Register@13805618]" name="register_alert_phone" duration-ms="34577" started-at="2020-06-20T16:04:24Z" data-provider="register_phone_alert" finished-at="2020-06-20T16:04:59Z">
+        <test-method status="PASS" signature="exclusive_validate_thumbnail()[pri:0, instance:testcases.Test_Exclusive@13805618]" name="exclusive_validate_thumbnail" duration-ms="11932" started-at="2020-06-24T16:01:56Z" finished-at="2020-06-24T16:02:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- exclusive_validate_thumbnail -->
+        <test-method status="PASS" signature="done()[pri:0, instance:testcases.Test_Exclusive@13805618]" name="done" is-config="true" duration-ms="87" started-at="2020-06-24T16:02:08Z" finished-at="2020-06-24T16:02:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- done -->
+        <test-method status="PASS" signature="set()[pri:0, instance:testcases.Test_Exclusive@13805618]" name="set" is-config="true" duration-ms="1429" started-at="2020-06-24T16:02:08Z" finished-at="2020-06-24T16:02:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- set -->
+        <test-method status="PASS" signature="integration_exclusive_validate_thumbnail()[pri:1, instance:testcases.Test_Exclusive@13805618]" name="integration_exclusive_validate_thumbnail" duration-ms="21794" started-at="2020-06-24T16:02:10Z" finished-at="2020-06-24T16:02:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- integration_exclusive_validate_thumbnail -->
+        <test-method status="PASS" signature="done()[pri:0, instance:testcases.Test_Exclusive@13805618]" name="done" is-config="true" duration-ms="85" started-at="2020-06-24T16:02:31Z" finished-at="2020-06-24T16:02:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- done -->
+        <test-method status="PASS" signature="set()[pri:0, instance:testcases.Test_Exclusive@13805618]" name="set" is-config="true" duration-ms="1372" started-at="2020-06-24T16:02:32Z" finished-at="2020-06-24T16:02:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- set -->
+        <test-method status="PASS" signature="exclusive_validate_list_share(java.lang.String, java.lang.String)[pri:2, instance:testcases.Test_Exclusive@13805618]" name="exclusive_validate_list_share" duration-ms="29742" started-at="2020-06-24T16:02:34Z" data-provider="list_share" finished-at="2020-06-24T16:03:04Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[00909089897897]]>
+                <![CDATA[0]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[password]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[password]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Please Try Again Phone Number Is Incorrect]]>
+                <![CDATA[facebook]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- register_alert_phone -->
-        <test-method status="PASS" signature="done()[pri:0, instance:testcases.Test_Register@13805618]" name="done" is-config="true" duration-ms="66" started-at="2020-06-20T16:04:59Z" finished-at="2020-06-20T16:04:59Z">
+        </test-method> <!-- exclusive_validate_list_share -->
+        <test-method status="PASS" signature="done()[pri:0, instance:testcases.Test_Exclusive@13805618]" name="done" is-config="true" duration-ms="82" started-at="2020-06-24T16:03:04Z" finished-at="2020-06-24T16:03:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- done -->
-        <test-method status="PASS" signature="set()[pri:0, instance:testcases.Test_Register@13805618]" name="set" is-config="true" duration-ms="1234" started-at="2020-06-20T16:04:59Z" finished-at="2020-06-20T16:05:00Z">
+        <test-method status="PASS" signature="set()[pri:0, instance:testcases.Test_Exclusive@13805618]" name="set" is-config="true" duration-ms="1285" started-at="2020-06-24T16:03:04Z" finished-at="2020-06-24T16:03:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- set -->
-        <test-method status="PASS" signature="register_alert_phone(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:testcases.Test_Register@13805618]" name="register_alert_phone" duration-ms="34914" started-at="2020-06-20T16:05:00Z" data-provider="register_phone_alert" finished-at="2020-06-20T16:05:35Z">
+        <test-method status="PASS" signature="exclusive_validate_list_share(java.lang.String, java.lang.String)[pri:2, instance:testcases.Test_Exclusive@13805618]" name="exclusive_validate_list_share" duration-ms="35671" started-at="2020-06-24T16:03:05Z" data-provider="list_share" finished-at="2020-06-24T16:03:41Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[82278843303]]>
+                <![CDATA[1]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[password]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[password]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[please try again, phone has been taken]]>
+                <![CDATA[twitter]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- register_alert_phone -->
-        <test-method status="PASS" signature="done()[pri:0, instance:testcases.Test_Register@13805618]" name="done" is-config="true" duration-ms="94" started-at="2020-06-20T16:05:35Z" finished-at="2020-06-20T16:05:35Z">
+        </test-method> <!-- exclusive_validate_list_share -->
+        <test-method status="PASS" signature="done()[pri:0, instance:testcases.Test_Exclusive@13805618]" name="done" is-config="true" duration-ms="134" started-at="2020-06-24T16:03:41Z" finished-at="2020-06-24T16:03:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- done -->
-        <test-method status="PASS" signature="set()[pri:0, instance:testcases.Test_Register@13805618]" name="set" is-config="true" duration-ms="1006" started-at="2020-06-20T16:05:35Z" finished-at="2020-06-20T16:05:36Z">
+        <test-method status="PASS" signature="set()[pri:0, instance:testcases.Test_Exclusive@13805618]" name="set" is-config="true" duration-ms="1572" started-at="2020-06-24T16:03:41Z" finished-at="2020-06-24T16:03:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- set -->
-        <test-method status="PASS" signature="register_phone_alert_password1(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:testcases.Test_Register@13805618]" name="register_phone_alert_password1" duration-ms="34433" started-at="2020-06-20T16:05:36Z" data-provider="register_password1_alert_phone" finished-at="2020-06-20T16:06:11Z">
+        <test-method status="PASS" signature="exclusive_validate_list_share(java.lang.String, java.lang.String)[pri:2, instance:testcases.Test_Exclusive@13805618]" name="exclusive_validate_list_share" duration-ms="18580" started-at="2020-06-24T16:03:42Z" data-provider="list_share" finished-at="2020-06-24T16:04:01Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[863436763543]]>
+                <![CDATA[2]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[kurang]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[kurang]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Password must at least 8 characters]]>
+                <![CDATA[line]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- register_phone_alert_password1 -->
-        <test-method status="PASS" signature="done()[pri:0, instance:testcases.Test_Register@13805618]" name="done" is-config="true" duration-ms="65" started-at="2020-06-20T16:06:11Z" finished-at="2020-06-20T16:06:11Z">
+        </test-method> <!-- exclusive_validate_list_share -->
+        <test-method status="PASS" signature="done()[pri:0, instance:testcases.Test_Exclusive@13805618]" name="done" is-config="true" duration-ms="132" started-at="2020-06-24T16:04:01Z" finished-at="2020-06-24T16:04:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- done -->
-        <test-method status="PASS" signature="set()[pri:0, instance:testcases.Test_Register@13805618]" name="set" is-config="true" duration-ms="1311" started-at="2020-06-20T16:06:11Z" finished-at="2020-06-20T16:06:12Z">
+        <test-method status="PASS" signature="set()[pri:0, instance:testcases.Test_Exclusive@13805618]" name="set" is-config="true" duration-ms="1375" started-at="2020-06-24T16:04:01Z" finished-at="2020-06-24T16:04:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- set -->
-        <test-method status="PASS" signature="register_phone_alert_password2(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:testcases.Test_Register@13805618]" name="register_phone_alert_password2" duration-ms="34610" started-at="2020-06-20T16:06:12Z" data-provider="register_password2_alert_phone" finished-at="2020-06-20T16:06:47Z">
+        <test-method status="PASS" signature="exclusive_validate_list_share(java.lang.String, java.lang.String)[pri:2, instance:testcases.Test_Exclusive@13805618]" name="exclusive_validate_list_share" duration-ms="24435" started-at="2020-06-24T16:04:02Z" data-provider="list_share" finished-at="2020-06-24T16:04:27Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[84534343436]]>
+                <![CDATA[3]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[password]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[passwordBeda]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Password must match]]>
+                <![CDATA[email]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- register_phone_alert_password2 -->
-        <test-method status="PASS" signature="done()[pri:0, instance:testcases.Test_Register@13805618]" name="done" is-config="true" duration-ms="110" started-at="2020-06-20T16:06:47Z" finished-at="2020-06-20T16:06:47Z">
+        </test-method> <!-- exclusive_validate_list_share -->
+        <test-method status="PASS" signature="done()[pri:0, instance:testcases.Test_Exclusive@13805618]" name="done" is-config="true" duration-ms="170" started-at="2020-06-24T16:04:27Z" finished-at="2020-06-24T16:04:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- done -->
-      </class> <!-- testcases.Test_Register -->
+        <test-method status="PASS" signature="set()[pri:0, instance:testcases.Test_Exclusive@13805618]" name="set" is-config="true" duration-ms="1474" started-at="2020-06-24T16:04:27Z" finished-at="2020-06-24T16:04:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- set -->
+        <test-method status="PASS" signature="exclusive_validate_list_share(java.lang.String, java.lang.String)[pri:2, instance:testcases.Test_Exclusive@13805618]" name="exclusive_validate_list_share" duration-ms="21301" started-at="2020-06-24T16:04:29Z" data-provider="list_share" finished-at="2020-06-24T16:04:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[whatsapp]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- exclusive_validate_list_share -->
+        <test-method status="PASS" signature="done()[pri:0, instance:testcases.Test_Exclusive@13805618]" name="done" is-config="true" duration-ms="131" started-at="2020-06-24T16:04:50Z" finished-at="2020-06-24T16:04:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- done -->
+        <test-method status="PASS" signature="set()[pri:0, instance:testcases.Test_Exclusive@13805618]" name="set" is-config="true" duration-ms="1415" started-at="2020-06-24T16:04:50Z" finished-at="2020-06-24T16:04:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- set -->
+        <test-method status="PASS" signature="exclusive_list_tab_menu(java.lang.String, java.lang.String)[pri:3, instance:testcases.Test_Exclusive@13805618]" name="exclusive_list_tab_menu" duration-ms="8651" started-at="2020-06-24T16:04:52Z" data-provider="list_tab_menu_exclusive" finished-at="2020-06-24T16:05:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[All]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- exclusive_list_tab_menu -->
+        <test-method status="PASS" signature="done()[pri:0, instance:testcases.Test_Exclusive@13805618]" name="done" is-config="true" duration-ms="170" started-at="2020-06-24T16:05:00Z" finished-at="2020-06-24T16:05:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- done -->
+        <test-method status="PASS" signature="set()[pri:0, instance:testcases.Test_Exclusive@13805618]" name="set" is-config="true" duration-ms="1407" started-at="2020-06-24T16:05:00Z" finished-at="2020-06-24T16:05:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- set -->
+        <test-method status="PASS" signature="exclusive_list_tab_menu(java.lang.String, java.lang.String)[pri:3, instance:testcases.Test_Exclusive@13805618]" name="exclusive_list_tab_menu" duration-ms="8503" started-at="2020-06-24T16:05:02Z" data-provider="list_tab_menu_exclusive" finished-at="2020-06-24T16:05:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Clip]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- exclusive_list_tab_menu -->
+        <test-method status="PASS" signature="done()[pri:0, instance:testcases.Test_Exclusive@13805618]" name="done" is-config="true" duration-ms="126" started-at="2020-06-24T16:05:10Z" finished-at="2020-06-24T16:05:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- done -->
+        <test-method status="PASS" signature="set()[pri:0, instance:testcases.Test_Exclusive@13805618]" name="set" is-config="true" duration-ms="1663" started-at="2020-06-24T16:05:10Z" finished-at="2020-06-24T16:05:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- set -->
+        <test-method status="PASS" signature="exclusive_list_tab_menu(java.lang.String, java.lang.String)[pri:3, instance:testcases.Test_Exclusive@13805618]" name="exclusive_list_tab_menu" duration-ms="8532" started-at="2020-06-24T16:05:12Z" data-provider="list_tab_menu_exclusive" finished-at="2020-06-24T16:05:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Photo]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- exclusive_list_tab_menu -->
+        <test-method status="PASS" signature="done()[pri:0, instance:testcases.Test_Exclusive@13805618]" name="done" is-config="true" duration-ms="155" started-at="2020-06-24T16:05:21Z" finished-at="2020-06-24T16:05:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- done -->
+        <test-method status="PASS" signature="set()[pri:0, instance:testcases.Test_Exclusive@13805618]" name="set" is-config="true" duration-ms="1139" started-at="2020-06-24T16:05:21Z" finished-at="2020-06-24T16:05:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- set -->
+        <test-method status="PASS" signature="exclusive_list_tab_menu(java.lang.String, java.lang.String)[pri:3, instance:testcases.Test_Exclusive@13805618]" name="exclusive_list_tab_menu" duration-ms="11365" started-at="2020-06-24T16:05:22Z" data-provider="list_tab_menu_exclusive" finished-at="2020-06-24T16:05:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Entertainment]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- exclusive_list_tab_menu -->
+        <test-method status="PASS" signature="done()[pri:0, instance:testcases.Test_Exclusive@13805618]" name="done" is-config="true" duration-ms="128" started-at="2020-06-24T16:05:33Z" finished-at="2020-06-24T16:05:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- done -->
+        <test-method status="PASS" signature="set()[pri:0, instance:testcases.Test_Exclusive@13805618]" name="set" is-config="true" duration-ms="1489" started-at="2020-06-24T16:05:33Z" finished-at="2020-06-24T16:05:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- set -->
+        <test-method status="PASS" signature="exclusive_list_tab_menu(java.lang.String, java.lang.String)[pri:3, instance:testcases.Test_Exclusive@13805618]" name="exclusive_list_tab_menu" duration-ms="10658" started-at="2020-06-24T16:05:35Z" data-provider="list_tab_menu_exclusive" finished-at="2020-06-24T16:05:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[News]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- exclusive_list_tab_menu -->
+        <test-method status="PASS" signature="done()[pri:0, instance:testcases.Test_Exclusive@13805618]" name="done" is-config="true" duration-ms="79" started-at="2020-06-24T16:05:46Z" finished-at="2020-06-24T16:05:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- done -->
+        <test-method status="PASS" signature="set()[pri:0, instance:testcases.Test_Exclusive@13805618]" name="set" is-config="true" duration-ms="1485" started-at="2020-06-24T16:05:46Z" finished-at="2020-06-24T16:05:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- set -->
+        <test-method status="PASS" signature="exclusive_list_tab_menu(java.lang.String, java.lang.String)[pri:3, instance:testcases.Test_Exclusive@13805618]" name="exclusive_list_tab_menu" duration-ms="5977" started-at="2020-06-24T16:05:47Z" data-provider="list_tab_menu_exclusive" finished-at="2020-06-24T16:05:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Bloopers]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- exclusive_list_tab_menu -->
+        <test-method status="PASS" signature="done()[pri:0, instance:testcases.Test_Exclusive@13805618]" name="done" is-config="true" duration-ms="74" started-at="2020-06-24T16:05:53Z" finished-at="2020-06-24T16:05:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- done -->
+        <test-method status="PASS" signature="set()[pri:0, instance:testcases.Test_Exclusive@13805618]" name="set" is-config="true" duration-ms="1414" started-at="2020-06-24T16:05:53Z" finished-at="2020-06-24T16:05:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- set -->
+        <test-method status="PASS" signature="exclusive_list_tab_menu(java.lang.String, java.lang.String)[pri:3, instance:testcases.Test_Exclusive@13805618]" name="exclusive_list_tab_menu" duration-ms="11331" started-at="2020-06-24T16:05:55Z" data-provider="list_tab_menu_exclusive" finished-at="2020-06-24T16:06:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[6]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Behind The Scenes]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- exclusive_list_tab_menu -->
+        <test-method status="PASS" signature="done()[pri:0, instance:testcases.Test_Exclusive@13805618]" name="done" is-config="true" duration-ms="135" started-at="2020-06-24T16:06:06Z" finished-at="2020-06-24T16:06:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- done -->
+        <test-method status="PASS" signature="set()[pri:0, instance:testcases.Test_Exclusive@13805618]" name="set" is-config="true" duration-ms="1445" started-at="2020-06-24T16:06:06Z" finished-at="2020-06-24T16:06:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- set -->
+        <test-method status="PASS" signature="exclusive_list_tab_menu_klik(java.lang.String, java.lang.String)[pri:4, instance:testcases.Test_Exclusive@13805618]" name="exclusive_list_tab_menu_klik" duration-ms="40114" started-at="2020-06-24T16:06:08Z" data-provider="list_tab_menu_exclusive" finished-at="2020-06-24T16:06:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[All]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- exclusive_list_tab_menu_klik -->
+        <test-method status="PASS" signature="done()[pri:0, instance:testcases.Test_Exclusive@13805618]" name="done" is-config="true" duration-ms="127" started-at="2020-06-24T16:06:48Z" finished-at="2020-06-24T16:06:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- done -->
+        <test-method status="PASS" signature="set()[pri:0, instance:testcases.Test_Exclusive@13805618]" name="set" is-config="true" duration-ms="1511" started-at="2020-06-24T16:06:48Z" finished-at="2020-06-24T16:06:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- set -->
+        <test-method status="PASS" signature="exclusive_list_tab_menu_klik(java.lang.String, java.lang.String)[pri:4, instance:testcases.Test_Exclusive@13805618]" name="exclusive_list_tab_menu_klik" duration-ms="12976" started-at="2020-06-24T16:06:49Z" data-provider="list_tab_menu_exclusive" finished-at="2020-06-24T16:07:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Clip]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- exclusive_list_tab_menu_klik -->
+        <test-method status="PASS" signature="done()[pri:0, instance:testcases.Test_Exclusive@13805618]" name="done" is-config="true" duration-ms="84" started-at="2020-06-24T16:07:02Z" finished-at="2020-06-24T16:07:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- done -->
+        <test-method status="PASS" signature="set()[pri:0, instance:testcases.Test_Exclusive@13805618]" name="set" is-config="true" duration-ms="1403" started-at="2020-06-24T16:07:03Z" finished-at="2020-06-24T16:07:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- set -->
+        <test-method status="PASS" signature="exclusive_list_tab_menu_klik(java.lang.String, java.lang.String)[pri:4, instance:testcases.Test_Exclusive@13805618]" name="exclusive_list_tab_menu_klik" duration-ms="16212" started-at="2020-06-24T16:07:04Z" data-provider="list_tab_menu_exclusive" finished-at="2020-06-24T16:07:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Photo]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- exclusive_list_tab_menu_klik -->
+        <test-method status="PASS" signature="done()[pri:0, instance:testcases.Test_Exclusive@13805618]" name="done" is-config="true" duration-ms="127" started-at="2020-06-24T16:07:20Z" finished-at="2020-06-24T16:07:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- done -->
+        <test-method status="PASS" signature="set()[pri:0, instance:testcases.Test_Exclusive@13805618]" name="set" is-config="true" duration-ms="1527" started-at="2020-06-24T16:07:20Z" finished-at="2020-06-24T16:07:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- set -->
+        <test-method status="PASS" signature="exclusive_list_tab_menu_klik(java.lang.String, java.lang.String)[pri:4, instance:testcases.Test_Exclusive@13805618]" name="exclusive_list_tab_menu_klik" duration-ms="17146" started-at="2020-06-24T16:07:22Z" data-provider="list_tab_menu_exclusive" finished-at="2020-06-24T16:07:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Entertainment]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- exclusive_list_tab_menu_klik -->
+        <test-method status="PASS" signature="done()[pri:0, instance:testcases.Test_Exclusive@13805618]" name="done" is-config="true" duration-ms="115" started-at="2020-06-24T16:07:39Z" finished-at="2020-06-24T16:07:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- done -->
+        <test-method status="PASS" signature="set()[pri:0, instance:testcases.Test_Exclusive@13805618]" name="set" is-config="true" duration-ms="1618" started-at="2020-06-24T16:07:39Z" finished-at="2020-06-24T16:07:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- set -->
+        <test-method status="PASS" signature="exclusive_list_tab_menu_klik(java.lang.String, java.lang.String)[pri:4, instance:testcases.Test_Exclusive@13805618]" name="exclusive_list_tab_menu_klik" duration-ms="19402" started-at="2020-06-24T16:07:41Z" data-provider="list_tab_menu_exclusive" finished-at="2020-06-24T16:08:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[News]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- exclusive_list_tab_menu_klik -->
+        <test-method status="PASS" signature="done()[pri:0, instance:testcases.Test_Exclusive@13805618]" name="done" is-config="true" duration-ms="80" started-at="2020-06-24T16:08:00Z" finished-at="2020-06-24T16:08:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- done -->
+        <test-method status="PASS" signature="set()[pri:0, instance:testcases.Test_Exclusive@13805618]" name="set" is-config="true" duration-ms="1607" started-at="2020-06-24T16:08:00Z" finished-at="2020-06-24T16:08:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- set -->
+        <test-method status="PASS" signature="exclusive_list_tab_menu_klik(java.lang.String, java.lang.String)[pri:4, instance:testcases.Test_Exclusive@13805618]" name="exclusive_list_tab_menu_klik" duration-ms="10235" started-at="2020-06-24T16:08:02Z" data-provider="list_tab_menu_exclusive" finished-at="2020-06-24T16:08:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Bloopers]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- exclusive_list_tab_menu_klik -->
+        <test-method status="PASS" signature="done()[pri:0, instance:testcases.Test_Exclusive@13805618]" name="done" is-config="true" duration-ms="143" started-at="2020-06-24T16:08:12Z" finished-at="2020-06-24T16:08:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- done -->
+        <test-method status="PASS" signature="set()[pri:0, instance:testcases.Test_Exclusive@13805618]" name="set" is-config="true" duration-ms="1498" started-at="2020-06-24T16:08:12Z" finished-at="2020-06-24T16:08:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- set -->
+        <test-method status="PASS" signature="exclusive_list_tab_menu_klik(java.lang.String, java.lang.String)[pri:4, instance:testcases.Test_Exclusive@13805618]" name="exclusive_list_tab_menu_klik" duration-ms="8800" started-at="2020-06-24T16:08:14Z" data-provider="list_tab_menu_exclusive" finished-at="2020-06-24T16:08:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[6]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Behind The Scenes]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- exclusive_list_tab_menu_klik -->
+        <test-method status="PASS" signature="done()[pri:0, instance:testcases.Test_Exclusive@13805618]" name="done" is-config="true" duration-ms="245" started-at="2020-06-24T16:08:22Z" finished-at="2020-06-24T16:08:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- done -->
+        <test-method status="PASS" signature="set()[pri:0, instance:testcases.Test_Exclusive@13805618]" name="set" is-config="true" duration-ms="1489" started-at="2020-06-24T16:08:23Z" finished-at="2020-06-24T16:08:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- set -->
+        <test-method status="PASS" signature="integration_exclusive_list_tab_menu_klik(java.lang.String, java.lang.String)[pri:5, instance:testcases.Test_Exclusive@13805618]" name="integration_exclusive_list_tab_menu_klik" duration-ms="21124" started-at="2020-06-24T16:08:24Z" data-provider="list_tab_menu_exclusive" finished-at="2020-06-24T16:08:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[All]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- integration_exclusive_list_tab_menu_klik -->
+        <test-method status="PASS" signature="done()[pri:0, instance:testcases.Test_Exclusive@13805618]" name="done" is-config="true" duration-ms="133" started-at="2020-06-24T16:08:45Z" finished-at="2020-06-24T16:08:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- done -->
+        <test-method status="PASS" signature="set()[pri:0, instance:testcases.Test_Exclusive@13805618]" name="set" is-config="true" duration-ms="1936" started-at="2020-06-24T16:08:46Z" finished-at="2020-06-24T16:08:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- set -->
+        <test-method status="PASS" signature="integration_exclusive_list_tab_menu_klik(java.lang.String, java.lang.String)[pri:5, instance:testcases.Test_Exclusive@13805618]" name="integration_exclusive_list_tab_menu_klik" duration-ms="18576" started-at="2020-06-24T16:08:48Z" data-provider="list_tab_menu_exclusive" finished-at="2020-06-24T16:09:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Clip]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- integration_exclusive_list_tab_menu_klik -->
+        <test-method status="PASS" signature="done()[pri:0, instance:testcases.Test_Exclusive@13805618]" name="done" is-config="true" duration-ms="77" started-at="2020-06-24T16:09:06Z" finished-at="2020-06-24T16:09:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- done -->
+        <test-method status="PASS" signature="set()[pri:0, instance:testcases.Test_Exclusive@13805618]" name="set" is-config="true" duration-ms="1577" started-at="2020-06-24T16:09:06Z" finished-at="2020-06-24T16:09:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- set -->
+        <test-method status="PASS" signature="integration_exclusive_list_tab_menu_klik(java.lang.String, java.lang.String)[pri:5, instance:testcases.Test_Exclusive@13805618]" name="integration_exclusive_list_tab_menu_klik" duration-ms="16592" started-at="2020-06-24T16:09:08Z" data-provider="list_tab_menu_exclusive" finished-at="2020-06-24T16:09:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Photo]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- integration_exclusive_list_tab_menu_klik -->
+        <test-method status="PASS" signature="done()[pri:0, instance:testcases.Test_Exclusive@13805618]" name="done" is-config="true" duration-ms="77" started-at="2020-06-24T16:09:24Z" finished-at="2020-06-24T16:09:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- done -->
+        <test-method status="PASS" signature="set()[pri:0, instance:testcases.Test_Exclusive@13805618]" name="set" is-config="true" duration-ms="1643" started-at="2020-06-24T16:09:24Z" finished-at="2020-06-24T16:09:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- set -->
+        <test-method status="PASS" signature="integration_exclusive_list_tab_menu_klik(java.lang.String, java.lang.String)[pri:5, instance:testcases.Test_Exclusive@13805618]" name="integration_exclusive_list_tab_menu_klik" duration-ms="16675" started-at="2020-06-24T16:09:26Z" data-provider="list_tab_menu_exclusive" finished-at="2020-06-24T16:09:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Entertainment]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- integration_exclusive_list_tab_menu_klik -->
+        <test-method status="PASS" signature="done()[pri:0, instance:testcases.Test_Exclusive@13805618]" name="done" is-config="true" duration-ms="130" started-at="2020-06-24T16:09:43Z" finished-at="2020-06-24T16:09:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- done -->
+        <test-method status="PASS" signature="set()[pri:0, instance:testcases.Test_Exclusive@13805618]" name="set" is-config="true" duration-ms="1558" started-at="2020-06-24T16:09:43Z" finished-at="2020-06-24T16:09:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- set -->
+        <test-method status="PASS" signature="integration_exclusive_list_tab_menu_klik(java.lang.String, java.lang.String)[pri:5, instance:testcases.Test_Exclusive@13805618]" name="integration_exclusive_list_tab_menu_klik" duration-ms="17504" started-at="2020-06-24T16:09:44Z" data-provider="list_tab_menu_exclusive" finished-at="2020-06-24T16:10:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[News]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- integration_exclusive_list_tab_menu_klik -->
+        <test-method status="PASS" signature="done()[pri:0, instance:testcases.Test_Exclusive@13805618]" name="done" is-config="true" duration-ms="101" started-at="2020-06-24T16:10:02Z" finished-at="2020-06-24T16:10:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- done -->
+        <test-method status="PASS" signature="set()[pri:0, instance:testcases.Test_Exclusive@13805618]" name="set" is-config="true" duration-ms="931" started-at="2020-06-24T16:10:02Z" finished-at="2020-06-24T16:10:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- set -->
+        <test-method status="PASS" signature="integration_exclusive_list_tab_menu_klik(java.lang.String, java.lang.String)[pri:5, instance:testcases.Test_Exclusive@13805618]" name="integration_exclusive_list_tab_menu_klik" duration-ms="18544" started-at="2020-06-24T16:10:03Z" data-provider="list_tab_menu_exclusive" finished-at="2020-06-24T16:10:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Bloopers]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- integration_exclusive_list_tab_menu_klik -->
+        <test-method status="PASS" signature="done()[pri:0, instance:testcases.Test_Exclusive@13805618]" name="done" is-config="true" duration-ms="84" started-at="2020-06-24T16:10:22Z" finished-at="2020-06-24T16:10:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- done -->
+        <test-method status="PASS" signature="set()[pri:0, instance:testcases.Test_Exclusive@13805618]" name="set" is-config="true" duration-ms="1559" started-at="2020-06-24T16:10:22Z" finished-at="2020-06-24T16:10:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- set -->
+        <test-method status="PASS" signature="integration_exclusive_list_tab_menu_klik(java.lang.String, java.lang.String)[pri:5, instance:testcases.Test_Exclusive@13805618]" name="integration_exclusive_list_tab_menu_klik" duration-ms="22702" started-at="2020-06-24T16:10:23Z" data-provider="list_tab_menu_exclusive" finished-at="2020-06-24T16:10:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[6]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Behind The Scenes]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- integration_exclusive_list_tab_menu_klik -->
+        <test-method status="PASS" signature="done()[pri:0, instance:testcases.Test_Exclusive@13805618]" name="done" is-config="true" duration-ms="90" started-at="2020-06-24T16:10:46Z" finished-at="2020-06-24T16:10:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- done -->
+      </class> <!-- testcases.Test_Exclusive -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
