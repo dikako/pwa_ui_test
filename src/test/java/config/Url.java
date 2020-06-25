@@ -19,6 +19,7 @@ public class Url {
 	public void urls(String page) {
 		String urlPage = baseUrl + page;
 		driver.get(urlPage);
+		assert driver.getCurrentUrl().contains(page);
 		System.out.println("Url Visit: " + driver.getCurrentUrl());
 	}
 }

@@ -31,7 +31,7 @@ public class Test_Chat extends Setup {
 		Button button = PageFactory.initElements(driver, Button.class);
 		Input input = PageFactory.initElements(driver, Input.class);
 		
-		System.out.println("Chat Test - Test Chatting");
+		System.out.println("Chat Test - Test Chatting Before Login");
 		
 		url.urls("/tv/" + urlLiveTv);
 		button.byIdDisplay("btn-expand", true);
@@ -40,36 +40,38 @@ public class Test_Chat extends Setup {
 		input.byId("email", username);
 		input.byId("password", password);
 		button.byId("submit-login");
+		Thread.sleep(5000);
 		
 		url.urls("/tv/" + urlLiveTv);
 		button.byId("btn-expand");
+		Thread.sleep(5000);
 		input.byIdDisplay("chat-input", true);
 		input.byId("chat-input", chatText + Keys.ENTER);
 		input.validateInputTextByClassByIndexone("username",  nickname);
 		input.validateInputTextByClassByIndexone("message",  chatText);
 	}
 	
-	@Test(priority = 0, testName = "Test Chat > After Login", dataProvider = "list_chat")
-	public void chat_test_after_login(String urlLiveTv, String username, String password, String nickname, String chatText) throws InterruptedException {
-		Url url = new Url(driver);
-		Button button = PageFactory.initElements(driver, Button.class);
-		Input input = PageFactory.initElements(driver, Input.class);
-		
-		System.out.println("Chat Test - Test Chatting After Login");
-		
-		
-		url.urls("/login");
-		input.byId("email", username);
-		input.byId("password", password);
-		button.byId("submit-login");
-		
-		url.urls("/tv/" + urlLiveTv);
-		button.byId("btn-expand");
-		input.byIdDisplay("chat-input", true);
-		input.byId("chat-input", chatText + Keys.ENTER);
-		input.validateInputTextByClassByIndexone("username",  nickname);
-		input.validateInputTextByClassByIndexone("message",  chatText);
-	}
+//	@Test(priority = 0, testName = "Test Chat > After Login", dataProvider = "list_chat")
+//	public void chat_test_after_login(String urlLiveTv, String username, String password, String nickname, String chatText) throws InterruptedException {
+//		Url url = new Url(driver);
+//		Button button = PageFactory.initElements(driver, Button.class);
+//		Input input = PageFactory.initElements(driver, Input.class);
+//		
+//		System.out.println("Chat Test - Test Chatting After Login");
+//		
+//		
+//		url.urls("/login");
+//		input.byId("email", username);
+//		input.byId("password", password);
+//		button.byId("submit-login");
+//		
+//		url.urls("/tv/" + urlLiveTv);
+//		button.byId("btn-expand");
+//		input.byIdDisplay("chat-input", true);
+//		input.byId("chat-input", chatText + Keys.ENTER);
+//		input.validateInputTextByClassByIndexone("username",  nickname);
+//		input.validateInputTextByClassByIndexone("message",  chatText);
+//	}
 	
 	
 }

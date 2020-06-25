@@ -249,6 +249,20 @@ public class Button {
 		System.out.println("Value is Match " + getText);
 		Assert.assertEquals(getText, textValue);
 	}
+	
+	// Get Size 
+	public void byClassGetSize(String selector, int size) {
+		List<WebElement> element = driver.findElements(By.className(selector));
+		Assert.assertEquals(element.size(), size);
+		System.out.println("Size is Match! " + element.size());
+	}
+	
+	// Get Size cuma
+	public void byClassGetSized(String selector) {
+		List<WebElement> element = driver.findElements(By.className(selector));
+		element.size();
+		System.out.println("Size is Match! " + element.size());
+	}
 
 	private void waitForVisible(WebDriver driver, WebElement element) {
 		try {
