@@ -1,169 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="284897" started-at="2020-06-25T04:35:52Z" finished-at="2020-06-25T04:40:37Z">
+  <suite name="Default suite" duration-ms="200743" started-at="2020-06-25T10:36:41Z" finished-at="2020-06-25T10:40:02Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="284897" started-at="2020-06-25T04:35:52Z" finished-at="2020-06-25T04:40:37Z">
-      <class name="testcases.Test_Chat">
-        <test-method status="PASS" signature="set()[pri:0, instance:testcases.Test_Chat@69ea3742]" name="set" is-config="true" duration-ms="1990" started-at="2020-06-25T11:35:52Z" finished-at="2020-06-25T11:35:54Z">
+    <test name="Default test" duration-ms="200743" started-at="2020-06-25T10:36:41Z" finished-at="2020-06-25T10:40:02Z">
+      <class name="testcases.Test_Mylist">
+        <test-method status="PASS" signature="set()[pri:0, instance:testcases.Test_Mylist@13805618]" name="set" is-config="true" duration-ms="1938" started-at="2020-06-25T17:36:41Z" finished-at="2020-06-25T17:36:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- set -->
-        <test-method status="PASS" signature="chat_test_before_login(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.Test_Chat@69ea3742]" name="chat_test_before_login" duration-ms="74226" started-at="2020-06-25T11:35:54Z" data-provider="list_chat" finished-at="2020-06-25T11:37:09Z">
+        <test-method status="PASS" signature="mylist_after_login_library(java.lang.String, java.lang.String)[pri:0, instance:testcases.Test_Mylist@13805618]" name="mylist_after_login_library" duration-ms="82728" started-at="2020-06-25T17:36:43Z" data-provider="mylist" finished-at="2020-06-25T17:38:06Z">
           <params>
             <param index="0">
-              <value>
-                <![CDATA[rcti]]>
-              </value>
-            </param>
-            <param index="1">
               <value>
                 <![CDATA[dikakoko04@gmail.com]]>
               </value>
             </param>
-            <param index="2">
+            <param index="1">
               <value>
                 <![CDATA[dikakoko]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[dikakokodikakoko]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[Selamat menonton semua!]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- chat_test_before_login -->
-        <test-method status="PASS" signature="done()[pri:0, instance:testcases.Test_Chat@69ea3742]" name="done" is-config="true" duration-ms="77" started-at="2020-06-25T11:37:09Z" finished-at="2020-06-25T11:37:09Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- done -->
-        <test-method status="PASS" signature="set()[pri:0, instance:testcases.Test_Chat@69ea3742]" name="set" is-config="true" duration-ms="2349" started-at="2020-06-25T11:37:09Z" finished-at="2020-06-25T11:37:11Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- set -->
-        <test-method status="PASS" signature="chat_test_before_login(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.Test_Chat@69ea3742]" name="chat_test_before_login" duration-ms="71136" started-at="2020-06-25T11:37:11Z" data-provider="list_chat" finished-at="2020-06-25T11:38:22Z">
+        </test-method> <!-- mylist_after_login_library -->
+        <test-method status="PASS" signature="done(org.testng.ITestResult)[pri:0, instance:testcases.Test_Mylist@13805618]" name="done" is-config="true" duration-ms="1044" started-at="2020-06-25T17:38:06Z" finished-at="2020-06-25T17:38:07Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[mnctv]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[dikakoko04@gmail.com]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[dikakoko]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[dikakokodikakoko]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[Selamat menonton semua!]]>
+                <![CDATA[[TestResult name=mylist_after_login_library status=SUCCESS method=Test_Mylist.mylist_after_login_library(java.lang.String, java.lang.String)[pri:0, instance:testcases.Test_Mylist@13805618] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- chat_test_before_login -->
-        <test-method status="PASS" signature="done()[pri:0, instance:testcases.Test_Chat@69ea3742]" name="done" is-config="true" duration-ms="121" started-at="2020-06-25T11:38:22Z" finished-at="2020-06-25T11:38:22Z">
-          <reporter-output>
-          </reporter-output>
         </test-method> <!-- done -->
-        <test-method status="PASS" signature="set()[pri:0, instance:testcases.Test_Chat@69ea3742]" name="set" is-config="true" duration-ms="1378" started-at="2020-06-25T11:38:22Z" finished-at="2020-06-25T11:38:24Z">
+        <test-method status="PASS" signature="set()[pri:0, instance:testcases.Test_Mylist@13805618]" name="set" is-config="true" duration-ms="1378" started-at="2020-06-25T17:38:07Z" finished-at="2020-06-25T17:38:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- set -->
-        <test-method status="PASS" signature="chat_test_before_login(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.Test_Chat@69ea3742]" name="chat_test_before_login" duration-ms="65847" started-at="2020-06-25T11:38:24Z" data-provider="list_chat" finished-at="2020-06-25T11:39:29Z">
+        <test-method status="PASS" signature="integration_mylist_after_login_library(java.lang.String, java.lang.String)[pri:1, instance:testcases.Test_Mylist@13805618]" name="integration_mylist_after_login_library" duration-ms="111929" started-at="2020-06-25T17:38:09Z" data-provider="mylist" finished-at="2020-06-25T17:40:01Z">
           <params>
             <param index="0">
-              <value>
-                <![CDATA[gtv]]>
-              </value>
-            </param>
-            <param index="1">
               <value>
                 <![CDATA[dikakoko04@gmail.com]]>
               </value>
             </param>
-            <param index="2">
+            <param index="1">
               <value>
                 <![CDATA[dikakoko]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[dikakokodikakoko]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[Selamat menonton semua!]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- chat_test_before_login -->
-        <test-method status="PASS" signature="done()[pri:0, instance:testcases.Test_Chat@69ea3742]" name="done" is-config="true" duration-ms="143" started-at="2020-06-25T11:39:30Z" finished-at="2020-06-25T11:39:30Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- done -->
-        <test-method status="PASS" signature="set()[pri:0, instance:testcases.Test_Chat@69ea3742]" name="set" is-config="true" duration-ms="1254" started-at="2020-06-25T11:39:30Z" finished-at="2020-06-25T11:39:31Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- set -->
-        <test-method status="PASS" signature="chat_test_before_login(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.Test_Chat@69ea3742]" name="chat_test_before_login" duration-ms="65615" started-at="2020-06-25T11:39:31Z" data-provider="list_chat" finished-at="2020-06-25T11:40:37Z">
+        </test-method> <!-- integration_mylist_after_login_library -->
+        <test-method status="PASS" signature="done(org.testng.ITestResult)[pri:0, instance:testcases.Test_Mylist@13805618]" name="done" is-config="true" duration-ms="986" started-at="2020-06-25T17:40:01Z" finished-at="2020-06-25T17:40:02Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[inews]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[dikakoko04@gmail.com]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[dikakoko]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[dikakokodikakoko]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[Selamat menonton semua!]]>
+                <![CDATA[[TestResult name=integration_mylist_after_login_library status=SUCCESS method=Test_Mylist.integration_mylist_after_login_library(java.lang.String, java.lang.String)[pri:1, instance:testcases.Test_Mylist@13805618] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- chat_test_before_login -->
-        <test-method status="PASS" signature="done()[pri:0, instance:testcases.Test_Chat@69ea3742]" name="done" is-config="true" duration-ms="134" started-at="2020-06-25T11:40:37Z" finished-at="2020-06-25T11:40:37Z">
-          <reporter-output>
-          </reporter-output>
         </test-method> <!-- done -->
-      </class> <!-- testcases.Test_Chat -->
+      </class> <!-- testcases.Test_Mylist -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -40,6 +40,7 @@ public class Test_Mylist extends Setup {
 		button.byId("submit-login");
 		
 		url.urls("/explores");
+		Thread.sleep(5000);
 		button.byClass("col-4");
 		String getTitleBeforeAddMylist = alert.byClassGetText("content-title");
 		System.out.println(getTitleBeforeAddMylist);
@@ -50,12 +51,15 @@ public class Test_Mylist extends Setup {
 		button.byId("action-mylist");
 		Thread.sleep(5000);
 		button.byXpath("//strong[contains(text(),'" + getTitleBeforeAddMylist + "')]");
+		Thread.sleep(5000);
 		String getTitleAfterAddMylist = alert.byClassGetText("content-title");
 		Assert.assertEquals(getTitleBeforeAddMylist, getTitleAfterAddMylist);
 		System.out.println(getTitleAfterAddMylist);
 		
 		//un Mylist
 		button.byXpath("//h3[contains(text(),'My List')]");
+		Thread.sleep(5000);
+		System.out.println("Un MyLIST");
 	}
 	
 	@Test(priority = 1, testName = "Mylis Test Integration - After Login From Library", dataProvider = "mylist")
@@ -76,8 +80,10 @@ public class Test_Mylist extends Setup {
 		Thread.sleep(5000);
 		
 		button.byId("action-library");
+		Thread.sleep(5000);
 		button.byClass("col-4");
-
+		Thread.sleep(5000);
+		
 		String getTitleBeforeAddMylist = alert.byClassGetText("content-title");
 		System.out.println(getTitleBeforeAddMylist);
 		button.byXpath("//h3[contains(text(),'My List')]");
@@ -87,11 +93,14 @@ public class Test_Mylist extends Setup {
 		button.byId("action-mylist");
 		Thread.sleep(5000);
 		button.byXpath("//strong[contains(text(),'" + getTitleBeforeAddMylist + "')]");
+		Thread.sleep(5000);
 		String getTitleAfterAddMylist = alert.byClassGetText("content-title");
 		Assert.assertEquals(getTitleBeforeAddMylist, getTitleAfterAddMylist);
 		System.out.println(getTitleAfterAddMylist);
 		
 		//un Mylist
 		button.byXpath("//h3[contains(text(),'My List')]");
+		Thread.sleep(5000);
+		System.out.println("Un MyLIST");
 	}
 }

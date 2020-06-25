@@ -8,8 +8,11 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+
+import utility.TakeScreenshot;
 
 public class Setup {
 	protected RemoteWebDriver driver;
@@ -39,7 +42,11 @@ public class Setup {
 	}
 
 	@AfterMethod
-	public void done() {
+	public void done(ITestResult result) {
+		String name = result.getName();
+		//if(ITestResult.FAILURE==result.getStatus()) {
+			TakeScreenshot.captureScreenshot(driver, name);
+		//}
 		driver.quit();
 	}
 }
