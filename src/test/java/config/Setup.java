@@ -42,13 +42,17 @@ public class Setup {
 	}
 
 	@AfterMethod
-	public void done(ITestResult result) {
+	public void done(ITestResult result) throws InterruptedException {
 		String name = result.getName();
 		if(ITestResult.FAILURE==result.getStatus()) {
 			TakeScreenshot.captureScreenshot(driver, "Error_" + name);
+			
+			System.out.println("*** Test execution " + result.getMethod().getMethodName() + " failed!");
+			System.out.println(result.getMethod().getMethodName() + " failed!");
 		} else {
 			TakeScreenshot.captureScreenshot(driver, "Pass_" + name);
 		}
+		Thread.sleep(5000);
 		driver.quit();
 	}
 }

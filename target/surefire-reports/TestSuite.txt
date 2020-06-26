@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 81, Failures: 1, Errors: 0, Skipped: 1, Time elapsed: 2,656.59 s <<< FAILURE! - in TestSuite
-testcases.Test_Mylist.mylist_after_login_library  Time elapsed: 89.167 s  <<< FAILURE!
+Tests run: 85, Failures: 6, Errors: 0, Skipped: 1, Time elapsed: 3,336.726 s <<< FAILURE! - in TestSuite
+testcases.Test_Mylist.mylist_after_login_library  Time elapsed: 90.896 s  <<< FAILURE!
 org.openqa.selenium.NoSuchElementException: 
 no such element: Unable to locate element: {"method":"xpath","selector":"//strong[contains(text(),'Test Movie 2 hoho')]"}
   (Session info: chrome=83.0.4103.61)
@@ -10,8 +10,36 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'MNCTVN05589', ip: '10.23.212.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.qlPPLo}, goog:chromeOptions: {debuggerAddress: localhost:37799}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: d412b46c574d36d3cd1b8b99f04...}
-Session ID: d412b46c574d36d3cd1b8b99f043a6db
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.CA6sZh}, goog:chromeOptions: {debuggerAddress: localhost:45275}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: e320b15747244662579350cd0a1...}
+Session ID: e320b15747244662579350cd0a1de748
 *** Element info: {Using=xpath, value=//strong[contains(text(),'Test Movie 2 hoho')]}
-	at testcases.Test_Mylist.mylist_after_login_library(Test_Mylist.java:53)
+	at testcases.Test_Mylist.mylist_after_login_library(Test_Mylist.java:55)
+
+testcases.Test_Register.register_alert_email  Time elapsed: 40.332 s  <<< FAILURE!
+org.openqa.selenium.StaleElementReferenceException: 
+stale element reference: element is not attached to the page document
+  (Session info: chrome=83.0.4103.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MNCTVN05589', ip: '10.23.212.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.RJoJ0i}, goog:chromeOptions: {debuggerAddress: localhost:39075}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 6ac070227db7284ae6663367f1a...}
+Session ID: 6ac070227db7284ae6663367f1aae2da
+	at testcases.Test_Register.register_alert_email(Test_Register.java:215)
+
+testcases.Test_Chat.chat_test_after_login  Time elapsed: 35.989 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at testcases.Test_Chat.chat_test_after_login(Test_Chat.java:76)
+
+testcases.Test_Chat.chat_test_after_login  Time elapsed: 43.985 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at testcases.Test_Chat.chat_test_after_login(Test_Chat.java:76)
+
+testcases.Test_Chat.chat_test_after_login  Time elapsed: 40.462 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at testcases.Test_Chat.chat_test_after_login(Test_Chat.java:76)
+
+testcases.Test_Chat.chat_test_after_login  Time elapsed: 36.285 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at testcases.Test_Chat.chat_test_after_login(Test_Chat.java:76)
 

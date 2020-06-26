@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="2,656.59" tests="81" errors="0" skipped="1" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="3,336.726" tests="85" errors="0" skipped="1" failures="6">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -18,7 +18,7 @@
     <property name="user.country" value="ID"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_221\jre\bin"/>
-    <property name="sun.java.command" value="C:\Users\fransiskus.setiawan\AppData\Local\Temp\surefire6315997500624093451\surefirebooter1249542694665405508.jar C:\Users\fransiskus.setiawan\AppData\Local\Temp\surefire6315997500624093451 2020-06-26T10-27-01_271-jvmRun1 surefire2274620625101788213tmp surefire_05556789023350071453tmp"/>
+    <property name="sun.java.command" value="C:\Users\fransiskus.setiawan\AppData\Local\Temp\surefire960315334579518856\surefirebooter8565100689830927183.jar C:\Users\fransiskus.setiawan\AppData\Local\Temp\surefire960315334579518856 2020-06-26T15-19-10_118-jvmRun1 surefire5818706319800079850tmp surefire_0356159955530143745tmp"/>
     <property name="surefire.test.class.path" value="D:\test-web\pwa\pwa_ui_test\target\test-classes;D:\test-web\pwa\pwa_ui_test\target\classes;C:\Users\fransiskus.setiawan\.m2\repository\info\cukes\cucumber-testng\1.2.5\cucumber-testng-1.2.5.jar;C:\Users\fransiskus.setiawan\.m2\repository\info\cukes\cucumber-core\1.2.5\cucumber-core-1.2.5.jar;C:\Users\fransiskus.setiawan\.m2\repository\info\cukes\cucumber-html\0.2.3\cucumber-html-0.2.3.jar;C:\Users\fransiskus.setiawan\.m2\repository\info\cukes\cucumber-jvm-deps\1.0.5\cucumber-jvm-deps-1.0.5.jar;C:\Users\fransiskus.setiawan\.m2\repository\info\cukes\gherkin\2.12.2\gherkin-2.12.2.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\fransiskus.setiawan\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\fransiskus.setiawan\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\fransiskus.setiawan\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\fransiskus.setiawan\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\fransiskus.setiawan\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\fransiskus.setiawan\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\fransiskus.setiawan\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\testng\testng\6.9.10\testng-6.9.10.jar;C:\Users\fransiskus.setiawan\.m2\repository\com\beust\jcommander\1.48\jcommander-1.48.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\beanshell\bsh\2.0b4\bsh-2.0b4.jar;C:\Users\fransiskus.setiawan\.m2\repository\jaxen\jaxen\1.2.0\jaxen-1.2.0.jar;C:\Users\fransiskus.setiawan\.m2\repository\dom4j\dom4j\1.6.1\dom4j-1.6.1.jar;C:\Users\fransiskus.setiawan\.m2\repository\xml-apis\xml-apis\1.0.b2\xml-apis-1.0.b2.jar;C:\Users\fransiskus.setiawan\.m2\repository\io\rest-assured\rest-assured\3.3.0\rest-assured-3.3.0.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\codehaus\groovy\groovy\2.4.15\groovy-2.4.15.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\codehaus\groovy\groovy-xml\2.4.15\groovy-xml-2.4.15.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\apache\httpcomponents\httpclient\4.5.3\httpclient-4.5.3.jar;C:\Users\fransiskus.setiawan\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\fransiskus.setiawan\.m2\repository\commons-codec\commons-codec\1.9\commons-codec-1.9.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\apache\httpcomponents\httpmime\4.5.3\httpmime-4.5.3.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\hamcrest\hamcrest-library\1.3\hamcrest-library-1.3.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\fransiskus.setiawan\.m2\repository\io\rest-assured\json-path\3.3.0\json-path-3.3.0.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\codehaus\groovy\groovy-json\2.4.15\groovy-json-2.4.15.jar;C:\Users\fransiskus.setiawan\.m2\repository\io\rest-assured\rest-assured-common\3.3.0\rest-assured-common-3.3.0.jar;C:\Users\fransiskus.setiawan\.m2\repository\io\rest-assured\xml-path\3.3.0\xml-path-3.3.0.jar;C:\Users\fransiskus.setiawan\.m2\repository\com\sun\xml\bind\jaxb-osgi\2.2.10\jaxb-osgi-2.2.10.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\apache\sling\org.apache.sling.javax.activation\0.1.0\org.apache.sling.javax.activation-0.1.0.jar;C:\Users\fransiskus.setiawan\.m2\repository\javax\mail\javax.mail-api\1.5.5\javax.mail-api-1.5.5.jar;C:\Users\fransiskus.setiawan\.m2\repository\com\sun\mail\javax.mail\1.6.0\javax.mail-1.6.0.jar;C:\Users\fransiskus.setiawan\.m2\repository\javax\activation\activation\1.1\activation-1.1.jar;C:\Users\fransiskus.setiawan\.m2\repository\io\github\bonigarcia\webdrivermanager\4.0.0\webdrivermanager-4.0.0.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\fransiskus.setiawan\.m2\repository\commons-io\commons-io\2.6\commons-io-2.6.jar;C:\Users\fransiskus.setiawan\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\apache\commons\commons-lang3\3.10\commons-lang3-3.10.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.0\httpclient5-5.0.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.0\httpcore5-5.0.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.0\httpcore5-h2-5.0.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\rauschig\jarchivelib\1.0.0\jarchivelib-1.0.0.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\jsoup\jsoup\1.13.1\jsoup-1.13.1.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\fransiskus.setiawan\.m2\repository\com\twilio\sdk\twilio\7.42.0\twilio-7.42.0.jar;C:\Users\fransiskus.setiawan\.m2\repository\joda-time\joda-time\2.5\joda-time-2.5.jar;C:\Users\fransiskus.setiawan\.m2\repository\io\jsonwebtoken\jjwt\0.4\jjwt-0.4.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\apache\httpcomponents\httpcore\4.4.10\httpcore-4.4.10.jar;C:\Users\fransiskus.setiawan\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.9.9\jackson-core-2.9.9.jar;C:\Users\fransiskus.setiawan\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.9.9\jackson-annotations-2.9.9.jar;C:\Users\fransiskus.setiawan\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.9.9.1\jackson-databind-2.9.9.1.jar;C:\Users\fransiskus.setiawan\.m2\repository\javax\xml\bind\jaxb-api\2.2\jaxb-api-2.2.jar;C:\Users\fransiskus.setiawan\.m2\repository\javax\xml\stream\stax-api\1.0-2\stax-api-1.0-2.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\apache\poi\poi-ooxml\4.1.2\poi-ooxml-4.1.2.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\apache\poi\poi\4.1.2\poi-4.1.2.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\fransiskus.setiawan\.m2\repository\com\zaxxer\SparseBitSet\1.2\SparseBitSet-1.2.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\apache\poi\poi-ooxml-schemas\4.1.2\poi-ooxml-schemas-4.1.2.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\apache\xmlbeans\xmlbeans\3.1.0\xmlbeans-3.1.0.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\apache\commons\commons-compress\1.19\commons-compress-1.19.jar;C:\Users\fransiskus.setiawan\.m2\repository\com\github\virtuald\curvesapi\1.06\curvesapi-1.06.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\apache\maven\plugins\maven-clean-plugin\3.1.0\maven-clean-plugin-3.1.0.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\apache\maven\maven-plugin-api\3.0\maven-plugin-api-3.0.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\apache\maven\maven-model\3.0\maven-model-3.0.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\codehaus\plexus\plexus-utils\2.0.4\plexus-utils-2.0.4.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\apache\maven\maven-artifact\3.0\maven-artifact-3.0.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\sonatype\sisu\sisu-inject-plexus\1.4.2\sisu-inject-plexus-1.4.2.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\codehaus\plexus\plexus-component-annotations\1.5.4\plexus-component-annotations-1.5.4.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\codehaus\plexus\plexus-classworlds\2.2.3\plexus-classworlds-2.2.3.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\sonatype\sisu\sisu-inject-bean\1.4.2\sisu-inject-bean-1.4.2.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\sonatype\sisu\sisu-guice\2.1.7\sisu-guice-2.1.7-noaop.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\apache\maven\shared\maven-shared-utils\3.2.1\maven-shared-utils-3.2.1.jar;C:\Users\fransiskus.setiawan\.m2\repository\io\qameta\allure\allure-testng\2.7.0\allure-testng-2.7.0.jar;C:\Users\fransiskus.setiawan\.m2\repository\io\qameta\allure\allure-descriptions-javadoc\2.7.0\allure-descriptions-javadoc-2.7.0.jar;C:\Users\fransiskus.setiawan\.m2\repository\io\qameta\allure\allure-java-commons\2.7.0\allure-java-commons-2.7.0.jar;C:\Users\fransiskus.setiawan\.m2\repository\io\qameta\allure\allure2-model-api\1.0.0\allure2-model-api-1.0.0.jar;C:\Users\fransiskus.setiawan\.m2\repository\io\qameta\allure\allure2-model-pojo\1.0.0\allure2-model-pojo-1.0.0.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\apache\tika\tika-core\1.14\tika-core-1.14.jar;C:\Users\fransiskus.setiawan\.m2\repository\io\qameta\allure\allure2-model-jackson\1.0.0\allure2-model-jackson-1.0.0.jar;C:\Users\fransiskus.setiawan\.m2\repository\com\fasterxml\jackson\module\jackson-module-jaxb-annotations\2.7.0\jackson-module-jaxb-annotations-2.7.0.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\aspectj\aspectjrt\1.9.1\aspectjrt-1.9.1.jar;C:\Users\fransiskus.setiawan\.m2\repository\org\jooq\joor-java-8\0.9.9\joor-java-8-0.9.9.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\fransiskus.setiawan"/>
@@ -31,7 +31,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\fransiskus.setiawan\AppData\Local\Temp\surefire6315997500624093451\surefirebooter1249542694665405508.jar;C:\Users\fransiskus.setiawan\.m2\repository/org/aspectj/aspectjweaver/1.9.2/aspectjweaver-1.9.2.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\fransiskus.setiawan\AppData\Local\Temp\surefire960315334579518856\surefirebooter8565100689830927183.jar;C:\Users\fransiskus.setiawan\.m2\repository/org/aspectj/aspectjweaver/1.9.2/aspectjweaver-1.9.2.jar"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_221\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_221\jre\classes"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -60,18 +60,18 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="mylist_after_login_library" classname="testcases.Test_Mylist" time="89.167">
-    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//strong[contains(text(),&apos;Test Movie 2 hoho&apos;)]&quot;}&#10;  (Session info: chrome=83.0.4103.61)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;MNCTVN05589&apos;, ip: &apos;10.23.212.104&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.qlPPLo}, goog:chromeOptions: {debuggerAddress: localhost:37799}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: d412b46c574d36d3cd1b8b99f04...}&#10;Session ID: d412b46c574d36d3cd1b8b99f043a6db&#10;*** Element info: {Using=xpath, value=//strong[contains(text(),&apos;Test Movie 2 hoho&apos;)]}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[org.openqa.selenium.NoSuchElementException: 
+  <testcase name="mylist_after_login_library" classname="testcases.Test_Mylist" time="90.896">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//strong[contains(text(),&apos;Test Movie 2 hoho&apos;)]&quot;}&#10;  (Session info: chrome=83.0.4103.61)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;MNCTVN05589&apos;, ip: &apos;10.23.212.104&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.CA6sZh}, goog:chromeOptions: {debuggerAddress: localhost:45275}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: e320b15747244662579350cd0a1...}&#10;Session ID: e320b15747244662579350cd0a1de748&#10;*** Element info: {Using=xpath, value=//strong[contains(text(),&apos;Test Movie 2 hoho&apos;)]}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[org.openqa.selenium.NoSuchElementException: 
 no such element: Unable to locate element: {"method":"xpath","selector":"//strong[contains(text(),'Test Movie 2 hoho')]"}
   (Session info: chrome=83.0.4103.61)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'MNCTVN05589', ip: '10.23.212.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.qlPPLo}, goog:chromeOptions: {debuggerAddress: localhost:37799}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: d412b46c574d36d3cd1b8b99f04...}
-Session ID: d412b46c574d36d3cd1b8b99f043a6db
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.CA6sZh}, goog:chromeOptions: {debuggerAddress: localhost:45275}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: e320b15747244662579350cd0a1...}
+Session ID: e320b15747244662579350cd0a1de748
 *** Element info: {Using=xpath, value=//strong[contains(text(),'Test Movie 2 hoho')]}
-	at testcases.Test_Mylist.mylist_after_login_library(Test_Mylist.java:53)
+	at testcases.Test_Mylist.mylist_after_login_library(Test_Mylist.java:55)
 ]]></failure>
     <system-out><![CDATA[Mylis Test - After Login From Library
 Url Visit: https://rc-webm.rctiplus.com/login
@@ -95,96 +95,432 @@ Button is Clicked!
     <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-Jun 26, 2020 10:27:20 AM org.openqa.selenium.remote.DesiredCapabilities chrome
+Jun 26, 2020 3:19:14 PM org.openqa.selenium.remote.DesiredCapabilities chrome
 INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
-Jun 26, 2020 10:27:22 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+Jun 26, 2020 3:19:15 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="integration_mylist_after_login_library" classname="testcases.Test_Mylist" time="111.991"/>
-  <testcase name="login_alert_password" classname="testcases.Test_Login" time="29.022"/>
-  <testcase name="login_alert_password" classname="testcases.Test_Login" time="28.698"/>
-  <testcase name="login_alert_username" classname="testcases.Test_Login" time="28.512"/>
-  <testcase name="login_alert_username" classname="testcases.Test_Login" time="29.806"/>
-  <testcase name="login_alert_popup" classname="testcases.Test_Login" time="28.773"/>
-  <testcase name="login_alert_popup" classname="testcases.Test_Login" time="29.174"/>
-  <testcase name="login_logout_from_Continue_Watching" classname="testcases.Test_Login" time="88.29"/>
-  <testcase name="login_logout_from_Continue_Watching" classname="testcases.Test_Login" time="88.219"/>
-  <testcase name="login_logout_from_account" classname="testcases.Test_Login" time="82.516"/>
-  <testcase name="login_logout_from_account" classname="testcases.Test_Login" time="86.136"/>
-  <testcase name="login_logout_from_history" classname="testcases.Test_Login" time="88.11"/>
-  <testcase name="login_logout_from_history" classname="testcases.Test_Login" time="87.744"/>
-  <testcase name="login_logout_from_mylist" classname="testcases.Test_Login" time="88.603"/>
-  <testcase name="login_logout_from_mylist" classname="testcases.Test_Login" time="88.207"/>
-  <testcase name="login_succes" classname="testcases.Test_Login" time="39.216"/>
-  <testcase name="login_succes" classname="testcases.Test_Login" time="38.586"/>
-  <testcase name="login_logout" classname="testcases.Test_Login" time="71.63"/>
-  <testcase name="login_logout" classname="testcases.Test_Login" time="71.446"/>
-  <testcase name="exclusive_validate_thumbnail" classname="testcases.Test_Exclusive" time="8.578"/>
-  <testcase name="integration_exclusive_validate_thumbnail" classname="testcases.Test_Exclusive" time="13.798"/>
-  <testcase name="exclusive_validate_list_share" classname="testcases.Test_Exclusive" time="7.592"/>
-  <testcase name="exclusive_validate_list_share" classname="testcases.Test_Exclusive" time="7.751"/>
-  <testcase name="exclusive_validate_list_share" classname="testcases.Test_Exclusive" time="7.981"/>
-  <testcase name="exclusive_validate_list_share" classname="testcases.Test_Exclusive" time="7.436"/>
-  <testcase name="exclusive_validate_list_share" classname="testcases.Test_Exclusive" time="7.27"/>
-  <testcase name="exclusive_list_tab_menu" classname="testcases.Test_Exclusive" time="1.86"/>
-  <testcase name="exclusive_list_tab_menu" classname="testcases.Test_Exclusive" time="1.727"/>
-  <testcase name="exclusive_list_tab_menu" classname="testcases.Test_Exclusive" time="2.152"/>
-  <testcase name="exclusive_list_tab_menu" classname="testcases.Test_Exclusive" time="2.313"/>
-  <testcase name="exclusive_list_tab_menu" classname="testcases.Test_Exclusive" time="1.704"/>
-  <testcase name="exclusive_list_tab_menu" classname="testcases.Test_Exclusive" time="1.621"/>
-  <testcase name="exclusive_list_tab_menu" classname="testcases.Test_Exclusive" time="1.855"/>
-  <testcase name="exclusive_list_tab_menu_klik" classname="testcases.Test_Exclusive" time="4.704"/>
-  <testcase name="exclusive_list_tab_menu_klik" classname="testcases.Test_Exclusive" time="7.404"/>
-  <testcase name="exclusive_list_tab_menu_klik" classname="testcases.Test_Exclusive" time="5.143"/>
-  <testcase name="exclusive_list_tab_menu_klik" classname="testcases.Test_Exclusive" time="5.081"/>
-  <testcase name="exclusive_list_tab_menu_klik" classname="testcases.Test_Exclusive" time="5.234"/>
-  <testcase name="exclusive_list_tab_menu_klik" classname="testcases.Test_Exclusive" time="5.295"/>
-  <testcase name="exclusive_list_tab_menu_klik" classname="testcases.Test_Exclusive" time="4.659"/>
-  <testcase name="integration_exclusive_list_tab_menu_klik" classname="testcases.Test_Exclusive" time="11.571"/>
-  <testcase name="integration_exclusive_list_tab_menu_klik" classname="testcases.Test_Exclusive" time="11.037"/>
-  <testcase name="integration_exclusive_list_tab_menu_klik" classname="testcases.Test_Exclusive" time="11.123"/>
-  <testcase name="integration_exclusive_list_tab_menu_klik" classname="testcases.Test_Exclusive" time="10.825"/>
-  <testcase name="integration_exclusive_list_tab_menu_klik" classname="testcases.Test_Exclusive" time="11.374"/>
-  <testcase name="integration_exclusive_list_tab_menu_klik" classname="testcases.Test_Exclusive" time="11.085"/>
-  <testcase name="integration_exclusive_list_tab_menu_klik" classname="testcases.Test_Exclusive" time="10.567"/>
-  <testcase name="radio_validate_url" classname="testcases.Test_Radio" time="5.868"/>
-  <testcase name="radio_integration" classname="testcases.Test_Radio" time="12.321"/>
-  <testcase name="register_alert_email" classname="testcases.Test_Register" time="33.811"/>
-  <testcase name="register_alert_email" classname="testcases.Test_Register" time="34.54"/>
-  <testcase name="register_email_alert_password1" classname="testcases.Test_Register" time="34.799"/>
-  <testcase name="register_email_alert_password2" classname="testcases.Test_Register" time="34.364"/>
-  <testcase name="register_alert_phone" classname="testcases.Test_Register" time="39.267"/>
-  <testcase name="register_alert_phone" classname="testcases.Test_Register" time="39.272"/>
-  <testcase name="register_phone_alert_password1" classname="testcases.Test_Register" time="39.091"/>
-  <testcase name="register_phone_alert_password2" classname="testcases.Test_Register" time="39.977"/>
-  <testcase name="register_page2_validate_birthday" classname="testcases.Test_Register" time="46.985"/>
-  <testcase name="register_page2_validate_fullname" classname="testcases.Test_Register" time="36.463"/>
-  <testcase name="register_page2_validate_gender_Male" classname="testcases.Test_Register" time="41.753"/>
-  <testcase name="register_page2_validate_gender_Male" classname="testcases.Test_Register" time="41.295"/>
-  <testcase name="menu_account_not_login_button_login" classname="testcases.Test_List_Menu_Account" time="27.759"/>
-  <testcase name="menu_account_not_login_button_scan_qrcode" classname="testcases.Test_List_Menu_Account" time="6.95"/>
-  <testcase name="menu_account_not_login_popup_login" classname="testcases.Test_List_Menu_Account" time="23.001"/>
-  <testcase name="menu_account_not_login_popup_login" classname="testcases.Test_List_Menu_Account" time="23.881"/>
-  <testcase name="menu_account_not_login_popup_login" classname="testcases.Test_List_Menu_Account" time="22.748"/>
-  <testcase name="menu_account_not_login_button_menu_direct" classname="testcases.Test_List_Menu_Account" time="19.489"/>
-  <testcase name="menu_account_not_login_button_menu_direct" classname="testcases.Test_List_Menu_Account" time="18.075"/>
-  <testcase name="menu_account_not_login_button_menu_direct" classname="testcases.Test_List_Menu_Account" time="18.595"/>
-  <testcase name="menu_account_not_login_button_menu_direct" classname="testcases.Test_List_Menu_Account" time="18.952"/>
-  <testcase name="menu_account_not_login_button_download" classname="testcases.Test_List_Menu_Account" time="23.075"/>
+  <testcase name="integration_mylist_after_login_library" classname="testcases.Test_Mylist" time="123.573"/>
+  <testcase name="login_alert_password" classname="testcases.Test_Login" time="29.732"/>
+  <testcase name="login_alert_password" classname="testcases.Test_Login" time="32.917"/>
+  <testcase name="login_alert_username" classname="testcases.Test_Login" time="33.021"/>
+  <testcase name="login_alert_username" classname="testcases.Test_Login" time="31.837"/>
+  <testcase name="login_alert_popup" classname="testcases.Test_Login" time="31.635"/>
+  <testcase name="login_alert_popup" classname="testcases.Test_Login" time="29.597"/>
+  <testcase name="login_logout_from_Continue_Watching" classname="testcases.Test_Login" time="91.124"/>
+  <testcase name="login_logout_from_Continue_Watching" classname="testcases.Test_Login" time="97.75"/>
+  <testcase name="login_logout_from_account" classname="testcases.Test_Login" time="98.192"/>
+  <testcase name="login_logout_from_account" classname="testcases.Test_Login" time="103.53"/>
+  <testcase name="login_logout_from_history" classname="testcases.Test_Login" time="90.543"/>
+  <testcase name="login_logout_from_history" classname="testcases.Test_Login" time="92.106"/>
+  <testcase name="login_logout_from_mylist" classname="testcases.Test_Login" time="89.291"/>
+  <testcase name="login_logout_from_mylist" classname="testcases.Test_Login" time="95.109"/>
+  <testcase name="login_succes" classname="testcases.Test_Login" time="39.595"/>
+  <testcase name="login_succes" classname="testcases.Test_Login" time="45.243"/>
+  <testcase name="login_logout" classname="testcases.Test_Login" time="72.774"/>
+  <testcase name="login_logout" classname="testcases.Test_Login" time="78.558"/>
+  <testcase name="exclusive_validate_thumbnail" classname="testcases.Test_Exclusive" time="13.41"/>
+  <testcase name="integration_exclusive_validate_thumbnail" classname="testcases.Test_Exclusive" time="29.714"/>
+  <testcase name="exclusive_validate_list_share" classname="testcases.Test_Exclusive" time="17.479"/>
+  <testcase name="exclusive_validate_list_share" classname="testcases.Test_Exclusive" time="20.458"/>
+  <testcase name="exclusive_validate_list_share" classname="testcases.Test_Exclusive" time="14.381"/>
+  <testcase name="exclusive_validate_list_share" classname="testcases.Test_Exclusive" time="20.552"/>
+  <testcase name="exclusive_validate_list_share" classname="testcases.Test_Exclusive" time="19.644"/>
+  <testcase name="exclusive_list_tab_menu" classname="testcases.Test_Exclusive" time="7.822"/>
+  <testcase name="exclusive_list_tab_menu" classname="testcases.Test_Exclusive" time="14.489"/>
+  <testcase name="exclusive_list_tab_menu" classname="testcases.Test_Exclusive" time="9.238"/>
+  <testcase name="exclusive_list_tab_menu" classname="testcases.Test_Exclusive" time="7.125"/>
+  <testcase name="exclusive_list_tab_menu" classname="testcases.Test_Exclusive" time="3.987"/>
+  <testcase name="exclusive_list_tab_menu" classname="testcases.Test_Exclusive" time="4.987"/>
+  <testcase name="exclusive_list_tab_menu" classname="testcases.Test_Exclusive" time="5.929"/>
+  <testcase name="exclusive_list_tab_menu_klik" classname="testcases.Test_Exclusive" time="25.091"/>
+  <testcase name="exclusive_list_tab_menu_klik" classname="testcases.Test_Exclusive" time="18.343"/>
+  <testcase name="exclusive_list_tab_menu_klik" classname="testcases.Test_Exclusive" time="31.71"/>
+  <testcase name="exclusive_list_tab_menu_klik" classname="testcases.Test_Exclusive" time="7.087"/>
+  <testcase name="exclusive_list_tab_menu_klik" classname="testcases.Test_Exclusive" time="14.319"/>
+  <testcase name="exclusive_list_tab_menu_klik" classname="testcases.Test_Exclusive" time="10.709"/>
+  <testcase name="exclusive_list_tab_menu_klik" classname="testcases.Test_Exclusive" time="14.26"/>
+  <testcase name="integration_exclusive_list_tab_menu_klik" classname="testcases.Test_Exclusive" time="17.899"/>
+  <testcase name="integration_exclusive_list_tab_menu_klik" classname="testcases.Test_Exclusive" time="22.714"/>
+  <testcase name="integration_exclusive_list_tab_menu_klik" classname="testcases.Test_Exclusive" time="19.91"/>
+  <testcase name="integration_exclusive_list_tab_menu_klik" classname="testcases.Test_Exclusive" time="13.535"/>
+  <testcase name="integration_exclusive_list_tab_menu_klik" classname="testcases.Test_Exclusive" time="18.154"/>
+  <testcase name="integration_exclusive_list_tab_menu_klik" classname="testcases.Test_Exclusive" time="13.934"/>
+  <testcase name="integration_exclusive_list_tab_menu_klik" classname="testcases.Test_Exclusive" time="13.197"/>
+  <testcase name="radio_validate_url" classname="testcases.Test_Radio" time="11.617"/>
+  <testcase name="radio_integration" classname="testcases.Test_Radio" time="18.659"/>
+  <testcase name="register_alert_email" classname="testcases.Test_Register" time="40.332">
+    <failure message="stale element reference: element is not attached to the page document&#10;  (Session info: chrome=83.0.4103.61)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;MNCTVN05589&apos;, ip: &apos;10.23.212.104&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.RJoJ0i}, goog:chromeOptions: {debuggerAddress: localhost:39075}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 6ac070227db7284ae6663367f1a...}&#10;Session ID: 6ac070227db7284ae6663367f1aae2da" type="org.openqa.selenium.StaleElementReferenceException"><![CDATA[org.openqa.selenium.StaleElementReferenceException: 
+stale element reference: element is not attached to the page document
+  (Session info: chrome=83.0.4103.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MNCTVN05589', ip: '10.23.212.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.RJoJ0i}, goog:chromeOptions: {debuggerAddress: localhost:39075}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 6ac070227db7284ae6663367f1a...}
+Session ID: 6ac070227db7284ae6663367f1aae2da
+	at testcases.Test_Register.register_alert_email(Test_Register.java:215)
+]]></failure>
+    <system-out><![CDATA[Register Test - Alert Email
+Url Visit: https://rc-webm.rctiplus.com/register
+Waiting for element visibility
+Register
+Waiting for element visibility
+Input Value: dikakoko04@gmail.com
+Waiting for element visibility
+Input Value: password
+Waiting for element visibility
+Input Value: password
+Waiting for element visibility
+Button is Clicked!
+Waiting for element visibility
+]]></system-out>
+    <system-err><![CDATA[Jun 26, 2020 3:51:49 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Jun 26, 2020 3:51:50 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=83.0.4103.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MNCTVN05589', ip: '10.23.212.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.RJoJ0i}, goog:chromeOptions: {debuggerAddress: localhost:39075}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 6ac070227db7284ae6663367f1a...}
+Session ID: 6ac070227db7284ae6663367f1aae2da
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:326)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at object.Alert.waitForVisible(Alert.java:187)
+	at object.Alert.byId(Alert.java:20)
+	at testcases.Test_Register.register_alert_email(Test_Register.java:215)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:377)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:138)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
+]]></system-err>
+  </testcase>
+  <testcase name="register_alert_email" classname="testcases.Test_Register" time="35.902"/>
+  <testcase name="register_email_alert_password1" classname="testcases.Test_Register" time="38.848"/>
+  <testcase name="register_email_alert_password2" classname="testcases.Test_Register" time="36.664"/>
+  <testcase name="register_alert_phone" classname="testcases.Test_Register" time="41.703"/>
+  <testcase name="register_alert_phone" classname="testcases.Test_Register" time="41.901"/>
+  <testcase name="register_phone_alert_password1" classname="testcases.Test_Register" time="42.176"/>
+  <testcase name="register_phone_alert_password2" classname="testcases.Test_Register" time="44.952"/>
+  <testcase name="register_page2_validate_birthday" classname="testcases.Test_Register" time="55.291"/>
+  <testcase name="register_page2_validate_fullname" classname="testcases.Test_Register" time="38.903"/>
+  <testcase name="register_page2_validate_gender_Male" classname="testcases.Test_Register" time="44.323"/>
+  <testcase name="register_page2_validate_gender_Male" classname="testcases.Test_Register" time="48.969"/>
+  <testcase name="menu_account_not_login_button_login" classname="testcases.Test_List_Menu_Account" time="38.501"/>
+  <testcase name="menu_account_not_login_button_scan_qrcode" classname="testcases.Test_List_Menu_Account" time="13.615"/>
+  <testcase name="menu_account_not_login_popup_login" classname="testcases.Test_List_Menu_Account" time="34.007"/>
+  <testcase name="menu_account_not_login_popup_login" classname="testcases.Test_List_Menu_Account" time="36.699"/>
+  <testcase name="menu_account_not_login_popup_login" classname="testcases.Test_List_Menu_Account" time="31.426"/>
+  <testcase name="menu_account_not_login_button_menu_direct" classname="testcases.Test_List_Menu_Account" time="29.605"/>
+  <testcase name="menu_account_not_login_button_menu_direct" classname="testcases.Test_List_Menu_Account" time="27.913"/>
+  <testcase name="menu_account_not_login_button_menu_direct" classname="testcases.Test_List_Menu_Account" time="30.546"/>
+  <testcase name="menu_account_not_login_button_menu_direct" classname="testcases.Test_List_Menu_Account" time="27.245"/>
+  <testcase name="menu_account_not_login_button_download" classname="testcases.Test_List_Menu_Account" time="34.18"/>
   <testcase name="continue_watching_after_login" classname="testcases.Test_Continue_Watching" time="0">
     <skipped message="&#10;Method continue_watching_after_login requires 2 parameters but 0 were supplied in the @Test annotation."/>
-    <system-out><![CDATA[C:\Users\FRANSI~1.SET\AppData\Local\Temp\screenshot1507259740090762242.png
-..\pwa_ui_test\Screenshots\menu_account_not_login_button_download.png
-Screenshot Taken
-]]></system-out>
   </testcase>
-  <testcase name="chat_test_before_login" classname="testcases.Test_Chat" time="64.569"/>
-  <testcase name="chat_test_before_login" classname="testcases.Test_Chat" time="63.984"/>
-  <testcase name="chat_test_before_login" classname="testcases.Test_Chat" time="64.41"/>
-  <testcase name="chat_test_before_login" classname="testcases.Test_Chat" time="65.538"/>
-  <testcase name="forget_password_alert" classname="testcases.Test_Forget_Password" time="18.124"/>
-  <testcase name="forget_password_alert" classname="testcases.Test_Forget_Password" time="18.065"/>
-  <testcase name="forget_password_alert" classname="testcases.Test_Forget_Password" time="19.442"/>
-  <testcase name="forget_password_alert" classname="testcases.Test_Forget_Password" time="19.079"/>
+  <testcase name="chat_test_before_login" classname="testcases.Test_Chat" time="71.855"/>
+  <testcase name="chat_test_before_login" classname="testcases.Test_Chat" time="69.067"/>
+  <testcase name="chat_test_before_login" classname="testcases.Test_Chat" time="70.078"/>
+  <testcase name="chat_test_before_login" classname="testcases.Test_Chat" time="64.418"/>
+  <testcase name="chat_test_after_login" classname="testcases.Test_Chat" time="35.989">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at testcases.Test_Chat.chat_test_after_login(Test_Chat.java:76)
+]]></failure>
+    <system-out><![CDATA[Chat Test - Test Chatting After Login
+Url Visit: https://rc-webm.rctiplus.com/login
+Waiting for element visibility
+Input Value: dikakoko04@gmail.com
+Waiting for element visibility
+Input Value: dikakoko
+Waiting for element visibility
+Button is Clicked!
+Url Visit: https://rc-webm.rctiplus.com/tv/rcti
+Waiting for element visibility
+Button is Clicked!
+Waiting for element visibility
+]]></system-out>
+    <system-err><![CDATA[Jun 26, 2020 4:10:43 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Jun 26, 2020 4:10:43 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[RemoteWebDriver: chrome on LINUX (7e3142792b570186f1866012b7efc02a)] -> id: chat-input] (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MNCTVN05589', ip: '10.23.212.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.9JganP}, goog:chromeOptions: {debuggerAddress: localhost:41539}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 7e3142792b570186f1866012b7e...}
+Session ID: 7e3142792b570186f1866012b7efc02a
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at object.Input.waitForVisible(Input.java:214)
+	at object.Input.byIdDisplay(Input.java:95)
+	at testcases.Test_Chat.chat_test_after_login(Test_Chat.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:377)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:138)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
+]]></system-err>
+  </testcase>
+  <testcase name="chat_test_after_login" classname="testcases.Test_Chat" time="43.985">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at testcases.Test_Chat.chat_test_after_login(Test_Chat.java:76)
+]]></failure>
+    <system-out><![CDATA[*** Test execution chat_test_after_login failed!
+chat_test_after_login failed!
+Chat Test - Test Chatting After Login
+Url Visit: https://rc-webm.rctiplus.com/login
+Waiting for element visibility
+Input Value: dikakoko04@gmail.com
+Waiting for element visibility
+Input Value: dikakoko
+Waiting for element visibility
+Button is Clicked!
+Url Visit: https://rc-webm.rctiplus.com/tv/mnctv
+Waiting for element visibility
+Button is Clicked!
+Waiting for element visibility
+]]></system-out>
+    <system-err><![CDATA[Jun 26, 2020 4:11:21 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Jun 26, 2020 4:11:21 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[RemoteWebDriver: chrome on LINUX (f8a0edc61d3eafde20c6066fe47072d8)] -> id: chat-input] (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MNCTVN05589', ip: '10.23.212.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.7F3DlA}, goog:chromeOptions: {debuggerAddress: localhost:35507}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: f8a0edc61d3eafde20c6066fe47...}
+Session ID: f8a0edc61d3eafde20c6066fe47072d8
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at object.Input.waitForVisible(Input.java:214)
+	at object.Input.byIdDisplay(Input.java:95)
+	at testcases.Test_Chat.chat_test_after_login(Test_Chat.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:377)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:138)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
+]]></system-err>
+  </testcase>
+  <testcase name="chat_test_after_login" classname="testcases.Test_Chat" time="40.462">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at testcases.Test_Chat.chat_test_after_login(Test_Chat.java:76)
+]]></failure>
+    <system-out><![CDATA[*** Test execution chat_test_after_login failed!
+chat_test_after_login failed!
+Chat Test - Test Chatting After Login
+Url Visit: https://rc-webm.rctiplus.com/login
+Waiting for element visibility
+Input Value: dikakoko04@gmail.com
+Waiting for element visibility
+Input Value: dikakoko
+Waiting for element visibility
+Button is Clicked!
+Url Visit: https://rc-webm.rctiplus.com/tv/gtv
+Waiting for element visibility
+Button is Clicked!
+Waiting for element visibility
+]]></system-out>
+    <system-err><![CDATA[Jun 26, 2020 4:12:06 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Jun 26, 2020 4:12:06 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[RemoteWebDriver: chrome on LINUX (9e34b5aa81e3b4ee787004d3d61030a5)] -> id: chat-input] (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MNCTVN05589', ip: '10.23.212.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.fyvVJw}, goog:chromeOptions: {debuggerAddress: localhost:39807}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 9e34b5aa81e3b4ee787004d3d61...}
+Session ID: 9e34b5aa81e3b4ee787004d3d61030a5
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at object.Input.waitForVisible(Input.java:214)
+	at object.Input.byIdDisplay(Input.java:95)
+	at testcases.Test_Chat.chat_test_after_login(Test_Chat.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:377)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:138)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
+]]></system-err>
+  </testcase>
+  <testcase name="chat_test_after_login" classname="testcases.Test_Chat" time="36.285">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at testcases.Test_Chat.chat_test_after_login(Test_Chat.java:76)
+]]></failure>
+    <system-out><![CDATA[*** Test execution chat_test_after_login failed!
+chat_test_after_login failed!
+Chat Test - Test Chatting After Login
+Url Visit: https://rc-webm.rctiplus.com/login
+Waiting for element visibility
+Input Value: dikakoko04@gmail.com
+Waiting for element visibility
+Input Value: dikakoko
+Waiting for element visibility
+Button is Clicked!
+Url Visit: https://rc-webm.rctiplus.com/tv/inews
+Waiting for element visibility
+Button is Clicked!
+Waiting for element visibility
+]]></system-out>
+    <system-err><![CDATA[Jun 26, 2020 4:12:48 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Jun 26, 2020 4:12:48 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[RemoteWebDriver: chrome on LINUX (1ce56c07c1e52d2b3c828196e3d4b871)] -> id: chat-input] (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MNCTVN05589', ip: '10.23.212.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.UlPCFK}, goog:chromeOptions: {debuggerAddress: localhost:35379}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 1ce56c07c1e52d2b3c828196e3d...}
+Session ID: 1ce56c07c1e52d2b3c828196e3d4b871
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at object.Input.waitForVisible(Input.java:214)
+	at object.Input.byIdDisplay(Input.java:95)
+	at testcases.Test_Chat.chat_test_after_login(Test_Chat.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:377)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:138)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
+]]></system-err>
+  </testcase>
+  <testcase name="forget_password_alert" classname="testcases.Test_Forget_Password" time="17.5"/>
+  <testcase name="forget_password_alert" classname="testcases.Test_Forget_Password" time="20.831"/>
+  <testcase name="forget_password_alert" classname="testcases.Test_Forget_Password" time="19.495"/>
+  <testcase name="forget_password_alert" classname="testcases.Test_Forget_Password" time="18.157"/>
 </testsuite>
