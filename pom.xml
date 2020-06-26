@@ -6,6 +6,12 @@
 	<artifactId>pwa</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
+	<properties>
+		<!-- <jre.level>1.8</jre.level> <jdk.level>1.8</jdk.level> -->
+		<aspectj.version>1.9.2</aspectj.version>
+	</properties>
+
+
 	<build>
 		<plugins>
 			<plugin>
@@ -26,10 +32,24 @@
 				<version>3.0.0-M4</version>
 
 				<configuration>
+					<testFailureIgnore>true</testFailureIgnore>
+					<argLine>
+						-javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
+					</argLine>
+
 					<suiteXmlFiles>
 						<suiteXmlFiles>testng.xml</suiteXmlFiles>
 					</suiteXmlFiles>
 				</configuration>
+
+				<dependencies>
+					<dependency>
+						<groupId>org.aspectj</groupId>
+						<artifactId>aspectjweaver</artifactId>
+						<version>${aspectj.version}</version>
+					</dependency>
+				</dependencies>
+
 			</plugin>
 		</plugins>
 	</build>
@@ -129,6 +149,23 @@
 			<version>3.1.0</version>
 		</dependency>
 
+		<dependency>
+			<groupId>io.qameta.allure</groupId>
+			<artifactId>allure-testng</artifactId>
+			<version>2.7.0</version>
+		</dependency>
 
 	</dependencies>
+
+	<reporting>
+		<excludeDefaults>true</excludeDefaults>
+		<plugins>
+			<plugin>
+				<groupId>io.qameta.allure</groupId>
+				<artifactId>allure-maven</artifactId>
+				<version>2.9</version>
+			</plugin>
+		</plugins>
+	</reporting>
+
 </project>

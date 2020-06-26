@@ -9,6 +9,7 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import config.Setup;
 import config.Url;
+import io.qameta.allure.Description;
 import object.Alert;
 import object.Button;
 import object.Dropdown;
@@ -54,14 +55,15 @@ public class Test_Register extends Setup {
 		ReadExcel read = new ReadExcel();
 		return read.getCellData(path, "Register_Password2_Alert_Phone");
 	}
-	
+
 	@DataProvider
 	public String[][] register_list_gender() throws InvalidFormatException, IOException {
 		ReadExcel read = new ReadExcel();
 		return read.getCellData(path, "Register_List_Gender");
 	}
 
-	@Test(priority = 4)
+	@Description("Register Test - Validate Register Page 2 Fullname")
+	@Test(priority = 4, testName = "Register Test - Validate Register Page 2 Fullname")
 	public void register_page2_validate_fullname() throws InterruptedException {
 		Url url = new Url(driver);
 		Input input = PageFactory.initElements(driver, Input.class);
@@ -84,7 +86,8 @@ public class Test_Register extends Setup {
 		input.byIdAttr("fullname", "maxlength", "25");
 	}
 
-	@Test(priority = 4)
+	@Description("Register Test - Validate Register Page 2 Birthday")
+	@Test(priority = 4, testName = "Register Test - Validate Register Page 2 Birthday")
 	public void register_page2_validate_birthday() throws InterruptedException {
 		Url url = new Url(driver);
 		Button button = PageFactory.initElements(driver, Button.class);
@@ -108,6 +111,7 @@ public class Test_Register extends Setup {
 		alert.byClassDisplay("datepicker-content", true);
 	}
 
+	@Description("Register Test - Validate Register Page 2 Gender ")
 	@Test(priority = 4, testName = "Register Validate Gender", dataProvider = "register_list_gender")
 	public void register_page2_validate_gender_Male(String gender) throws InterruptedException {
 		Url url = new Url(driver);
@@ -115,12 +119,12 @@ public class Test_Register extends Setup {
 		Alert alert = PageFactory.initElements(driver, Alert.class);
 		Input input = PageFactory.initElements(driver, Input.class);
 		Dropdown dropdown = PageFactory.initElements(driver, Dropdown.class);
-		
+
 		System.out.println("Register Test - Validate Register Page 2 Gender ");
 
 		Random random = new Random();
 		int randomInt = random.nextInt(10000);
-		
+
 		url.urls("/register");
 		alert.byClass("header-nav-verif", "Register");
 		input.byId("email", "auieo" + randomInt + "@gmail.com");
@@ -131,17 +135,17 @@ public class Test_Register extends Setup {
 		alert.byClass("header-nav-verif", "Verification");
 		dropdown.dropdownByIdByVisibleText("gender", gender);
 	}
-	
 
+	@Description("Register Test - Alert Phone Number")
 	@Test(priority = 3, testName = "Register Phone Number Alert", dataProvider = "register_phone_alert")
 	public void register_alert_phone(String phone, String password, String rePassword, String alertText) {
 		Url url = new Url(driver);
 		Input input = PageFactory.initElements(driver, Input.class);
 		Button button = PageFactory.initElements(driver, Button.class);
 		Alert alert = PageFactory.initElements(driver, Alert.class);
-		
+
 		System.out.println("Register Test - Alert Phone Number");
-		
+
 		url.urls("/register");
 		alert.byClass("header-nav-verif", "Register");
 		button.byId("register-phone");
@@ -151,16 +155,17 @@ public class Test_Register extends Setup {
 		button.byId("button-next");
 		alert.byId("invalid-phone-number", alertText);
 	}
-	
+
+	@Description("Register Test - Alert Phone Password Form 1")
 	@Test(priority = 3, testName = "Register Password1 Alert Phone", dataProvider = "register_password1_alert_phone")
 	public void register_phone_alert_password1(String phone, String password, String rePassword, String alertText) {
 		Url url = new Url(driver);
 		Input input = PageFactory.initElements(driver, Input.class);
 		Button button = PageFactory.initElements(driver, Button.class);
 		Alert alert = PageFactory.initElements(driver, Alert.class);
-		
+
 		System.out.println("Register Test - Alert Phone Password Form 1");
-		
+
 		url.urls("/register");
 		alert.byClass("header-nav-verif", "Register");
 		button.byId("register-phone");
@@ -170,16 +175,17 @@ public class Test_Register extends Setup {
 		button.byId("button-next");
 		alert.byId("invalid-password-num-chars", alertText);
 	}
-	
+
+	@Description("Register Test - Alert Phone Password Form 2")
 	@Test(priority = 3, testName = "Register Password 2Alert Phone", dataProvider = "register_password2_alert_phone")
 	public void register_phone_alert_password2(String phone, String password, String rePassword, String alertText) {
 		Url url = new Url(driver);
 		Input input = PageFactory.initElements(driver, Input.class);
 		Button button = PageFactory.initElements(driver, Button.class);
 		Alert alert = PageFactory.initElements(driver, Alert.class);
-		
+
 		System.out.println("Register Test - Alert Phone Password Form 2");
-		
+
 		url.urls("/register");
 		alert.byClass("header-nav-verif", "Register");
 		button.byId("register-phone");
@@ -189,16 +195,17 @@ public class Test_Register extends Setup {
 		button.byId("button-next");
 		alert.byId("invalid-password-not-match", alertText);
 	}
-	
+
+	@Description("Register Test - Alert Email")
 	@Test(priority = 0, testName = "Register Email Alert", dataProvider = "register_email_alert")
 	public void register_alert_email(String email, String password, String rePassword, String alertText) {
 		Url url = new Url(driver);
 		Input input = PageFactory.initElements(driver, Input.class);
 		Button button = PageFactory.initElements(driver, Button.class);
 		Alert alert = PageFactory.initElements(driver, Alert.class);
-		
+
 		System.out.println("Register Test - Alert Email");
-		
+
 		url.urls("/register");
 		alert.byClass("header-nav-verif", "Register");
 		input.byId("email", email);
@@ -207,16 +214,17 @@ public class Test_Register extends Setup {
 		button.byId("button-next");
 		alert.byId("invalid-email", alertText);
 	}
-	
+
+	@Description("Register Test - Alert Password Form 1")
 	@Test(priority = 0, testName = "Register Password1 Alert", dataProvider = "register_password1_alert_email")
 	public void register_email_alert_password1(String email, String password, String rePassword, String alertText) {
 		Url url = new Url(driver);
 		Input input = PageFactory.initElements(driver, Input.class);
 		Button button = PageFactory.initElements(driver, Button.class);
 		Alert alert = PageFactory.initElements(driver, Alert.class);
-		
+
 		System.out.println("Register Test - Alert Password Form 1");
-		
+
 		url.urls("/register");
 		alert.byClass("header-nav-verif", "Register");
 		input.byId("email", email);
@@ -225,16 +233,17 @@ public class Test_Register extends Setup {
 		button.byId("button-next");
 		alert.byId("invalid-password-num-chars", alertText);
 	}
-	
+
+	@Description("Register Test - Alert Password Form 2")
 	@Test(priority = 0, testName = "Register Password 2Alert", dataProvider = "register_password2_alert_email")
 	public void register_email_alert_password2(String email, String password, String rePassword, String alertText) {
 		Url url = new Url(driver);
 		Input input = PageFactory.initElements(driver, Input.class);
 		Button button = PageFactory.initElements(driver, Button.class);
 		Alert alert = PageFactory.initElements(driver, Alert.class);
-		
+
 		System.out.println("Register Test - Alert Password Form 2");
-		
+
 		url.urls("/register");
 		alert.byClass("header-nav-verif", "Register");
 		input.byId("email", email);

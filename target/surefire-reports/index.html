@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Suite">
-                    <span>D:\test-web\pwa\pwa\testng.xml</span>
+                    <span>D:\test-web\pwa\pwa_ui_test\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,35 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">22 methods,   22 passed</span>
+                    <span class="method-stats">81 methods, 1 failed,  1 skipped,  79 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.Test_Mylist" hash-for-method="mylist_after_login_library(dikakoko04@gmail.com, dikakoko)">mylist_after_login_library(dikakoko04@gmail.com, dikakoko)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Suite">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.Test_Continue_Watching" hash-for-method="continue_watching_after_login">continue_watching_after_login</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,62 +130,277 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.Test_Login" hash-for-method="login_alert_popup(/login, 628229098776544, passwordslah, User has not been registered)">login_alert_popup(/login, 628229098776544, passwordslah, User has not been registered)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.Test_Chat" hash-for-method="chat_test_before_login(mnctv, dikakoko04@gmail.com, dikakoko, dikakokodikakoko, Selamat menonton semua!)">chat_test_before_login(mnctv, dikakoko04@gmail.com, dikakoko, dikakokodikakoko, Selamat menonton semua!)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.Test_Login" hash-for-method="login_alert_popup(/login, dixosgadpoyt@gmail.com, passwordslah, User has not been registered)">login_alert_popup(/login, dixosgadpoyt@gmail.com, passwordslah, User has not been registered)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.Test_Chat" hash-for-method="chat_test_before_login(gtv, dikakoko04@gmail.com, dikakoko, dikakokodikakoko, Selamat menonton semua!)">chat_test_before_login(gtv, dikakoko04@gmail.com, dikakoko, dikakokodikakoko, Selamat menonton semua!)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.Test_Login" hash-for-method="login_logout(/login, 082278843303, dikakoko, dikakokos)">login_logout(/login, 082278843303, dikakoko, dikakokos)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.Test_Chat" hash-for-method="chat_test_before_login(rcti, dikakoko04@gmail.com, dikakoko, dikakokodikakoko, Selamat menonton semua!)">chat_test_before_login(rcti, dikakoko04@gmail.com, dikakoko, dikakokodikakoko, Selamat menonton semua!)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.Test_Login" hash-for-method="login_logout(/login, dikakoko04@gmail.com, dikakoko, dikakoko)">login_logout(/login, dikakoko04@gmail.com, dikakoko, dikakoko)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.Test_Chat" hash-for-method="chat_test_before_login(inews, dikakoko04@gmail.com, dikakoko, dikakokodikakoko, Selamat menonton semua!)">chat_test_before_login(inews, dikakoko04@gmail.com, dikakoko, dikakokodikakoko, Selamat menonton semua!)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.Test_Integration_Login" hash-for-method="login_logout_from_Continue_Watching(/login, dikakoko04@gmail.com, dikakoko, dikakoko)">login_logout_from_Continue_Watching(/login, dikakoko04@gmail.com, dikakoko, dikakoko)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.Test_Exclusive" hash-for-method="exclusive_list_tab_menu(6, Behind The Scenes)">exclusive_list_tab_menu(6, Behind The Scenes)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.Test_Integration_Login" hash-for-method="login_logout_from_Continue_Watching(/login, 082278843303, dikakoko, dikakokos)">login_logout_from_Continue_Watching(/login, 082278843303, dikakoko, dikakokos)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.Test_Exclusive" hash-for-method="exclusive_list_tab_menu(3, Entertainment)">exclusive_list_tab_menu(3, Entertainment)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.Test_Integration_Login" hash-for-method="login_logout_from_account(/login, dikakoko04@gmail.com, dikakoko, dikakoko)">login_logout_from_account(/login, dikakoko04@gmail.com, dikakoko, dikakoko)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.Test_Exclusive" hash-for-method="exclusive_list_tab_menu(1, Clip)">exclusive_list_tab_menu(1, Clip)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.Test_Integration_Login" hash-for-method="login_logout_from_account(/login, 082278843303, dikakoko, dikakokos)">login_logout_from_account(/login, 082278843303, dikakoko, dikakokos)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.Test_Exclusive" hash-for-method="exclusive_list_tab_menu(5, Bloopers)">exclusive_list_tab_menu(5, Bloopers)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.Test_Integration_Login" hash-for-method="login_logout_from_history(/login, dikakoko04@gmail.com, dikakoko, dikakoko)">login_logout_from_history(/login, dikakoko04@gmail.com, dikakoko, dikakoko)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.Test_Exclusive" hash-for-method="exclusive_list_tab_menu(2, Photo)">exclusive_list_tab_menu(2, Photo)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.Test_Integration_Login" hash-for-method="login_logout_from_history(/login, 082278843303, dikakoko, dikakokos)">login_logout_from_history(/login, 082278843303, dikakoko, dikakokos)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.Test_Exclusive" hash-for-method="exclusive_list_tab_menu(0, All)">exclusive_list_tab_menu(0, All)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.Test_Integration_Login" hash-for-method="login_logout_from_mylist(/login, 082278843303, dikakoko, dikakokos)">login_logout_from_mylist(/login, 082278843303, dikakoko, dikakokos)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.Test_Exclusive" hash-for-method="exclusive_list_tab_menu(4, News)">exclusive_list_tab_menu(4, News)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.Test_Integration_Login" hash-for-method="login_logout_from_mylist(/login, dikakoko04@gmail.com, dikakoko, dikakoko)">login_logout_from_mylist(/login, dikakoko04@gmail.com, dikakoko, dikakoko)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.Test_Exclusive" hash-for-method="exclusive_list_tab_menu_klik(4, News)">exclusive_list_tab_menu_klik(4, News)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.Test_Exclusive" hash-for-method="exclusive_list_tab_menu_klik(2, Photo)">exclusive_list_tab_menu_klik(2, Photo)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.Test_Exclusive" hash-for-method="exclusive_list_tab_menu_klik(0, All)">exclusive_list_tab_menu_klik(0, All)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.Test_Exclusive" hash-for-method="exclusive_list_tab_menu_klik(3, Entertainment)">exclusive_list_tab_menu_klik(3, Entertainment)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.Test_Exclusive" hash-for-method="exclusive_list_tab_menu_klik(1, Clip)">exclusive_list_tab_menu_klik(1, Clip)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.Test_Exclusive" hash-for-method="exclusive_list_tab_menu_klik(5, Bloopers)">exclusive_list_tab_menu_klik(5, Bloopers)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.Test_Exclusive" hash-for-method="exclusive_list_tab_menu_klik(6, Behind The Scenes)">exclusive_list_tab_menu_klik(6, Behind The Scenes)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.Test_Exclusive" hash-for-method="exclusive_validate_list_share(0, facebook)">exclusive_validate_list_share(0, facebook)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.Test_Exclusive" hash-for-method="exclusive_validate_list_share(4, whatsapp)">exclusive_validate_list_share(4, whatsapp)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.Test_Exclusive" hash-for-method="exclusive_validate_list_share(3, email)">exclusive_validate_list_share(3, email)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.Test_Exclusive" hash-for-method="exclusive_validate_list_share(1, twitter)">exclusive_validate_list_share(1, twitter)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.Test_Exclusive" hash-for-method="exclusive_validate_list_share(2, line)">exclusive_validate_list_share(2, line)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.Test_Exclusive" hash-for-method="exclusive_validate_thumbnail">exclusive_validate_thumbnail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.Test_Forget_Password" hash-for-method="forget_password_alert(454546546565646, Please Try Again Phone Number Is Incorrect)">forget_password_alert(454546546565646, Please Try Again Phone Number Is Incorrect)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.Test_Forget_Password" hash-for-method="forget_password_alert(iustrtqc@gmail.com, User has not been registered)">forget_password_alert(iustrtqc@gmail.com, User has not been registered)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.Test_Forget_Password" hash-for-method="forget_password_alert(082222992299, User has not been registered)">forget_password_alert(082222992299, User has not been registered)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.Test_Forget_Password" hash-for-method="forget_password_alert(email.com, Please Try Again Email Is Incorrect)">forget_password_alert(email.com, Please Try Again Email Is Incorrect)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.Test_Exclusive" hash-for-method="integration_exclusive_list_tab_menu_klik(1, Clip)">integration_exclusive_list_tab_menu_klik(1, Clip)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.Test_Exclusive" hash-for-method="integration_exclusive_list_tab_menu_klik(4, News)">integration_exclusive_list_tab_menu_klik(4, News)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.Test_Exclusive" hash-for-method="integration_exclusive_list_tab_menu_klik(0, All)">integration_exclusive_list_tab_menu_klik(0, All)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.Test_Exclusive" hash-for-method="integration_exclusive_list_tab_menu_klik(3, Entertainment)">integration_exclusive_list_tab_menu_klik(3, Entertainment)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.Test_Exclusive" hash-for-method="integration_exclusive_list_tab_menu_klik(2, Photo)">integration_exclusive_list_tab_menu_klik(2, Photo)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.Test_Exclusive" hash-for-method="integration_exclusive_list_tab_menu_klik(5, Bloopers)">integration_exclusive_list_tab_menu_klik(5, Bloopers)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.Test_Exclusive" hash-for-method="integration_exclusive_list_tab_menu_klik(6, Behind The Scenes)">integration_exclusive_list_tab_menu_klik(6, Behind The Scenes)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.Test_Exclusive" hash-for-method="integration_exclusive_validate_thumbnail">integration_exclusive_validate_thumbnail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.Test_Mylist" hash-for-method="integration_mylist_after_login_library(dikakoko04@gmail.com, dikakoko)">integration_mylist_after_login_library(dikakoko04@gmail.com, dikakoko)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.Test_Login" hash-for-method="login_alert_password(082278843303, passwordslah, Please Try Again Password Is Incorrect)">login_alert_password(082278843303, passwordslah, Please Try Again Password Is Incorrect)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.Test_Login" hash-for-method="login_alert_password(dikakoko04@gmail.com, passwordslah, Please Try Again Password Is Incorrect)">login_alert_password(dikakoko04@gmail.com, passwordslah, Please Try Again Password Is Incorrect)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.Test_Login" hash-for-method="login_alert_popup(628229098776544, passwordslah, User has not been registered)">login_alert_popup(628229098776544, passwordslah, User has not been registered)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.Test_Login" hash-for-method="login_alert_popup(dixosgadpoyt@gmail.com, passwordslah, User has not been registered)">login_alert_popup(dixosgadpoyt@gmail.com, passwordslah, User has not been registered)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.Test_Login" hash-for-method="login_alert_username(dikakoko.com, passwordslah, Please Try Again Email Is Incorrect)">login_alert_username(dikakoko.com, passwordslah, Please Try Again Email Is Incorrect)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.Test_Login" hash-for-method="login_alert_username(8767868768768, passwordslah, Please Try Again Phone Number Is Incorrect)">login_alert_username(8767868768768, passwordslah, Please Try Again Phone Number Is Incorrect)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.Test_Login" hash-for-method="login_logout(082278843303, dikakoko, dikakokos)">login_logout(082278843303, dikakoko, dikakokos)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.Test_Login" hash-for-method="login_logout(dikakoko04@gmail.com, dikakoko, dikakoko)">login_logout(dikakoko04@gmail.com, dikakoko, dikakoko)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.Test_Login" hash-for-method="login_logout_from_Continue_Watching(dikakoko04@gmail.com, dikakoko, dikakoko)">login_logout_from_Continue_Watching(dikakoko04@gmail.com, dikakoko, dikakoko)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.Test_Login" hash-for-method="login_logout_from_Continue_Watching(082278843303, dikakoko, dikakokos)">login_logout_from_Continue_Watching(082278843303, dikakoko, dikakokos)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.Test_Login" hash-for-method="login_logout_from_account(dikakoko04@gmail.com, dikakoko, dikakoko)">login_logout_from_account(dikakoko04@gmail.com, dikakoko, dikakoko)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.Test_Login" hash-for-method="login_logout_from_account(082278843303, dikakoko, dikakokos)">login_logout_from_account(082278843303, dikakoko, dikakokos)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.Test_Login" hash-for-method="login_logout_from_history(dikakoko04@gmail.com, dikakoko, dikakoko)">login_logout_from_history(dikakoko04@gmail.com, dikakoko, dikakoko)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.Test_Login" hash-for-method="login_logout_from_history(082278843303, dikakoko, dikakokos)">login_logout_from_history(082278843303, dikakoko, dikakokos)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.Test_Login" hash-for-method="login_logout_from_mylist(dikakoko04@gmail.com, dikakoko, dikakoko)">login_logout_from_mylist(dikakoko04@gmail.com, dikakoko, dikakoko)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.Test_Login" hash-for-method="login_logout_from_mylist(082278843303, dikakoko, dikakokos)">login_logout_from_mylist(082278843303, dikakoko, dikakokos)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.Test_Login" hash-for-method="login_succes(082278843303, dikakoko, dikakokos)">login_succes(082278843303, dikakoko, dikakokos)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.Test_Login" hash-for-method="login_succes(dikakoko04@gmail.com, dikakoko, dikakoko)">login_succes(dikakoko04@gmail.com, dikakoko, dikakoko)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -168,6 +411,11 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.Test_List_Menu_Account" hash-for-method="menu_account_not_login_button_login">menu_account_not_login_button_login</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.Test_List_Menu_Account" hash-for-method="menu_account_not_login_button_menu_direct(privacy-policy, Privacy Policy)">menu_account_not_login_button_menu_direct(privacy-policy, Privacy Policy)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -187,11 +435,6 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.Test_List_Menu_Account" hash-for-method="menu_account_not_login_button_menu_direct(privacy-policy, Privacy Policy)">menu_account_not_login_button_menu_direct(privacy-policy, Privacy Policy)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.Test_List_Menu_Account" hash-for-method="menu_account_not_login_button_scan_qrcode">menu_account_not_login_button_scan_qrcode</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -202,12 +445,82 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.Test_List_Menu_Account" hash-for-method="menu_account_not_login_popup_login(continue-watching, Sign Up, Sign In)">menu_account_not_login_popup_login(continue-watching, Sign Up, Sign In)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.Test_List_Menu_Account" hash-for-method="menu_account_not_login_popup_login(history, Sign Up, Sign In)">menu_account_not_login_popup_login(history, Sign Up, Sign In)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.Test_List_Menu_Account" hash-for-method="menu_account_not_login_popup_login(continue-watching, Sign Up, Sign In)">menu_account_not_login_popup_login(continue-watching, Sign Up, Sign In)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.Test_Radio" hash-for-method="radio_integration">radio_integration</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.Test_Radio" hash-for-method="radio_validate_url">radio_validate_url</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.Test_Register" hash-for-method="register_alert_email(rtgsfad.com, password, password, Please Try Again Email Is Incorrect)">register_alert_email(rtgsfad.com, password, password, Please Try Again Email Is Incorrect)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.Test_Register" hash-for-method="register_alert_email(dikakoko04@gmail.com, password, password, please try again, email has been taken)">register_alert_email(dikakoko04@gmail.com, password, password, please try again, email has been taken)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.Test_Register" hash-for-method="register_alert_phone(82278843303, password, password, please try again, phone has been taken)">register_alert_phone(82278843303, password, password, please try again, phone has been taken)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.Test_Register" hash-for-method="register_alert_phone(00909089897897, password, password, Please Try Again Phone Number Is Incorrect)">register_alert_phone(00909089897897, password, password, Please Try Again Phone Number Is Incorrect)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.Test_Register" hash-for-method="register_email_alert_password1(nteamqcdfard@gmail.com, kurang, kurang, Password must at least 8 characters)">register_email_alert_password1(nteamqcdfard@gmail.com, kurang, kurang, Password must at least 8 characters)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.Test_Register" hash-for-method="register_email_alert_password2(nteamqcdfard@gmail.com, password, passwordBeda, Password must match)">register_email_alert_password2(nteamqcdfard@gmail.com, password, passwordBeda, Password must match)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.Test_Register" hash-for-method="register_page2_validate_birthday">register_page2_validate_birthday</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.Test_Register" hash-for-method="register_page2_validate_fullname">register_page2_validate_fullname</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.Test_Register" hash-for-method="register_page2_validate_gender_Male(Male)">register_page2_validate_gender_Male(Male)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.Test_Register" hash-for-method="register_page2_validate_gender_Male(Female)">register_page2_validate_gender_Male(Female)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.Test_Register" hash-for-method="register_phone_alert_password1(863436763543, kurang, kurang, Password must at least 8 characters)">register_phone_alert_password1(863436763543, kurang, kurang, Password must at least 8 characters)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.Test_Register" hash-for-method="register_phone_alert_password2(84534343436, password, passwordBeda, Password must match)">register_phone_alert_password2(84534343436, password, passwordBeda, Password must match)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -222,74 +535,543 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">testcases.Test_Integration_Login</span>
+              <img src="failed.png"/>
+              <span class="class-name">testcases.Test_Mylist</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="login_logout_from_Continue_Watching(/login, dikakoko04@gmail.com, dikakoko, dikakoko)">
-                  </a> <!-- login_logout_from_Continue_Watching(/login, dikakoko04@gmail.com, dikakoko, dikakoko) -->
+                  <a name="mylist_after_login_library(dikakoko04@gmail.com, dikakoko)">
+                  </a> <!-- mylist_after_login_library(dikakoko04@gmail.com, dikakoko) -->
+                  <span class="method-name">mylist_after_login_library</span>
+                  <span class="parameters">(dikakoko04@gmail.com, dikakoko)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//strong[contains(text(),&apos;Test Movie 2 hoho&apos;)]&quot;}
+  (Session info: chrome=83.0.4103.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;MNCTVN05589&apos;, ip: &apos;10.23.212.104&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.qlPPLo}, goog:chromeOptions: {debuggerAddress: localhost:37799}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: d412b46c574d36d3cd1b8b99f04...}
+Session ID: d412b46c574d36d3cd1b8b99f043a6db
+*** Element info: {Using=xpath, value=//strong[contains(text(),&apos;Test Movie 2 hoho&apos;)]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at object.Button.byXpath(Button.java:31)
+	at testcases.Test_Mylist.mylist_after_login_library(Test_Mylist.java:53)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">testcases.Test_Continue_Watching</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="continue_watching_after_login">
+                  </a> <!-- continue_watching_after_login -->
+                  <span class="method-name">continue_watching_after_login</span>
+                  <div class="stack-trace">org.testng.TestNGException: 
+Method continue_watching_after_login requires 2 parameters but 0 were supplied in the @Test annotation.
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.Test_Login</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="login_alert_password(082278843303, passwordslah, Please Try Again Password Is Incorrect)">
+                  </a> <!-- login_alert_password(082278843303, passwordslah, Please Try Again Password Is Incorrect) -->
+                  <span class="method-name">login_alert_password</span>
+                  <span class="parameters">(082278843303, passwordslah, Please Try Again Password Is Incorrect)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="login_alert_password(dikakoko04@gmail.com, passwordslah, Please Try Again Password Is Incorrect)">
+                  </a> <!-- login_alert_password(dikakoko04@gmail.com, passwordslah, Please Try Again Password Is Incorrect) -->
+                  <span class="method-name">login_alert_password</span>
+                  <span class="parameters">(dikakoko04@gmail.com, passwordslah, Please Try Again Password Is Incorrect)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="login_alert_popup(628229098776544, passwordslah, User has not been registered)">
+                  </a> <!-- login_alert_popup(628229098776544, passwordslah, User has not been registered) -->
+                  <span class="method-name">login_alert_popup</span>
+                  <span class="parameters">(628229098776544, passwordslah, User has not been registered)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="login_alert_popup(dixosgadpoyt@gmail.com, passwordslah, User has not been registered)">
+                  </a> <!-- login_alert_popup(dixosgadpoyt@gmail.com, passwordslah, User has not been registered) -->
+                  <span class="method-name">login_alert_popup</span>
+                  <span class="parameters">(dixosgadpoyt@gmail.com, passwordslah, User has not been registered)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="login_alert_username(dikakoko.com, passwordslah, Please Try Again Email Is Incorrect)">
+                  </a> <!-- login_alert_username(dikakoko.com, passwordslah, Please Try Again Email Is Incorrect) -->
+                  <span class="method-name">login_alert_username</span>
+                  <span class="parameters">(dikakoko.com, passwordslah, Please Try Again Email Is Incorrect)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="login_alert_username(8767868768768, passwordslah, Please Try Again Phone Number Is Incorrect)">
+                  </a> <!-- login_alert_username(8767868768768, passwordslah, Please Try Again Phone Number Is Incorrect) -->
+                  <span class="method-name">login_alert_username</span>
+                  <span class="parameters">(8767868768768, passwordslah, Please Try Again Phone Number Is Incorrect)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="login_logout(082278843303, dikakoko, dikakokos)">
+                  </a> <!-- login_logout(082278843303, dikakoko, dikakokos) -->
+                  <span class="method-name">login_logout</span>
+                  <span class="parameters">(082278843303, dikakoko, dikakokos)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="login_logout(dikakoko04@gmail.com, dikakoko, dikakoko)">
+                  </a> <!-- login_logout(dikakoko04@gmail.com, dikakoko, dikakoko) -->
+                  <span class="method-name">login_logout</span>
+                  <span class="parameters">(dikakoko04@gmail.com, dikakoko, dikakoko)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="login_logout_from_Continue_Watching(dikakoko04@gmail.com, dikakoko, dikakoko)">
+                  </a> <!-- login_logout_from_Continue_Watching(dikakoko04@gmail.com, dikakoko, dikakoko) -->
                   <span class="method-name">login_logout_from_Continue_Watching</span>
-                  <span class="parameters">(/login, dikakoko04@gmail.com, dikakoko, dikakoko)</span>
+                  <span class="parameters">(dikakoko04@gmail.com, dikakoko, dikakoko)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="login_logout_from_Continue_Watching(/login, 082278843303, dikakoko, dikakokos)">
-                  </a> <!-- login_logout_from_Continue_Watching(/login, 082278843303, dikakoko, dikakokos) -->
+                  <a name="login_logout_from_Continue_Watching(082278843303, dikakoko, dikakokos)">
+                  </a> <!-- login_logout_from_Continue_Watching(082278843303, dikakoko, dikakokos) -->
                   <span class="method-name">login_logout_from_Continue_Watching</span>
-                  <span class="parameters">(/login, 082278843303, dikakoko, dikakokos)</span>
+                  <span class="parameters">(082278843303, dikakoko, dikakokos)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="login_logout_from_account(/login, dikakoko04@gmail.com, dikakoko, dikakoko)">
-                  </a> <!-- login_logout_from_account(/login, dikakoko04@gmail.com, dikakoko, dikakoko) -->
+                  <a name="login_logout_from_account(dikakoko04@gmail.com, dikakoko, dikakoko)">
+                  </a> <!-- login_logout_from_account(dikakoko04@gmail.com, dikakoko, dikakoko) -->
                   <span class="method-name">login_logout_from_account</span>
-                  <span class="parameters">(/login, dikakoko04@gmail.com, dikakoko, dikakoko)</span>
+                  <span class="parameters">(dikakoko04@gmail.com, dikakoko, dikakoko)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="login_logout_from_account(/login, 082278843303, dikakoko, dikakokos)">
-                  </a> <!-- login_logout_from_account(/login, 082278843303, dikakoko, dikakokos) -->
+                  <a name="login_logout_from_account(082278843303, dikakoko, dikakokos)">
+                  </a> <!-- login_logout_from_account(082278843303, dikakoko, dikakokos) -->
                   <span class="method-name">login_logout_from_account</span>
-                  <span class="parameters">(/login, 082278843303, dikakoko, dikakokos)</span>
+                  <span class="parameters">(082278843303, dikakoko, dikakokos)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="login_logout_from_history(/login, dikakoko04@gmail.com, dikakoko, dikakoko)">
-                  </a> <!-- login_logout_from_history(/login, dikakoko04@gmail.com, dikakoko, dikakoko) -->
+                  <a name="login_logout_from_history(dikakoko04@gmail.com, dikakoko, dikakoko)">
+                  </a> <!-- login_logout_from_history(dikakoko04@gmail.com, dikakoko, dikakoko) -->
                   <span class="method-name">login_logout_from_history</span>
-                  <span class="parameters">(/login, dikakoko04@gmail.com, dikakoko, dikakoko)</span>
+                  <span class="parameters">(dikakoko04@gmail.com, dikakoko, dikakoko)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="login_logout_from_history(/login, 082278843303, dikakoko, dikakokos)">
-                  </a> <!-- login_logout_from_history(/login, 082278843303, dikakoko, dikakokos) -->
+                  <a name="login_logout_from_history(082278843303, dikakoko, dikakokos)">
+                  </a> <!-- login_logout_from_history(082278843303, dikakoko, dikakokos) -->
                   <span class="method-name">login_logout_from_history</span>
-                  <span class="parameters">(/login, 082278843303, dikakoko, dikakokos)</span>
+                  <span class="parameters">(082278843303, dikakoko, dikakokos)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="login_logout_from_mylist(/login, 082278843303, dikakoko, dikakokos)">
-                  </a> <!-- login_logout_from_mylist(/login, 082278843303, dikakoko, dikakokos) -->
+                  <a name="login_logout_from_mylist(dikakoko04@gmail.com, dikakoko, dikakoko)">
+                  </a> <!-- login_logout_from_mylist(dikakoko04@gmail.com, dikakoko, dikakoko) -->
                   <span class="method-name">login_logout_from_mylist</span>
-                  <span class="parameters">(/login, 082278843303, dikakoko, dikakokos)</span>
+                  <span class="parameters">(dikakoko04@gmail.com, dikakoko, dikakoko)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="login_logout_from_mylist(/login, dikakoko04@gmail.com, dikakoko, dikakoko)">
-                  </a> <!-- login_logout_from_mylist(/login, dikakoko04@gmail.com, dikakoko, dikakoko) -->
+                  <a name="login_logout_from_mylist(082278843303, dikakoko, dikakokos)">
+                  </a> <!-- login_logout_from_mylist(082278843303, dikakoko, dikakokos) -->
                   <span class="method-name">login_logout_from_mylist</span>
-                  <span class="parameters">(/login, dikakoko04@gmail.com, dikakoko, dikakoko)</span>
+                  <span class="parameters">(082278843303, dikakoko, dikakokos)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="login_succes(082278843303, dikakoko, dikakokos)">
+                  </a> <!-- login_succes(082278843303, dikakoko, dikakokos) -->
+                  <span class="method-name">login_succes</span>
+                  <span class="parameters">(082278843303, dikakoko, dikakokos)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="login_succes(dikakoko04@gmail.com, dikakoko, dikakoko)">
+                  </a> <!-- login_succes(dikakoko04@gmail.com, dikakoko, dikakoko) -->
+                  <span class="method-name">login_succes</span>
+                  <span class="parameters">(dikakoko04@gmail.com, dikakoko, dikakoko)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.Test_Register</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="register_alert_email(rtgsfad.com, password, password, Please Try Again Email Is Incorrect)">
+                  </a> <!-- register_alert_email(rtgsfad.com, password, password, Please Try Again Email Is Incorrect) -->
+                  <span class="method-name">register_alert_email</span>
+                  <span class="parameters">(rtgsfad.com, password, password, Please Try Again Email Is Incorrect)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="register_alert_email(dikakoko04@gmail.com, password, password, please try again, email has been taken)">
+                  </a> <!-- register_alert_email(dikakoko04@gmail.com, password, password, please try again, email has been taken) -->
+                  <span class="method-name">register_alert_email</span>
+                  <span class="parameters">(dikakoko04@gmail.com, password, password, please try again, email has been taken)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="register_alert_phone(82278843303, password, password, please try again, phone has been taken)">
+                  </a> <!-- register_alert_phone(82278843303, password, password, please try again, phone has been taken) -->
+                  <span class="method-name">register_alert_phone</span>
+                  <span class="parameters">(82278843303, password, password, please try again, phone has been taken)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="register_alert_phone(00909089897897, password, password, Please Try Again Phone Number Is Incorrect)">
+                  </a> <!-- register_alert_phone(00909089897897, password, password, Please Try Again Phone Number Is Incorrect) -->
+                  <span class="method-name">register_alert_phone</span>
+                  <span class="parameters">(00909089897897, password, password, Please Try Again Phone Number Is Incorrect)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="register_email_alert_password1(nteamqcdfard@gmail.com, kurang, kurang, Password must at least 8 characters)">
+                  </a> <!-- register_email_alert_password1(nteamqcdfard@gmail.com, kurang, kurang, Password must at least 8 characters) -->
+                  <span class="method-name">register_email_alert_password1</span>
+                  <span class="parameters">(nteamqcdfard@gmail.com, kurang, kurang, Password must at least 8 characters)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="register_email_alert_password2(nteamqcdfard@gmail.com, password, passwordBeda, Password must match)">
+                  </a> <!-- register_email_alert_password2(nteamqcdfard@gmail.com, password, passwordBeda, Password must match) -->
+                  <span class="method-name">register_email_alert_password2</span>
+                  <span class="parameters">(nteamqcdfard@gmail.com, password, passwordBeda, Password must match)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="register_page2_validate_birthday">
+                  </a> <!-- register_page2_validate_birthday -->
+                  <span class="method-name">register_page2_validate_birthday</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="register_page2_validate_fullname">
+                  </a> <!-- register_page2_validate_fullname -->
+                  <span class="method-name">register_page2_validate_fullname</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="register_page2_validate_gender_Male(Male)">
+                  </a> <!-- register_page2_validate_gender_Male(Male) -->
+                  <span class="method-name">register_page2_validate_gender_Male</span>
+                  <span class="parameters">(Male)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="register_page2_validate_gender_Male(Female)">
+                  </a> <!-- register_page2_validate_gender_Male(Female) -->
+                  <span class="method-name">register_page2_validate_gender_Male</span>
+                  <span class="parameters">(Female)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="register_phone_alert_password1(863436763543, kurang, kurang, Password must at least 8 characters)">
+                  </a> <!-- register_phone_alert_password1(863436763543, kurang, kurang, Password must at least 8 characters) -->
+                  <span class="method-name">register_phone_alert_password1</span>
+                  <span class="parameters">(863436763543, kurang, kurang, Password must at least 8 characters)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="register_phone_alert_password2(84534343436, password, passwordBeda, Password must match)">
+                  </a> <!-- register_phone_alert_password2(84534343436, password, passwordBeda, Password must match) -->
+                  <span class="method-name">register_phone_alert_password2</span>
+                  <span class="parameters">(84534343436, password, passwordBeda, Password must match)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.Test_Exclusive</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="exclusive_list_tab_menu(6, Behind The Scenes)">
+                  </a> <!-- exclusive_list_tab_menu(6, Behind The Scenes) -->
+                  <span class="method-name">exclusive_list_tab_menu</span>
+                  <span class="parameters">(6, Behind The Scenes)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="exclusive_list_tab_menu(3, Entertainment)">
+                  </a> <!-- exclusive_list_tab_menu(3, Entertainment) -->
+                  <span class="method-name">exclusive_list_tab_menu</span>
+                  <span class="parameters">(3, Entertainment)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="exclusive_list_tab_menu(1, Clip)">
+                  </a> <!-- exclusive_list_tab_menu(1, Clip) -->
+                  <span class="method-name">exclusive_list_tab_menu</span>
+                  <span class="parameters">(1, Clip)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="exclusive_list_tab_menu(5, Bloopers)">
+                  </a> <!-- exclusive_list_tab_menu(5, Bloopers) -->
+                  <span class="method-name">exclusive_list_tab_menu</span>
+                  <span class="parameters">(5, Bloopers)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="exclusive_list_tab_menu(2, Photo)">
+                  </a> <!-- exclusive_list_tab_menu(2, Photo) -->
+                  <span class="method-name">exclusive_list_tab_menu</span>
+                  <span class="parameters">(2, Photo)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="exclusive_list_tab_menu(0, All)">
+                  </a> <!-- exclusive_list_tab_menu(0, All) -->
+                  <span class="method-name">exclusive_list_tab_menu</span>
+                  <span class="parameters">(0, All)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="exclusive_list_tab_menu(4, News)">
+                  </a> <!-- exclusive_list_tab_menu(4, News) -->
+                  <span class="method-name">exclusive_list_tab_menu</span>
+                  <span class="parameters">(4, News)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="exclusive_list_tab_menu_klik(4, News)">
+                  </a> <!-- exclusive_list_tab_menu_klik(4, News) -->
+                  <span class="method-name">exclusive_list_tab_menu_klik</span>
+                  <span class="parameters">(4, News)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="exclusive_list_tab_menu_klik(2, Photo)">
+                  </a> <!-- exclusive_list_tab_menu_klik(2, Photo) -->
+                  <span class="method-name">exclusive_list_tab_menu_klik</span>
+                  <span class="parameters">(2, Photo)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="exclusive_list_tab_menu_klik(0, All)">
+                  </a> <!-- exclusive_list_tab_menu_klik(0, All) -->
+                  <span class="method-name">exclusive_list_tab_menu_klik</span>
+                  <span class="parameters">(0, All)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="exclusive_list_tab_menu_klik(3, Entertainment)">
+                  </a> <!-- exclusive_list_tab_menu_klik(3, Entertainment) -->
+                  <span class="method-name">exclusive_list_tab_menu_klik</span>
+                  <span class="parameters">(3, Entertainment)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="exclusive_list_tab_menu_klik(1, Clip)">
+                  </a> <!-- exclusive_list_tab_menu_klik(1, Clip) -->
+                  <span class="method-name">exclusive_list_tab_menu_klik</span>
+                  <span class="parameters">(1, Clip)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="exclusive_list_tab_menu_klik(5, Bloopers)">
+                  </a> <!-- exclusive_list_tab_menu_klik(5, Bloopers) -->
+                  <span class="method-name">exclusive_list_tab_menu_klik</span>
+                  <span class="parameters">(5, Bloopers)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="exclusive_list_tab_menu_klik(6, Behind The Scenes)">
+                  </a> <!-- exclusive_list_tab_menu_klik(6, Behind The Scenes) -->
+                  <span class="method-name">exclusive_list_tab_menu_klik</span>
+                  <span class="parameters">(6, Behind The Scenes)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="exclusive_validate_list_share(0, facebook)">
+                  </a> <!-- exclusive_validate_list_share(0, facebook) -->
+                  <span class="method-name">exclusive_validate_list_share</span>
+                  <span class="parameters">(0, facebook)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="exclusive_validate_list_share(4, whatsapp)">
+                  </a> <!-- exclusive_validate_list_share(4, whatsapp) -->
+                  <span class="method-name">exclusive_validate_list_share</span>
+                  <span class="parameters">(4, whatsapp)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="exclusive_validate_list_share(3, email)">
+                  </a> <!-- exclusive_validate_list_share(3, email) -->
+                  <span class="method-name">exclusive_validate_list_share</span>
+                  <span class="parameters">(3, email)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="exclusive_validate_list_share(1, twitter)">
+                  </a> <!-- exclusive_validate_list_share(1, twitter) -->
+                  <span class="method-name">exclusive_validate_list_share</span>
+                  <span class="parameters">(1, twitter)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="exclusive_validate_list_share(2, line)">
+                  </a> <!-- exclusive_validate_list_share(2, line) -->
+                  <span class="method-name">exclusive_validate_list_share</span>
+                  <span class="parameters">(2, line)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="exclusive_validate_thumbnail">
+                  </a> <!-- exclusive_validate_thumbnail -->
+                  <span class="method-name">exclusive_validate_thumbnail</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="integration_exclusive_list_tab_menu_klik(1, Clip)">
+                  </a> <!-- integration_exclusive_list_tab_menu_klik(1, Clip) -->
+                  <span class="method-name">integration_exclusive_list_tab_menu_klik</span>
+                  <span class="parameters">(1, Clip)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="integration_exclusive_list_tab_menu_klik(4, News)">
+                  </a> <!-- integration_exclusive_list_tab_menu_klik(4, News) -->
+                  <span class="method-name">integration_exclusive_list_tab_menu_klik</span>
+                  <span class="parameters">(4, News)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="integration_exclusive_list_tab_menu_klik(0, All)">
+                  </a> <!-- integration_exclusive_list_tab_menu_klik(0, All) -->
+                  <span class="method-name">integration_exclusive_list_tab_menu_klik</span>
+                  <span class="parameters">(0, All)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="integration_exclusive_list_tab_menu_klik(3, Entertainment)">
+                  </a> <!-- integration_exclusive_list_tab_menu_klik(3, Entertainment) -->
+                  <span class="method-name">integration_exclusive_list_tab_menu_klik</span>
+                  <span class="parameters">(3, Entertainment)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="integration_exclusive_list_tab_menu_klik(2, Photo)">
+                  </a> <!-- integration_exclusive_list_tab_menu_klik(2, Photo) -->
+                  <span class="method-name">integration_exclusive_list_tab_menu_klik</span>
+                  <span class="parameters">(2, Photo)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="integration_exclusive_list_tab_menu_klik(5, Bloopers)">
+                  </a> <!-- integration_exclusive_list_tab_menu_klik(5, Bloopers) -->
+                  <span class="method-name">integration_exclusive_list_tab_menu_klik</span>
+                  <span class="parameters">(5, Bloopers)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="integration_exclusive_list_tab_menu_klik(6, Behind The Scenes)">
+                  </a> <!-- integration_exclusive_list_tab_menu_klik(6, Behind The Scenes) -->
+                  <span class="method-name">integration_exclusive_list_tab_menu_klik</span>
+                  <span class="parameters">(6, Behind The Scenes)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="integration_exclusive_validate_thumbnail">
+                  </a> <!-- integration_exclusive_validate_thumbnail -->
+                  <span class="method-name">integration_exclusive_validate_thumbnail</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -312,6 +1094,14 @@
                   <a name="menu_account_not_login_button_login">
                   </a> <!-- menu_account_not_login_button_login -->
                   <span class="method-name">menu_account_not_login_button_login</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="menu_account_not_login_button_menu_direct(privacy-policy, Privacy Policy)">
+                  </a> <!-- menu_account_not_login_button_menu_direct(privacy-policy, Privacy Policy) -->
+                  <span class="method-name">menu_account_not_login_button_menu_direct</span>
+                  <span class="parameters">(privacy-policy, Privacy Policy)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -340,14 +1130,6 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="menu_account_not_login_button_menu_direct(privacy-policy, Privacy Policy)">
-                  </a> <!-- menu_account_not_login_button_menu_direct(privacy-policy, Privacy Policy) -->
-                  <span class="method-name">menu_account_not_login_button_menu_direct</span>
-                  <span class="parameters">(privacy-policy, Privacy Policy)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="menu_account_not_login_button_scan_qrcode">
                   </a> <!-- menu_account_not_login_button_scan_qrcode -->
                   <span class="method-name">menu_account_not_login_button_scan_qrcode</span>
@@ -363,18 +1145,18 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="menu_account_not_login_popup_login(history, Sign Up, Sign In)">
-                  </a> <!-- menu_account_not_login_popup_login(history, Sign Up, Sign In) -->
-                  <span class="method-name">menu_account_not_login_popup_login</span>
-                  <span class="parameters">(history, Sign Up, Sign In)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="menu_account_not_login_popup_login(continue-watching, Sign Up, Sign In)">
                   </a> <!-- menu_account_not_login_popup_login(continue-watching, Sign Up, Sign In) -->
                   <span class="method-name">menu_account_not_login_popup_login</span>
                   <span class="parameters">(continue-watching, Sign Up, Sign In)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="menu_account_not_login_popup_login(history, Sign Up, Sign In)">
+                  </a> <!-- menu_account_not_login_popup_login(history, Sign Up, Sign In) -->
+                  <span class="method-name">menu_account_not_login_popup_login</span>
+                  <span class="parameters">(history, Sign Up, Sign In)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -382,39 +1164,117 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">testcases.Test_Login</span>
+              <span class="class-name">testcases.Test_Radio</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="login_alert_popup(/login, 628229098776544, passwordslah, User has not been registered)">
-                  </a> <!-- login_alert_popup(/login, 628229098776544, passwordslah, User has not been registered) -->
-                  <span class="method-name">login_alert_popup</span>
-                  <span class="parameters">(/login, 628229098776544, passwordslah, User has not been registered)</span>
+                  <a name="radio_integration">
+                  </a> <!-- radio_integration -->
+                  <span class="method-name">radio_integration</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="login_alert_popup(/login, dixosgadpoyt@gmail.com, passwordslah, User has not been registered)">
-                  </a> <!-- login_alert_popup(/login, dixosgadpoyt@gmail.com, passwordslah, User has not been registered) -->
-                  <span class="method-name">login_alert_popup</span>
-                  <span class="parameters">(/login, dixosgadpoyt@gmail.com, passwordslah, User has not been registered)</span>
+                  <a name="radio_validate_url">
+                  </a> <!-- radio_validate_url -->
+                  <span class="method-name">radio_validate_url</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.Test_Mylist</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="integration_mylist_after_login_library(dikakoko04@gmail.com, dikakoko)">
+                  </a> <!-- integration_mylist_after_login_library(dikakoko04@gmail.com, dikakoko) -->
+                  <span class="method-name">integration_mylist_after_login_library</span>
+                  <span class="parameters">(dikakoko04@gmail.com, dikakoko)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.Test_Chat</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="chat_test_before_login(mnctv, dikakoko04@gmail.com, dikakoko, dikakokodikakoko, Selamat menonton semua!)">
+                  </a> <!-- chat_test_before_login(mnctv, dikakoko04@gmail.com, dikakoko, dikakokodikakoko, Selamat menonton semua!) -->
+                  <span class="method-name">chat_test_before_login</span>
+                  <span class="parameters">(mnctv, dikakoko04@gmail.com, dikakoko, dikakokodikakoko, Selamat menonton semua!)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="login_logout(/login, 082278843303, dikakoko, dikakokos)">
-                  </a> <!-- login_logout(/login, 082278843303, dikakoko, dikakokos) -->
-                  <span class="method-name">login_logout</span>
-                  <span class="parameters">(/login, 082278843303, dikakoko, dikakokos)</span>
+                  <a name="chat_test_before_login(gtv, dikakoko04@gmail.com, dikakoko, dikakokodikakoko, Selamat menonton semua!)">
+                  </a> <!-- chat_test_before_login(gtv, dikakoko04@gmail.com, dikakoko, dikakokodikakoko, Selamat menonton semua!) -->
+                  <span class="method-name">chat_test_before_login</span>
+                  <span class="parameters">(gtv, dikakoko04@gmail.com, dikakoko, dikakokodikakoko, Selamat menonton semua!)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="login_logout(/login, dikakoko04@gmail.com, dikakoko, dikakoko)">
-                  </a> <!-- login_logout(/login, dikakoko04@gmail.com, dikakoko, dikakoko) -->
-                  <span class="method-name">login_logout</span>
-                  <span class="parameters">(/login, dikakoko04@gmail.com, dikakoko, dikakoko)</span>
+                  <a name="chat_test_before_login(rcti, dikakoko04@gmail.com, dikakoko, dikakokodikakoko, Selamat menonton semua!)">
+                  </a> <!-- chat_test_before_login(rcti, dikakoko04@gmail.com, dikakoko, dikakokodikakoko, Selamat menonton semua!) -->
+                  <span class="method-name">chat_test_before_login</span>
+                  <span class="parameters">(rcti, dikakoko04@gmail.com, dikakoko, dikakokodikakoko, Selamat menonton semua!)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="chat_test_before_login(inews, dikakoko04@gmail.com, dikakoko, dikakokodikakoko, Selamat menonton semua!)">
+                  </a> <!-- chat_test_before_login(inews, dikakoko04@gmail.com, dikakoko, dikakokodikakoko, Selamat menonton semua!) -->
+                  <span class="method-name">chat_test_before_login</span>
+                  <span class="parameters">(inews, dikakoko04@gmail.com, dikakoko, dikakokodikakoko, Selamat menonton semua!)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.Test_Forget_Password</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="forget_password_alert(454546546565646, Please Try Again Phone Number Is Incorrect)">
+                  </a> <!-- forget_password_alert(454546546565646, Please Try Again Phone Number Is Incorrect) -->
+                  <span class="method-name">forget_password_alert</span>
+                  <span class="parameters">(454546546565646, Please Try Again Phone Number Is Incorrect)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="forget_password_alert(iustrtqc@gmail.com, User has not been registered)">
+                  </a> <!-- forget_password_alert(iustrtqc@gmail.com, User has not been registered) -->
+                  <span class="method-name">forget_password_alert</span>
+                  <span class="parameters">(iustrtqc@gmail.com, User has not been registered)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="forget_password_alert(082222992299, User has not been registered)">
+                  </a> <!-- forget_password_alert(082222992299, User has not been registered) -->
+                  <span class="method-name">forget_password_alert</span>
+                  <span class="parameters">(082222992299, User has not been registered)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="forget_password_alert(email.com, Please Try Again Email Is Incorrect)">
+                  </a> <!-- forget_password_alert(email.com, Please Try Again Email Is Incorrect) -->
+                  <span class="method-name">forget_password_alert</span>
+                  <span class="parameters">(email.com, Please Try Again Email Is Incorrect)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -422,7 +1282,7 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">D:\test-web\pwa\pwa\testng.xml</span>
+            <span class="header-content">D:\test-web\pwa\pwa_ui_test\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -431,9 +1291,15 @@
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;Suite&quot;&gt;
   &lt;test name=&quot;Test&quot;&gt;
     &lt;classes&gt;
+      &lt;class name=&quot;testcases.Test_Mylist&quot;/&gt;
       &lt;class name=&quot;testcases.Test_Login&quot;/&gt;
+      &lt;class name=&quot;testcases.Test_Exclusive&quot;/&gt;
+      &lt;class name=&quot;testcases.Test_Radio&quot;/&gt;
+      &lt;class name=&quot;testcases.Test_Register&quot;/&gt;
       &lt;class name=&quot;testcases.Test_List_Menu_Account&quot;/&gt;
-      &lt;class name=&quot;testcases.Test_Integration_Login&quot;/&gt;
+      &lt;class name=&quot;testcases.Test_Continue_Watching&quot;/&gt;
+      &lt;class name=&quot;testcases.Test_Chat&quot;/&gt;
+      &lt;class name=&quot;testcases.Test_Forget_Password&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -447,7 +1313,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (3 classes)</span>
+                <span class="test-name">Test (9 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -473,100 +1339,336 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(22);
+data.addRows(81);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'login_logout_from_mylist')
-data.setCell(0, 2, 'testcases.Test_Integration_Login')
-data.setCell(0, 3, 111113);
+data.setCell(0, 1, 'integration_mylist_after_login_library')
+data.setCell(0, 2, 'testcases.Test_Mylist')
+data.setCell(0, 3, 111990);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'login_logout_from_mylist')
-data.setCell(1, 2, 'testcases.Test_Integration_Login')
-data.setCell(1, 3, 87754);
+data.setCell(1, 1, 'mylist_after_login_library')
+data.setCell(1, 2, 'testcases.Test_Mylist')
+data.setCell(1, 3, 89148);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'login_logout_from_Continue_Watching')
-data.setCell(2, 2, 'testcases.Test_Integration_Login')
-data.setCell(2, 3, 87292);
+data.setCell(2, 1, 'login_logout_from_mylist')
+data.setCell(2, 2, 'testcases.Test_Login')
+data.setCell(2, 3, 88600);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'login_logout_from_history')
-data.setCell(3, 2, 'testcases.Test_Integration_Login')
-data.setCell(3, 3, 86498);
+data.setCell(3, 1, 'login_logout_from_Continue_Watching')
+data.setCell(3, 2, 'testcases.Test_Login')
+data.setCell(3, 3, 88288);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'login_logout_from_Continue_Watching')
-data.setCell(4, 2, 'testcases.Test_Integration_Login')
-data.setCell(4, 3, 86454);
+data.setCell(4, 2, 'testcases.Test_Login')
+data.setCell(4, 3, 88216);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'login_logout_from_history')
-data.setCell(5, 2, 'testcases.Test_Integration_Login')
-data.setCell(5, 3, 86338);
+data.setCell(5, 1, 'login_logout_from_mylist')
+data.setCell(5, 2, 'testcases.Test_Login')
+data.setCell(5, 3, 88204);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'login_logout_from_account')
-data.setCell(6, 2, 'testcases.Test_Integration_Login')
-data.setCell(6, 3, 82247);
+data.setCell(6, 1, 'login_logout_from_history')
+data.setCell(6, 2, 'testcases.Test_Login')
+data.setCell(6, 3, 88108);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'login_logout_from_account')
-data.setCell(7, 2, 'testcases.Test_Integration_Login')
-data.setCell(7, 3, 81132);
+data.setCell(7, 1, 'login_logout_from_history')
+data.setCell(7, 2, 'testcases.Test_Login')
+data.setCell(7, 3, 87742);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'login_logout')
+data.setCell(8, 1, 'login_logout_from_account')
 data.setCell(8, 2, 'testcases.Test_Login')
-data.setCell(8, 3, 70175);
+data.setCell(8, 3, 86134);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'login_logout')
+data.setCell(9, 1, 'login_logout_from_account')
 data.setCell(9, 2, 'testcases.Test_Login')
-data.setCell(9, 3, 69594);
+data.setCell(9, 3, 82514);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'menu_account_not_login_button_login')
-data.setCell(10, 2, 'testcases.Test_List_Menu_Account')
-data.setCell(10, 3, 29616);
+data.setCell(10, 1, 'login_logout')
+data.setCell(10, 2, 'testcases.Test_Login')
+data.setCell(10, 3, 71627);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'login_alert_popup')
+data.setCell(11, 1, 'login_logout')
 data.setCell(11, 2, 'testcases.Test_Login')
-data.setCell(11, 3, 26132);
+data.setCell(11, 3, 71444);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'menu_account_not_login_popup_login')
-data.setCell(12, 2, 'testcases.Test_List_Menu_Account')
-data.setCell(12, 3, 25598);
+data.setCell(12, 1, 'chat_test_before_login')
+data.setCell(12, 2, 'testcases.Test_Chat')
+data.setCell(12, 3, 65537);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'login_alert_popup')
-data.setCell(13, 2, 'testcases.Test_Login')
-data.setCell(13, 3, 24636);
+data.setCell(13, 1, 'chat_test_before_login')
+data.setCell(13, 2, 'testcases.Test_Chat')
+data.setCell(13, 3, 64567);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'menu_account_not_login_popup_login')
-data.setCell(14, 2, 'testcases.Test_List_Menu_Account')
-data.setCell(14, 3, 24446);
+data.setCell(14, 1, 'chat_test_before_login')
+data.setCell(14, 2, 'testcases.Test_Chat')
+data.setCell(14, 3, 64408);
 data.setCell(15, 0, 15)
-data.setCell(15, 1, 'menu_account_not_login_popup_login')
-data.setCell(15, 2, 'testcases.Test_List_Menu_Account')
-data.setCell(15, 3, 24147);
+data.setCell(15, 1, 'chat_test_before_login')
+data.setCell(15, 2, 'testcases.Test_Chat')
+data.setCell(15, 3, 63982);
 data.setCell(16, 0, 16)
-data.setCell(16, 1, 'menu_account_not_login_button_download')
-data.setCell(16, 2, 'testcases.Test_List_Menu_Account')
-data.setCell(16, 3, 24007);
+data.setCell(16, 1, 'register_page2_validate_birthday')
+data.setCell(16, 2, 'testcases.Test_Register')
+data.setCell(16, 3, 46984);
 data.setCell(17, 0, 17)
-data.setCell(17, 1, 'menu_account_not_login_button_menu_direct')
-data.setCell(17, 2, 'testcases.Test_List_Menu_Account')
-data.setCell(17, 3, 20687);
+data.setCell(17, 1, 'register_page2_validate_gender_Male')
+data.setCell(17, 2, 'testcases.Test_Register')
+data.setCell(17, 3, 41751);
 data.setCell(18, 0, 18)
-data.setCell(18, 1, 'menu_account_not_login_button_menu_direct')
-data.setCell(18, 2, 'testcases.Test_List_Menu_Account')
-data.setCell(18, 3, 20485);
+data.setCell(18, 1, 'register_page2_validate_gender_Male')
+data.setCell(18, 2, 'testcases.Test_Register')
+data.setCell(18, 3, 41292);
 data.setCell(19, 0, 19)
-data.setCell(19, 1, 'menu_account_not_login_button_menu_direct')
-data.setCell(19, 2, 'testcases.Test_List_Menu_Account')
-data.setCell(19, 3, 20479);
+data.setCell(19, 1, 'register_phone_alert_password2')
+data.setCell(19, 2, 'testcases.Test_Register')
+data.setCell(19, 3, 39975);
 data.setCell(20, 0, 20)
-data.setCell(20, 1, 'menu_account_not_login_button_menu_direct')
-data.setCell(20, 2, 'testcases.Test_List_Menu_Account')
-data.setCell(20, 3, 20326);
+data.setCell(20, 1, 'register_alert_phone')
+data.setCell(20, 2, 'testcases.Test_Register')
+data.setCell(20, 3, 39270);
 data.setCell(21, 0, 21)
-data.setCell(21, 1, 'menu_account_not_login_button_scan_qrcode')
-data.setCell(21, 2, 'testcases.Test_List_Menu_Account')
-data.setCell(21, 3, 8115);
+data.setCell(21, 1, 'register_alert_phone')
+data.setCell(21, 2, 'testcases.Test_Register')
+data.setCell(21, 3, 39263);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'login_succes')
+data.setCell(22, 2, 'testcases.Test_Login')
+data.setCell(22, 3, 39215);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'register_phone_alert_password1')
+data.setCell(23, 2, 'testcases.Test_Register')
+data.setCell(23, 3, 39088);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'login_succes')
+data.setCell(24, 2, 'testcases.Test_Login')
+data.setCell(24, 3, 38583);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'register_page2_validate_fullname')
+data.setCell(25, 2, 'testcases.Test_Register')
+data.setCell(25, 3, 36461);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'register_email_alert_password1')
+data.setCell(26, 2, 'testcases.Test_Register')
+data.setCell(26, 3, 34796);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'register_alert_email')
+data.setCell(27, 2, 'testcases.Test_Register')
+data.setCell(27, 3, 34539);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'register_email_alert_password2')
+data.setCell(28, 2, 'testcases.Test_Register')
+data.setCell(28, 3, 34362);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'register_alert_email')
+data.setCell(29, 2, 'testcases.Test_Register')
+data.setCell(29, 3, 33809);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'login_alert_username')
+data.setCell(30, 2, 'testcases.Test_Login')
+data.setCell(30, 3, 29803);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'login_alert_popup')
+data.setCell(31, 2, 'testcases.Test_Login')
+data.setCell(31, 3, 29172);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'login_alert_password')
+data.setCell(32, 2, 'testcases.Test_Login')
+data.setCell(32, 3, 29019);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'login_alert_popup')
+data.setCell(33, 2, 'testcases.Test_Login')
+data.setCell(33, 3, 28771);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'login_alert_password')
+data.setCell(34, 2, 'testcases.Test_Login')
+data.setCell(34, 3, 28696);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'login_alert_username')
+data.setCell(35, 2, 'testcases.Test_Login')
+data.setCell(35, 3, 28510);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'menu_account_not_login_button_login')
+data.setCell(36, 2, 'testcases.Test_List_Menu_Account')
+data.setCell(36, 3, 27758);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'menu_account_not_login_popup_login')
+data.setCell(37, 2, 'testcases.Test_List_Menu_Account')
+data.setCell(37, 3, 23880);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'menu_account_not_login_button_download')
+data.setCell(38, 2, 'testcases.Test_List_Menu_Account')
+data.setCell(38, 3, 23072);
+data.setCell(39, 0, 39)
+data.setCell(39, 1, 'menu_account_not_login_popup_login')
+data.setCell(39, 2, 'testcases.Test_List_Menu_Account')
+data.setCell(39, 3, 23000);
+data.setCell(40, 0, 40)
+data.setCell(40, 1, 'menu_account_not_login_popup_login')
+data.setCell(40, 2, 'testcases.Test_List_Menu_Account')
+data.setCell(40, 3, 22746);
+data.setCell(41, 0, 41)
+data.setCell(41, 1, 'menu_account_not_login_button_menu_direct')
+data.setCell(41, 2, 'testcases.Test_List_Menu_Account')
+data.setCell(41, 3, 19487);
+data.setCell(42, 0, 42)
+data.setCell(42, 1, 'forget_password_alert')
+data.setCell(42, 2, 'testcases.Test_Forget_Password')
+data.setCell(42, 3, 19439);
+data.setCell(43, 0, 43)
+data.setCell(43, 1, 'forget_password_alert')
+data.setCell(43, 2, 'testcases.Test_Forget_Password')
+data.setCell(43, 3, 19076);
+data.setCell(44, 0, 44)
+data.setCell(44, 1, 'menu_account_not_login_button_menu_direct')
+data.setCell(44, 2, 'testcases.Test_List_Menu_Account')
+data.setCell(44, 3, 18951);
+data.setCell(45, 0, 45)
+data.setCell(45, 1, 'menu_account_not_login_button_menu_direct')
+data.setCell(45, 2, 'testcases.Test_List_Menu_Account')
+data.setCell(45, 3, 18595);
+data.setCell(46, 0, 46)
+data.setCell(46, 1, 'forget_password_alert')
+data.setCell(46, 2, 'testcases.Test_Forget_Password')
+data.setCell(46, 3, 18120);
+data.setCell(47, 0, 47)
+data.setCell(47, 1, 'menu_account_not_login_button_menu_direct')
+data.setCell(47, 2, 'testcases.Test_List_Menu_Account')
+data.setCell(47, 3, 18074);
+data.setCell(48, 0, 48)
+data.setCell(48, 1, 'forget_password_alert')
+data.setCell(48, 2, 'testcases.Test_Forget_Password')
+data.setCell(48, 3, 18061);
+data.setCell(49, 0, 49)
+data.setCell(49, 1, 'integration_exclusive_validate_thumbnail')
+data.setCell(49, 2, 'testcases.Test_Exclusive')
+data.setCell(49, 3, 13796);
+data.setCell(50, 0, 50)
+data.setCell(50, 1, 'radio_integration')
+data.setCell(50, 2, 'testcases.Test_Radio')
+data.setCell(50, 3, 12318);
+data.setCell(51, 0, 51)
+data.setCell(51, 1, 'integration_exclusive_list_tab_menu_klik')
+data.setCell(51, 2, 'testcases.Test_Exclusive')
+data.setCell(51, 3, 11568);
+data.setCell(52, 0, 52)
+data.setCell(52, 1, 'integration_exclusive_list_tab_menu_klik')
+data.setCell(52, 2, 'testcases.Test_Exclusive')
+data.setCell(52, 3, 11370);
+data.setCell(53, 0, 53)
+data.setCell(53, 1, 'integration_exclusive_list_tab_menu_klik')
+data.setCell(53, 2, 'testcases.Test_Exclusive')
+data.setCell(53, 3, 11120);
+data.setCell(54, 0, 54)
+data.setCell(54, 1, 'integration_exclusive_list_tab_menu_klik')
+data.setCell(54, 2, 'testcases.Test_Exclusive')
+data.setCell(54, 3, 11082);
+data.setCell(55, 0, 55)
+data.setCell(55, 1, 'integration_exclusive_list_tab_menu_klik')
+data.setCell(55, 2, 'testcases.Test_Exclusive')
+data.setCell(55, 3, 11033);
+data.setCell(56, 0, 56)
+data.setCell(56, 1, 'integration_exclusive_list_tab_menu_klik')
+data.setCell(56, 2, 'testcases.Test_Exclusive')
+data.setCell(56, 3, 10823);
+data.setCell(57, 0, 57)
+data.setCell(57, 1, 'integration_exclusive_list_tab_menu_klik')
+data.setCell(57, 2, 'testcases.Test_Exclusive')
+data.setCell(57, 3, 10565);
+data.setCell(58, 0, 58)
+data.setCell(58, 1, 'exclusive_validate_thumbnail')
+data.setCell(58, 2, 'testcases.Test_Exclusive')
+data.setCell(58, 3, 8576);
+data.setCell(59, 0, 59)
+data.setCell(59, 1, 'exclusive_validate_list_share')
+data.setCell(59, 2, 'testcases.Test_Exclusive')
+data.setCell(59, 3, 7978);
+data.setCell(60, 0, 60)
+data.setCell(60, 1, 'exclusive_validate_list_share')
+data.setCell(60, 2, 'testcases.Test_Exclusive')
+data.setCell(60, 3, 7749);
+data.setCell(61, 0, 61)
+data.setCell(61, 1, 'exclusive_validate_list_share')
+data.setCell(61, 2, 'testcases.Test_Exclusive')
+data.setCell(61, 3, 7590);
+data.setCell(62, 0, 62)
+data.setCell(62, 1, 'exclusive_validate_list_share')
+data.setCell(62, 2, 'testcases.Test_Exclusive')
+data.setCell(62, 3, 7433);
+data.setCell(63, 0, 63)
+data.setCell(63, 1, 'exclusive_list_tab_menu_klik')
+data.setCell(63, 2, 'testcases.Test_Exclusive')
+data.setCell(63, 3, 7401);
+data.setCell(64, 0, 64)
+data.setCell(64, 1, 'exclusive_validate_list_share')
+data.setCell(64, 2, 'testcases.Test_Exclusive')
+data.setCell(64, 3, 7267);
+data.setCell(65, 0, 65)
+data.setCell(65, 1, 'menu_account_not_login_button_scan_qrcode')
+data.setCell(65, 2, 'testcases.Test_List_Menu_Account')
+data.setCell(65, 3, 6948);
+data.setCell(66, 0, 66)
+data.setCell(66, 1, 'radio_validate_url')
+data.setCell(66, 2, 'testcases.Test_Radio')
+data.setCell(66, 3, 5865);
+data.setCell(67, 0, 67)
+data.setCell(67, 1, 'exclusive_list_tab_menu_klik')
+data.setCell(67, 2, 'testcases.Test_Exclusive')
+data.setCell(67, 3, 5293);
+data.setCell(68, 0, 68)
+data.setCell(68, 1, 'exclusive_list_tab_menu_klik')
+data.setCell(68, 2, 'testcases.Test_Exclusive')
+data.setCell(68, 3, 5231);
+data.setCell(69, 0, 69)
+data.setCell(69, 1, 'exclusive_list_tab_menu_klik')
+data.setCell(69, 2, 'testcases.Test_Exclusive')
+data.setCell(69, 3, 5140);
+data.setCell(70, 0, 70)
+data.setCell(70, 1, 'exclusive_list_tab_menu_klik')
+data.setCell(70, 2, 'testcases.Test_Exclusive')
+data.setCell(70, 3, 5078);
+data.setCell(71, 0, 71)
+data.setCell(71, 1, 'exclusive_list_tab_menu_klik')
+data.setCell(71, 2, 'testcases.Test_Exclusive')
+data.setCell(71, 3, 4701);
+data.setCell(72, 0, 72)
+data.setCell(72, 1, 'exclusive_list_tab_menu_klik')
+data.setCell(72, 2, 'testcases.Test_Exclusive')
+data.setCell(72, 3, 4655);
+data.setCell(73, 0, 73)
+data.setCell(73, 1, 'exclusive_list_tab_menu')
+data.setCell(73, 2, 'testcases.Test_Exclusive')
+data.setCell(73, 3, 2311);
+data.setCell(74, 0, 74)
+data.setCell(74, 1, 'exclusive_list_tab_menu')
+data.setCell(74, 2, 'testcases.Test_Exclusive')
+data.setCell(74, 3, 2149);
+data.setCell(75, 0, 75)
+data.setCell(75, 1, 'exclusive_list_tab_menu')
+data.setCell(75, 2, 'testcases.Test_Exclusive')
+data.setCell(75, 3, 1860);
+data.setCell(76, 0, 76)
+data.setCell(76, 1, 'exclusive_list_tab_menu')
+data.setCell(76, 2, 'testcases.Test_Exclusive')
+data.setCell(76, 3, 1852);
+data.setCell(77, 0, 77)
+data.setCell(77, 1, 'exclusive_list_tab_menu')
+data.setCell(77, 2, 'testcases.Test_Exclusive')
+data.setCell(77, 3, 1725);
+data.setCell(78, 0, 78)
+data.setCell(78, 1, 'exclusive_list_tab_menu')
+data.setCell(78, 2, 'testcases.Test_Exclusive')
+data.setCell(78, 3, 1702);
+data.setCell(79, 0, 79)
+data.setCell(79, 1, 'exclusive_list_tab_menu')
+data.setCell(79, 2, 'testcases.Test_Exclusive')
+data.setCell(79, 3, 1619);
+data.setCell(80, 0, 80)
+data.setCell(80, 1, 'continue_watching_after_login')
+data.setCell(80, 2, 'testcases.Test_Continue_Watching')
+data.setCell(80, 3, 0);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 18 minutes</span>
+              <span class="suite-total-time">Total running time: 41 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -592,276 +1694,989 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testcases.Test_Login</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testcases.Test_Mylist</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">set</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">login_alert_popup(/login, dixosgadpoyt@gmail.com, passwordslah, User has not been registered)</span>
-                <span class="method-start">2624 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">mylist_after_login_library(dikakoko04@gmail.com, dikakoko)</span>
+                <span class="method-start">3641 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">done</span>
-                <span class="method-start">28757 ms</span>
+                <span class="method-name">done([TestResult name=mylist_after_login_library status=FAILURE method=Test_Mylist.mylist_after_login_lib...)</span>
+                <span class="method-start">92820 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">set</span>
-                <span class="method-start">28925 ms</span>
+                <span class="method-start">93394 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">login_alert_popup(/login, 628229098776544, passwordslah, User has not been registered)</span>
-                <span class="method-start">30436 ms</span>
+                <span class="method-name">integration_mylist_after_login_library(dikakoko04@gmail.com, dikakoko)</span>
+                <span class="method-start">95480 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">done</span>
-                <span class="method-start">55072 ms</span>
+                <span class="method-name">done([TestResult name=integration_mylist_after_login_library status=SUCCESS method=Test_Mylist.integratio...)</span>
+                <span class="method-start">207474 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.Test_Login</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">set</span>
+                <span class="method-start">208626 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">login_alert_password(dikakoko04@gmail.com, passwordslah, Please Try Again Password Is Incorrect)</span>
+                <span class="method-start">209915 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">done([TestResult name=login_alert_password status=SUCCESS method=Test_Login.login_alert_password(java.lan...)</span>
+                <span class="method-start">238935 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">set</span>
-                <span class="method-start">55269 ms</span>
+                <span class="method-start">239336 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">login_logout(/login, dikakoko04@gmail.com, dikakoko, dikakoko)</span>
-                <span class="method-start">56776 ms</span>
+                <span class="method-name">login_alert_password(082278843303, passwordslah, Please Try Again Password Is Incorrect)</span>
+                <span class="method-start">240524 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">done</span>
-                <span class="method-start">126951 ms</span>
+                <span class="method-name">done([TestResult name=login_alert_password status=SUCCESS method=Test_Login.login_alert_password(java.lan...)</span>
+                <span class="method-start">269222 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">set</span>
-                <span class="method-start">127032 ms</span>
+                <span class="method-start">269712 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">login_logout(/login, 082278843303, dikakoko, dikakokos)</span>
-                <span class="method-start">128571 ms</span>
+                <span class="method-name">login_alert_username(dikakoko.com, passwordslah, Please Try Again Email Is Incorrect)</span>
+                <span class="method-start">270967 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">done</span>
-                <span class="method-start">198165 ms</span>
+                <span class="method-name">done([TestResult name=login_alert_username status=SUCCESS method=Test_Login.login_alert_username(java.lan...)</span>
+                <span class="method-start">299477 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">set</span>
+                <span class="method-start">299876 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">login_alert_username(8767868768768, passwordslah, Please Try Again Phone Number Is Incorrect)</span>
+                <span class="method-start">301134 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">done([TestResult name=login_alert_username status=SUCCESS method=Test_Login.login_alert_username(java.lan...)</span>
+                <span class="method-start">330938 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">set</span>
+                <span class="method-start">331463 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">login_alert_popup(dixosgadpoyt@gmail.com, passwordslah, User has not been registered)</span>
+                <span class="method-start">332742 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">done([TestResult name=login_alert_popup status=SUCCESS method=Test_Login.login_alert_popup(java.lang.Stri...)</span>
+                <span class="method-start">361514 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">set</span>
+                <span class="method-start">361905 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">login_alert_popup(628229098776544, passwordslah, User has not been registered)</span>
+                <span class="method-start">363537 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">done([TestResult name=login_alert_popup status=SUCCESS method=Test_Login.login_alert_popup(java.lang.Stri...)</span>
+                <span class="method-start">392711 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">set</span>
+                <span class="method-start">393138 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">login_logout_from_Continue_Watching(dikakoko04@gmail.com, dikakoko, dikakoko)</span>
+                <span class="method-start">394432 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">done([TestResult name=login_logout_from_Continue_Watching status=SUCCESS method=Test_Login.login_logout_f...)</span>
+                <span class="method-start">482722 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">set</span>
+                <span class="method-start">483124 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">login_logout_from_Continue_Watching(082278843303, dikakoko, dikakokos)</span>
+                <span class="method-start">484389 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">done([TestResult name=login_logout_from_Continue_Watching status=SUCCESS method=Test_Login.login_logout_f...)</span>
+                <span class="method-start">572607 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">set</span>
+                <span class="method-start">573074 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">login_logout_from_account(dikakoko04@gmail.com, dikakoko, dikakoko)</span>
+                <span class="method-start">574283 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">done([TestResult name=login_logout_from_account status=SUCCESS method=Test_Login.login_logout_from_accoun...)</span>
+                <span class="method-start">656799 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">set</span>
+                <span class="method-start">657166 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">login_logout_from_account(082278843303, dikakoko, dikakokos)</span>
+                <span class="method-start">658574 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">done([TestResult name=login_logout_from_account status=SUCCESS method=Test_Login.login_logout_from_accoun...)</span>
+                <span class="method-start">744710 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">set</span>
+                <span class="method-start">745141 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">login_logout_from_history(dikakoko04@gmail.com, dikakoko, dikakoko)</span>
+                <span class="method-start">746380 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">done([TestResult name=login_logout_from_history status=SUCCESS method=Test_Login.login_logout_from_histor...)</span>
+                <span class="method-start">834489 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">set</span>
+                <span class="method-start">834849 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">login_logout_from_history(082278843303, dikakoko, dikakokos)</span>
+                <span class="method-start">836801 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">done([TestResult name=login_logout_from_history status=SUCCESS method=Test_Login.login_logout_from_histor...)</span>
+                <span class="method-start">924544 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">set</span>
+                <span class="method-start">924987 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">login_logout_from_mylist(dikakoko04@gmail.com, dikakoko, dikakoko)</span>
+                <span class="method-start">926281 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">done([TestResult name=login_logout_from_mylist status=SUCCESS method=Test_Login.login_logout_from_mylist(...)</span>
+                <span class="method-start">1014883 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">set</span>
+                <span class="method-start">1015264 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">login_logout_from_mylist(082278843303, dikakoko, dikakokos)</span>
+                <span class="method-start">1016429 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">done([TestResult name=login_logout_from_mylist status=SUCCESS method=Test_Login.login_logout_from_mylist(...)</span>
+                <span class="method-start">1104635 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">set</span>
+                <span class="method-start">1105152 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">login_succes(dikakoko04@gmail.com, dikakoko, dikakoko)</span>
+                <span class="method-start">1106355 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">done([TestResult name=login_succes status=SUCCESS method=Test_Login.login_succes(java.lang.String, java.l...)</span>
+                <span class="method-start">1145571 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">set</span>
+                <span class="method-start">1146247 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">login_succes(082278843303, dikakoko, dikakokos)</span>
+                <span class="method-start">1147567 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">done([TestResult name=login_succes status=SUCCESS method=Test_Login.login_succes(java.lang.String, java.l...)</span>
+                <span class="method-start">1186152 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">set</span>
+                <span class="method-start">1186733 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">login_logout(dikakoko04@gmail.com, dikakoko, dikakoko)</span>
+                <span class="method-start">1187879 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">done([TestResult name=login_logout status=SUCCESS method=Test_Login.login_logout(java.lang.String, java.l...)</span>
+                <span class="method-start">1259508 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">set</span>
+                <span class="method-start">1259868 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">login_logout(082278843303, dikakoko, dikakokos)</span>
+                <span class="method-start">1261604 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">done([TestResult name=login_logout status=SUCCESS method=Test_Login.login_logout(java.lang.String, java.l...)</span>
+                <span class="method-start">1333049 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.Test_Exclusive</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">set</span>
+                <span class="method-start">1333518 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">exclusive_validate_thumbnail</span>
+                <span class="method-start">1334791 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">done([TestResult name=exclusive_validate_thumbnail status=SUCCESS method=Test_Exclusive.exclusive_validat...)</span>
+                <span class="method-start">1343368 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">set</span>
+                <span class="method-start">1343907 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">integration_exclusive_validate_thumbnail</span>
+                <span class="method-start">1345174 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">done([TestResult name=integration_exclusive_validate_thumbnail status=SUCCESS method=Test_Exclusive.integ...)</span>
+                <span class="method-start">1358971 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">set</span>
+                <span class="method-start">1359532 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">exclusive_validate_list_share(0, facebook)</span>
+                <span class="method-start">1361062 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">done([TestResult name=exclusive_validate_list_share status=SUCCESS method=Test_Exclusive.exclusive_valida...)</span>
+                <span class="method-start">1368653 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">set</span>
+                <span class="method-start">1369178 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">exclusive_validate_list_share(1, twitter)</span>
+                <span class="method-start">1370533 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">done([TestResult name=exclusive_validate_list_share status=SUCCESS method=Test_Exclusive.exclusive_valida...)</span>
+                <span class="method-start">1378283 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">set</span>
+                <span class="method-start">1378884 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">exclusive_validate_list_share(2, line)</span>
+                <span class="method-start">1380095 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">done([TestResult name=exclusive_validate_list_share status=SUCCESS method=Test_Exclusive.exclusive_valida...)</span>
+                <span class="method-start">1388075 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">set</span>
+                <span class="method-start">1388611 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">exclusive_validate_list_share(3, email)</span>
+                <span class="method-start">1389830 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">done([TestResult name=exclusive_validate_list_share status=SUCCESS method=Test_Exclusive.exclusive_valida...)</span>
+                <span class="method-start">1397264 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">set</span>
+                <span class="method-start">1397814 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">exclusive_validate_list_share(4, whatsapp)</span>
+                <span class="method-start">1399031 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">done([TestResult name=exclusive_validate_list_share status=SUCCESS method=Test_Exclusive.exclusive_valida...)</span>
+                <span class="method-start">1406299 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">set</span>
+                <span class="method-start">1406891 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">exclusive_list_tab_menu(0, All)</span>
+                <span class="method-start">1408197 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">done([TestResult name=exclusive_list_tab_menu status=SUCCESS method=Test_Exclusive.exclusive_list_tab_men...)</span>
+                <span class="method-start">1410058 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">set</span>
+                <span class="method-start">1410539 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">exclusive_list_tab_menu(1, Clip)</span>
+                <span class="method-start">1411930 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">done([TestResult name=exclusive_list_tab_menu status=SUCCESS method=Test_Exclusive.exclusive_list_tab_men...)</span>
+                <span class="method-start">1413657 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">set</span>
+                <span class="method-start">1414245 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">exclusive_list_tab_menu(2, Photo)</span>
+                <span class="method-start">1415609 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">done([TestResult name=exclusive_list_tab_menu status=SUCCESS method=Test_Exclusive.exclusive_list_tab_men...)</span>
+                <span class="method-start">1417759 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">set</span>
+                <span class="method-start">1418879 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">exclusive_list_tab_menu(3, Entertainment)</span>
+                <span class="method-start">1419953 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">done([TestResult name=exclusive_list_tab_menu status=SUCCESS method=Test_Exclusive.exclusive_list_tab_men...)</span>
+                <span class="method-start">1422265 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">set</span>
+                <span class="method-start">1423043 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">exclusive_list_tab_menu(4, News)</span>
+                <span class="method-start">1424811 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">done([TestResult name=exclusive_list_tab_menu status=SUCCESS method=Test_Exclusive.exclusive_list_tab_men...)</span>
+                <span class="method-start">1426514 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">set</span>
+                <span class="method-start">1427570 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">exclusive_list_tab_menu(5, Bloopers)</span>
+                <span class="method-start">1428730 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">done([TestResult name=exclusive_list_tab_menu status=SUCCESS method=Test_Exclusive.exclusive_list_tab_men...)</span>
+                <span class="method-start">1430350 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">set</span>
+                <span class="method-start">1431102 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">exclusive_list_tab_menu(6, Behind The Scenes)</span>
+                <span class="method-start">1432599 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">done([TestResult name=exclusive_list_tab_menu status=SUCCESS method=Test_Exclusive.exclusive_list_tab_men...)</span>
+                <span class="method-start">1434452 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">set</span>
+                <span class="method-start">1435140 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">exclusive_list_tab_menu_klik(0, All)</span>
+                <span class="method-start">1436498 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">done([TestResult name=exclusive_list_tab_menu_klik status=SUCCESS method=Test_Exclusive.exclusive_list_ta...)</span>
+                <span class="method-start">1441200 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">set</span>
+                <span class="method-start">1442280 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">exclusive_list_tab_menu_klik(1, Clip)</span>
+                <span class="method-start">1443707 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">done([TestResult name=exclusive_list_tab_menu_klik status=SUCCESS method=Test_Exclusive.exclusive_list_ta...)</span>
+                <span class="method-start">1451109 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">set</span>
+                <span class="method-start">1452009 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">exclusive_list_tab_menu_klik(2, Photo)</span>
+                <span class="method-start">1453321 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">done([TestResult name=exclusive_list_tab_menu_klik status=SUCCESS method=Test_Exclusive.exclusive_list_ta...)</span>
+                <span class="method-start">1458462 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">set</span>
+                <span class="method-start">1458898 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">exclusive_list_tab_menu_klik(3, Entertainment)</span>
+                <span class="method-start">1460031 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">done([TestResult name=exclusive_list_tab_menu_klik status=SUCCESS method=Test_Exclusive.exclusive_list_ta...)</span>
+                <span class="method-start">1465110 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">set</span>
+                <span class="method-start">1465533 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">exclusive_list_tab_menu_klik(4, News)</span>
+                <span class="method-start">1466845 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">done([TestResult name=exclusive_list_tab_menu_klik status=SUCCESS method=Test_Exclusive.exclusive_list_ta...)</span>
+                <span class="method-start">1472077 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">set</span>
+                <span class="method-start">1472479 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">exclusive_list_tab_menu_klik(5, Bloopers)</span>
+                <span class="method-start">1474065 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">done([TestResult name=exclusive_list_tab_menu_klik status=SUCCESS method=Test_Exclusive.exclusive_list_ta...)</span>
+                <span class="method-start">1479359 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">set</span>
+                <span class="method-start">1480038 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">exclusive_list_tab_menu_klik(6, Behind The Scenes)</span>
+                <span class="method-start">1481421 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">done([TestResult name=exclusive_list_tab_menu_klik status=SUCCESS method=Test_Exclusive.exclusive_list_ta...)</span>
+                <span class="method-start">1486077 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">set</span>
+                <span class="method-start">1486824 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">integration_exclusive_list_tab_menu_klik(0, All)</span>
+                <span class="method-start">1488167 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">done([TestResult name=integration_exclusive_list_tab_menu_klik status=SUCCESS method=Test_Exclusive.integ...)</span>
+                <span class="method-start">1499736 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">set</span>
+                <span class="method-start">1500248 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">integration_exclusive_list_tab_menu_klik(1, Clip)</span>
+                <span class="method-start">1501500 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">done([TestResult name=integration_exclusive_list_tab_menu_klik status=SUCCESS method=Test_Exclusive.integ...)</span>
+                <span class="method-start">1512534 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">set</span>
+                <span class="method-start">1513417 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">integration_exclusive_list_tab_menu_klik(2, Photo)</span>
+                <span class="method-start">1514687 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">done([TestResult name=integration_exclusive_list_tab_menu_klik status=SUCCESS method=Test_Exclusive.integ...)</span>
+                <span class="method-start">1525807 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">set</span>
+                <span class="method-start">1526221 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">integration_exclusive_list_tab_menu_klik(3, Entertainment)</span>
+                <span class="method-start">1528855 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">done([TestResult name=integration_exclusive_list_tab_menu_klik status=SUCCESS method=Test_Exclusive.integ...)</span>
+                <span class="method-start">1539679 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">set</span>
+                <span class="method-start">1540081 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">integration_exclusive_list_tab_menu_klik(4, News)</span>
+                <span class="method-start">1541345 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">done([TestResult name=integration_exclusive_list_tab_menu_klik status=SUCCESS method=Test_Exclusive.integ...)</span>
+                <span class="method-start">1552717 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">set</span>
+                <span class="method-start">1553114 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">integration_exclusive_list_tab_menu_klik(5, Bloopers)</span>
+                <span class="method-start">1554268 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">done([TestResult name=integration_exclusive_list_tab_menu_klik status=SUCCESS method=Test_Exclusive.integ...)</span>
+                <span class="method-start">1565351 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">set</span>
+                <span class="method-start">1565774 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">integration_exclusive_list_tab_menu_klik(6, Behind The Scenes)</span>
+                <span class="method-start">1566971 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">done([TestResult name=integration_exclusive_list_tab_menu_klik status=SUCCESS method=Test_Exclusive.integ...)</span>
+                <span class="method-start">1577538 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.Test_Radio</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">set</span>
+                <span class="method-start">1578283 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">radio_validate_url</span>
+                <span class="method-start">1579697 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">done([TestResult name=radio_validate_url status=SUCCESS method=Test_Radio.radio_validate_url()[pri:0, ins...)</span>
+                <span class="method-start">1585563 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">set</span>
+                <span class="method-start">1586336 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">radio_integration</span>
+                <span class="method-start">1587612 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">done([TestResult name=radio_integration status=SUCCESS method=Test_Radio.radio_integration()[pri:1, insta...)</span>
+                <span class="method-start">1599931 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.Test_Register</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">set</span>
+                <span class="method-start">1600674 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">register_alert_email(dikakoko04@gmail.com, password, password, please try again, email has been taken)</span>
+                <span class="method-start">1601905 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">done([TestResult name=register_alert_email status=SUCCESS method=Test_Register.register_alert_email(java....)</span>
+                <span class="method-start">1635715 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">set</span>
+                <span class="method-start">1636088 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">register_alert_email(rtgsfad.com, password, password, Please Try Again Email Is Incorrect)</span>
+                <span class="method-start">1637159 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">done([TestResult name=register_alert_email status=SUCCESS method=Test_Register.register_alert_email(java....)</span>
+                <span class="method-start">1671699 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">set</span>
+                <span class="method-start">1672204 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">register_email_alert_password1(nteamqcdfard@gmail.com, kurang, kurang, Password must at least 8 characters)</span>
+                <span class="method-start">1673848 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">done([TestResult name=register_email_alert_password1 status=SUCCESS method=Test_Register.register_email_a...)</span>
+                <span class="method-start">1708645 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">set</span>
+                <span class="method-start">1709044 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">register_email_alert_password2(nteamqcdfard@gmail.com, password, passwordBeda, Password must match)</span>
+                <span class="method-start">1710253 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">done([TestResult name=register_email_alert_password2 status=SUCCESS method=Test_Register.register_email_a...)</span>
+                <span class="method-start">1744616 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">set</span>
+                <span class="method-start">1745065 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">register_alert_phone(00909089897897, password, password, Please Try Again Phone Number Is Incorrect)</span>
+                <span class="method-start">1746326 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">done([TestResult name=register_alert_phone status=SUCCESS method=Test_Register.register_alert_phone(java....)</span>
+                <span class="method-start">1785590 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">set</span>
+                <span class="method-start">1786024 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">register_alert_phone(82278843303, password, password, please try again, phone has been taken)</span>
+                <span class="method-start">1787345 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">done([TestResult name=register_alert_phone status=SUCCESS method=Test_Register.register_alert_phone(java....)</span>
+                <span class="method-start">1826617 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">set</span>
+                <span class="method-start">1827097 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">register_phone_alert_password1(863436763543, kurang, kurang, Password must at least 8 characters)</span>
+                <span class="method-start">1828321 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">done([TestResult name=register_phone_alert_password1 status=SUCCESS method=Test_Register.register_phone_a...)</span>
+                <span class="method-start">1867410 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">set</span>
+                <span class="method-start">1867813 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">register_phone_alert_password2(84534343436, password, passwordBeda, Password must match)</span>
+                <span class="method-start">1868965 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">done([TestResult name=register_phone_alert_password2 status=SUCCESS method=Test_Register.register_phone_a...)</span>
+                <span class="method-start">1908942 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">set</span>
+                <span class="method-start">1909350 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">register_page2_validate_birthday</span>
+                <span class="method-start">1910413 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">done([TestResult name=register_page2_validate_birthday status=SUCCESS method=Test_Register.register_page2...)</span>
+                <span class="method-start">1957399 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">set</span>
+                <span class="method-start">1957739 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">register_page2_validate_fullname</span>
+                <span class="method-start">1958901 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">done([TestResult name=register_page2_validate_fullname status=SUCCESS method=Test_Register.register_page2...)</span>
+                <span class="method-start">1995363 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">set</span>
+                <span class="method-start">1995753 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">register_page2_validate_gender_Male(Male)</span>
+                <span class="method-start">1996984 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">done([TestResult name=register_page2_validate_gender_Male status=SUCCESS method=Test_Register.register_pa...)</span>
+                <span class="method-start">2038736 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">set</span>
+                <span class="method-start">2039079 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">register_page2_validate_gender_Male(Female)</span>
+                <span class="method-start">2040093 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">done([TestResult name=register_page2_validate_gender_Male status=SUCCESS method=Test_Register.register_pa...)</span>
+                <span class="method-start">2081387 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcases.Test_List_Menu_Account</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">set</span>
-                <span class="method-start">198309 ms</span>
+                <span class="method-start">2081815 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">menu_account_not_login_button_login</span>
-                <span class="method-start">199740 ms</span>
+                <span class="method-start">2082907 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">done</span>
-                <span class="method-start">229357 ms</span>
+                <span class="method-name">done([TestResult name=menu_account_not_login_button_login status=SUCCESS method=Test_List_Menu_Account.me...)</span>
+                <span class="method-start">2110666 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">set</span>
-                <span class="method-start">229440 ms</span>
+                <span class="method-start">2111089 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">menu_account_not_login_button_scan_qrcode</span>
-                <span class="method-start">230989 ms</span>
+                <span class="method-start">2112174 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">done</span>
-                <span class="method-start">239104 ms</span>
+                <span class="method-name">done([TestResult name=menu_account_not_login_button_scan_qrcode status=SUCCESS method=Test_List_Menu_Acco...)</span>
+                <span class="method-start">2119123 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">set</span>
-                <span class="method-start">239279 ms</span>
+                <span class="method-start">2119505 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">menu_account_not_login_popup_login(history, Sign Up, Sign In)</span>
-                <span class="method-start">240840 ms</span>
+                <span class="method-start">2120786 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">done</span>
-                <span class="method-start">264987 ms</span>
+                <span class="method-name">done([TestResult name=menu_account_not_login_popup_login status=SUCCESS method=Test_List_Menu_Account.men...)</span>
+                <span class="method-start">2143787 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">set</span>
-                <span class="method-start">265268 ms</span>
+                <span class="method-start">2144217 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">menu_account_not_login_popup_login(mylist, Sign Up, Sign In)</span>
-                <span class="method-start">266794 ms</span>
+                <span class="method-start">2145454 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">done</span>
-                <span class="method-start">291240 ms</span>
+                <span class="method-name">done([TestResult name=menu_account_not_login_popup_login status=SUCCESS method=Test_List_Menu_Account.men...)</span>
+                <span class="method-start">2169336 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">set</span>
-                <span class="method-start">291374 ms</span>
+                <span class="method-start">2169751 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">menu_account_not_login_popup_login(continue-watching, Sign Up, Sign In)</span>
-                <span class="method-start">292654 ms</span>
+                <span class="method-start">2170766 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">done</span>
-                <span class="method-start">318253 ms</span>
+                <span class="method-name">done([TestResult name=menu_account_not_login_popup_login status=SUCCESS method=Test_List_Menu_Account.men...)</span>
+                <span class="method-start">2193514 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">set</span>
-                <span class="method-start">318402 ms</span>
+                <span class="method-start">2193921 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">menu_account_not_login_button_menu_direct(tnc, Terms and Conditions)</span>
-                <span class="method-start">319703 ms</span>
+                <span class="method-start">2195023 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">done</span>
-                <span class="method-start">340029 ms</span>
+                <span class="method-name">done([TestResult name=menu_account_not_login_button_menu_direct status=SUCCESS method=Test_List_Menu_Acco...)</span>
+                <span class="method-start">2214511 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">set</span>
-                <span class="method-start">340106 ms</span>
+                <span class="method-start">2214985 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">menu_account_not_login_button_menu_direct(privacy-policy, Privacy Policy)</span>
-                <span class="method-start">341479 ms</span>
+                <span class="method-start">2215976 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">done</span>
-                <span class="method-start">362166 ms</span>
+                <span class="method-name">done([TestResult name=menu_account_not_login_button_menu_direct status=SUCCESS method=Test_List_Menu_Acco...)</span>
+                <span class="method-start">2234050 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">set</span>
-                <span class="method-start">362250 ms</span>
+                <span class="method-start">2234508 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">menu_account_not_login_button_menu_direct(contact-us, Contact Us)</span>
-                <span class="method-start">363739 ms</span>
+                <span class="method-start">2235846 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">done</span>
-                <span class="method-start">384224 ms</span>
+                <span class="method-name">done([TestResult name=menu_account_not_login_button_menu_direct status=SUCCESS method=Test_List_Menu_Acco...)</span>
+                <span class="method-start">2254442 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">set</span>
-                <span class="method-start">384306 ms</span>
+                <span class="method-start">2254809 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">menu_account_not_login_button_menu_direct(faq, Faq)</span>
-                <span class="method-start">385592 ms</span>
+                <span class="method-start">2256647 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">done</span>
-                <span class="method-start">406071 ms</span>
+                <span class="method-name">done([TestResult name=menu_account_not_login_button_menu_direct status=SUCCESS method=Test_List_Menu_Acco...)</span>
+                <span class="method-start">2275599 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">set</span>
-                <span class="method-start">406274 ms</span>
+                <span class="method-start">2276002 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">menu_account_not_login_button_download</span>
-                <span class="method-start">407668 ms</span>
+                <span class="method-start">2277324 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">done</span>
-                <span class="method-start">431675 ms</span>
+                <span class="method-name">done([TestResult name=menu_account_not_login_button_download status=SUCCESS method=Test_List_Menu_Account...)</span>
+                <span class="method-start">2300398 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">testcases.Test_Integration_Login</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testcases.Test_Chat</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">set</span>
-                <span class="method-start">431871 ms</span>
+                <span class="method-start">2300793 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">login_logout_from_Continue_Watching(/login, dikakoko04@gmail.com, dikakoko, dikakoko)</span>
-                <span class="method-start">433205 ms</span>
+                <span class="method-name">chat_test_before_login(rcti, dikakoko04@gmail.com, dikakoko, dikakokodikakoko, Selamat menonton semua!)</span>
+                <span class="method-start">2302378 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">done</span>
-                <span class="method-start">520497 ms</span>
+                <span class="method-name">done([TestResult name=chat_test_before_login status=SUCCESS method=Test_Chat.chat_test_before_login(java....)</span>
+                <span class="method-start">2366946 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">set</span>
-                <span class="method-start">520733 ms</span>
+                <span class="method-start">2367412 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">login_logout_from_Continue_Watching(/login, 082278843303, dikakoko, dikakokos)</span>
-                <span class="method-start">522858 ms</span>
+                <span class="method-name">chat_test_before_login(mnctv, dikakoko04@gmail.com, dikakoko, dikakokodikakoko, Selamat menonton semua!)</span>
+                <span class="method-start">2369606 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">done</span>
-                <span class="method-start">609312 ms</span>
+                <span class="method-name">done([TestResult name=chat_test_before_login status=SUCCESS method=Test_Chat.chat_test_before_login(java....)</span>
+                <span class="method-start">2433589 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">set</span>
-                <span class="method-start">609474 ms</span>
+                <span class="method-start">2434142 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">login_logout_from_account(/login, dikakoko04@gmail.com, dikakoko, dikakoko)</span>
-                <span class="method-start">610843 ms</span>
+                <span class="method-name">chat_test_before_login(gtv, dikakoko04@gmail.com, dikakoko, dikakokodikakoko, Selamat menonton semua!)</span>
+                <span class="method-start">2435483 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">done</span>
-                <span class="method-start">691976 ms</span>
+                <span class="method-name">done([TestResult name=chat_test_before_login status=SUCCESS method=Test_Chat.chat_test_before_login(java....)</span>
+                <span class="method-start">2499893 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">set</span>
-                <span class="method-start">692119 ms</span>
+                <span class="method-start">2500338 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">login_logout_from_account(/login, 082278843303, dikakoko, dikakokos)</span>
-                <span class="method-start">693467 ms</span>
+                <span class="method-name">chat_test_before_login(inews, dikakoko04@gmail.com, dikakoko, dikakokodikakoko, Selamat menonton semua!)</span>
+                <span class="method-start">2501353 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">done</span>
-                <span class="method-start">775714 ms</span>
+                <span class="method-name">done([TestResult name=chat_test_before_login status=SUCCESS method=Test_Chat.chat_test_before_login(java....)</span>
+                <span class="method-start">2566891 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.Test_Forget_Password</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">set</span>
+                <span class="method-start">2567392 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">forget_password_alert(email.com, Please Try Again Email Is Incorrect)</span>
+                <span class="method-start">2569506 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">done([TestResult name=forget_password_alert status=SUCCESS method=Test_Forget_Password.forget_password_al...)</span>
+                <span class="method-start">2587628 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">set</span>
-                <span class="method-start">775871 ms</span>
+                <span class="method-start">2587986 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">login_logout_from_history(/login, dikakoko04@gmail.com, dikakoko, dikakoko)</span>
-                <span class="method-start">777213 ms</span>
+                <span class="method-name">forget_password_alert(454546546565646, Please Try Again Phone Number Is Incorrect)</span>
+                <span class="method-start">2589115 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">done</span>
-                <span class="method-start">863551 ms</span>
+                <span class="method-name">done([TestResult name=forget_password_alert status=SUCCESS method=Test_Forget_Password.forget_password_al...)</span>
+                <span class="method-start">2607177 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">set</span>
-                <span class="method-start">863631 ms</span>
+                <span class="method-start">2607584 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">login_logout_from_history(/login, 082278843303, dikakoko, dikakokos)</span>
-                <span class="method-start">866096 ms</span>
+                <span class="method-name">forget_password_alert(iustrtqc@gmail.com, User has not been registered)</span>
+                <span class="method-start">2608725 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">done</span>
-                <span class="method-start">952595 ms</span>
+                <span class="method-name">done([TestResult name=forget_password_alert status=SUCCESS method=Test_Forget_Password.forget_password_al...)</span>
+                <span class="method-start">2628166 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">set</span>
-                <span class="method-start">952741 ms</span>
+                <span class="method-start">2628529 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">login_logout_from_mylist(/login, dikakoko04@gmail.com, dikakoko, dikakoko)</span>
-                <span class="method-start">954250 ms</span>
+                <span class="method-name">forget_password_alert(082222992299, User has not been registered)</span>
+                <span class="method-start">2629227 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">done</span>
-                <span class="method-start">1042004 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">set</span>
-                <span class="method-start">1042081 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">login_logout_from_mylist(/login, 082278843303, dikakoko, dikakokos)</span>
-                <span class="method-start">1043639 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">done</span>
-                <span class="method-start">1154752 ms</span>
+                <span class="method-name">done([TestResult name=forget_password_alert status=SUCCESS method=Test_Forget_Password.forget_password_al...)</span>
+                <span class="method-start">2648305 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

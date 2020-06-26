@@ -6,8 +6,11 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 
+import io.qameta.allure.Attachment;
+
 public class TakeScreenshot {
 
+	@Attachment(value = "Finish Test Screenshot", type = "image/png")
 	public static void captureScreenshot(WebDriver driver, String screenshotName) {
 		try {
 			TakesScreenshot ts = (TakesScreenshot) driver;

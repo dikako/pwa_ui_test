@@ -9,6 +9,9 @@ import org.testng.annotations.Test;
 
 import config.Setup;
 import config.Url;
+import io.qameta.allure.Description;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
 import object.Button;
 import object.Input;
 import utility.ReadExcel;
@@ -23,6 +26,8 @@ public class Test_Continue_Watching extends Setup {
 		return read.getCellData(path, "Login_Alert_Username");
 	}
 	
+	@Severity(SeverityLevel.CRITICAL)
+	@Description("Continue Watching Test - After Login")
 	@Test(priority = 0, testName = "Continue Watching Afetr Login", dataProvider = "")
 	public void continue_watching_after_login(String username, String password) {
 		Url url = new Url(driver);
@@ -35,6 +40,5 @@ public class Test_Continue_Watching extends Setup {
 		input.byId("email", username);
 		input.byId("password", password);
 		button.byId("submit-login");
-		
 	}
 }

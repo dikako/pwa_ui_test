@@ -44,9 +44,11 @@ public class Setup {
 	@AfterMethod
 	public void done(ITestResult result) {
 		String name = result.getName();
-		//if(ITestResult.FAILURE==result.getStatus()) {
-			TakeScreenshot.captureScreenshot(driver, name);
-		//}
+		if(ITestResult.FAILURE==result.getStatus()) {
+			TakeScreenshot.captureScreenshot(driver, "Error_" + name);
+		} else {
+			TakeScreenshot.captureScreenshot(driver, "Pass_" + name);
+		}
 		driver.quit();
 	}
 }

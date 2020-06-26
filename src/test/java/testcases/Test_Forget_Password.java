@@ -10,6 +10,7 @@ import com.fasterxml.jackson.databind.exc.InvalidFormatException;
 
 import config.Setup;
 import config.Url;
+import io.qameta.allure.Description;
 import object.Alert;
 import object.Button;
 import object.Input;
@@ -25,14 +26,15 @@ public class Test_Forget_Password extends Setup {
 		return read.getCellData(path, "Forget_Password_Alert");
 	}
 	
-	@Test(priority = 0, testName = "Forget Password - Alert ", dataProvider = "forget_password_alert")
+	@Description("Forget Password - Alert Username")
+	@Test(priority = 0, testName = "Forget Password - Alert Username", dataProvider = "forget_password_alert")
 	public void forget_password_alert(String username, String alertText) {
 		Url url = new Url(driver);
 		Button button = PageFactory.initElements(driver, Button.class);
 		Input input = PageFactory.initElements(driver, Input.class);
 		Alert alert = PageFactory.initElements(driver, Alert.class);
 		
-		System.out.println("Forget Password - Alert");
+		System.out.println("Forget Password - Alert Username");
 		
 		url.urls("/forget-password");
 		input.byId("input-email-phone", username);

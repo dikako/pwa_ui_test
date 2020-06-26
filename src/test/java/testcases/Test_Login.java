@@ -7,10 +7,13 @@ import org.testng.annotations.Test;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import config.Setup;
 import config.Url;
+import io.qameta.allure.Description;
 import object.Alert;
 import object.Button;
 import object.Input;
 import utility.ReadExcel;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
 
 public class Test_Login extends Setup {
 
@@ -40,6 +43,8 @@ public class Test_Login extends Setup {
 		return read.getCellData(path, "Login_Alert_Popup");
 	}
 
+	@Severity(SeverityLevel.MINOR)
+	@Description("Login Test - Login Alert Pop Up Not Registered")
 	@Test(priority = 2, testName = "Login Alert Pop Up", dataProvider = "login_alert_popup")
 	public void login_alert_popup(String username, String password, String alertText) {
 		Url url = new Url(driver);
@@ -57,6 +62,8 @@ public class Test_Login extends Setup {
 		alerts.byId("swal2-content", alertText);
 	}
 
+	@Severity(SeverityLevel.CRITICAL)
+	@Description("Login Test - Login Logout")
 	@Test(priority = 4, testName = "Login Logout", dataProvider = "login_success")
 	public void login_logout(String username, String password, String displayName) throws InterruptedException {
 		Url url = new Url(driver);
@@ -82,6 +89,8 @@ public class Test_Login extends Setup {
 		button.byIdDisplay("button-login", true);
 	}
 
+	@Severity(SeverityLevel.MINOR)
+	@Description("Login Test - Login Alert Password")
 	@Test(priority = 0, testName = "Login Alert Password", dataProvider = "login_alert_password")
 	public void login_alert_password(String username, String password, String alertText) {
 		Url url = new Url(driver);
@@ -99,6 +108,8 @@ public class Test_Login extends Setup {
 		alerts.byId("invalid-password", alertText);
 	}
 
+	@Severity(SeverityLevel.MINOR)
+	@Description("Login Test - Login Alert Username")
 	@Test(priority = 1, testName = "Login Alert Username", dataProvider = "login_alert_username")
 	public void login_alert_username(String username, String password, String alertText) throws InterruptedException {
 		Url url = new Url(driver);
@@ -116,6 +127,8 @@ public class Test_Login extends Setup {
 		alerts.byId("invalid-username", alertText);
 	}
 
+	@Severity(SeverityLevel.CRITICAL)
+	@Description("Login Test - Login Success")
 	@Test(priority = 3, testName = "Login Success", dataProvider = "login_success")
 	public void login_succes(String username, String password, String displayName) throws InterruptedException {
 		Url url = new Url(driver);
@@ -135,6 +148,8 @@ public class Test_Login extends Setup {
 		button.byIdGetText("action-profile", displayName);
 	}
 
+	@Severity(SeverityLevel.CRITICAL)
+	@Description("Login Test Integration - Login Success From Account -> Login")
 	@Test(priority = 2, testName = "Login Success From Account -> Login", dataProvider = "login_success")
 	public void login_logout_from_account(String username, String password, String displayName)
 			throws InterruptedException {
@@ -163,6 +178,8 @@ public class Test_Login extends Setup {
 		button.byIdDisplay("button-login", true);
 	}
 
+	@Severity(SeverityLevel.CRITICAL)
+	@Description("Login Test Integration - Login Success From Account -> History")
 	@Test(priority = 2, testName = "Login Success Account -> History", dataProvider = "login_success")
 	public void login_logout_from_history(String username, String password, String displayName)
 			throws InterruptedException {
@@ -192,6 +209,8 @@ public class Test_Login extends Setup {
 		button.byIdDisplay("button-login", true);
 	}
 
+	@Severity(SeverityLevel.CRITICAL)
+	@Description("Login Test Integration - Login Success From Account -> Mylist")
 	@Test(priority = 2, testName = "Login Success Account -> Mylist", dataProvider = "login_success")
 	public void login_logout_from_mylist(String username, String password, String displayName)
 			throws InterruptedException {
@@ -221,6 +240,8 @@ public class Test_Login extends Setup {
 		button.byIdDisplay("button-login", true);
 	}
 
+	@Severity(SeverityLevel.CRITICAL)
+	@Description("Login Test Integration - Login Success From Account -> Continue Watching")
 	@Test(priority = 2, testName = "Login Success Account -> Continue Watching", dataProvider = "login_success")
 	public void login_logout_from_Continue_Watching(String username, String password, String displayName)
 			throws InterruptedException {

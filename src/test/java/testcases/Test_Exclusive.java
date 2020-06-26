@@ -7,6 +7,7 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import config.Setup;
 import config.Url;
+import io.qameta.allure.Description;
 import object.Button;
 import utility.ReadExcel;
 
@@ -42,13 +43,14 @@ public class Test_Exclusive extends Setup {
 		button.byClassByTagByAttrToString("exclusive-item", indexToInteger, "a", "class", "active nav-link");
 	}
 
+	@Description("Exclusive Test - Validate List Tab Menu Klik")
 	@Test(priority = 4, testName = "Validate Tab Menu", dataProvider = "list_tab_menu_exclusive")
 	public void exclusive_list_tab_menu_klik(String index, String textValue) throws InterruptedException {
 		Url url = new Url(driver);
 		Button button = PageFactory.initElements(driver, Button.class);
 		Integer indexToInteger = Integer.valueOf(index);
 
-		System.out.println("Exclusive Test - Validate List Tab Menu");
+		System.out.println("Exclusive Test - Validate List Tab Menu Klik");
 
 		url.urls("/exclusive");
 		button.byClassesGetText("exclusive-item", indexToInteger, textValue);
@@ -57,6 +59,7 @@ public class Test_Exclusive extends Setup {
 		button.byClassByTagByAttrToString("exclusive-item", indexToInteger, "a", "class", "active nav-link");
 	}
 
+	@Description("Exclusive Test - Validate List Tab Menu")
 	@Test(priority = 3, testName = "Validate Tab Menu", dataProvider = "list_tab_menu_exclusive")
 	public void exclusive_list_tab_menu(String index, String textValue) {
 		Url url = new Url(driver);
@@ -69,7 +72,8 @@ public class Test_Exclusive extends Setup {
 		button.byClassesGetText("exclusive-item", indexToInteger, textValue);
 	}
 
-	@Test(priority = 0)
+	@Description("Exclusive Test - Validate Thumbnail")
+	@Test(priority = 0, testName = "Exclusive Test - Validate Thumbnail")
 	public void exclusive_validate_thumbnail() {
 		Url url = new Url(driver);
 		Button button = PageFactory.initElements(driver, Button.class);
@@ -80,7 +84,8 @@ public class Test_Exclusive extends Setup {
 		button.byClassDisplay("program-thumbnail", true);
 	}
 
-	@Test(priority = 1)
+	@Description("Exclusive Test Integration - Validate Thumbnail ")
+	@Test(priority = 1, testName = "Exclusive Test Integration - Validate Thumbnail")
 	public void integration_exclusive_validate_thumbnail() {
 		Url url = new Url(driver);
 		Button button = PageFactory.initElements(driver, Button.class);
@@ -92,6 +97,7 @@ public class Test_Exclusive extends Setup {
 		button.byClassDisplay("program-thumbnail", true);
 	}
 
+	@Description("Exclusive Test - Validate List Share")
 	@Test(priority = 2, testName = "Validate List Share", dataProvider = "list_share")
 	public void exclusive_validate_list_share(String index, String listShare) {
 		Url url = new Url(driver);

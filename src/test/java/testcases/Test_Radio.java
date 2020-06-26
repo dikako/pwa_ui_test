@@ -4,6 +4,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 import config.Setup;
 import config.Url;
+import io.qameta.allure.Description;
 import object.Button;
 
 public class Test_Radio extends Setup {
@@ -20,6 +21,7 @@ public class Test_Radio extends Setup {
 		System.out.println(urlRadio);
 	}
 	
+	@Description("Radio Test - Validate url direct")
 	@Test(priority = 1, testName = "Integration Test Radio")
 	public void radio_integration() throws InterruptedException {
 		Url url = new Url(driver);
