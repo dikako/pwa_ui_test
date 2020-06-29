@@ -205,6 +205,14 @@ public class Input {
 		}
 	}
 	
+	//Clear
+	
+	public void byIdClear(String selector) {
+		WebElement element = driver.findElement(By.id(selector));
+		element.clear();
+		System.out.println("Form is cleared!");
+	}
+	
 
 	private void waitForVisible(WebDriver driver, WebElement element) {
 		try {

@@ -3,6 +3,7 @@ package object;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -262,6 +263,20 @@ public class Button {
 		List<WebElement> element = driver.findElements(By.className(selector));
 		element.size();
 		System.out.println("Size is Match! " + element.size());
+	}
+	
+	//Valdiate Button disbld 0r enabled
+	
+	public void byIdEnabled(String selector, boolean enable) {
+		WebElement element = driver.findElement(By.id(selector));
+		waitForVisible(driver, element);
+		Actions actions = new Actions(driver);
+		actions.moveToElement(element);
+		boolean btn = element.isEnabled();
+		Assert.assertEquals(btn, enable);
+		actions.sendKeys(Keys.ENTER);
+		actions.build().perform();
+		System.out.println("Button is Enabled: " + btn);
 	}
 
 	private void waitForVisible(WebDriver driver, WebElement element) {

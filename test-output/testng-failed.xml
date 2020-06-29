@@ -3,7 +3,18 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test verbose="2" name="Default test">
     <classes>
-      <class name="testcases.Test_Mylist"/>
+      <class name="testcases.Test_Edit_Profile"/>
     </classes>
   </test> <!-- Default test -->
+  <test name="Default test(failed)">
+    <classes>
+      <class name="testcases.Test_Edit_Profile">
+        <methods>
+          <include name="done"/>
+          <include name="set"/>
+          <include name="edit_profile_form_field_alert" invocation-numbers="2"/>
+        </methods>
+      </class> <!-- testcases.Test_Edit_Profile -->
+    </classes>
+  </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
