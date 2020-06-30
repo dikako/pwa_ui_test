@@ -10,7 +10,7 @@ import config.Url;
 import io.qameta.allure.Description;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
-import object.Alert;
+import object.Button;
 import utility.ReadExcel;
 
 public class Test_Live_Tv extends Setup {
@@ -24,18 +24,19 @@ public class Test_Live_Tv extends Setup {
 	}
 
 	@Severity(SeverityLevel.CRITICAL)
-	@Description("Live Tv Test - Validate Live Tv")
-	@Test(priority = 0, testName = "Validate Live Tv", dataProvider = "live_tv_active_tab")
-	public void live_tv_active_tab(String liveTv) throws InterruptedException {
+	@Description("Live Tv Test - Validate List Tab Live Tv")
+	@Test(priority = 0, testName = "Validate List Tab Live Tv", dataProvider = "live_tv_active_tab")
+	public void live_tv_active_tab(String index, String textValue) throws InterruptedException {
 		Url url = new Url(driver);
-		// Input input = PageFactory.initElements(driver, Input.class);
-		// Button button = PageFactory.initElements(driver, Button.class);
-		Alert alerts = PageFactory.initElements(driver, Alert.class);
+		Button button = PageFactory.initElements(driver, Button.class);
 
-		System.out.println("Live Tv Test - Validate Live Tv");
+		Integer indexToInt = Integer.valueOf(index);
 
-		url.urls("/" + liveTv);
+		System.out.println("Live Tv Test - Validate List Tab Live Tv");
+
+		url.defaultUrl();
+		button.byId("action-live-tv");
 		Thread.sleep(5000);
-		alerts.byXpathByAttrValidateValueAttr("//button[contains(text(),'" + liveTv + "')]", "class", "selected");
+		button.byClassesGetText("text-center", indexToInt, textValue);
 	}
 }

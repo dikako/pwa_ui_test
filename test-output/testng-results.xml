@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="215633" started-at="2020-06-30T04:32:54Z" finished-at="2020-06-30T04:36:29Z">
+  <suite name="Default suite" duration-ms="150726" started-at="2020-06-30T06:52:32Z" finished-at="2020-06-30T06:55:03Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="215633" started-at="2020-06-30T04:32:54Z" finished-at="2020-06-30T04:36:29Z">
-      <class name="testcases.Test_Homepage">
-        <test-method status="PASS" signature="set()[pri:0, instance:testcases.Test_Homepage@d5ae57e]" name="set" is-config="true" duration-ms="2368" started-at="2020-06-30T11:32:55Z" finished-at="2020-06-30T11:32:57Z">
+    <test name="Default test" duration-ms="150726" started-at="2020-06-30T06:52:32Z" finished-at="2020-06-30T06:55:03Z">
+      <class name="testcases.Test_Live_Tv">
+        <test-method status="PASS" signature="set()[pri:0, instance:testcases.Test_Live_Tv@7e985ce9]" name="set" is-config="true" duration-ms="2644" started-at="2020-06-30T13:52:34Z" finished-at="2020-06-30T13:52:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- set -->
-        <test-method status="PASS" signature="homepage_center_menu_direct(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:testcases.Test_Homepage@d5ae57e]" name="homepage_center_menu_direct" duration-ms="117180" started-at="2020-06-30T11:32:57Z" data-provider="homepage_menu_tengah_direct" finished-at="2020-06-30T11:34:54Z">
+        <test-method status="PASS" signature="live_tv_active_tab(java.lang.String, java.lang.String)[pri:0, instance:testcases.Test_Live_Tv@7e985ce9]" name="live_tv_active_tab" duration-ms="30634" started-at="2020-06-30T13:52:36Z" data-provider="live_tv_active_tab" finished-at="2020-06-30T13:53:07Z">
           <params>
             <param index="0">
               <value>
@@ -20,34 +20,29 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[Exclusive]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[exclusive]]>
+                <![CDATA[RCTI]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- homepage_center_menu_direct -->
-        <test-method status="PASS" signature="done(org.testng.ITestResult)[pri:0, instance:testcases.Test_Homepage@d5ae57e]" name="done" is-config="true" duration-ms="5492" started-at="2020-06-30T11:34:54Z" finished-at="2020-06-30T11:35:00Z">
+        </test-method> <!-- live_tv_active_tab -->
+        <test-method status="PASS" signature="done(org.testng.ITestResult)[pri:0, instance:testcases.Test_Live_Tv@7e985ce9]" name="done" is-config="true" duration-ms="5626" started-at="2020-06-30T13:53:07Z" finished-at="2020-06-30T13:53:13Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=homepage_center_menu_direct status=SUCCESS method=Test_Homepage.homepage_center_menu_direct(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:testcases.Test_Homepage@d5ae57e] output={null}]]]>
+                <![CDATA[[TestResult name=live_tv_active_tab status=SUCCESS method=Test_Live_Tv.live_tv_active_tab(java.lang.String, java.lang.String)[pri:0, instance:testcases.Test_Live_Tv@7e985ce9] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- done -->
-        <test-method status="PASS" signature="set()[pri:0, instance:testcases.Test_Homepage@d5ae57e]" name="set" is-config="true" duration-ms="1139" started-at="2020-06-30T11:35:00Z" finished-at="2020-06-30T11:35:01Z">
+        <test-method status="PASS" signature="set()[pri:0, instance:testcases.Test_Live_Tv@7e985ce9]" name="set" is-config="true" duration-ms="1771" started-at="2020-06-30T13:53:13Z" finished-at="2020-06-30T13:53:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- set -->
-        <test-method status="PASS" signature="homepage_center_menu_direct(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:testcases.Test_Homepage@d5ae57e]" name="homepage_center_menu_direct" duration-ms="26828" started-at="2020-06-30T11:35:01Z" data-provider="homepage_menu_tengah_direct" finished-at="2020-06-30T11:35:28Z">
+        <test-method status="PASS" signature="live_tv_active_tab(java.lang.String, java.lang.String)[pri:0, instance:testcases.Test_Live_Tv@7e985ce9]" name="live_tv_active_tab" duration-ms="27419" started-at="2020-06-30T13:53:14Z" data-provider="live_tv_active_tab" finished-at="2020-06-30T13:53:42Z">
           <params>
             <param index="0">
               <value>
@@ -56,34 +51,29 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[News]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[trending]]>
+                <![CDATA[MNCTV]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- homepage_center_menu_direct -->
-        <test-method status="PASS" signature="done(org.testng.ITestResult)[pri:0, instance:testcases.Test_Homepage@d5ae57e]" name="done" is-config="true" duration-ms="6040" started-at="2020-06-30T11:35:28Z" finished-at="2020-06-30T11:35:34Z">
+        </test-method> <!-- live_tv_active_tab -->
+        <test-method status="PASS" signature="done(org.testng.ITestResult)[pri:0, instance:testcases.Test_Live_Tv@7e985ce9]" name="done" is-config="true" duration-ms="5689" started-at="2020-06-30T13:53:42Z" finished-at="2020-06-30T13:53:47Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=homepage_center_menu_direct status=SUCCESS method=Test_Homepage.homepage_center_menu_direct(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:testcases.Test_Homepage@d5ae57e] output={null}]]]>
+                <![CDATA[[TestResult name=live_tv_active_tab status=SUCCESS method=Test_Live_Tv.live_tv_active_tab(java.lang.String, java.lang.String)[pri:0, instance:testcases.Test_Live_Tv@7e985ce9] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- done -->
-        <test-method status="PASS" signature="set()[pri:0, instance:testcases.Test_Homepage@d5ae57e]" name="set" is-config="true" duration-ms="1301" started-at="2020-06-30T11:35:34Z" finished-at="2020-06-30T11:35:35Z">
+        <test-method status="PASS" signature="set()[pri:0, instance:testcases.Test_Live_Tv@7e985ce9]" name="set" is-config="true" duration-ms="1192" started-at="2020-06-30T13:53:47Z" finished-at="2020-06-30T13:53:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- set -->
-        <test-method status="PASS" signature="homepage_center_menu_direct(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:testcases.Test_Homepage@d5ae57e]" name="homepage_center_menu_direct" duration-ms="48548" started-at="2020-06-30T11:35:35Z" data-provider="homepage_menu_tengah_direct" finished-at="2020-06-30T11:36:24Z">
+        <test-method status="PASS" signature="live_tv_active_tab(java.lang.String, java.lang.String)[pri:0, instance:testcases.Test_Live_Tv@7e985ce9]" name="live_tv_active_tab" duration-ms="28773" started-at="2020-06-30T13:53:49Z" data-provider="live_tv_active_tab" finished-at="2020-06-30T13:54:17Z">
           <params>
             <param index="0">
               <value>
@@ -92,30 +82,56 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[Radio+]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[radio]]>
+                <![CDATA[GTV]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- homepage_center_menu_direct -->
-        <test-method status="PASS" signature="done(org.testng.ITestResult)[pri:0, instance:testcases.Test_Homepage@d5ae57e]" name="done" is-config="true" duration-ms="5491" started-at="2020-06-30T11:36:24Z" finished-at="2020-06-30T11:36:29Z">
+        </test-method> <!-- live_tv_active_tab -->
+        <test-method status="PASS" signature="done(org.testng.ITestResult)[pri:0, instance:testcases.Test_Live_Tv@7e985ce9]" name="done" is-config="true" duration-ms="5488" started-at="2020-06-30T13:54:17Z" finished-at="2020-06-30T13:54:23Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=homepage_center_menu_direct status=SUCCESS method=Test_Homepage.homepage_center_menu_direct(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:testcases.Test_Homepage@d5ae57e] output={null}]]]>
+                <![CDATA[[TestResult name=live_tv_active_tab status=SUCCESS method=Test_Live_Tv.live_tv_active_tab(java.lang.String, java.lang.String)[pri:0, instance:testcases.Test_Live_Tv@7e985ce9] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- done -->
-      </class> <!-- testcases.Test_Homepage -->
+        <test-method status="PASS" signature="set()[pri:0, instance:testcases.Test_Live_Tv@7e985ce9]" name="set" is-config="true" duration-ms="1373" started-at="2020-06-30T13:54:23Z" finished-at="2020-06-30T13:54:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- set -->
+        <test-method status="PASS" signature="live_tv_active_tab(java.lang.String, java.lang.String)[pri:0, instance:testcases.Test_Live_Tv@7e985ce9]" name="live_tv_active_tab" duration-ms="33422" started-at="2020-06-30T13:54:24Z" data-provider="live_tv_active_tab" finished-at="2020-06-30T13:54:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[INEWS]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- live_tv_active_tab -->
+        <test-method status="PASS" signature="done(org.testng.ITestResult)[pri:0, instance:testcases.Test_Live_Tv@7e985ce9]" name="done" is-config="true" duration-ms="5410" started-at="2020-06-30T13:54:58Z" finished-at="2020-06-30T13:55:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=live_tv_active_tab status=SUCCESS method=Test_Live_Tv.live_tv_active_tab(java.lang.String, java.lang.String)[pri:0, instance:testcases.Test_Live_Tv@7e985ce9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- done -->
+      </class> <!-- testcases.Test_Live_Tv -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
