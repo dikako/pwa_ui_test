@@ -248,7 +248,7 @@ public class Button {
 		List<WebElement> element = driver.findElements(By.className(selector));
 		String getText = element.get(index).getText();
 		System.out.println("Value is Match " + getText);
-		Assert.assertEquals(getText, textValue);
+		Assert.assertEquals(getText.toLowerCase().replace(" ", ""), textValue.toLowerCase().replace(" ", ""));
 	}
 	
 	// Get Size 

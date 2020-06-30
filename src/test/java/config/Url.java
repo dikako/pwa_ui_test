@@ -17,9 +17,9 @@ public class Url {
 	}
 
 	public void urls(String page) {
-		String urlPage = baseUrl + page;
+		String urlPage = baseUrl + page.toLowerCase().replace(" ", "");
 		driver.get(urlPage);
-		assert driver.getCurrentUrl().contains(page);
+		assert driver.getCurrentUrl().contains(page.toLowerCase().replace(" ", ""));
 		System.out.println("Url Visit: " + driver.getCurrentUrl());
 	}
 }

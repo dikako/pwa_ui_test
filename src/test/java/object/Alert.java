@@ -206,9 +206,41 @@ public class Alert {
 		waitForVisible(driver, element);
 		Actions actions = new Actions(driver);
 		actions.moveToElement(element);
-		element.getText().toLowerCase().replace(" ", "").replace("\n", "").replace("\n", "").replace("-", "").contains(alertText.toLowerCase().replace(" ", "").replace("\n", "").replace("\n", "").replace("\n", "").replace("-", ""));
+		element.getText().toLowerCase().replace(" ", "").replace("\n", "").replace("\n", "").replace("-", "")
+				.contains(alertText.toLowerCase().replace(" ", "").replace("\n", "").replace("\n", "").replace("\n", "")
+						.replace("-", ""));
 		actions.build().perform();
 		System.out.println(element.getText());
+	}
+
+	// By Attribute Display
+
+	public void byClassByAttrValidateValueAttr(String selector, String attr, String attrValue) {
+		WebElement element = driver.findElement(By.className(selector));
+		Actions actions = new Actions(driver);
+		actions.moveToElement(element);
+		boolean validateAttr = element.getAttribute(attr).contains(attrValue);
+		Assert.assertEquals(validateAttr, true);
+		actions.build().perform();
+		System.out.println("Attribut: " + validateAttr);
+	}
+
+	public void byXpathByAttrValidateValueAttr(String selector, String attr, String attrValue) {
+		WebElement element = driver.findElement(By.xpath(selector));
+		Actions actions = new Actions(driver);
+		actions.moveToElement(element);
+		boolean validateAttr = element.getAttribute(attr).contains(attrValue);
+		Assert.assertEquals(validateAttr, true);
+		actions.build().perform();
+		System.out.println("Attribut: " + validateAttr);
+	}
+
+	// validate url
+
+	public void urlValidate(String url) {
+		boolean u = driver.getCurrentUrl().contains(url);
+		Assert.assertEquals(u, true);
+		System.out.println("Url: " + driver.getCurrentUrl());
 	}
 
 	private void waitForVisible(WebDriver driver, WebElement element) {
