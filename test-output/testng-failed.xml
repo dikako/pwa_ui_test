@@ -6,4 +6,15 @@
       <class name="testcases.Test_Live_Tv"/>
     </classes>
   </test> <!-- Default test -->
+  <test name="Default test(failed)">
+    <classes>
+      <class name="testcases.Test_Live_Tv">
+        <methods>
+          <include name="exclusive_validate_list_share" invocation-numbers="0 1 2 3 4"/>
+          <include name="done"/>
+          <include name="set"/>
+        </methods>
+      </class> <!-- testcases.Test_Live_Tv -->
+    </classes>
+  </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
