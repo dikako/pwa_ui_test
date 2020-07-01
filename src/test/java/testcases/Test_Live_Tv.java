@@ -34,53 +34,53 @@ public class Test_Live_Tv extends Setup {
 		return read.getCellData(path, "List_Share");
 	}
 
-//	@Severity(SeverityLevel.CRITICAL)
-//	@Description("Live Tv Test - Validate List Tab Live Tv")
-//	@Test(priority = 0, testName = "Validate List Tab Live Tv", dataProvider = "live_tv_active_tab")
-//	public void live_tv_list_tab_livetv(String index, String textValue) throws InterruptedException {
-//		Url url = new Url(driver);
-//		Button button = PageFactory.initElements(driver, Button.class);
-//
-//		Integer indexToInt = Integer.valueOf(index);
-//
-//		System.out.println("Live Tv Test - Validate List Tab Live Tv");
-//
-//		url.defaultUrl();
-//		button.byId("action-live-tv");
-//		Thread.sleep(5000);
-//		button.byClassesGetText("text-center", indexToInt, textValue);
-//	}
-	
-//	@Severity(SeverityLevel.CRITICAL)
-//	@Description("Live Tv Test - Validate Tab Live and Cacthup")
-//	@Test(priority = 1, testName = "Validate Tab Live and Cacthup", dataProvider = "tab_livetv_catchup")
-//	public void live_tv_live_and_cathup(String index, String textValue) throws InterruptedException {
-//		Url url = new Url(driver);
-//		Button button = PageFactory.initElements(driver, Button.class);
-//
-//		Integer indexToInt = Integer.valueOf(index);
-//
-//		System.out.println("Live Tv Test - Validate Tab Live and Cacthup");
-//
-//		url.defaultUrl();
-//		button.byId("action-live-tv");
-//		Thread.sleep(5000);
-//		button.byClassesGetText("nav-link", indexToInt, textValue);
-//	}
-	
-	@Description("Live Tv Test - Validate List Share")
-	@Test(priority = 2, testName = "Validate List Share", dataProvider = "list_share")
-	public void exclusive_validate_list_share(String index, String listShare) {
+	@Severity(SeverityLevel.CRITICAL)
+	@Description("Live Tv Test - Validate List Tab Live Tv")
+	@Test(priority = 0, testName = "Validate List Tab Live Tv", dataProvider = "live_tv_active_tab")
+	public void live_tv_list_tab_livetv(String index, String textValue) throws InterruptedException {
 		Url url = new Url(driver);
 		Button button = PageFactory.initElements(driver, Button.class);
-		Integer indexToInteger = Integer.valueOf(index);
 
-		System.out.println("Live Tv Test - Validate List Share");
+		Integer indexToInt = Integer.valueOf(index);
+
+		System.out.println("Live Tv Test - Validate List Tab Live Tv");
 
 		url.defaultUrl();
 		button.byId("action-live-tv");
-		button.byClass("share-btn");
-		button.byClassByTagByAttrToString("sheet-action-button-share", indexToInteger, "div", "aria-label", listShare);
+		Thread.sleep(5000);
+		button.byClassesGetText("text-center", indexToInt, textValue);
 	}
+	
+	@Severity(SeverityLevel.CRITICAL)
+	@Description("Live Tv Test - Validate Tab Live and Cacthup")
+	@Test(priority = 1, testName = "Validate Tab Live and Cacthup", dataProvider = "tab_livetv_catchup")
+	public void live_tv_live_and_cathup(String index, String textValue) throws InterruptedException {
+		Url url = new Url(driver);
+		Button button = PageFactory.initElements(driver, Button.class);
+
+		Integer indexToInt = Integer.valueOf(index);
+
+		System.out.println("Live Tv Test - Validate Tab Live and Cacthup");
+
+		url.defaultUrl();
+		button.byId("action-live-tv");
+		Thread.sleep(5000);
+		button.byClassesGetText("nav-link", indexToInt, textValue);
+	}
+	
+//	@Description("Live Tv Test - Validate List Share")
+//	@Test(priority = 2, testName = "Validate List Share", dataProvider = "list_share")
+//	public void exclusive_validate_list_share(String index, String listShare) {
+//		Url url = new Url(driver);
+//		Button button = PageFactory.initElements(driver, Button.class);
+//		Integer indexToInteger = Integer.valueOf(index);
+//
+//		System.out.println("Live Tv Test - Validate List Share");
+//
+//		url.defaultUrl();
+//		button.byId("action-live-tv");
+//		button.byClass("share-btn");
+//		button.byClassByTagByAttrToString("sheet-action-button-share", indexToInteger, "div", "aria-label", listShare);
+//	}
 	
 }

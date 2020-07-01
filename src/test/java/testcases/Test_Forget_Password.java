@@ -41,5 +41,4 @@ public class Test_Forget_Password extends Setup {
 		button.byId("button-next");
 		alert.byId("invalid-feedback", alertText);
 	}
-	
 }
