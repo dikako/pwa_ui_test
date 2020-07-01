@@ -6,7 +6,7 @@
       <class name="testcases.Test_Login"/>
       <class name="testcases.Test_Radio"/>
       <class name="testcases.Test_Live_Tv"/>
-      <class name="testcases.Test_Continue_Watching"/>
+     <!--  <class name="testcases.Test_Continue_Watching"/> -->
       <class name="testcases.Test_News"/>
       <class name="testcases.Test_Chat"/>
       <class name="testcases.Test_Edit_Profile"/>
