@@ -38,6 +38,7 @@ public class Test_Chat extends Setup {
 		System.out.println("Chat Test - Test Chatting Before Login");
 
 		url.urls("/tv/" + urlLiveTv);
+		Thread.sleep(5000);
 		button.byIdDisplay("btn-expand", true);
 		button.byId("btn-expand");
 		button.byId("popup-action-signin");
@@ -70,6 +71,7 @@ public class Test_Chat extends Setup {
 		input.byId("email", username);
 		input.byId("password", password);
 		button.byId("submit-login");
+		Thread.sleep(5000);
 
 		url.urls("/tv/" + urlLiveTv);
 		button.byId("btn-expand");

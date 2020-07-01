@@ -29,7 +29,7 @@ public class Test_Continue_Watching extends Setup {
 	@Severity(SeverityLevel.CRITICAL)
 	@Description("Continue Watching Test - After Login")
 	@Test(priority = 0, testName = "Continue Watching Afetr Login", dataProvider = "")
-	public void continue_watching_after_login(String username, String password) {
+	public void continue_watching_after_login(String username, String password) throws InterruptedException {
 		Url url = new Url(driver);
 		Input input = PageFactory.initElements(driver, Input.class);
 		Button button = PageFactory.initElements(driver, Button.class);
@@ -40,5 +40,13 @@ public class Test_Continue_Watching extends Setup {
 		input.byId("email", username);
 		input.byId("password", password);
 		button.byId("submit-login");
+		Thread.sleep(5000);
+		button.byId("action-exclusive");
+		button.byXpath("//a[contains(text(),'Clip')]");
+		button.byClassByIndex("program-thumbnail", 0);
+		Thread.sleep(10000);
+		url.defaultUrl();
+		button.byId("action-account");
+		button.byClassDisplay("list-item-thumbnail", true);
 	}
 }

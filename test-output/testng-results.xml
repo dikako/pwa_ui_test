@@ -1,47 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="5" total="5" passed="0">
+<testng-results skipped="0" failed="8" total="8" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="294837" started-at="2020-07-01T03:31:24Z" finished-at="2020-07-01T03:36:19Z">
+  <suite name="Default suite" duration-ms="573639" started-at="2020-07-01T07:46:09Z" finished-at="2020-07-01T07:55:43Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="294837" started-at="2020-07-01T03:31:24Z" finished-at="2020-07-01T03:36:19Z">
-      <class name="testcases.Test_Live_Tv">
-        <test-method status="PASS" signature="set()[pri:0, instance:testcases.Test_Live_Tv@6d366c9b]" name="set" is-config="true" duration-ms="2269" started-at="2020-07-01T10:31:25Z" finished-at="2020-07-01T10:31:27Z">
+    <test name="Default test" duration-ms="573639" started-at="2020-07-01T07:46:09Z" finished-at="2020-07-01T07:55:43Z">
+      <class name="testcases.Test_Chat">
+        <test-method status="PASS" signature="set()[pri:0, instance:testcases.Test_Chat@3185fa6b]" name="set" is-config="true" duration-ms="2727" started-at="2020-07-01T14:46:10Z" finished-at="2020-07-01T14:46:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- set -->
-        <test-method status="FAIL" signature="exclusive_validate_list_share(java.lang.String, java.lang.String)[pri:2, instance:testcases.Test_Live_Tv@6d366c9b]" name="exclusive_validate_list_share" duration-ms="43092" started-at="2020-07-01T10:31:27Z" data-provider="list_share" finished-at="2020-07-01T10:32:10Z">
+        <test-method status="FAIL" signature="chat_test_before_login(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.Test_Chat@3185fa6b]" name="chat_test_before_login" duration-ms="36385" started-at="2020-07-01T14:46:13Z" data-provider="list_chat" finished-at="2020-07-01T14:46:49Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[0]]>
+                <![CDATA[rcti]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[facebook]]>
+                <![CDATA[dikakoko04@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[dikakoko]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[dikakokodikakoko]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Selamat menonton semua!]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.JavascriptException">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[javascript error: Failed to execute 'elementsFromPoint' on 'Document': The provided double value is non-finite.
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#btn\-expand"}
   (Session info: chrome=83.0.4103.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'MNCTVN05589', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.HGghJ9}, goog:chromeOptions: {debuggerAddress: localhost:43215}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: bf9127092c05eb15aefd685abda...}
-Session ID: bf9127092c05eb15aefd685abdae0b72]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.bgXlxc}, goog:chromeOptions: {debuggerAddress: localhost:37249}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 844dff2d8d58f5c48549469c9bd...}
+Session ID: 844dff2d8d58f5c48549469c9bd4bec2
+*** Element info: {Using=id, value=btn-expand}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.JavascriptException: javascript error: Failed to execute 'elementsFromPoint' on 'Document': The provided double value is non-finite.
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#btn\-expand"}
   (Session info: chrome=83.0.4103.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'MNCTVN05589', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.HGghJ9}, goog:chromeOptions: {debuggerAddress: localhost:43215}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: bf9127092c05eb15aefd685abda...}
-Session ID: bf9127092c05eb15aefd685abdae0b72
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.bgXlxc}, goog:chromeOptions: {debuggerAddress: localhost:37249}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 844dff2d8d58f5c48549469c9bd...}
+Session ID: 844dff2d8d58f5c48549469c9bd4bec2
+*** Element info: {Using=id, value=btn-expand}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -51,10 +70,12 @@ Session ID: bf9127092c05eb15aefd685abdae0b72
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)
-	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)
-	at object.Button.byClass(Button.java:57)
-	at testcases.Test_Live_Tv.exclusive_validate_list_share(Test_Live_Tv.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at object.Button.byIdDisplay(Button.java:161)
+	at testcases.Test_Chat.chat_test_before_login(Test_Chat.java:41)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -81,56 +102,75 @@ Session ID: bf9127092c05eb15aefd685abdae0b72
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.JavascriptException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- exclusive_validate_list_share -->
-        <test-method status="PASS" signature="done(org.testng.ITestResult)[pri:0, instance:testcases.Test_Live_Tv@6d366c9b]" name="done" is-config="true" duration-ms="6327" started-at="2020-07-01T10:32:10Z" finished-at="2020-07-01T10:32:17Z">
+        </test-method> <!-- chat_test_before_login -->
+        <test-method status="PASS" signature="done(org.testng.ITestResult)[pri:0, instance:testcases.Test_Chat@3185fa6b]" name="done" is-config="true" duration-ms="5872" started-at="2020-07-01T14:46:49Z" finished-at="2020-07-01T14:46:55Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=exclusive_validate_list_share status=FAILURE method=Test_Live_Tv.exclusive_validate_list_share(java.lang.String, java.lang.String)[pri:2, instance:testcases.Test_Live_Tv@6d366c9b] output={null}]]]>
+                <![CDATA[[TestResult name=chat_test_before_login status=FAILURE method=Test_Chat.chat_test_before_login(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.Test_Chat@3185fa6b] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- done -->
-        <test-method status="PASS" signature="set()[pri:0, instance:testcases.Test_Live_Tv@6d366c9b]" name="set" is-config="true" duration-ms="2592" started-at="2020-07-01T10:32:17Z" finished-at="2020-07-01T10:32:19Z">
+        <test-method status="PASS" signature="set()[pri:0, instance:testcases.Test_Chat@3185fa6b]" name="set" is-config="true" duration-ms="1161" started-at="2020-07-01T14:46:55Z" finished-at="2020-07-01T14:46:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- set -->
-        <test-method status="FAIL" signature="exclusive_validate_list_share(java.lang.String, java.lang.String)[pri:2, instance:testcases.Test_Live_Tv@6d366c9b]" name="exclusive_validate_list_share" duration-ms="43255" started-at="2020-07-01T10:32:19Z" data-provider="list_share" finished-at="2020-07-01T10:33:03Z">
+        <test-method status="FAIL" signature="chat_test_before_login(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.Test_Chat@3185fa6b]" name="chat_test_before_login" duration-ms="39208" started-at="2020-07-01T14:46:56Z" data-provider="list_chat" finished-at="2020-07-01T14:47:35Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[1]]>
+                <![CDATA[mnctv]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[twitter]]>
+                <![CDATA[dikakoko04@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[dikakoko]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[dikakokodikakoko]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Selamat menonton semua!]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.JavascriptException">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[javascript error: Failed to execute 'elementsFromPoint' on 'Document': The provided double value is non-finite.
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#btn\-expand"}
   (Session info: chrome=83.0.4103.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'MNCTVN05589', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.XdmZBX}, goog:chromeOptions: {debuggerAddress: localhost:45001}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 698485efce3d39b0395aaa3257b...}
-Session ID: 698485efce3d39b0395aaa3257b9de57]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.reuUCB}, goog:chromeOptions: {debuggerAddress: localhost:37541}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: d6321d899ed4d4e1ca4f6d62488...}
+Session ID: d6321d899ed4d4e1ca4f6d624887ca64
+*** Element info: {Using=id, value=btn-expand}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.JavascriptException: javascript error: Failed to execute 'elementsFromPoint' on 'Document': The provided double value is non-finite.
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#btn\-expand"}
   (Session info: chrome=83.0.4103.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'MNCTVN05589', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.XdmZBX}, goog:chromeOptions: {debuggerAddress: localhost:45001}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 698485efce3d39b0395aaa3257b...}
-Session ID: 698485efce3d39b0395aaa3257b9de57
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.reuUCB}, goog:chromeOptions: {debuggerAddress: localhost:37541}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: d6321d899ed4d4e1ca4f6d62488...}
+Session ID: d6321d899ed4d4e1ca4f6d624887ca64
+*** Element info: {Using=id, value=btn-expand}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -140,10 +180,12 @@ Session ID: 698485efce3d39b0395aaa3257b9de57
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)
-	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)
-	at object.Button.byClass(Button.java:57)
-	at testcases.Test_Live_Tv.exclusive_validate_list_share(Test_Live_Tv.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at object.Button.byIdDisplay(Button.java:161)
+	at testcases.Test_Chat.chat_test_before_login(Test_Chat.java:41)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -170,56 +212,75 @@ Session ID: 698485efce3d39b0395aaa3257b9de57
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.JavascriptException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- exclusive_validate_list_share -->
-        <test-method status="PASS" signature="done(org.testng.ITestResult)[pri:0, instance:testcases.Test_Live_Tv@6d366c9b]" name="done" is-config="true" duration-ms="5977" started-at="2020-07-01T10:33:03Z" finished-at="2020-07-01T10:33:09Z">
+        </test-method> <!-- chat_test_before_login -->
+        <test-method status="PASS" signature="done(org.testng.ITestResult)[pri:0, instance:testcases.Test_Chat@3185fa6b]" name="done" is-config="true" duration-ms="5498" started-at="2020-07-01T14:47:35Z" finished-at="2020-07-01T14:47:41Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=exclusive_validate_list_share status=FAILURE method=Test_Live_Tv.exclusive_validate_list_share(java.lang.String, java.lang.String)[pri:2, instance:testcases.Test_Live_Tv@6d366c9b] output={null}]]]>
+                <![CDATA[[TestResult name=chat_test_before_login status=FAILURE method=Test_Chat.chat_test_before_login(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.Test_Chat@3185fa6b] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- done -->
-        <test-method status="PASS" signature="set()[pri:0, instance:testcases.Test_Live_Tv@6d366c9b]" name="set" is-config="true" duration-ms="1632" started-at="2020-07-01T10:33:09Z" finished-at="2020-07-01T10:33:10Z">
+        <test-method status="PASS" signature="set()[pri:0, instance:testcases.Test_Chat@3185fa6b]" name="set" is-config="true" duration-ms="1668" started-at="2020-07-01T14:47:41Z" finished-at="2020-07-01T14:47:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- set -->
-        <test-method status="FAIL" signature="exclusive_validate_list_share(java.lang.String, java.lang.String)[pri:2, instance:testcases.Test_Live_Tv@6d366c9b]" name="exclusive_validate_list_share" duration-ms="49180" started-at="2020-07-01T10:33:10Z" data-provider="list_share" finished-at="2020-07-01T10:33:59Z">
+        <test-method status="FAIL" signature="chat_test_before_login(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.Test_Chat@3185fa6b]" name="chat_test_before_login" duration-ms="45474" started-at="2020-07-01T14:47:43Z" data-provider="list_chat" finished-at="2020-07-01T14:48:28Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[2]]>
+                <![CDATA[gtv]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[line]]>
+                <![CDATA[dikakoko04@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[dikakoko]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[dikakokodikakoko]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Selamat menonton semua!]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.JavascriptException">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[javascript error: Failed to execute 'elementsFromPoint' on 'Document': The provided double value is non-finite.
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#btn\-expand"}
   (Session info: chrome=83.0.4103.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'MNCTVN05589', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.AI1p5Y}, goog:chromeOptions: {debuggerAddress: localhost:43145}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 7f5f9ede45ca8fc521b3573d52f...}
-Session ID: 7f5f9ede45ca8fc521b3573d52f11767]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.iLC0SR}, goog:chromeOptions: {debuggerAddress: localhost:34911}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 76fc0feed405aae4daf0dde275f...}
+Session ID: 76fc0feed405aae4daf0dde275f225ea
+*** Element info: {Using=id, value=btn-expand}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.JavascriptException: javascript error: Failed to execute 'elementsFromPoint' on 'Document': The provided double value is non-finite.
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#btn\-expand"}
   (Session info: chrome=83.0.4103.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'MNCTVN05589', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.AI1p5Y}, goog:chromeOptions: {debuggerAddress: localhost:43145}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 7f5f9ede45ca8fc521b3573d52f...}
-Session ID: 7f5f9ede45ca8fc521b3573d52f11767
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.iLC0SR}, goog:chromeOptions: {debuggerAddress: localhost:34911}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 76fc0feed405aae4daf0dde275f...}
+Session ID: 76fc0feed405aae4daf0dde275f225ea
+*** Element info: {Using=id, value=btn-expand}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -229,10 +290,12 @@ Session ID: 7f5f9ede45ca8fc521b3573d52f11767
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)
-	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)
-	at object.Button.byClass(Button.java:57)
-	at testcases.Test_Live_Tv.exclusive_validate_list_share(Test_Live_Tv.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at object.Button.byIdDisplay(Button.java:161)
+	at testcases.Test_Chat.chat_test_before_login(Test_Chat.java:41)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -259,56 +322,75 @@ Session ID: 7f5f9ede45ca8fc521b3573d52f11767
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.JavascriptException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- exclusive_validate_list_share -->
-        <test-method status="PASS" signature="done(org.testng.ITestResult)[pri:0, instance:testcases.Test_Live_Tv@6d366c9b]" name="done" is-config="true" duration-ms="5466" started-at="2020-07-01T10:33:59Z" finished-at="2020-07-01T10:34:05Z">
+        </test-method> <!-- chat_test_before_login -->
+        <test-method status="PASS" signature="done(org.testng.ITestResult)[pri:0, instance:testcases.Test_Chat@3185fa6b]" name="done" is-config="true" duration-ms="5362" started-at="2020-07-01T14:48:28Z" finished-at="2020-07-01T14:48:34Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=exclusive_validate_list_share status=FAILURE method=Test_Live_Tv.exclusive_validate_list_share(java.lang.String, java.lang.String)[pri:2, instance:testcases.Test_Live_Tv@6d366c9b] output={null}]]]>
+                <![CDATA[[TestResult name=chat_test_before_login status=FAILURE method=Test_Chat.chat_test_before_login(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.Test_Chat@3185fa6b] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- done -->
-        <test-method status="PASS" signature="set()[pri:0, instance:testcases.Test_Live_Tv@6d366c9b]" name="set" is-config="true" duration-ms="1493" started-at="2020-07-01T10:34:05Z" finished-at="2020-07-01T10:34:06Z">
+        <test-method status="PASS" signature="set()[pri:0, instance:testcases.Test_Chat@3185fa6b]" name="set" is-config="true" duration-ms="1582" started-at="2020-07-01T14:48:34Z" finished-at="2020-07-01T14:48:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- set -->
-        <test-method status="FAIL" signature="exclusive_validate_list_share(java.lang.String, java.lang.String)[pri:2, instance:testcases.Test_Live_Tv@6d366c9b]" name="exclusive_validate_list_share" duration-ms="47810" started-at="2020-07-01T10:34:06Z" data-provider="list_share" finished-at="2020-07-01T10:34:54Z">
+        <test-method status="FAIL" signature="chat_test_before_login(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.Test_Chat@3185fa6b]" name="chat_test_before_login" duration-ms="36753" started-at="2020-07-01T14:48:35Z" data-provider="list_chat" finished-at="2020-07-01T14:49:12Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[3]]>
+                <![CDATA[inews]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[email]]>
+                <![CDATA[dikakoko04@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[dikakoko]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[dikakokodikakoko]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Selamat menonton semua!]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.JavascriptException">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[javascript error: Failed to execute 'elementsFromPoint' on 'Document': The provided double value is non-finite.
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#btn\-expand"}
   (Session info: chrome=83.0.4103.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'MNCTVN05589', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.FarFu7}, goog:chromeOptions: {debuggerAddress: localhost:35877}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 9afd0b184e53cbd5edd75d1998c...}
-Session ID: 9afd0b184e53cbd5edd75d1998cc232a]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.nkbgF1}, goog:chromeOptions: {debuggerAddress: localhost:39645}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 49a9053770aa2abfb97fd5ce90d...}
+Session ID: 49a9053770aa2abfb97fd5ce90dcb542
+*** Element info: {Using=id, value=btn-expand}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.JavascriptException: javascript error: Failed to execute 'elementsFromPoint' on 'Document': The provided double value is non-finite.
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#btn\-expand"}
   (Session info: chrome=83.0.4103.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'MNCTVN05589', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.FarFu7}, goog:chromeOptions: {debuggerAddress: localhost:35877}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 9afd0b184e53cbd5edd75d1998c...}
-Session ID: 9afd0b184e53cbd5edd75d1998cc232a
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.nkbgF1}, goog:chromeOptions: {debuggerAddress: localhost:39645}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 49a9053770aa2abfb97fd5ce90d...}
+Session ID: 49a9053770aa2abfb97fd5ce90dcb542
+*** Element info: {Using=id, value=btn-expand}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -318,10 +400,12 @@ Session ID: 9afd0b184e53cbd5edd75d1998cc232a
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)
-	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)
-	at object.Button.byClass(Button.java:57)
-	at testcases.Test_Live_Tv.exclusive_validate_list_share(Test_Live_Tv.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at object.Button.byIdDisplay(Button.java:161)
+	at testcases.Test_Chat.chat_test_before_login(Test_Chat.java:41)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -348,56 +432,75 @@ Session ID: 9afd0b184e53cbd5edd75d1998cc232a
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.JavascriptException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- exclusive_validate_list_share -->
-        <test-method status="PASS" signature="done(org.testng.ITestResult)[pri:0, instance:testcases.Test_Live_Tv@6d366c9b]" name="done" is-config="true" duration-ms="5444" started-at="2020-07-01T10:34:54Z" finished-at="2020-07-01T10:35:00Z">
+        </test-method> <!-- chat_test_before_login -->
+        <test-method status="PASS" signature="done(org.testng.ITestResult)[pri:0, instance:testcases.Test_Chat@3185fa6b]" name="done" is-config="true" duration-ms="5435" started-at="2020-07-01T14:49:12Z" finished-at="2020-07-01T14:49:17Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=exclusive_validate_list_share status=FAILURE method=Test_Live_Tv.exclusive_validate_list_share(java.lang.String, java.lang.String)[pri:2, instance:testcases.Test_Live_Tv@6d366c9b] output={null}]]]>
+                <![CDATA[[TestResult name=chat_test_before_login status=FAILURE method=Test_Chat.chat_test_before_login(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.Test_Chat@3185fa6b] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- done -->
-        <test-method status="PASS" signature="set()[pri:0, instance:testcases.Test_Live_Tv@6d366c9b]" name="set" is-config="true" duration-ms="1249" started-at="2020-07-01T10:35:00Z" finished-at="2020-07-01T10:35:01Z">
+        <test-method status="PASS" signature="set()[pri:0, instance:testcases.Test_Chat@3185fa6b]" name="set" is-config="true" duration-ms="3107" started-at="2020-07-01T14:49:17Z" finished-at="2020-07-01T14:49:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- set -->
-        <test-method status="FAIL" signature="exclusive_validate_list_share(java.lang.String, java.lang.String)[pri:2, instance:testcases.Test_Live_Tv@6d366c9b]" name="exclusive_validate_list_share" duration-ms="72442" started-at="2020-07-01T10:35:01Z" data-provider="list_share" finished-at="2020-07-01T10:36:13Z">
+        <test-method status="FAIL" signature="chat_test_after_login(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:testcases.Test_Chat@3185fa6b]" name="chat_test_after_login" duration-ms="118469" started-at="2020-07-01T14:49:21Z" data-provider="list_chat" finished-at="2020-07-01T14:51:19Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[4]]>
+                <![CDATA[rcti]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[whatsapp]]>
+                <![CDATA[dikakoko04@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[dikakoko]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[dikakokodikakoko]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Selamat menonton semua!]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.JavascriptException">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[javascript error: Failed to execute 'elementsFromPoint' on 'Document': The provided double value is non-finite.
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#btn\-expand"}
   (Session info: chrome=83.0.4103.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'MNCTVN05589', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.h2VSED}, goog:chromeOptions: {debuggerAddress: localhost:33995}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 821621d01054ebdcd596a4f056d...}
-Session ID: 821621d01054ebdcd596a4f056de32d5]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.RXtQqv}, goog:chromeOptions: {debuggerAddress: localhost:36005}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 461567aea0d67ce6d7c6c9060e6...}
+Session ID: 461567aea0d67ce6d7c6c9060e61a13b
+*** Element info: {Using=id, value=btn-expand}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.JavascriptException: javascript error: Failed to execute 'elementsFromPoint' on 'Document': The provided double value is non-finite.
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#btn\-expand"}
   (Session info: chrome=83.0.4103.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'MNCTVN05589', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.h2VSED}, goog:chromeOptions: {debuggerAddress: localhost:33995}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 821621d01054ebdcd596a4f056d...}
-Session ID: 821621d01054ebdcd596a4f056de32d5
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.RXtQqv}, goog:chromeOptions: {debuggerAddress: localhost:36005}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 461567aea0d67ce6d7c6c9060e6...}
+Session ID: 461567aea0d67ce6d7c6c9060e61a13b
+*** Element info: {Using=id, value=btn-expand}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -407,10 +510,12 @@ Session ID: 821621d01054ebdcd596a4f056de32d5
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)
-	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)
-	at object.Button.byClass(Button.java:57)
-	at testcases.Test_Live_Tv.exclusive_validate_list_share(Test_Live_Tv.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at object.Button.byId(Button.java:22)
+	at testcases.Test_Chat.chat_test_after_login(Test_Chat.java:75)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -437,22 +542,352 @@ Session ID: 821621d01054ebdcd596a4f056de32d5
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.JavascriptException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- exclusive_validate_list_share -->
-        <test-method status="PASS" signature="done(org.testng.ITestResult)[pri:0, instance:testcases.Test_Live_Tv@6d366c9b]" name="done" is-config="true" duration-ms="5417" started-at="2020-07-01T10:36:13Z" finished-at="2020-07-01T10:36:19Z">
+        </test-method> <!-- chat_test_after_login -->
+        <test-method status="PASS" signature="done(org.testng.ITestResult)[pri:0, instance:testcases.Test_Chat@3185fa6b]" name="done" is-config="true" duration-ms="5474" started-at="2020-07-01T14:51:19Z" finished-at="2020-07-01T14:51:25Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=exclusive_validate_list_share status=FAILURE method=Test_Live_Tv.exclusive_validate_list_share(java.lang.String, java.lang.String)[pri:2, instance:testcases.Test_Live_Tv@6d366c9b] output={null}]]]>
+                <![CDATA[[TestResult name=chat_test_after_login status=FAILURE method=Test_Chat.chat_test_after_login(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:testcases.Test_Chat@3185fa6b] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- done -->
-      </class> <!-- testcases.Test_Live_Tv -->
+        <test-method status="PASS" signature="set()[pri:0, instance:testcases.Test_Chat@3185fa6b]" name="set" is-config="true" duration-ms="1897" started-at="2020-07-01T14:51:25Z" finished-at="2020-07-01T14:51:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- set -->
+        <test-method status="FAIL" signature="chat_test_after_login(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:testcases.Test_Chat@3185fa6b]" name="chat_test_after_login" duration-ms="105756" started-at="2020-07-01T14:51:26Z" data-provider="list_chat" finished-at="2020-07-01T14:53:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mnctv]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[dikakoko04@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[dikakoko]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[dikakokodikakoko]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Selamat menonton semua!]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#btn\-expand"}
+  (Session info: chrome=83.0.4103.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MNCTVN05589', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.5ojFmo}, goog:chromeOptions: {debuggerAddress: localhost:45757}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: bf8302b20c1ac629fe6d79787b3...}
+Session ID: bf8302b20c1ac629fe6d79787b3a8b1a
+*** Element info: {Using=id, value=btn-expand}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#btn\-expand"}
+  (Session info: chrome=83.0.4103.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MNCTVN05589', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.5ojFmo}, goog:chromeOptions: {debuggerAddress: localhost:45757}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: bf8302b20c1ac629fe6d79787b3...}
+Session ID: bf8302b20c1ac629fe6d79787b3a8b1a
+*** Element info: {Using=id, value=btn-expand}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at object.Button.byId(Button.java:22)
+	at testcases.Test_Chat.chat_test_after_login(Test_Chat.java:75)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- chat_test_after_login -->
+        <test-method status="PASS" signature="done(org.testng.ITestResult)[pri:0, instance:testcases.Test_Chat@3185fa6b]" name="done" is-config="true" duration-ms="5459" started-at="2020-07-01T14:53:12Z" finished-at="2020-07-01T14:53:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=chat_test_after_login status=FAILURE method=Test_Chat.chat_test_after_login(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:testcases.Test_Chat@3185fa6b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- done -->
+        <test-method status="PASS" signature="set()[pri:0, instance:testcases.Test_Chat@3185fa6b]" name="set" is-config="true" duration-ms="1741" started-at="2020-07-01T14:53:18Z" finished-at="2020-07-01T14:53:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- set -->
+        <test-method status="FAIL" signature="chat_test_after_login(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:testcases.Test_Chat@3185fa6b]" name="chat_test_after_login" duration-ms="73906" started-at="2020-07-01T14:53:19Z" data-provider="list_chat" finished-at="2020-07-01T14:54:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[gtv]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[dikakoko04@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[dikakoko]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[dikakokodikakoko]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Selamat menonton semua!]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#btn\-expand"}
+  (Session info: chrome=83.0.4103.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MNCTVN05589', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.z4S4t7}, goog:chromeOptions: {debuggerAddress: localhost:35607}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 1c71ee7202070089dc16d01adb2...}
+Session ID: 1c71ee7202070089dc16d01adb2d2252
+*** Element info: {Using=id, value=btn-expand}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#btn\-expand"}
+  (Session info: chrome=83.0.4103.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MNCTVN05589', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.z4S4t7}, goog:chromeOptions: {debuggerAddress: localhost:35607}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 1c71ee7202070089dc16d01adb2...}
+Session ID: 1c71ee7202070089dc16d01adb2d2252
+*** Element info: {Using=id, value=btn-expand}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at object.Button.byId(Button.java:22)
+	at testcases.Test_Chat.chat_test_after_login(Test_Chat.java:75)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- chat_test_after_login -->
+        <test-method status="PASS" signature="done(org.testng.ITestResult)[pri:0, instance:testcases.Test_Chat@3185fa6b]" name="done" is-config="true" duration-ms="5568" started-at="2020-07-01T14:54:33Z" finished-at="2020-07-01T14:54:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=chat_test_after_login status=FAILURE method=Test_Chat.chat_test_after_login(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:testcases.Test_Chat@3185fa6b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- done -->
+        <test-method status="PASS" signature="set()[pri:0, instance:testcases.Test_Chat@3185fa6b]" name="set" is-config="true" duration-ms="1303" started-at="2020-07-01T14:54:39Z" finished-at="2020-07-01T14:54:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- set -->
+        <test-method status="FAIL" signature="chat_test_after_login(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:testcases.Test_Chat@3185fa6b]" name="chat_test_after_login" duration-ms="56805" started-at="2020-07-01T14:54:40Z" data-provider="list_chat" finished-at="2020-07-01T14:55:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[inews]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[dikakoko04@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[dikakoko]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[dikakokodikakoko]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Selamat menonton semua!]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#btn\-expand"}
+  (Session info: chrome=83.0.4103.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MNCTVN05589', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.FGJ47S}, goog:chromeOptions: {debuggerAddress: localhost:44791}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: e5811253f29e88aad2c5ee221ba...}
+Session ID: e5811253f29e88aad2c5ee221bad2a31
+*** Element info: {Using=id, value=btn-expand}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#btn\-expand"}
+  (Session info: chrome=83.0.4103.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MNCTVN05589', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.FGJ47S}, goog:chromeOptions: {debuggerAddress: localhost:44791}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: e5811253f29e88aad2c5ee221ba...}
+Session ID: e5811253f29e88aad2c5ee221bad2a31
+*** Element info: {Using=id, value=btn-expand}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at object.Button.byId(Button.java:22)
+	at testcases.Test_Chat.chat_test_after_login(Test_Chat.java:75)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- chat_test_after_login -->
+        <test-method status="PASS" signature="done(org.testng.ITestResult)[pri:0, instance:testcases.Test_Chat@3185fa6b]" name="done" is-config="true" duration-ms="5643" started-at="2020-07-01T14:55:37Z" finished-at="2020-07-01T14:55:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=chat_test_after_login status=FAILURE method=Test_Chat.chat_test_after_login(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:testcases.Test_Chat@3185fa6b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- done -->
+      </class> <!-- testcases.Test_Chat -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
