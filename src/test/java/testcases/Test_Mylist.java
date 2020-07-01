@@ -40,6 +40,7 @@ public class Test_Mylist extends Setup {
 		input.byId("email", username);
 		input.byId("password", password);
 		button.byId("submit-login");
+		Thread.sleep(5000);
 
 		url.urls("/explores");
 		Thread.sleep(5000);

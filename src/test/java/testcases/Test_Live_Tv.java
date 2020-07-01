@@ -67,20 +67,4 @@ public class Test_Live_Tv extends Setup {
 		Thread.sleep(5000);
 		button.byClassesGetText("nav-link", indexToInt, textValue);
 	}
-	
-//	@Description("Live Tv Test - Validate List Share")
-//	@Test(priority = 2, testName = "Validate List Share", dataProvider = "list_share")
-//	public void exclusive_validate_list_share(String index, String listShare) {
-//		Url url = new Url(driver);
-//		Button button = PageFactory.initElements(driver, Button.class);
-//		Integer indexToInteger = Integer.valueOf(index);
-//
-//		System.out.println("Live Tv Test - Validate List Share");
-//
-//		url.defaultUrl();
-//		button.byId("action-live-tv");
-//		button.byClass("share-btn");
-//		button.byClassByTagByAttrToString("sheet-action-button-share", indexToInteger, "div", "aria-label", listShare);
-//	}
-	
 }
