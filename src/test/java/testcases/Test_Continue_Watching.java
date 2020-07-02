@@ -36,17 +36,17 @@ public class Test_Continue_Watching extends Setup {
 		
 		System.out.println("Continue Watching Test - After Login");
 		
-		url.urls("/login");
-		input.byId("email", username);
-		input.byId("password", password);
-		button.byId("submit-login");
-		Thread.sleep(5000);
-		button.byId("action-exclusive");
-		button.byXpath("//a[contains(text(),'Clip')]");
-		button.byClassByIndex("program-thumbnail", 0);
-		Thread.sleep(10000);
-		url.defaultUrl();
-		button.byId("action-account");
-		button.byClassDisplay("list-item-thumbnail", true);
+//		url.urls("/login");
+//		input.byId("email", username);
+//		input.byId("password", password);
+//		button.byId("submit-login");
+//		Thread.sleep(5000);
+//		button.byId("action-exclusive");
+//		button.byXpath("//a[contains(text(),'Clip')]");
+//		button.byClassByIndex("program-thumbnail", 0);
+//		Thread.sleep(10000);
+//		url.defaultUrl();
+//		button.byId("action-account");
+//		button.byClassDisplay("list-item-thumbnail", true);
 	}
 }

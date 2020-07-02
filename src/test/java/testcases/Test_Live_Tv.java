@@ -28,11 +28,6 @@ public class Test_Live_Tv extends Setup {
 		ReadExcel read = new ReadExcel();
 		return read.getCellData(path, "Live_Tv_Tab_Live_And_Catch");
 	}
-	@DataProvider
-	public String[][] list_share() throws InvalidFormatException, IOException {
-		ReadExcel read = new ReadExcel();
-		return read.getCellData(path, "List_Share");
-	}
 
 	@Severity(SeverityLevel.CRITICAL)
 	@Description("Live Tv Test - Validate List Tab Live Tv")
