@@ -21,14 +21,14 @@ public class Test_Continue_Watching extends Setup {
 	public String path = "../pwa_ui_test/src/main/java/data/data_test.xlsx";
 	
 	@DataProvider
-	public String[][] login_alert_username() throws InvalidFormatException, IOException {
+	public String[][] continue_watching() throws InvalidFormatException, IOException {
 		ReadExcel read = new ReadExcel();
-		return read.getCellData(path, "Login_Alert_Username");
+		return read.getCellData(path, "Continue_Watching");
 	}
 	
 	@Severity(SeverityLevel.CRITICAL)
 	@Description("Continue Watching Test - After Login")
-	@Test(priority = 0, testName = "Continue Watching Afetr Login", dataProvider = "")
+	@Test(priority = 0, testName = "Continue Watching Afetr Login", dataProvider = "continue_watching")
 	public void continue_watching_after_login(String username, String password) throws InterruptedException {
 		Url url = new Url(driver);
 		Input input = PageFactory.initElements(driver, Input.class);
