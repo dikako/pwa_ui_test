@@ -9,6 +9,7 @@ import org.testng.annotations.Test;
 import com.fasterxml.jackson.databind.exc.InvalidFormatException;
 import config.Setup;
 import config.Url;
+import object.Alert;
 import object.Button;
 import object.Input;
 import utility.ReadExcel;
@@ -79,5 +80,68 @@ public class Test_Chat extends Setup {
 //		input.byId("chat-input", chatText + Keys.ENTER);
 //		input.validateInputTextByClassByIndexone("username", nickname);
 //		input.validateInputTextByClassByIndexone("message", chatText);
+	}
+
+	@Severity(SeverityLevel.CRITICAL)
+	@Description("Chat Test Live Event - Test Chatting After Login")
+	@Test(priority = 1, testName = "Test Chat Live Event > After Login", dataProvider = "list_chat")
+	public void chat_test_live_event_after_login(String urlLiveTv, String username, String password, String nickname,
+			String chatText) throws InterruptedException {
+		Url url = new Url(driver);
+		Button button = PageFactory.initElements(driver, Button.class);
+		Input input = PageFactory.initElements(driver, Input.class);
+		Alert alert = PageFactory.initElements(driver, Alert.class);
+
+		System.out.println("Chat Test Live Event - Test Chatting After Login");
+
+		url.urls("/login");
+		input.byId("email", username);
+		input.byId("password", password);
+		button.byId("submit-login");
+		Thread.sleep(5000);
+
+		button.byId("action-live-event");
+		alert.byClass("header-nav-verif", "Live Event");
+		if (button.isClassDisplay("thumb-timer")) {
+			button.byClassByIndex("thumb-timer", 0);
+		} else {
+			System.out.println("Data Live Event Tidak Ada");
+		}
+		button.byId("btn-expand");
+		input.byIdDisplay("chat-input", true);
+		input.byId("chat-input", chatText + Keys.ENTER);
+		input.validateInputTextByClassByIndexone("username", nickname);
+		input.validateInputTextByClassByIndexone("message", chatText);
+	}
+
+	@Severity(SeverityLevel.CRITICAL)
+	@Description("Chat Test Live Event - Test Chatting Before Login")
+	@Test(priority = 0, testName = "Test Chat Live Event > Before Login > Type Chat", dataProvider = "list_chat")
+	public void test_chat_live_event__before_login(String urlLiveTv, String username, String password, String nickname,
+			String chatText) throws InterruptedException {
+		Url url = new Url(driver);
+		Button button = PageFactory.initElements(driver, Button.class);
+		Input input = PageFactory.initElements(driver, Input.class);
+
+		System.out.println("Chat Test Live Event - Test Chatting Before Login");
+
+		url.defaultUrl();
+		button.byId("action-live-event");
+		Thread.sleep(5000);
+		button.byIdDisplay("btn-expand", true);
+		button.byId("btn-expand");
+		button.byId("popup-action-signin");
+		input.byId("email", username);
+		input.byId("password", password);
+		button.byId("submit-login");
+		Thread.sleep(5000);
+
+		button.byId("action-live-event");
+		button.byId("btn-expand");
+		Thread.sleep(5000);
+		input.byIdDisplay("chat-input", true);
+		input.byId("chat-input", chatText + Keys.ENTER);
+		input.validateInputTextByClassByIndexone("username", nickname);
+		input.validateInputTextByClassByIndexone("message", chatText);
 	}
 }

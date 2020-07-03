@@ -289,6 +289,11 @@ public class Button {
 		System.out.println("Button is Enabled: " + btn);
 	}
 
+	// boolean display function
+	public Boolean isClassDisplay(String selector) {
+		return driver.findElements(By.className(selector)).size() > 0;		
+	}
+	
 	private void waitForVisible(WebDriver driver, WebElement element) {
 		try {
 			Thread.sleep(5000);

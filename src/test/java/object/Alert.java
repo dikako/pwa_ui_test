@@ -1,5 +1,7 @@
 package object;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -241,6 +243,15 @@ public class Alert {
 		boolean u = driver.getCurrentUrl().contains(url);
 		Assert.assertEquals(u, true);
 		System.out.println("Url: " + driver.getCurrentUrl());
+	}
+
+	// validate Class by index
+	public void byClassByIndex(int index, String selector, String alertText) {
+		List<WebElement> element = driver.findElements(By.className(selector));
+		Assert.assertEquals(
+				element.get(index).getText().toLowerCase().replace(" ", "").replace("\n", "").replace("\n", ""),
+				alertText.toLowerCase().replace(" ", "").replace("\n", "").replace("\n", ""));
+		System.out.println(element.get(index).getText());
 	}
 
 	private void waitForVisible(WebDriver driver, WebElement element) {
