@@ -1,10 +1,13 @@
 package testcases;
 
 import java.io.IOException;
+
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+
 import com.fasterxml.jackson.databind.exc.InvalidFormatException;
+
 import config.Setup;
 import config.Url;
 import io.qameta.allure.Description;
@@ -113,7 +116,7 @@ public class Test_Edit_Profile extends Setup {
 		alert.byClassContains("header-nav-verif", edit);
 		Thread.sleep(5000);
 		input.byId("form-field", inputEdit);
-		//button.byId("save-edit");
+		button.byId("save-edit");
 		alert.byIdByTag("invalid-feedback-top", "p", alertText);
 	}
 	
@@ -144,7 +147,7 @@ public class Test_Edit_Profile extends Setup {
 		alert.byClassContains("header-nav-verif", edit);
 		Thread.sleep(5000);
 		input.byId("phone_number", inputEdit);
-		//button.byId("save-edit");
+		button.byId("save-edit");
 		alert.byIdByTag("invalid-feedback-top", "p", alertText);
 	}
 }
