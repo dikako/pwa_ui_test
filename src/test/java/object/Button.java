@@ -228,6 +228,14 @@ public class Button {
 
 	public void byClassByIndex(String selector, int index) {
 		List<WebElement> element = driver.findElements(By.className(selector));
+		System.out.println(element.size());
+		element.get(index).click();
+		System.out.println("Button is Clicked!");
+	}
+	
+	public void byXpathByIndex(String selector, int index) {
+		List<WebElement> element = driver.findElements(By.xpath(selector));
+		System.out.println(element.size());
 		element.get(index).click();
 		System.out.println("Button is Clicked!");
 	}

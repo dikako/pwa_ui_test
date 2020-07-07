@@ -98,23 +98,23 @@ public class Test_Edit_Profile extends Setup {
 
 		System.out.println("Edit Profile Test - Alert Edit Profile Form Field");
 
-//		url.urls("/login");
-//		alert.byClass("header-nav-verif", "Login");
-//		input.byId("email", username);
-//		input.byId("password", password);
-//		button.byId("submit-login");
-//		Thread.sleep(5000);
-//		button.byId("action-account");
-//		button.byId("action-profile");
-//		Thread.sleep(5000);
-//		alert.byClass("header-nav-verif", "Edit Profile");
-//		button.byId(edit + "-input");
-//		Thread.sleep(5000);
-//		alert.byClassContains("header-nav-verif", edit);
-//		Thread.sleep(5000);
-//		input.byId("form-field", inputEdit);
-//		//button.byId("save-edit");
-//		alert.byIdByTag("invalid-feedback-top", "p", alertText);
+		url.urls("/login");
+		alert.byClass("header-nav-verif", "Login");
+		input.byId("email", username);
+		input.byId("password", password);
+		button.byId("submit-login");
+		Thread.sleep(5000);
+		button.byId("action-account");
+		button.byId("action-profile");
+		Thread.sleep(5000);
+		alert.byClass("header-nav-verif", "Edit Profile");
+		button.byId(edit + "-input");
+		Thread.sleep(5000);
+		alert.byClassContains("header-nav-verif", edit);
+		Thread.sleep(5000);
+		input.byId("form-field", inputEdit);
+		//button.byId("save-edit");
+		alert.byIdByTag("invalid-feedback-top", "p", alertText);
 	}
 	
 	@Severity(SeverityLevel.MINOR)
@@ -129,22 +129,22 @@ public class Test_Edit_Profile extends Setup {
 
 		System.out.println("Edit Profile Test - Alert Edit Profile Phone Alert");
 
-//		url.urls("/login");
-//		alert.byClass("header-nav-verif", "Login");
-//		input.byId("email", username);
-//		input.byId("password", password);
-//		button.byId("submit-login");
-//		Thread.sleep(5000);
-//		button.byId("action-account");
-//		button.byId("action-profile");
-//		Thread.sleep(5000);
-//		alert.byClass("header-nav-verif", "Edit Profile");
-//		button.byId(edit + "-input");
-//		Thread.sleep(5000);
-//		alert.byClassContains("header-nav-verif", edit);
-//		Thread.sleep(5000);
-//		input.byId("phone_number", inputEdit);
-//		//button.byId("save-edit");
-//		alert.byIdByTag("invalid-feedback-top", "p", alertText);
+		url.urls("/login");
+		alert.byClass("header-nav-verif", "Login");
+		input.byId("email", username);
+		input.byId("password", password);
+		button.byId("submit-login");
+		Thread.sleep(5000);
+		button.byId("action-account");
+		button.byId("action-profile");
+		Thread.sleep(5000);
+		alert.byClass("header-nav-verif", "Edit Profile");
+		button.byId(edit + "-input");
+		Thread.sleep(5000);
+		alert.byClassContains("header-nav-verif", edit);
+		Thread.sleep(5000);
+		input.byId("phone_number", inputEdit);
+		//button.byId("save-edit");
+		alert.byIdByTag("invalid-feedback-top", "p", alertText);
 	}
 }

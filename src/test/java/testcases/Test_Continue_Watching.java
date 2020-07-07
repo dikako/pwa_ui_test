@@ -12,6 +12,7 @@ import config.Url;
 import io.qameta.allure.Description;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
+import object.Alert;
 import object.Button;
 import object.Input;
 import utility.ReadExcel;
@@ -27,26 +28,37 @@ public class Test_Continue_Watching extends Setup {
 	}
 	
 	@Severity(SeverityLevel.CRITICAL)
-	@Description("Continue Watching Test - After Login")
-	@Test(priority = 0, testName = "Continue Watching Afetr Login", dataProvider = "continue_watching")
-	public void continue_watching_after_login(String username, String password) throws InterruptedException {
+	@Description("Continue Watching Test - From Exlcuisve")
+	@Test(priority = 0, testName = "Continue Watching Test - From Exlcuisve", dataProvider = "continue_watching")
+	public void continue_watching_from_exclusive(String username, String password) throws InterruptedException {
 		Url url = new Url(driver);
 		Input input = PageFactory.initElements(driver, Input.class);
 		Button button = PageFactory.initElements(driver, Button.class);
+		Alert alert = PageFactory.initElements(driver, Alert.class);
 		
-		System.out.println("Continue Watching Test - After Login");
+		System.out.println("Continue Watching Test - From Exlcuisve");
 		
-//		url.urls("/login");
-//		input.byId("email", username);
-//		input.byId("password", password);
-//		button.byId("submit-login");
-//		Thread.sleep(5000);
-//		button.byId("action-exclusive");
-//		button.byXpath("//a[contains(text(),'Clip')]");
-//		button.byClassByIndex("program-thumbnail", 0);
-//		Thread.sleep(10000);
-//		url.defaultUrl();
-//		button.byId("action-account");
-//		button.byClassDisplay("list-item-thumbnail", true);
+		url.urls("/login");
+		alert.byClass("header-nav-verif", "Login");
+		input.byId("email", username);
+		input.byId("password", password);
+		button.byId("submit-login");
+		Thread.sleep(5000);
+		
+		button.byId("action-exclusive");
+		button.byXpath("//a[contains(text(),'Clip')]");
+		Thread.sleep(5000);
+		button.byXpath("//div[contains(@class,'tab-pane active')]//div[2]//div[1]//div[2]//img[1]");
+		Thread.sleep(20000);
+		button.byClass("close");
+		button.byId("action-account");
+		Thread.sleep(5000);
+		button.byClassDisplay("list-item-thumbnail", true);
+		
+		//Delete Continue Watching
+		button.byId("action-continue-watching");
+		Thread.sleep(5000);
+		alert.byClass("header-nav-verif", "Continue Watching");
+		button.byClassByIndex("action-button", 0);
 	}
 }

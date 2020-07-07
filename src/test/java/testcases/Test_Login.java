@@ -190,23 +190,23 @@ public class Test_Login extends Setup {
 
 		System.out.println("Login Test Integration - Login Success From Account -> History");
 
-//		url.defaultUrl();
-//		button.byId("action-account");
-//		button.byId("action-history");
-//		button.byId("pop-up-action-sign-in");
-//		alert.byClass("header-nav-verif", "Login");
-//		input.byId("email", username);
-//		input.byId("password", password);
-//		button.byId("submit-login");
-//		Thread.sleep(5000);
-//		button.byId("action-account");
-//		button.byIdGetText("action-profile", displayName);
-//		button.byId("action-profile");
-//		button.byId("action-three-dot");
-//		button.byId("action-logout");
-//		Thread.sleep(5000);
-//		button.byId("action-account");
-//		button.byIdDisplay("button-login", true);
+		url.defaultUrl();
+		button.byId("action-account");
+		button.byId("action-history");
+		button.byId("pop-up-action-sign-in");
+		alert.byClass("header-nav-verif", "Login");
+		input.byId("email", username);
+		input.byId("password", password);
+		button.byId("submit-login");
+		Thread.sleep(5000);
+		button.byId("action-account");
+		button.byIdGetText("action-profile", displayName);
+		button.byId("action-profile");
+		button.byId("action-three-dot");
+		button.byId("action-logout");
+		Thread.sleep(5000);
+		button.byId("action-account");
+		button.byIdDisplay("button-login", true);
 	}
 
 	@Severity(SeverityLevel.CRITICAL)
@@ -221,23 +221,23 @@ public class Test_Login extends Setup {
 
 		System.out.println("Login Test Integration - Login Success From Account -> Mylist");
 
-//		url.defaultUrl();
-//		button.byId("action-account");
-//		button.byId("action-mylist");
-//		button.byId("pop-up-action-sign-in");
-//		alert.byClass("header-nav-verif", "Login");
-//		input.byId("email", username);
-//		input.byId("password", password);
-//		button.byId("submit-login");
-//		Thread.sleep(5000);
-//		button.byId("action-account");
-//		button.byIdGetText("action-profile", displayName);
-//		button.byId("action-profile");
-//		button.byId("action-three-dot");
-//		button.byId("action-logout");
-//		Thread.sleep(5000);
-//		button.byId("action-account");
-//		button.byIdDisplay("button-login", true);
+		url.defaultUrl();
+		button.byId("action-account");
+		button.byId("action-mylist");
+		button.byId("pop-up-action-sign-in");
+		alert.byClass("header-nav-verif", "Login");
+		input.byId("email", username);
+		input.byId("password", password);
+		button.byId("submit-login");
+		Thread.sleep(5000);
+		button.byId("action-account");
+		button.byIdGetText("action-profile", displayName);
+		button.byId("action-profile");
+		button.byId("action-three-dot");
+		button.byId("action-logout");
+		Thread.sleep(5000);
+		button.byId("action-account");
+		button.byIdDisplay("button-login", true);
 	}
 
 	@Severity(SeverityLevel.CRITICAL)
@@ -252,22 +252,22 @@ public class Test_Login extends Setup {
 
 		System.out.println("Login Test Integration - Login Success From Account -> Continue Watching");
 
-//		url.defaultUrl();
-//		button.byId("action-account");
-//		button.byId("action-continue-watching");
-//		button.byId("pop-up-action-sign-in");
-//		alert.byClass("header-nav-verif", "Login");
-//		input.byId("email", username);
-//		input.byId("password", password);
-//		button.byId("submit-login");
-//		Thread.sleep(5000);
-//		button.byId("action-account");
-//		button.byIdGetText("action-profile", displayName);
-//		button.byId("action-profile");
-//		button.byId("action-three-dot");
-//		button.byId("action-logout");
-//		Thread.sleep(5000);
-//		button.byId("action-account");
-//		button.byIdDisplay("button-login", true);
+		url.defaultUrl();
+		button.byId("action-account");
+		button.byId("action-continue-watching");
+		button.byId("pop-up-action-sign-in");
+		alert.byClass("header-nav-verif", "Login");
+		input.byId("email", username);
+		input.byId("password", password);
+		button.byId("submit-login");
+		Thread.sleep(5000);
+		button.byId("action-account");
+		button.byIdGetText("action-profile", displayName);
+		button.byId("action-profile");
+		button.byId("action-three-dot");
+		button.byId("action-logout");
+		Thread.sleep(5000);
+		button.byId("action-account");
+		button.byIdDisplay("button-login", true);
 	}
 }
