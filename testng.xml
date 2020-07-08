@@ -10,7 +10,6 @@
       <class name="testcases.Test_News"/>
       <class name="testcases.Test_Chat"/>
       <class name="testcases.Test_Edit_Profile"/>
-      <class name="testcases.Test_Sticky_Ads_Homepage"/>
       <class name="testcases.Test_Mylist"/>
       <class name="testcases.Test_Exclusive"/>
       <class name="testcases.Test_Register"/>
