@@ -107,7 +107,9 @@ public class Test_Chat extends Setup {
 		} else {
 			System.out.println("Data Live Event Tidak Ada");
 		}
+		Thread.sleep(5000);
 		button.byId("btn-expand");
+		Thread.sleep(5000);
 		input.byIdDisplay("chat-input", true);
 		input.byId("chat-input", chatText + Keys.ENTER);
 		input.validateInputTextByClassByIndexone("username", nickname);
@@ -137,6 +139,7 @@ public class Test_Chat extends Setup {
 		Thread.sleep(5000);
 
 		button.byId("action-live-event");
+		Thread.sleep(5000);
 		button.byId("btn-expand");
 		Thread.sleep(5000);
 		input.byIdDisplay("chat-input", true);

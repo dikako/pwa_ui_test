@@ -15,13 +15,14 @@ public class Test_Sticky_Ads_Homepage extends Setup {
 	@Description("Sticky Ads Test - Under Story")
 	@Severity(SeverityLevel.MINOR)
 	@Test(alwaysRun = true, priority = 0, testName = "Sticky Ads Test - Under Story")
-	public void sticky_ads() {
+	public void sticky_ads() throws InterruptedException {
 		Url url = new Url(driver);
 		Button button = PageFactory.initElements(driver, Button.class);
 		
 		System.out.println("Sticky Ads Test - Validate Display Under Story");
 		
 		url.defaultUrl();
+		Thread.sleep(5000);
 		button.byIdDisplay("google_image_div", true);
 	}
 	
@@ -37,6 +38,7 @@ public class Test_Sticky_Ads_Homepage extends Setup {
 		System.out.println("Sticky Ads Test - Validate Display Scroll Button");
 		
 		url.defaultUrl();
+		Thread.sleep(5000);
 		js.executeScript("window.scrollTo(0,1000)");
 		Thread.sleep(5000);
 		button.byIdDisplay("google_image_div", true);

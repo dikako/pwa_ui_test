@@ -30,6 +30,7 @@ public class Test_Radio extends Setup {
 		System.out.println("Radio Test - Validate url direct");
 		
 		url.defaultUrl();
+		Thread.sleep(5000);
 		button.byId("action-radio");
 		Thread.sleep(2000);
 		String urlRadio = driver.getCurrentUrl();
