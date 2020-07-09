@@ -105,7 +105,7 @@ public class Test_Register extends Setup {
 		input.byId("password", "password");
 		input.byId("password2", "password");
 		button.byId("button-next");
-		Thread.sleep(2000);
+		Thread.sleep(5000);
 		alert.byClass("header-nav-verif", "Verification");
 		button.byId("BirthDate");
 		alert.byClassDisplay("datepicker-content", true);

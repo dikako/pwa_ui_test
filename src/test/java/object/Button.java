@@ -176,6 +176,22 @@ public class Button {
 		actions.build().perform();
 		System.out.println("Button is Displayed");
 	}
+	
+	public void byClassSize(String selector, int size) {
+		List<WebElement> element = driver.findElements(By.className(selector));
+		Assert.assertEquals(element.size(), size);
+		System.out.println("Element is Found");
+	}
+	
+	public void byClassDisplay(String selector) {
+		WebElement element = driver.findElement(By.className(selector));
+		waitForVisible(driver, element);
+		Actions actions = new Actions(driver);
+		actions.moveToElement(element);
+		Assert.assertTrue(element.isDisplayed());
+		actions.build().perform();
+		System.out.println("Button is Displayed");
+	}
 
 	public void byXpathDisplay(String selector, boolean display) {
 		WebElement element = driver.findElement(By.xpath(selector));

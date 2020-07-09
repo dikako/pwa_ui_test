@@ -53,7 +53,7 @@ public class Test_Continue_Watching extends Setup {
 		url.defaultUrl();
 		button.byId("action-account");
 		Thread.sleep(5000);
-		button.byClassDisplay("list-item-thumbnail", true);
+		button.byClassSize("list-item-thumbnail", 1);
 		
 		//Delete Continue Watching
 		button.byId("action-continue-watching");
