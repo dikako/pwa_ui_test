@@ -6,7 +6,6 @@ import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-
 import config.Setup;
 import config.Url;
 import io.qameta.allure.Description;
@@ -18,15 +17,15 @@ import object.Input;
 import utility.ReadExcel;
 
 public class Test_Continue_Watching extends Setup {
-	
+
 	public String path = "../pwa_ui_test/src/main/java/data/data_test.xlsx";
-	
+
 	@DataProvider
 	public String[][] continue_watching() throws InvalidFormatException, IOException {
 		ReadExcel read = new ReadExcel();
 		return read.getCellData(path, "Continue_Watching");
 	}
-	
+
 	@Severity(SeverityLevel.CRITICAL)
 	@Description("Continue Watching Test - From Exlcuisve")
 	@Test(priority = 0, testName = "Continue Watching Test - From Exlcuisve", dataProvider = "continue_watching")
@@ -53,7 +52,7 @@ public class Test_Continue_Watching extends Setup {
 		url.defaultUrl();
 		button.byId("action-account");
 		Thread.sleep(5000);
-		button.byClassSize("list-item-thumbnail", 1);
+		button.byClassNotNull("list-item-thumbnail");
 		
 		//Delete Continue Watching
 		button.byId("action-continue-watching");

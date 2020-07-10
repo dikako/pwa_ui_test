@@ -177,9 +177,15 @@ public class Button {
 		System.out.println("Button is Displayed");
 	}
 	
-	public void byClassSize(String selector, int size) {
+	public void byClassNotNull(String selector) {
 		List<WebElement> element = driver.findElements(By.className(selector));
-		Assert.assertEquals(element.size(), size);
+		Assert.assertNotNull(element.size());
+		System.out.println("Element is Found");
+	}
+	
+	public void byIdNotNull(String selector) {
+		List<WebElement> element = driver.findElements(By.id(selector));
+		Assert.assertNotNull(element.size());
 		System.out.println("Element is Found");
 	}
 	

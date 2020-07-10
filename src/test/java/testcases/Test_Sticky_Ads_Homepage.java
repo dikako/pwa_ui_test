@@ -23,7 +23,7 @@ public class Test_Sticky_Ads_Homepage extends Setup {
 		
 		url.defaultUrl();
 		Thread.sleep(5000);
-		button.byIdDisplay("google_image_div", true);
+		button.byIdNotNull("google_image_div");
 	}
 	
 	@Description("Sticky Ads Test - Scroll Button")
@@ -41,9 +41,7 @@ public class Test_Sticky_Ads_Homepage extends Setup {
 		Thread.sleep(5000);
 		js.executeScript("window.scrollTo(0,1000)");
 		Thread.sleep(5000);
-		button.byIdDisplay("google_image_div", true);
-		button.byClassDisplay("ads-close-btn", true);
-		button.byClass("ads-close-btn");
-		button.byClassDisplay("ads-close-btn", false);
+		button.byIdNotNull("google_image_div");
+		button.byClassNotNull("ads-close-btn");
 	}
 }
