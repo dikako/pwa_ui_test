@@ -49,10 +49,12 @@ public class Setup {
 			
 			System.out.println("*** Test execution " + result.getMethod().getMethodName() + " failed!");
 			System.out.println(result.getMethod().getMethodName() + " failed!");
+			Thread.sleep(5000);
+			driver.quit();
 		} else {
 			TakeScreenshot.captureScreenshot(driver, "Pass_" + name);
+			Thread.sleep(5000);
+			driver.quit();
 		}
-		Thread.sleep(5000);
-		driver.quit();
 	}
 }

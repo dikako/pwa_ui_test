@@ -179,7 +179,7 @@ public class Button {
 	
 	public void byClassNotNull(String selector) {
 		List<WebElement> element = driver.findElements(By.className(selector));
-		Assert.assertNotNull(element.size());
+		Assert.assertEquals(element.size(), 1);
 		System.out.println("Element is Found");
 	}
 	

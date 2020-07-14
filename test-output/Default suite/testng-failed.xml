@@ -3,18 +3,18 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test verbose="2" name="Default test">
     <classes>
-      <class name="testcases.Test_Sticky_Ads_Homepage"/>
+      <class name="testcases.Test_Continue_Watching"/>
     </classes>
   </test> <!-- Default test -->
   <test name="Default test(failed)">
     <classes>
-      <class name="testcases.Test_Sticky_Ads_Homepage">
+      <class name="testcases.Test_Continue_Watching">
         <methods>
+          <include name="continue_watching_from_exclusive" invocation-numbers="0"/>
           <include name="done"/>
           <include name="set"/>
-          <include name="sticky_ads_Scroll_Buttom"/>
         </methods>
-      </class> <!-- testcases.Test_Sticky_Ads_Homepage -->
+      </class> <!-- testcases.Test_Continue_Watching -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
