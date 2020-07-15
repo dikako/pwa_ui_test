@@ -14,7 +14,7 @@ public class Test_Sticky_Ads_Homepage extends Setup {
 	
 	@Description("Sticky Ads Test - Under Story")
 	@Severity(SeverityLevel.MINOR)
-	@Test(alwaysRun = true, priority = 0, testName = "Sticky Ads Test - Under Story")
+	@Test(priority = 0, testName = "Sticky Ads Test - Under Story")
 	public void sticky_ads() throws InterruptedException {
 		Url url = new Url(driver);
 		Button button = PageFactory.initElements(driver, Button.class);
@@ -28,7 +28,7 @@ public class Test_Sticky_Ads_Homepage extends Setup {
 	
 	@Description("Sticky Ads Test - Scroll Button")
 	@Severity(SeverityLevel.MINOR)
-	@Test(alwaysRun = true, priority = 1, testName = "Sticky Ads Test - Scroll Button")
+	@Test(priority = 1, testName = "Sticky Ads Test - Scroll Button")
 	public void sticky_ads_Scroll_Buttom() throws InterruptedException {
 		Url url = new Url(driver);
 		Button button = PageFactory.initElements(driver, Button.class);

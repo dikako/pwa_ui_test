@@ -84,7 +84,7 @@ public class Test_Chat extends Setup {
 
 	@Severity(SeverityLevel.CRITICAL)
 	@Description("Chat Test Live Event - Test Chatting After Login")
-	@Test(priority = 1, testName = "Test Chat Live Event > After Login", dataProvider = "list_chat")
+	@Test(priority = 2, testName = "Test Chat Live Event > After Login", dataProvider = "list_chat")
 	public void chat_test_live_event_after_login(String urlLiveTv, String username, String password, String nickname,
 			String chatText) throws InterruptedException {
 		Url url = new Url(driver);
@@ -118,7 +118,7 @@ public class Test_Chat extends Setup {
 
 	@Severity(SeverityLevel.CRITICAL)
 	@Description("Chat Test Live Event - Test Chatting Before Login")
-	@Test(priority = 0, testName = "Test Chat Live Event > Before Login > Type Chat", dataProvider = "list_chat")
+	@Test(priority = 3, testName = "Test Chat Live Event > Before Login > Type Chat", dataProvider = "list_chat")
 	public void test_chat_live_event__before_login(String urlLiveTv, String username, String password, String nickname,
 			String chatText) throws InterruptedException {
 		Url url = new Url(driver);

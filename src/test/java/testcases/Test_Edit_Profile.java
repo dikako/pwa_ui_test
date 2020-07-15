@@ -91,7 +91,7 @@ public class Test_Edit_Profile extends Setup {
 	
 	@Severity(SeverityLevel.MINOR)
 	@Description("Edit Profile Test - Alert Edit Profile Form Field")
-	@Test(priority = 0, testName = "Edit Profile Test - Alert Edit Profile Form Field", dataProvider = "edit_profile_alert_form_field")
+	@Test(priority = 1, testName = "Edit Profile Test - Alert Edit Profile Form Field", dataProvider = "edit_profile_alert_form_field")
 	public void edit_profile_form_field_alert(String username, String password, String edit, String inputEdit, String alertText)
 			throws InterruptedException {
 		Url url = new Url(driver);
@@ -122,7 +122,7 @@ public class Test_Edit_Profile extends Setup {
 	
 	@Severity(SeverityLevel.MINOR)
 	@Description("Edit Profile Test - Alert Edit Profile Phone Alert")
-	@Test(priority = 0, testName = "Edit Profile Test - Alert Edit Profile Phone Alert", dataProvider = "edit_profile_alert_Phone")
+	@Test(priority = 2, testName = "Edit Profile Test - Alert Edit Profile Phone Alert", dataProvider = "edit_profile_alert_Phone")
 	public void edit_profile_phone_alert(String username, String password, String edit, String inputEdit, String alertText)
 			throws InterruptedException {
 		Url url = new Url(driver);

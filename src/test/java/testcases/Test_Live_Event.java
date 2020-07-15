@@ -46,7 +46,7 @@ public class Test_Live_Event extends Setup {
 
 	@Description("Live Event Test - List Tab On Player Live Event ")
 	@Severity(SeverityLevel.CRITICAL)
-	@Test(alwaysRun = true, priority = 0, testName = "Live Event Test - List Tab On Player Live Event", dataProvider = "list_tab_live_event")
+	@Test(priority = 1, testName = "Live Event Test - List Tab On Player Live Event", dataProvider = "list_tab_live_event")
 	public void live_event_klik_live_event(String index, String alertText) {
 		Url url = new Url(driver);
 		Button button = PageFactory.initElements(driver, Button.class);

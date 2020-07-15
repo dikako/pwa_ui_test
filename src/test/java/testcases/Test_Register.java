@@ -63,7 +63,7 @@ public class Test_Register extends Setup {
 	}
 
 	@Description("Register Test - Validate Register Page 2 Fullname")
-	@Test(priority = 4, testName = "Register Test - Validate Register Page 2 Fullname")
+	@Test(priority = 0, testName = "Register Test - Validate Register Page 2 Fullname")
 	public void register_page2_validate_fullname() throws InterruptedException {
 		Url url = new Url(driver);
 		Input input = PageFactory.initElements(driver, Input.class);
@@ -87,7 +87,7 @@ public class Test_Register extends Setup {
 	}
 
 	@Description("Register Test - Validate Register Page 2 Birthday")
-	@Test(priority = 4, testName = "Register Test - Validate Register Page 2 Birthday")
+	@Test(priority = 1, testName = "Register Test - Validate Register Page 2 Birthday")
 	public void register_page2_validate_birthday() throws InterruptedException {
 		Url url = new Url(driver);
 		Button button = PageFactory.initElements(driver, Button.class);
@@ -112,7 +112,7 @@ public class Test_Register extends Setup {
 	}
 
 	@Description("Register Test - Validate Register Page 2 Gender ")
-	@Test(priority = 4, testName = "Register Validate Gender", dataProvider = "register_list_gender")
+	@Test(priority = 2, testName = "Register Validate Gender", dataProvider = "register_list_gender")
 	public void register_page2_validate_gender_Male(String gender) throws InterruptedException {
 		Url url = new Url(driver);
 		Button button = PageFactory.initElements(driver, Button.class);
@@ -157,7 +157,7 @@ public class Test_Register extends Setup {
 	}
 
 	@Description("Register Test - Alert Phone Password Form 1")
-	@Test(priority = 3, testName = "Register Password1 Alert Phone", dataProvider = "register_password1_alert_phone")
+	@Test(priority = 4, testName = "Register Password1 Alert Phone", dataProvider = "register_password1_alert_phone")
 	public void register_phone_alert_password1(String phone, String password, String rePassword, String alertText) {
 		Url url = new Url(driver);
 		Input input = PageFactory.initElements(driver, Input.class);
@@ -177,7 +177,7 @@ public class Test_Register extends Setup {
 	}
 
 	@Description("Register Test - Alert Phone Password Form 2")
-	@Test(priority = 3, testName = "Register Password 2Alert Phone", dataProvider = "register_password2_alert_phone")
+	@Test(priority = 5, testName = "Register Password 2Alert Phone", dataProvider = "register_password2_alert_phone")
 	public void register_phone_alert_password2(String phone, String password, String rePassword, String alertText) {
 		Url url = new Url(driver);
 		Input input = PageFactory.initElements(driver, Input.class);
@@ -216,7 +216,7 @@ public class Test_Register extends Setup {
 	}
 
 	@Description("Register Test - Alert Password Form 1")
-	@Test(priority = 0, testName = "Register Password1 Alert", dataProvider = "register_password1_alert_email")
+	@Test(priority = 6, testName = "Register Password1 Alert", dataProvider = "register_password1_alert_email")
 	public void register_email_alert_password1(String email, String password, String rePassword, String alertText) {
 		Url url = new Url(driver);
 		Input input = PageFactory.initElements(driver, Input.class);
@@ -235,7 +235,7 @@ public class Test_Register extends Setup {
 	}
 
 	@Description("Register Test - Alert Password Form 2")
-	@Test(priority = 0, testName = "Register Password 2Alert", dataProvider = "register_password2_alert_email")
+	@Test(priority = 7, testName = "Register Password 2Alert", dataProvider = "register_password2_alert_email")
 	public void register_email_alert_password2(String email, String password, String rePassword, String alertText) {
 		Url url = new Url(driver);
 		Input input = PageFactory.initElements(driver, Input.class);
