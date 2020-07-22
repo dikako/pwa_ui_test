@@ -38,6 +38,7 @@ public class Test_Continue_Watching extends Setup {
 		System.out.println("Continue Watching Test - From Exlcuisve");
 		
 		url.urls("/login");
+		Thread.sleep(4000);
 		alert.byClass("header-nav-verif", "Login");
 		input.byId("email", username);
 		input.byId("password", password);
@@ -45,10 +46,11 @@ public class Test_Continue_Watching extends Setup {
 		Thread.sleep(5000);
 		
 		button.byId("action-exclusive");
+		Thread.sleep(4000);
 		button.byXpath("//a[contains(text(),'Clip')]");
 		Thread.sleep(5000);
 		button.byXpath("//div[contains(@class,'tab-pane active')]//div[2]//div[1]//div[2]//img[1]");
-		Thread.sleep(20000);
+		Thread.sleep(35000);
 		url.defaultUrl();
 		button.byId("action-account");
 		Thread.sleep(5000);

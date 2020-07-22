@@ -46,7 +46,7 @@ public class Test_Login extends Setup {
 	@Severity(SeverityLevel.MINOR)
 	@Description("Login Test - Login Alert Pop Up Not Registered")
 	@Test(priority = 0, testName = "Login Alert Pop Up", dataProvider = "login_alert_popup")
-	public void login_alert_popup(String username, String password, String alertText) {
+	public void login_alert_popup(String username, String password, String alertText) throws InterruptedException {
 		Url url = new Url(driver);
 		Input input = PageFactory.initElements(driver, Input.class);
 		Button button = PageFactory.initElements(driver, Button.class);
@@ -55,6 +55,7 @@ public class Test_Login extends Setup {
 		System.out.println("Login Test - Login Alert Pop Up Not Registered");
 
 		url.urls("/login");
+		Thread.sleep(4000);
 		alerts.byClass("header-nav-verif", "Login");
 		input.byId("email", username);
 		input.byId("password", password);
@@ -74,6 +75,7 @@ public class Test_Login extends Setup {
 		System.out.println("Login Test - Login Logout");
 
 		url.urls("/login");
+		Thread.sleep(4000);
 		alerts.byClass("header-nav-verif", "Login");
 		input.byId("email", username);
 		input.byId("password", password);
@@ -92,7 +94,7 @@ public class Test_Login extends Setup {
 	@Severity(SeverityLevel.MINOR)
 	@Description("Login Test - Login Alert Password")
 	@Test(priority = 2, testName = "Login Alert Password", dataProvider = "login_alert_password")
-	public void login_alert_password(String username, String password, String alertText) {
+	public void login_alert_password(String username, String password, String alertText) throws InterruptedException {
 		Url url = new Url(driver);
 		Input input = PageFactory.initElements(driver, Input.class);
 		Button button = PageFactory.initElements(driver, Button.class);
@@ -101,6 +103,7 @@ public class Test_Login extends Setup {
 		System.out.println("Login Test - Login Alert Password");
 
 		url.urls("/login");
+		Thread.sleep(4000);
 		alerts.byClass("header-nav-verif", "Login");
 		input.byId("email", username);
 		input.byId("password", password);
@@ -120,6 +123,7 @@ public class Test_Login extends Setup {
 		System.out.println("Login Test - Login Alert Username");
 
 		url.urls("/login");
+		Thread.sleep(4000);
 		alerts.byClass("header-nav-verif", "Login");
 		input.byId("email", username);
 		input.byId("password", password);
@@ -139,6 +143,7 @@ public class Test_Login extends Setup {
 		System.out.println("Login Test - Login Success");
 
 		url.urls("/login");
+		Thread.sleep(4000);
 		alerts.byClass("header-nav-verif", "Login");
 		input.byId("email", username);
 		input.byId("password", password);
@@ -161,6 +166,7 @@ public class Test_Login extends Setup {
 		System.out.println("Login Test Integration - Login Success From Account -> Login");
 
 		url.defaultUrl();
+		Thread.sleep(4000);
 		button.byId("action-account");
 		button.byId("button-login");
 		alert.byClass("header-nav-verif", "Login");
@@ -191,6 +197,7 @@ public class Test_Login extends Setup {
 		System.out.println("Login Test Integration - Login Success From Account -> History");
 
 		url.defaultUrl();
+		Thread.sleep(4000);
 		button.byId("action-account");
 		button.byId("action-history");
 		button.byId("pop-up-action-sign-in");
@@ -222,6 +229,7 @@ public class Test_Login extends Setup {
 		System.out.println("Login Test Integration - Login Success From Account -> Mylist");
 
 		url.defaultUrl();
+		Thread.sleep(4000);
 		button.byId("action-account");
 		button.byId("action-mylist");
 		button.byId("pop-up-action-sign-in");
@@ -253,6 +261,7 @@ public class Test_Login extends Setup {
 		System.out.println("Login Test Integration - Login Success From Account -> Continue Watching");
 
 		url.defaultUrl();
+		Thread.sleep(4000);
 		button.byId("action-account");
 		button.byId("action-continue-watching");
 		button.byId("pop-up-action-sign-in");

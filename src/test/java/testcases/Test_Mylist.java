@@ -37,6 +37,7 @@ public class Test_Mylist extends Setup {
 		System.out.println("Mylis Test - After Login From Library");
 
 		url.urls("/login");
+		Thread.sleep(4000);
 		input.byId("email", username);
 		input.byId("password", password);
 		button.byId("submit-login");
@@ -76,6 +77,7 @@ public class Test_Mylist extends Setup {
 		System.out.println("Mylis Test Integration - After Login From Library");
 
 		url.defaultUrl();
+		Thread.sleep(4000);
 		button.byId("action-account");
 		button.byId("button-login");
 		input.byId("email", username);

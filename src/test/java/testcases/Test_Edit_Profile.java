@@ -59,6 +59,7 @@ public class Test_Edit_Profile extends Setup {
 		System.out.println("Edit Profile Test - Success Edit Profile");
 
 		url.urls("/login");
+		Thread.sleep(4000);
 		alert.byClass("header-nav-verif", "Login");
 		input.byId("email", username);
 		input.byId("password", password);
@@ -102,6 +103,7 @@ public class Test_Edit_Profile extends Setup {
 		System.out.println("Edit Profile Test - Alert Edit Profile Form Field");
 
 		url.urls("/login");
+		Thread.sleep(4000);
 		alert.byClass("header-nav-verif", "Login");
 		input.byId("email", username);
 		input.byId("password", password);
@@ -133,6 +135,7 @@ public class Test_Edit_Profile extends Setup {
 		System.out.println("Edit Profile Test - Alert Edit Profile Phone Alert");
 
 		url.urls("/login");
+		Thread.sleep(4000);
 		alert.byClass("header-nav-verif", "Login");
 		input.byId("email", username);
 		input.byId("password", password);

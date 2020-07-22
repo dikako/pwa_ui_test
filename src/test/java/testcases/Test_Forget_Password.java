@@ -28,7 +28,7 @@ public class Test_Forget_Password extends Setup {
 	
 	@Description("Forget Password - Alert Username")
 	@Test(priority = 0, testName = "Forget Password - Alert Username", dataProvider = "forget_password_alert")
-	public void forget_password_alert(String username, String alertText) {
+	public void forget_password_alert(String username, String alertText) throws InterruptedException {
 		Url url = new Url(driver);
 		Button button = PageFactory.initElements(driver, Button.class);
 		Input input = PageFactory.initElements(driver, Input.class);
@@ -37,6 +37,7 @@ public class Test_Forget_Password extends Setup {
 		System.out.println("Forget Password - Alert Username");
 		
 		url.urls("/forget-password");
+		Thread.sleep(4000);
 		input.byId("input-email-phone", username);
 		button.byId("button-next");
 		alert.byId("invalid-feedback", alertText);

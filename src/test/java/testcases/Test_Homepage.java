@@ -55,6 +55,7 @@ public class Test_Homepage extends Setup {
 		System.out.println("Hompage Test - Search Direct");
 
 		url.defaultUrl();
+		Thread.sleep(4000);
 		button.byClass("search-input");
 		Thread.sleep(5000);
 		alert.urlValidate("explores");
@@ -72,6 +73,7 @@ public class Test_Homepage extends Setup {
 		System.out.println("Hompage Test - Validate STORY IS FOUND");
 
 		url.defaultUrl();
+		Thread.sleep(4000);
 		Thread.sleep(5000);
 		button.byClassDisplay("story", true);
 	}

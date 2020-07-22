@@ -33,7 +33,7 @@ public class Test_List_Menu_Account extends Setup {
 	}
 
 	@Test(priority = 0)
-	public void menu_account_not_login_button_login() {
+	public void menu_account_not_login_button_login() throws InterruptedException {
 		Url url = new Url(driver);
 		Button button = PageFactory.initElements(driver, Button.class);
 		Input input = PageFactory.initElements(driver, Input.class);
@@ -41,6 +41,7 @@ public class Test_List_Menu_Account extends Setup {
 		System.out.println("Menu Account Test - Button Login Condition Not Login");
 
 		url.urls("/profile");
+		Thread.sleep(4000);
 		button.byIdDisplay("button-login", true);
 		button.byId("button-login");
 		input.byIdDisplay("email", true);
@@ -62,7 +63,7 @@ public class Test_List_Menu_Account extends Setup {
 
 	@Description("Menu Account Test - Button History Condition Not Login")
 	@Test(priority = 2, testName = "Test Validate List Menu Account Popup Login", dataProvider = "list_menu_account_popup_login")
-	public void menu_account_not_login_popup_login(String element, String alertPopup1, String alertPopup2) {
+	public void menu_account_not_login_popup_login(String element, String alertPopup1, String alertPopup2) throws InterruptedException {
 		Url url = new Url(driver);
 		Button button = PageFactory.initElements(driver, Button.class);
 		Alert alert = PageFactory.initElements(driver, Alert.class);
@@ -70,6 +71,7 @@ public class Test_List_Menu_Account extends Setup {
 		System.out.println("Menu Account Test - Button History Condition Not Login");
 
 		url.urls("/profile");
+		Thread.sleep(4000);
 		button.byIdDisplay("action-" + element, true);
 		button.byId("action-" + element);
 		alert.byId("pop-up-action-sign-up", alertPopup1);
@@ -78,7 +80,7 @@ public class Test_List_Menu_Account extends Setup {
 
 	@Description("Menu Account Test - Button List Menu Account Direct")
 	@Test(priority = 3, testName = "Test Menu Account Button menu Direct", dataProvider = "list_menu_account_direct")
-	public void menu_account_not_login_button_menu_direct(String element, String alertText) {
+	public void menu_account_not_login_button_menu_direct(String element, String alertText) throws InterruptedException {
 		Url url = new Url(driver);
 		Button button = PageFactory.initElements(driver, Button.class);
 		Alert alert = PageFactory.initElements(driver, Alert.class);
@@ -86,6 +88,7 @@ public class Test_List_Menu_Account extends Setup {
 		System.out.println("Menu Account Test - Button List Menu Account Direct");
 
 		url.urls("/profile");
+		Thread.sleep(4000);
 		button.byIdDisplay("action-" + element, true);
 		button.byId("action-" + element);
 		alert.byClass("header-nav-verif", alertText);
@@ -93,13 +96,14 @@ public class Test_List_Menu_Account extends Setup {
 
 	@Description("Menu Account Test - Button Download Condition Not Login")
 	@Test(priority = 4, testName = "Menu Account Test - Button Download Condition Not Login")
-	public void menu_account_not_login_button_download() {
+	public void menu_account_not_login_button_download() throws InterruptedException {
 		Url url = new Url(driver);
 		Button button = PageFactory.initElements(driver, Button.class);
 
 		System.out.println("Menu Account Test - Button Download Condition Not Login");
 
 		url.urls("/profile");
+		Thread.sleep(4000);
 		button.byIdDisplay("action-download", true);
 		button.byId("action-download");
 		button.byIdDisplay("popup-action-openstore", true);

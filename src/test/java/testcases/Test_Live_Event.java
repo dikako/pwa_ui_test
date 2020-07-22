@@ -28,7 +28,7 @@ public class Test_Live_Event extends Setup {
 	@Description("Live Event Test - Dashboard Live Event")
 	@Severity(SeverityLevel.CRITICAL)
 	@Test(priority = 0, testName = "Live Event Test - Dashboard Live Event", dataProvider = "list_tab_live_event")
-	public void live_event(String index, String alertText) {
+	public void live_event(String index, String alertText) throws InterruptedException {
 		Url url = new Url(driver);
 		Button button = PageFactory.initElements(driver, Button.class);
 		Alert alert = PageFactory.initElements(driver, Alert.class);
@@ -38,6 +38,7 @@ public class Test_Live_Event extends Setup {
 		System.out.println("Live Event - Dashboard Live Event");
 
 		url.defaultUrl();
+		Thread.sleep(4000);
 		button.byId("action-live-event");
 		alert.byClass("header-nav-verif", "Live Event");
 		alert.byClassByIndex(indexToInt, "le-title", alertText);
@@ -47,7 +48,7 @@ public class Test_Live_Event extends Setup {
 	@Description("Live Event Test - List Tab On Player Live Event ")
 	@Severity(SeverityLevel.CRITICAL)
 	@Test(priority = 1, testName = "Live Event Test - List Tab On Player Live Event", dataProvider = "list_tab_live_event")
-	public void live_event_klik_live_event(String index, String alertText) {
+	public void live_event_klik_live_event(String index, String alertText) throws InterruptedException {
 		Url url = new Url(driver);
 		Button button = PageFactory.initElements(driver, Button.class);
 		Alert alert = PageFactory.initElements(driver, Alert.class);
@@ -57,6 +58,7 @@ public class Test_Live_Event extends Setup {
 		System.out.println("Live Event - List Tab On Player Live Event");
 
 		url.defaultUrl();
+		Thread.sleep(4000);
 		button.byId("action-live-event");
 		alert.byClass("header-nav-verif", "Live Event");
 		if (button.isClassDisplay("thumb-timer")) {

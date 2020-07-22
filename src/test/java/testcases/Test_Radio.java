@@ -10,12 +10,13 @@ import object.Button;
 public class Test_Radio extends Setup {
 	
 	@Test(priority = 0, testName = "Test Radio")
-	public void radio_validate_url() {
+	public void radio_validate_url() throws InterruptedException {
 		Url url = new Url(driver);
 		
 		System.out.println("Radio Test - Validate url direct");
 		
 		url.urls("/radio");
+		Thread.sleep(4000);
 		String urlRadio = driver.getCurrentUrl();
 		assert urlRadio.contains("radio");	
 		System.out.println(urlRadio);

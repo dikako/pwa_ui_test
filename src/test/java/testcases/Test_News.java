@@ -29,7 +29,7 @@ public class Test_News extends Setup {
 
 	@Description("News Test - validate Default Kanal")
 	@Test(priority = 0, testName = "Validate Default Kanal", dataProvider = "default_kanal")
-	public void news_validate_default_kanal(String index, String textValue) {
+	public void news_validate_default_kanal(String index, String textValue) throws InterruptedException {
 		Url url = new Url(driver);
 		Button button = PageFactory.initElements(driver, Button.class);
 		Integer indexToInteger = Integer.valueOf(index);
@@ -37,19 +37,21 @@ public class Test_News extends Setup {
 		System.out.println("News Test - validate Default Kanal");
 
 		url.urls("/trending");
+		Thread.sleep(4000);
 		button.byClassGetSize("navigation-tabs-item", 3);
 		button.byClassesGetText("navigation-tabs-item", indexToInteger, textValue);
 	}
 
 	@Description("News Test - validate Add Kanal")
 	@Test(priority = 1, testName = "News Test - validate Add Kanal")
-	public void news_validate_add_kanal() {
+	public void news_validate_add_kanal() throws InterruptedException {
 		Url url = new Url(driver);
 		Button button = PageFactory.initElements(driver, Button.class);
 
 		System.out.println("News Test - validate Add Kanal");
 
 		url.urls("/trending");
+		Thread.sleep(4000);
 		button.byClass("add-tab-button");
 		button.byClassByIndex("button-container", 0);
 		button.byClassGetSize("remove-button", 1);

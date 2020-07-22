@@ -49,6 +49,7 @@ public class Test_Chat extends Setup {
 		Thread.sleep(5000);
 
 		url.urls("/tv/" + urlLiveTv);
+		Thread.sleep(5000);
 		button.byId("btn-expand");
 		Thread.sleep(5000);
 		input.byIdDisplay("chat-input", true);
@@ -69,12 +70,14 @@ public class Test_Chat extends Setup {
 		System.out.println("Chat Test - Test Chatting After Login");
 
 		url.urls("/login");
+		Thread.sleep(4000);
 		input.byId("email", username);
 		input.byId("password", password);
 		button.byId("submit-login");
 		Thread.sleep(5000);
 
 		url.urls("/tv/" + urlLiveTv);
+		Thread.sleep(5000);
 		button.byId("btn-expand");
 		input.byIdDisplay("chat-input", true);
 		input.byId("chat-input", chatText + Keys.ENTER);
@@ -95,12 +98,14 @@ public class Test_Chat extends Setup {
 		System.out.println("Chat Test Live Event - Test Chatting After Login");
 
 		url.urls("/login");
+		Thread.sleep(4000);
 		input.byId("email", username);
 		input.byId("password", password);
 		button.byId("submit-login");
 		Thread.sleep(5000);
 
 		button.byId("action-live-event");
+		Thread.sleep(5000);
 		alert.byClass("header-nav-verif", "Live Event");
 		if (button.isClassDisplay("thumb-timer")) {
 			button.byClassByIndex("thumb-timer", 0);
@@ -128,6 +133,7 @@ public class Test_Chat extends Setup {
 		System.out.println("Chat Test Live Event - Test Chatting Before Login");
 
 		url.defaultUrl();
+		Thread.sleep(4000);
 		button.byId("action-live-event");
 		Thread.sleep(5000);
 		button.byIdDisplay("btn-expand", true);

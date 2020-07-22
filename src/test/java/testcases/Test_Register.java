@@ -76,6 +76,7 @@ public class Test_Register extends Setup {
 		int randomInt = random.nextInt(10000);
 
 		url.urls("/register");
+		Thread.sleep(4000);
 		alert.byClass("header-nav-verif", "Register");
 		input.byId("email", "auieo" + randomInt + "@gmail.com");
 		input.byId("password", "password");
@@ -100,6 +101,7 @@ public class Test_Register extends Setup {
 		int randomInt = random.nextInt(10000);
 
 		url.urls("/register");
+		Thread.sleep(4000);
 		alert.byClass("header-nav-verif", "Register");
 		input.byId("email", "auieo" + randomInt + "@gmail.com");
 		input.byId("password", "password");
@@ -126,6 +128,7 @@ public class Test_Register extends Setup {
 		int randomInt = random.nextInt(10000);
 
 		url.urls("/register");
+		Thread.sleep(4000);
 		alert.byClass("header-nav-verif", "Register");
 		input.byId("email", "auieo" + randomInt + "@gmail.com");
 		input.byId("password", "password");
@@ -138,7 +141,7 @@ public class Test_Register extends Setup {
 
 	@Description("Register Test - Alert Phone Number")
 	@Test(priority = 3, testName = "Register Phone Number Alert", dataProvider = "register_phone_alert")
-	public void register_alert_phone(String phone, String password, String rePassword, String alertText) {
+	public void register_alert_phone(String phone, String password, String rePassword, String alertText) throws InterruptedException {
 		Url url = new Url(driver);
 		Input input = PageFactory.initElements(driver, Input.class);
 		Button button = PageFactory.initElements(driver, Button.class);
@@ -147,6 +150,7 @@ public class Test_Register extends Setup {
 		System.out.println("Register Test - Alert Phone Number");
 
 		url.urls("/register");
+		Thread.sleep(4000);
 		alert.byClass("header-nav-verif", "Register");
 		button.byId("register-phone");
 		input.byId("phone_number", phone);
@@ -158,7 +162,7 @@ public class Test_Register extends Setup {
 
 	@Description("Register Test - Alert Phone Password Form 1")
 	@Test(priority = 4, testName = "Register Password1 Alert Phone", dataProvider = "register_password1_alert_phone")
-	public void register_phone_alert_password1(String phone, String password, String rePassword, String alertText) {
+	public void register_phone_alert_password1(String phone, String password, String rePassword, String alertText) throws InterruptedException {
 		Url url = new Url(driver);
 		Input input = PageFactory.initElements(driver, Input.class);
 		Button button = PageFactory.initElements(driver, Button.class);
@@ -167,6 +171,7 @@ public class Test_Register extends Setup {
 		System.out.println("Register Test - Alert Phone Password Form 1");
 
 		url.urls("/register");
+		Thread.sleep(4000);
 		alert.byClass("header-nav-verif", "Register");
 		button.byId("register-phone");
 		input.byId("phone_number", phone);
@@ -178,7 +183,7 @@ public class Test_Register extends Setup {
 
 	@Description("Register Test - Alert Phone Password Form 2")
 	@Test(priority = 5, testName = "Register Password 2Alert Phone", dataProvider = "register_password2_alert_phone")
-	public void register_phone_alert_password2(String phone, String password, String rePassword, String alertText) {
+	public void register_phone_alert_password2(String phone, String password, String rePassword, String alertText) throws InterruptedException {
 		Url url = new Url(driver);
 		Input input = PageFactory.initElements(driver, Input.class);
 		Button button = PageFactory.initElements(driver, Button.class);
@@ -187,6 +192,7 @@ public class Test_Register extends Setup {
 		System.out.println("Register Test - Alert Phone Password Form 2");
 
 		url.urls("/register");
+		Thread.sleep(4000);
 		alert.byClass("header-nav-verif", "Register");
 		button.byId("register-phone");
 		input.byId("phone_number", phone);
@@ -198,7 +204,7 @@ public class Test_Register extends Setup {
 
 	@Description("Register Test - Alert Email")
 	@Test(priority = 0, testName = "Register Email Alert", dataProvider = "register_email_alert")
-	public void register_alert_email(String email, String password, String rePassword, String alertText) {
+	public void register_alert_email(String email, String password, String rePassword, String alertText) throws InterruptedException {
 		Url url = new Url(driver);
 		Input input = PageFactory.initElements(driver, Input.class);
 		Button button = PageFactory.initElements(driver, Button.class);
@@ -207,6 +213,7 @@ public class Test_Register extends Setup {
 		System.out.println("Register Test - Alert Email");
 
 		url.urls("/register");
+		Thread.sleep(4000);
 		alert.byClass("header-nav-verif", "Register");
 		input.byId("email", email);
 		input.byId("password", password);
@@ -217,7 +224,7 @@ public class Test_Register extends Setup {
 
 	@Description("Register Test - Alert Password Form 1")
 	@Test(priority = 6, testName = "Register Password1 Alert", dataProvider = "register_password1_alert_email")
-	public void register_email_alert_password1(String email, String password, String rePassword, String alertText) {
+	public void register_email_alert_password1(String email, String password, String rePassword, String alertText) throws InterruptedException {
 		Url url = new Url(driver);
 		Input input = PageFactory.initElements(driver, Input.class);
 		Button button = PageFactory.initElements(driver, Button.class);
@@ -226,6 +233,7 @@ public class Test_Register extends Setup {
 		System.out.println("Register Test - Alert Password Form 1");
 
 		url.urls("/register");
+		Thread.sleep(4000);
 		alert.byClass("header-nav-verif", "Register");
 		input.byId("email", email);
 		input.byId("password", password);
@@ -236,7 +244,7 @@ public class Test_Register extends Setup {
 
 	@Description("Register Test - Alert Password Form 2")
 	@Test(priority = 7, testName = "Register Password 2Alert", dataProvider = "register_password2_alert_email")
-	public void register_email_alert_password2(String email, String password, String rePassword, String alertText) {
+	public void register_email_alert_password2(String email, String password, String rePassword, String alertText) throws InterruptedException {
 		Url url = new Url(driver);
 		Input input = PageFactory.initElements(driver, Input.class);
 		Button button = PageFactory.initElements(driver, Button.class);
@@ -245,6 +253,7 @@ public class Test_Register extends Setup {
 		System.out.println("Register Test - Alert Password Form 2");
 
 		url.urls("/register");
+		Thread.sleep(4000);
 		alert.byClass("header-nav-verif", "Register");
 		input.byId("email", email);
 		input.byId("password", password);

@@ -34,8 +34,8 @@ public class Setup {
 		handlessOptions.addArguments("--disable-gpu");
 		handlessOptions.setPageLoadStrategy(PageLoadStrategy.NORMAL);
 		URL url = new URL("http://172.31.0.70:4444/wd/hub");
-		//URL url = new URL("http://localhost:4444/wd/hub");
-		//URL url = new URL("http://selenium.mncplus.com/wd/hub");
+		// URL url = new URL("http://localhost:4444/wd/hub");
+		// URL url = new URL("http://selenium.mncplus.com/wd/hub");
 		DesiredCapabilities capabilities = DesiredCapabilities.chrome();
 		capabilities.setCapability(ChromeOptions.CAPABILITY, handlessOptions);
 		handlessOptions.merge(capabilities);
@@ -47,9 +47,9 @@ public class Setup {
 	@AfterMethod
 	public void done(ITestResult result) throws InterruptedException {
 		String name = result.getName();
-		if(ITestResult.FAILURE==result.getStatus()) {
+		if (ITestResult.FAILURE == result.getStatus()) {
 			TakeScreenshot.captureScreenshot(driver, "Error_" + name);
-			
+
 			System.out.println("*** Test execution " + result.getMethod().getMethodName() + " failed!");
 			System.out.println(result.getMethod().getMethodName() + " failed!");
 			Thread.sleep(5000);

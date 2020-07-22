@@ -36,6 +36,7 @@ public class Test_Exclusive extends Setup {
 		System.out.println("Exclusive Test - Validate List Tab Menu");
 
 		url.defaultUrl();
+		Thread.sleep(4000);
 		button.byId("action-exclusive");
 		button.byClassesGetText("exclusive-item", indexToInteger, textValue);
 		button.byClassByIndex("exclusive-item", indexToInteger);
@@ -53,6 +54,7 @@ public class Test_Exclusive extends Setup {
 		System.out.println("Exclusive Test - Validate List Tab Menu Klik");
 
 		url.urls("/exclusive");
+		Thread.sleep(4000);
 		button.byClassesGetText("exclusive-item", indexToInteger, textValue);
 		button.byClassByIndex("exclusive-item", indexToInteger);
 		Thread.sleep(2000);
@@ -74,25 +76,27 @@ public class Test_Exclusive extends Setup {
 
 	@Description("Exclusive Test - Validate Thumbnail")
 	@Test(priority = 0, testName = "Exclusive Test - Validate Thumbnail")
-	public void exclusive_validate_thumbnail() {
+	public void exclusive_validate_thumbnail() throws InterruptedException {
 		Url url = new Url(driver);
 		Button button = PageFactory.initElements(driver, Button.class);
 
 		System.out.println("Exclusive Test - Validate Thumbnail");
 
 		url.urls("/exclusive");
+		Thread.sleep(4000);
 		button.byClassDisplay("program-thumbnail", true);
 	}
 
 	@Description("Exclusive Test Integration - Validate Thumbnail ")
 	@Test(priority = 1, testName = "Exclusive Test Integration - Validate Thumbnail")
-	public void integration_exclusive_validate_thumbnail() {
+	public void integration_exclusive_validate_thumbnail() throws InterruptedException {
 		Url url = new Url(driver);
 		Button button = PageFactory.initElements(driver, Button.class);
 
 		System.out.println("Exclusive Test Integration - Validate Thumbnail ");
 
 		url.defaultUrl();
+		Thread.sleep(4000);
 		button.byId("action-exclusive");
 		button.byClassDisplay("program-thumbnail", true);
 	}
