@@ -1,104 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="172241" started-at="2020-07-22T07:24:30Z" finished-at="2020-07-22T07:27:22Z">
+  <suite name="Default suite" duration-ms="83911" started-at="2020-07-29T07:56:28Z" finished-at="2020-07-29T07:57:52Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="172241" started-at="2020-07-22T07:24:30Z" finished-at="2020-07-22T07:27:22Z">
-      <class name="testcases.Test_Phone_Code">
-        <test-method status="PASS" signature="set()[pri:0, instance:testcases.Test_Phone_Code@592e843a]" name="set" is-config="true" duration-ms="2200" started-at="2020-07-22T14:24:31Z" finished-at="2020-07-22T14:24:34Z">
+    <test name="Default test" duration-ms="83911" started-at="2020-07-29T07:56:28Z" finished-at="2020-07-29T07:57:52Z">
+      <class name="testcases.Test_Login_Phone_Code">
+        <test-method status="PASS" signature="set()[pri:0, instance:testcases.Test_Login_Phone_Code@410ae9a3]" name="set" is-config="true" duration-ms="3160" started-at="2020-07-29T14:56:30Z" finished-at="2020-07-29T14:56:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- set -->
-        <test-method status="PASS" signature="login_list_phone_code(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.Test_Phone_Code@592e843a]" name="login_list_phone_code" duration-ms="52611" started-at="2020-07-22T14:24:34Z" data-provider="phone_code_number" finished-at="2020-07-22T14:25:26Z">
+        <test-method status="PASS" signature="login(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.Test_Login_Phone_Code@410ae9a3]" name="login" duration-ms="72664" started-at="2020-07-29T14:56:33Z" data-provider="login_phone_code" finished-at="2020-07-29T14:57:45Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[8227884]]>
+                <![CDATA[2126712234]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[5]]>
+                <![CDATA[dikakoko]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[AI]]>
+                <![CDATA[united states]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[dikaphonecod]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[US]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login_list_phone_code -->
-        <test-method status="PASS" signature="done(org.testng.ITestResult)[pri:0, instance:testcases.Test_Phone_Code@592e843a]" name="done" is-config="true" duration-ms="5552" started-at="2020-07-22T14:25:26Z" finished-at="2020-07-22T14:25:32Z">
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="done(org.testng.ITestResult)[pri:0, instance:testcases.Test_Login_Phone_Code@410ae9a3]" name="done" is-config="true" duration-ms="6133" started-at="2020-07-29T14:57:45Z" finished-at="2020-07-29T14:57:52Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=login_list_phone_code status=SUCCESS method=Test_Phone_Code.login_list_phone_code(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.Test_Phone_Code@592e843a] output={null}]]]>
+                <![CDATA[[TestResult name=login status=SUCCESS method=Test_Login_Phone_Code.login(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.Test_Login_Phone_Code@410ae9a3] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- done -->
-        <test-method status="PASS" signature="set()[pri:0, instance:testcases.Test_Phone_Code@592e843a]" name="set" is-config="true" duration-ms="1069" started-at="2020-07-22T14:25:32Z" finished-at="2020-07-22T14:25:33Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- set -->
-        <test-method status="PASS" signature="login_list_phone_code_default()[pri:1, instance:testcases.Test_Phone_Code@592e843a]" name="login_list_phone_code_default" duration-ms="42045" started-at="2020-07-22T14:25:33Z" finished-at="2020-07-22T14:26:15Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login_list_phone_code_default -->
-        <test-method status="PASS" signature="done(org.testng.ITestResult)[pri:0, instance:testcases.Test_Phone_Code@592e843a]" name="done" is-config="true" duration-ms="5403" started-at="2020-07-22T14:26:15Z" finished-at="2020-07-22T14:26:20Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=login_list_phone_code_default status=SUCCESS method=Test_Phone_Code.login_list_phone_code_default()[pri:1, instance:testcases.Test_Phone_Code@592e843a] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- done -->
-        <test-method status="PASS" signature="set()[pri:0, instance:testcases.Test_Phone_Code@592e843a]" name="set" is-config="true" duration-ms="1208" started-at="2020-07-22T14:26:20Z" finished-at="2020-07-22T14:26:22Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- set -->
-        <test-method status="PASS" signature="register_list_phone_code_default(java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:testcases.Test_Phone_Code@592e843a]" name="register_list_phone_code_default" duration-ms="55271" started-at="2020-07-22T14:26:22Z" data-provider="phone_code_number" finished-at="2020-07-22T14:27:17Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[8227884]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[5]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[AI]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- register_list_phone_code_default -->
-        <test-method status="PASS" signature="done(org.testng.ITestResult)[pri:0, instance:testcases.Test_Phone_Code@592e843a]" name="done" is-config="true" duration-ms="5451" started-at="2020-07-22T14:27:17Z" finished-at="2020-07-22T14:27:22Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=register_list_phone_code_default status=SUCCESS method=Test_Phone_Code.register_list_phone_code_default(java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:testcases.Test_Phone_Code@592e843a] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- done -->
-      </class> <!-- testcases.Test_Phone_Code -->
+      </class> <!-- testcases.Test_Login_Phone_Code -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
