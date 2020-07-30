@@ -50,8 +50,9 @@ public class Test_Continue_Watching extends Setup {
 		button.byXpath("//a[contains(text(),'Clip')]");
 		Thread.sleep(5000);
 		button.byXpath("//div[contains(@class,'tab-pane active')]//div[2]//div[1]//div[2]//img[1]");
-		Thread.sleep(35000);
-		url.defaultUrl();
+		Thread.sleep(40000);
+		button.byId("action-home");
+		Thread.sleep(4000);
 		button.byId("action-account");
 		Thread.sleep(5000);
 		button.byClassNotNull("list-item-thumbnail");

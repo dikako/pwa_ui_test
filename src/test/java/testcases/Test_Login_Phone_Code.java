@@ -51,7 +51,7 @@ public class Test_Login_Phone_Code extends Setup {
 		
 		input.byId("password", password);
 		button.byId("submit-login");
-		Thread.sleep(5000);
+		Thread.sleep(20000);
 		button.byId("action-account");
 		Thread.sleep(4000);
 		alerts.byId("action-profile", alertText);

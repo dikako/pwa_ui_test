@@ -107,18 +107,20 @@ public class Test_Chat extends Setup {
 		button.byId("action-live-event");
 		Thread.sleep(5000);
 		alert.byClass("header-nav-verif", "Live Event");
+		
 		if (button.isClassDisplay("thumb-timer")) {
 			button.byClassByIndex("thumb-timer", 0);
+			Thread.sleep(5000);
+			button.byIdDisplay("btn-expand", true);
+			button.byId("btn-expand");
+			Thread.sleep(5000);
+			input.byIdDisplay("chat-input", true);
+			input.byId("chat-input", chatText + Keys.ENTER);
+			input.validateInputTextByClassByIndexone("username", nickname);
+			input.validateInputTextByClassByIndexone("message", chatText);
 		} else {
 			System.out.println("Data Live Event Tidak Ada");
 		}
-		Thread.sleep(5000);
-		button.byId("btn-expand");
-		Thread.sleep(5000);
-		input.byIdDisplay("chat-input", true);
-		input.byId("chat-input", chatText + Keys.ENTER);
-		input.validateInputTextByClassByIndexone("username", nickname);
-		input.validateInputTextByClassByIndexone("message", chatText);
 	}
 
 	@Severity(SeverityLevel.CRITICAL)
@@ -129,6 +131,7 @@ public class Test_Chat extends Setup {
 		Url url = new Url(driver);
 		Button button = PageFactory.initElements(driver, Button.class);
 		Input input = PageFactory.initElements(driver, Input.class);
+		Alert alert = PageFactory.initElements(driver, Alert.class);
 
 		System.out.println("Chat Test Live Event - Test Chatting Before Login");
 
@@ -136,21 +139,30 @@ public class Test_Chat extends Setup {
 		Thread.sleep(4000);
 		button.byId("action-live-event");
 		Thread.sleep(5000);
-		button.byIdDisplay("btn-expand", true);
-		button.byId("btn-expand");
-		button.byId("popup-action-signin");
-		input.byId("email", username);
-		input.byId("password", password);
-		button.byId("submit-login");
-		Thread.sleep(5000);
+		alert.byClass("header-nav-verif", "Live Event");
+		
+		if (button.isClassDisplay("thumb-timer")) {
+			button.byClassByIndex("thumb-timer", 0);
+			Thread.sleep(5000);
+			button.byIdDisplay("btn-expand", true);
+			button.byId("btn-expand");
+			button.byId("popup-action-signin");
+			input.byId("email", username);
+			input.byId("password", password);
+			button.byId("submit-login");
+			Thread.sleep(5000);
 
-		button.byId("action-live-event");
-		Thread.sleep(5000);
-		button.byId("btn-expand");
-		Thread.sleep(5000);
-		input.byIdDisplay("chat-input", true);
-		input.byId("chat-input", chatText + Keys.ENTER);
-		input.validateInputTextByClassByIndexone("username", nickname);
-		input.validateInputTextByClassByIndexone("message", chatText);
+			button.byId("action-live-event");
+			Thread.sleep(5000);
+			button.byId("btn-expand");
+			Thread.sleep(5000);
+			input.byIdDisplay("chat-input", true);
+			input.byId("chat-input", chatText + Keys.ENTER);
+			input.validateInputTextByClassByIndexone("username", nickname);
+			input.validateInputTextByClassByIndexone("message", chatText);
+			
+		} else {
+			System.out.println("Data Live Event Tidak Ada");
+		}
 	}
 }
