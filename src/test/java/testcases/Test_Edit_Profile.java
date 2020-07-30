@@ -71,7 +71,7 @@ public class Test_Edit_Profile extends Setup {
 		alert.byClass("header-nav-verif", "Edit Profile");
 		button.byId(edit + "-input");
 		Thread.sleep(2000);
-		alert.byClass("header-nav-verif", edit);
+		alert.byClass("header-nav-verif", "Edit Profile");
 		Thread.sleep(5000);
 		input.byId("form-field", inputEdit);
 		Thread.sleep(4000);
@@ -83,7 +83,7 @@ public class Test_Edit_Profile extends Setup {
 		// Back Change
 		button.byId(edit + "-input");
 		Thread.sleep(2000);
-		alert.byClass("header-nav-verif", edit);
+		alert.byClass("header-nav-verif", "Edit Profile");
 		Thread.sleep(5000);
 		input.byId("form-field", "notEdit");
 		button.byId("save-edit");
@@ -115,7 +115,7 @@ public class Test_Edit_Profile extends Setup {
 		alert.byClass("header-nav-verif", "Edit Profile");
 		button.byId(edit + "-input");
 		Thread.sleep(5000);
-		alert.byClassContains("header-nav-verif", edit);
+		alert.byClassContains("header-nav-verif", "Edit Profile");
 		Thread.sleep(5000);
 		input.byId("form-field", inputEdit);
 		button.byId("save-edit");
@@ -147,7 +147,7 @@ public class Test_Edit_Profile extends Setup {
 		alert.byClass("header-nav-verif", "Edit Profile");
 		button.byId(edit + "-input");
 		Thread.sleep(5000);
-		alert.byClassContains("header-nav-verif", edit);
+		alert.byClassContains("header-nav-verif", "Edit Profile");
 		Thread.sleep(5000);
 		input.byId("phone_number", inputEdit);
 		button.byId("save-edit");
