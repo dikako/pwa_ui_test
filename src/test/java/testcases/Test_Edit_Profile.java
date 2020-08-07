@@ -54,37 +54,25 @@ public class Test_Edit_Profile extends Setup {
 		Url url = new Url(driver);
 		Input input = PageFactory.initElements(driver, Input.class);
 		Button button = PageFactory.initElements(driver, Button.class);
-		Alert alert = PageFactory.initElements(driver, Alert.class);
 
 		System.out.println("Edit Profile Test - Success Edit Profile");
 
+		// Action Login
 		url.urls("/login");
-		Thread.sleep(4000);
-		alert.byClass("header-nav-verif", "Login");
 		input.byId("email", username);
 		input.byId("password", password);
 		button.byId("submit-login");
 		Thread.sleep(5000);
+		
 		button.byId("action-account");
 		button.byId("action-profile");
-		Thread.sleep(5000);
-		alert.byClass("header-nav-verif", "Edit Profile");
 		button.byId(edit + "-input");
-		Thread.sleep(2000);
-		alert.byClass("header-nav-verif", "Edit Profile");
-		Thread.sleep(5000);
 		input.byId("form-field", inputEdit);
-		Thread.sleep(4000);
 		button.byId("save-edit");
-		Thread.sleep(5000);
-		alert.byClass("header-nav-verif", "Edit Profile");
 		input.byIdAttr(edit + "-input", "value", inputEdit);
 
 		// Back Change
 		button.byId(edit + "-input");
-		Thread.sleep(2000);
-		alert.byClass("header-nav-verif", "Edit Profile");
-		Thread.sleep(5000);
 		input.byId("form-field", "notEdit");
 		button.byId("save-edit");
 		System.out.println("Fullname kembali kesemula");
@@ -102,21 +90,16 @@ public class Test_Edit_Profile extends Setup {
 
 		System.out.println("Edit Profile Test - Alert Edit Profile Form Field");
 
+		// Action Login
 		url.urls("/login");
-		Thread.sleep(4000);
-		alert.byClass("header-nav-verif", "Login");
 		input.byId("email", username);
 		input.byId("password", password);
 		button.byId("submit-login");
 		Thread.sleep(5000);
+		
 		button.byId("action-account");
 		button.byId("action-profile");
-		Thread.sleep(5000);
-		alert.byClass("header-nav-verif", "Edit Profile");
 		button.byId(edit + "-input");
-		Thread.sleep(5000);
-		alert.byClassContains("header-nav-verif", "Edit Profile");
-		Thread.sleep(5000);
 		input.byId("form-field", inputEdit);
 		button.byId("save-edit");
 		alert.byIdByTag("invalid-feedback-top", "p", alertText);
@@ -135,20 +118,14 @@ public class Test_Edit_Profile extends Setup {
 		System.out.println("Edit Profile Test - Alert Edit Profile Phone Alert");
 
 		url.urls("/login");
-		Thread.sleep(4000);
-		alert.byClass("header-nav-verif", "Login");
 		input.byId("email", username);
 		input.byId("password", password);
 		button.byId("submit-login");
 		Thread.sleep(5000);
+		
 		button.byId("action-account");
 		button.byId("action-profile");
-		Thread.sleep(5000);
-		alert.byClass("header-nav-verif", "Edit Profile");
 		button.byId(edit + "-input");
-		Thread.sleep(5000);
-		alert.byClassContains("header-nav-verif", "Edit Profile");
-		Thread.sleep(5000);
 		input.byId("phone_number", inputEdit);
 		button.byId("save-edit");
 		alert.byIdByTag("invalid-feedback-top", "p", alertText);

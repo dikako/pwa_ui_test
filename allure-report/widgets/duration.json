@@ -1,1 +1,281 @@
-[ ]
+[ {
+  "uid" : "6c5ba5ef67a5a3e0",
+  "name" : "login_list_phone_code",
+  "time" : {
+    "start" : 1596426598670,
+    "stop" : 1596426668146,
+    "duration" : 69476
+  },
+  "status" : "broken",
+  "severity" : "critical"
+}, {
+  "uid" : "ac30febd1332b901",
+  "name" : "chat_test_after_login",
+  "time" : {
+    "start" : 1596822899480,
+    "stop" : 1596822917860,
+    "duration" : 18380
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "83d5f58f38ace75c",
+  "name" : "chat_test_before_login",
+  "time" : {
+    "start" : 1596822808027,
+    "stop" : 1596822835978,
+    "duration" : 27951
+  },
+  "status" : "broken",
+  "severity" : "critical"
+}, {
+  "uid" : "794043af2affc4e9",
+  "name" : "edit_profile_form_field_alert",
+  "time" : {
+    "start" : 1596824236604,
+    "stop" : 1596824236605,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "severity" : "minor"
+}, {
+  "uid" : "62d89272aaee9780",
+  "name" : "chat_test_after_login",
+  "time" : {
+    "start" : 1596822919952,
+    "stop" : 1596822936545,
+    "duration" : 16593
+  },
+  "status" : "broken",
+  "severity" : "critical"
+}, {
+  "uid" : "74bb99a000b88993",
+  "name" : "chat_test_live_event_after_login",
+  "time" : {
+    "start" : 1596822995165,
+    "stop" : 1596823018602,
+    "duration" : 23437
+  },
+  "status" : "failed",
+  "severity" : "critical"
+}, {
+  "uid" : "b23d8390720fdda4",
+  "name" : "test_chat_live_event__before_login",
+  "time" : {
+    "start" : 1596823112648,
+    "stop" : 1596823158752,
+    "duration" : 46104
+  },
+  "status" : "broken",
+  "severity" : "critical"
+}, {
+  "uid" : "4e3e9120e8630b06",
+  "name" : "edit_profile_phone_alert",
+  "time" : {
+    "start" : 1596824236739,
+    "stop" : 1596824236739,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "minor"
+}, {
+  "uid" : "669bbc8aa03a7e8e",
+  "name" : "register_list_phone_code_default",
+  "time" : {
+    "start" : 1596426772457,
+    "stop" : 1596426855144,
+    "duration" : 82687
+  },
+  "status" : "broken",
+  "severity" : "critical"
+}, {
+  "uid" : "729b215e9a6bca02",
+  "name" : "test_chat_live_event__before_login",
+  "time" : {
+    "start" : 1596823064580,
+    "stop" : 1596823110437,
+    "duration" : 45857
+  },
+  "status" : "broken",
+  "severity" : "critical"
+}, {
+  "uid" : "25c70cc0d4352ca6",
+  "name" : "edit_profile_form_field_alert",
+  "time" : {
+    "start" : 1596824236609,
+    "stop" : 1596824236609,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "minor"
+}, {
+  "uid" : "147d91c3417ae881",
+  "name" : "continue_watching_from_exclusive_home",
+  "time" : {
+    "start" : 1596822437079,
+    "stop" : 1596822469667,
+    "duration" : 32588
+  },
+  "status" : "broken",
+  "severity" : "minor"
+}, {
+  "uid" : "2698a9763a167628",
+  "name" : "continue_watching_from_exclusive_cleared",
+  "time" : {
+    "start" : 1596822050089,
+    "stop" : 1596822083051,
+    "duration" : 32962
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "6d5c1bb6f69c19b5",
+  "name" : "chat_test_before_login",
+  "time" : {
+    "start" : 1596822868412,
+    "stop" : 1596822897365,
+    "duration" : 28953
+  },
+  "status" : "broken",
+  "severity" : "critical"
+}, {
+  "uid" : "17813dfc760907ec",
+  "name" : "test_chat_live_event__before_login",
+  "time" : {
+    "start" : 1596823162356,
+    "stop" : 1596823209388,
+    "duration" : 47032
+  },
+  "status" : "broken",
+  "severity" : "critical"
+}, {
+  "uid" : "11cbbb384d57c3d5",
+  "name" : "chat_test_before_login",
+  "time" : {
+    "start" : 1596822837619,
+    "stop" : 1596822866389,
+    "duration" : 28770
+  },
+  "status" : "broken",
+  "severity" : "critical"
+}, {
+  "uid" : "5832818f410282e5",
+  "name" : "login_list_phone_code_default",
+  "time" : {
+    "start" : 1596426684733,
+    "stop" : 1596426758424,
+    "duration" : 73691
+  },
+  "status" : "broken",
+  "severity" : "critical"
+}, {
+  "uid" : "f5db104132dbdb2b",
+  "name" : "chat_test_live_event_after_login",
+  "time" : {
+    "start" : 1596823042925,
+    "stop" : 1596823062541,
+    "duration" : 19616
+  },
+  "status" : "failed",
+  "severity" : "critical"
+}, {
+  "uid" : "3b170369bc48e3c2",
+  "name" : "chat_test_after_login",
+  "time" : {
+    "start" : 1596822938408,
+    "stop" : 1596822962605,
+    "duration" : 24197
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "24366423ef4b1ab7",
+  "name" : "chat_test_live_event_after_login",
+  "time" : {
+    "start" : 1596822983833,
+    "stop" : 1596822993486,
+    "duration" : 9653
+  },
+  "status" : "broken",
+  "severity" : "critical"
+}, {
+  "uid" : "841a05147854e4d4",
+  "name" : "edit_profile_form_field_alert",
+  "time" : {
+    "start" : 1596824111352,
+    "stop" : 1596824176535,
+    "duration" : 65183
+  },
+  "status" : "broken",
+  "severity" : "minor"
+}, {
+  "uid" : "98dd7a075e86ba76",
+  "name" : "chat_test_live_event_after_login",
+  "time" : {
+    "start" : 1596823020774,
+    "stop" : 1596823040601,
+    "duration" : 19827
+  },
+  "status" : "failed",
+  "severity" : "critical"
+}, {
+  "uid" : "5969c8522fc94b04",
+  "name" : "test_chat_live_event__before_login",
+  "time" : {
+    "start" : 1596823213018,
+    "stop" : 1596823259056,
+    "duration" : 46038
+  },
+  "status" : "broken",
+  "severity" : "critical"
+}, {
+  "uid" : "4b861d74d7b7b67c",
+  "name" : "continue_watching_from_exclusive_delete",
+  "time" : {
+    "start" : 1596793526387,
+    "stop" : 1596793565699,
+    "duration" : 39312
+  },
+  "status" : "broken",
+  "severity" : "minor"
+}, {
+  "uid" : "f53cb8ffb707834d",
+  "name" : "chat_test_before_login",
+  "time" : {
+    "start" : 1596822777312,
+    "stop" : 1596822806018,
+    "duration" : 28706
+  },
+  "status" : "broken",
+  "severity" : "critical"
+}, {
+  "uid" : "74ac20200380d36a",
+  "name" : "chat_test_after_login",
+  "time" : {
+    "start" : 1596822964295,
+    "stop" : 1596822982116,
+    "duration" : 17821
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "6a6c27e1917023fd",
+  "name" : "edit_profile_success_edit_fullname",
+  "time" : {
+    "start" : 1596824086903,
+    "stop" : 1596824109278,
+    "duration" : 22375
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "4a47e0799cc0a9bf",
+  "name" : "continue_watching_from_exclusive",
+  "time" : {
+    "start" : 1596821987286,
+    "stop" : 1596822046018,
+    "duration" : 58732
+  },
+  "status" : "passed",
+  "severity" : "minor"
+} ]

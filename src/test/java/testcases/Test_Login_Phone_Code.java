@@ -39,8 +39,6 @@ public class Test_Login_Phone_Code extends Setup {
 		System.out.println("Login Test Phone Code");
 
 		url.urls("/login");
-		Thread.sleep(5000);
-		alerts.byClass("header-nav-verif", "Login");
 		input.byId("email", username);
 		button.byId("action-country-code");
 		button.byClass("search-action");
@@ -48,12 +46,11 @@ public class Test_Login_Phone_Code extends Setup {
 		input.byId("search", country + Keys.ENTER);
 		button.byClassByIndex("country-item", 0);
 		alerts.byId("action-country-code", countryName);
-		
 		input.byId("password", password);
 		button.byId("submit-login");
-		Thread.sleep(20000);
+		Thread.sleep(5000);
+		
 		button.byId("action-account");
-		Thread.sleep(4000);
 		alerts.byId("action-profile", alertText);
 	}
 }

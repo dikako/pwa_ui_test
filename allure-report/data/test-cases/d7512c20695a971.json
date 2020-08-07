@@ -1,0 +1,103 @@
+{
+  "uid" : "d7512c20695a971",
+  "name" : "continue_watching_from_exclusive_cleared",
+  "fullName" : "testcases.Test_Continue_Watching.continue_watching_from_exclusive_cleared",
+  "historyId" : "e670178666dba7033d1e3a12c41bccd4",
+  "time" : {
+    "start" : 1596821910671,
+    "stop" : 1596821941133,
+    "duration" : 30462
+  },
+  "description" : "Continue Watching Test - From Exlcuisve",
+  "descriptionHtml" : "<p>Continue Watching Test - From Exlcuisve</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "set",
+    "time" : {
+      "start" : 1596821909443,
+      "stop" : 1596821910668,
+      "duration" : 1225
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "done",
+    "time" : {
+      "start" : 1596821941134,
+      "stop" : 1596821941739,
+      "duration" : 605
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "1c1a418b5c69f7be",
+      "name" : "captureScreenshot",
+      "source" : "1c1a418b5c69f7be.png",
+      "type" : "image/png",
+      "size" : 479974
+    } ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1,
+    "stepsCount" : 0,
+    "hasContent" : true
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "testcases.Test_Continue_Watching"
+  }, {
+    "name" : "testClass",
+    "value" : "testcases.Test_Continue_Watching"
+  }, {
+    "name" : "testMethod",
+    "value" : "continue_watching_from_exclusive_cleared"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Default suite"
+  }, {
+    "name" : "suite",
+    "value" : "Default test"
+  }, {
+    "name" : "subSuite",
+    "value" : "testcases.Test_Continue_Watching"
+  }, {
+    "name" : "host",
+    "value" : "MNCTVN05589"
+  }, {
+    "name" : "thread",
+    "value" : "1816@MNCTVN05589.main(1)"
+  }, {
+    "name" : "severity",
+    "value" : "minor"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "arg0",
+    "value" : "dikakoko04@gmail.com"
+  }, {
+    "name" : "arg1",
+    "value" : "dikakoko"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "d7512c20695a971.json",
+  "parameterValues" : [ "dikakoko04@gmail.com", "dikakoko" ]
+}

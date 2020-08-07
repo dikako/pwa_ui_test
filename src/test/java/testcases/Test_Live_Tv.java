@@ -41,7 +41,6 @@ public class Test_Live_Tv extends Setup {
 		System.out.println("Live Tv Test - Validate List Tab Live Tv");
 
 		url.defaultUrl();
-		Thread.sleep(4000);
 		button.byId("action-live-tv");
 		Thread.sleep(5000);
 		button.byClassesGetText("text-center", indexToInt, textValue);
@@ -59,7 +58,6 @@ public class Test_Live_Tv extends Setup {
 		System.out.println("Live Tv Test - Validate Tab Live and Cacthup");
 
 		url.defaultUrl();
-		Thread.sleep(4000);
 		button.byId("action-live-tv");
 		Thread.sleep(5000);
 		button.byClassesGetText("nav-link", indexToInt, textValue);

@@ -39,10 +39,7 @@ public class Test_Phone_Code extends Setup {
 		System.out.println("Login Test - List Phone Code");
 
 		url.urls("/login");
-		Thread.sleep(4000);
-		alerts.byClass("header-nav-verif", "Login");
 		input.byId("email", phone);
-		Thread.sleep(1000);
 		button.byIdDisplay("action-country-code", true);
 		button.byId("action-country-code");
 		alerts.byClass("search-text", "Select Country");
@@ -63,10 +60,7 @@ public class Test_Phone_Code extends Setup {
 		System.out.println("Login Test - List Phone Code");
 
 		url.urls("/login");
-		Thread.sleep(4000);
-		alerts.byClass("header-nav-verif", "Login");
 		input.byId("email", "82278843");
-		Thread.sleep(1000);
 		button.byIdDisplay("action-country-code", true);
 		alerts.byId("action-country-code", "ID");
 	}
@@ -85,8 +79,6 @@ public class Test_Phone_Code extends Setup {
 		System.out.println("Register Test - List Phone Code");
 
 		url.urls("/register");
-		Thread.sleep(4000);
-		alerts.byClass("header-nav-verif", "Register");
 		
 		button.byId("register-phone");
 		input.byId("phone_number", phone);

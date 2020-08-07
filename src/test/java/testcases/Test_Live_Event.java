@@ -38,9 +38,7 @@ public class Test_Live_Event extends Setup {
 		System.out.println("Live Event - Dashboard Live Event");
 
 		url.defaultUrl();
-		Thread.sleep(4000);
 		button.byId("action-live-event");
-		alert.byClass("header-nav-verif", "Live Event");
 		alert.byClassByIndex(indexToInt, "le-title", alertText);
 		button.byClassDisplay("thumb-img", true);
 	}
@@ -58,9 +56,7 @@ public class Test_Live_Event extends Setup {
 		System.out.println("Live Event - List Tab On Player Live Event");
 
 		url.defaultUrl();
-		Thread.sleep(4000);
 		button.byId("action-live-event");
-		alert.byClass("header-nav-verif", "Live Event");
 		if (button.isClassDisplay("thumb-timer")) {
 			button.byClassByIndex("thumb-timer", 0);
 			alert.byClassByIndex(indexToInt, "nav-link", alertText);

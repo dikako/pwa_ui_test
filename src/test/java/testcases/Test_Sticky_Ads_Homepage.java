@@ -13,7 +13,7 @@ import object.Button;
 public class Test_Sticky_Ads_Homepage extends Setup {
 	
 	@Description("Sticky Ads Test - Under Story")
-	@Severity(SeverityLevel.MINOR)
+	@Severity(SeverityLevel.CRITICAL)
 	@Test(priority = 0, testName = "Sticky Ads Test - Under Story")
 	public void sticky_ads() throws InterruptedException {
 		Url url = new Url(driver);
@@ -22,12 +22,11 @@ public class Test_Sticky_Ads_Homepage extends Setup {
 		System.out.println("Sticky Ads Test - Validate Display Under Story");
 		
 		url.defaultUrl();
-		Thread.sleep(5000);
 		button.byIdNotNull("google_image_div");
 	}
 	
 	@Description("Sticky Ads Test - Scroll Button")
-	@Severity(SeverityLevel.MINOR)
+	@Severity(SeverityLevel.CRITICAL)
 	@Test(priority = 1, testName = "Sticky Ads Test - Scroll Button")
 	public void sticky_ads_Scroll_Buttom() throws InterruptedException {
 		Url url = new Url(driver);
@@ -38,7 +37,6 @@ public class Test_Sticky_Ads_Homepage extends Setup {
 		System.out.println("Sticky Ads Test - Validate Display Scroll Button");
 		
 		url.defaultUrl();
-		Thread.sleep(5000);
 		js.executeScript("window.scrollTo(0,1000)");
 		Thread.sleep(5000);
 		button.byIdNotNull("google_image_div");

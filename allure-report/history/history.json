@@ -1,1 +1,553 @@
-{ }
+{
+  "7a947a4181a34bc98a7778cdea68e419" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "669bbc8aa03a7e8e",
+      "status" : "broken",
+      "statusDetails" : "Unable to locate element: .header\\-nav\\-verif\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'MNCTVN05589', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'\nDriver info: org.openqa.selenium.remote.RemoteWebDriver\nCapabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 76.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200507114007, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 1954, moz:profile: /tmp/rust_mozprofile14gv1U, moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, platformVersion: 4.19.76-linuxkit, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: 1066da6f-9632-470c-9b37-655...}\nSession ID: 1066da6f-9632-470c-9b37-655437c0444c\n*** Element info: {Using=class name, value=header-nav-verif}",
+      "time" : {
+        "start" : 1596426772457,
+        "stop" : 1596426855144,
+        "duration" : 82687
+      }
+    } ]
+  },
+  "c71e5125efcd051a275ba4b094271999" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "4b861d74d7b7b67c",
+      "status" : "broken",
+      "statusDetails" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".header\\-nav\\-verif\"}\n  (Session info: chrome=83.0.4103.61)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'MNCTVN05589', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'\nDriver info: org.openqa.selenium.remote.RemoteWebDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.5Lt46s}, goog:chromeOptions: {debuggerAddress: localhost:41337}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: f2b52b08f3ca56b75f42efc25b3...}\nSession ID: f2b52b08f3ca56b75f42efc25b362a53\n*** Element info: {Using=class name, value=header-nav-verif}",
+      "time" : {
+        "start" : 1596793526387,
+        "stop" : 1596793565699,
+        "duration" : 39312
+      }
+    } ]
+  },
+  "9c329967f86133631a266c606a21d75" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "17813dfc760907ec",
+      "status" : "broken",
+      "statusDetails" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#btn\\-expand\"}\n  (Session info: chrome=83.0.4103.61)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'MNCTVN05589', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'\nDriver info: org.openqa.selenium.remote.RemoteWebDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.5OZ5jn}, goog:chromeOptions: {debuggerAddress: localhost:45987}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: cf0642ba665dc0812d68697ad0b...}\nSession ID: cf0642ba665dc0812d68697ad0b8768c\n*** Element info: {Using=id, value=btn-expand}",
+      "time" : {
+        "start" : 1596823162356,
+        "stop" : 1596823209388,
+        "duration" : 47032
+      }
+    } ]
+  },
+  "3f7e34f1e222b106101df0595a76b6c0" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "62d89272aaee9780",
+      "status" : "broken",
+      "statusDetails" : "move target out of bounds\n  (Session info: chrome=83.0.4103.61)\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'MNCTVN05589', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'\nDriver info: org.openqa.selenium.remote.RemoteWebDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.c49arm}, goog:chromeOptions: {debuggerAddress: localhost:36091}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: b605fcd633169b042483fcc16e8...}\nSession ID: b605fcd633169b042483fcc16e81994a",
+      "time" : {
+        "start" : 1596822919952,
+        "stop" : 1596822936545,
+        "duration" : 16593
+      }
+    } ]
+  },
+  "cff44040a88aa53a7df342ea0344979d" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "4e3e9120e8630b06",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1596824236739,
+        "stop" : 1596824236739,
+        "duration" : 0
+      }
+    } ]
+  },
+  "6c2bab193f6b57dee2c11df82b605eb9" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "25c70cc0d4352ca6",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1596824236609,
+        "stop" : 1596824236609,
+        "duration" : 0
+      }
+    } ]
+  },
+  "d2f20178a170e93cd150295dac972859" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "83d5f58f38ace75c",
+      "status" : "broken",
+      "statusDetails" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#popup\\-action\\-signin\"}\n  (Session info: chrome=83.0.4103.61)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'MNCTVN05589', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'\nDriver info: org.openqa.selenium.remote.RemoteWebDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.erOT1Z}, goog:chromeOptions: {debuggerAddress: localhost:39825}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: e0f1f9ba15f5d100bb10f0a8a87...}\nSession ID: e0f1f9ba15f5d100bb10f0a8a87b5067\n*** Element info: {Using=id, value=popup-action-signin}",
+      "time" : {
+        "start" : 1596822808027,
+        "stop" : 1596822835978,
+        "duration" : 27951
+      }
+    } ]
+  },
+  "f75b8bb864cd78465e20402d899ebe60" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "794043af2affc4e9",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1596824236604,
+        "stop" : 1596824236605,
+        "duration" : 1
+      }
+    } ]
+  },
+  "1d1254667a475630f46415ac7bbaf11a" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "5969c8522fc94b04",
+      "status" : "broken",
+      "statusDetails" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#btn\\-expand\"}\n  (Session info: chrome=83.0.4103.61)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'MNCTVN05589', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'\nDriver info: org.openqa.selenium.remote.RemoteWebDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.J7vFXN}, goog:chromeOptions: {debuggerAddress: localhost:46485}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 373e1808d7776b206a9c4e79939...}\nSession ID: 373e1808d7776b206a9c4e799395a481\n*** Element info: {Using=id, value=btn-expand}",
+      "time" : {
+        "start" : 1596823213018,
+        "stop" : 1596823259056,
+        "duration" : 46038
+      }
+    } ]
+  },
+  "f3929f4e54969b341dbc9d5fd5db6544" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "841a05147854e4d4",
+      "status" : "broken",
+      "statusDetails" : "Unable to determine type from: <. Last 1 characters read: <\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'MNCTVN05589', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'\nDriver info: driver.version: RemoteWebDriver",
+      "time" : {
+        "start" : 1596824111352,
+        "stop" : 1596824176535,
+        "duration" : 65183
+      }
+    } ]
+  },
+  "aea76171019e95c79a80cafc798eeb4" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "729b215e9a6bca02",
+      "status" : "broken",
+      "statusDetails" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#btn\\-expand\"}\n  (Session info: chrome=83.0.4103.61)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'MNCTVN05589', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'\nDriver info: org.openqa.selenium.remote.RemoteWebDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.HpSP5K}, goog:chromeOptions: {debuggerAddress: localhost:41301}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 66f375c48e56008af4de476bf28...}\nSession ID: 66f375c48e56008af4de476bf280b833\n*** Element info: {Using=id, value=btn-expand}",
+      "time" : {
+        "start" : 1596823064580,
+        "stop" : 1596823110437,
+        "duration" : 45857
+      }
+    } ]
+  },
+  "d760c97d6426670ac450fb46e8006f0f" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "147d91c3417ae881",
+      "status" : "broken",
+      "statusDetails" : "Index: 0, Size: 0",
+      "time" : {
+        "start" : 1596822437079,
+        "stop" : 1596822469667,
+        "duration" : 32588
+      }
+    } ]
+  },
+  "e670178666dba7033d1e3a12c41bccd4" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "2698a9763a167628",
+      "status" : "passed",
+      "time" : {
+        "start" : 1596822050089,
+        "stop" : 1596822083051,
+        "duration" : 32962
+      }
+    } ]
+  },
+  "ed4d01f4988fb69e7a63990742446fca" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "f53cb8ffb707834d",
+      "status" : "broken",
+      "statusDetails" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#popup\\-action\\-signin\"}\n  (Session info: chrome=83.0.4103.61)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'MNCTVN05589', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'\nDriver info: org.openqa.selenium.remote.RemoteWebDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.kOWFc8}, goog:chromeOptions: {debuggerAddress: localhost:34741}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 89354bf5f244674e1a7e232e478...}\nSession ID: 89354bf5f244674e1a7e232e478e3284\n*** Element info: {Using=id, value=popup-action-signin}",
+      "time" : {
+        "start" : 1596822777312,
+        "stop" : 1596822806018,
+        "duration" : 28706
+      }
+    } ]
+  },
+  "4b8dda2b5f604a0b55f3824ad5b26acd" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "ac30febd1332b901",
+      "status" : "passed",
+      "time" : {
+        "start" : 1596822899480,
+        "stop" : 1596822917860,
+        "duration" : 18380
+      }
+    } ]
+  },
+  "ee57cb63e3f408d7a67e039f6726e964" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "74bb99a000b88993",
+      "status" : "failed",
+      "statusDetails" : "expected [akudikakoko] but found [riorenaldibeng]",
+      "time" : {
+        "start" : 1596822995165,
+        "stop" : 1596823018602,
+        "duration" : 23437
+      }
+    } ]
+  },
+  "1ad33c1f8076fa9ea3cfaae10ee8de83" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "5832818f410282e5",
+      "status" : "broken",
+      "statusDetails" : "Unable to locate element: .header\\-nav\\-verif\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'MNCTVN05589', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'\nDriver info: org.openqa.selenium.remote.RemoteWebDriver\nCapabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 76.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200507114007, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 1627, moz:profile: /tmp/rust_mozprofilegfwx7b, moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, platformVersion: 4.19.76-linuxkit, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: 4e39fa85-0304-4b83-a368-4ef...}\nSession ID: 4e39fa85-0304-4b83-a368-4efb662df602\n*** Element info: {Using=class name, value=header-nav-verif}",
+      "time" : {
+        "start" : 1596426684733,
+        "stop" : 1596426758424,
+        "duration" : 73691
+      }
+    } ]
+  },
+  "9dbb59176323ff85a823721863875ad4" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "f5db104132dbdb2b",
+      "status" : "failed",
+      "statusDetails" : "expected [akudikakoko] but found [riorenaldibeng]",
+      "time" : {
+        "start" : 1596823042925,
+        "stop" : 1596823062541,
+        "duration" : 19616
+      }
+    } ]
+  },
+  "33113e4f8ceb8a986c888bc751aa75ce" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "3b170369bc48e3c2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1596822938408,
+        "stop" : 1596822962605,
+        "duration" : 24197
+      }
+    } ]
+  },
+  "f3196170a3445eed897158cc61c03ba0" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b23d8390720fdda4",
+      "status" : "broken",
+      "statusDetails" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#btn\\-expand\"}\n  (Session info: chrome=83.0.4103.61)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'MNCTVN05589', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'\nDriver info: org.openqa.selenium.remote.RemoteWebDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.VUwJEj}, goog:chromeOptions: {debuggerAddress: localhost:36921}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 30b91a1bc86ec0a5507093bf7c5...}\nSession ID: 30b91a1bc86ec0a5507093bf7c5d283c\n*** Element info: {Using=id, value=btn-expand}",
+      "time" : {
+        "start" : 1596823112648,
+        "stop" : 1596823158752,
+        "duration" : 46104
+      }
+    } ]
+  },
+  "984fdf3783e9552225df449252c8572f" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "6d5c1bb6f69c19b5",
+      "status" : "broken",
+      "statusDetails" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#popup\\-action\\-signin\"}\n  (Session info: chrome=83.0.4103.61)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'MNCTVN05589', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'\nDriver info: org.openqa.selenium.remote.RemoteWebDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.XOBrQe}, goog:chromeOptions: {debuggerAddress: localhost:38615}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 7d844c99632d651404d15479aea...}\nSession ID: 7d844c99632d651404d15479aea5b3c3\n*** Element info: {Using=id, value=popup-action-signin}",
+      "time" : {
+        "start" : 1596822868412,
+        "stop" : 1596822897365,
+        "duration" : 28953
+      }
+    } ]
+  },
+  "8a3906e35b99cf57baa61f04f25c045a" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "6c5ba5ef67a5a3e0",
+      "status" : "broken",
+      "statusDetails" : "Unable to locate element: .header\\-nav\\-verif\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'MNCTVN05589', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'\nDriver info: org.openqa.selenium.remote.RemoteWebDriver\nCapabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 76.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200507114007, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 1306, moz:profile: /tmp/rust_mozprofileGTgkbt, moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, platformVersion: 4.19.76-linuxkit, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: 726a916b-8f2b-49f5-b77c-11d...}\nSession ID: 726a916b-8f2b-49f5-b77c-11d422c13f09\n*** Element info: {Using=class name, value=header-nav-verif}",
+      "time" : {
+        "start" : 1596426598670,
+        "stop" : 1596426668146,
+        "duration" : 69476
+      }
+    } ]
+  },
+  "bfaadb36730edc7eddb72d90724b4e54" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "24366423ef4b1ab7",
+      "status" : "broken",
+      "statusDetails" : "stale element reference: element is not attached to the page document\n  (Session info: chrome=83.0.4103.61)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'MNCTVN05589', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'\nDriver info: org.openqa.selenium.remote.RemoteWebDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.OmP2lj}, goog:chromeOptions: {debuggerAddress: localhost:43461}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 42069649f14bbad99b9e5d5aff4...}\nSession ID: 42069649f14bbad99b9e5d5aff4d1aeb",
+      "time" : {
+        "start" : 1596822983833,
+        "stop" : 1596822993486,
+        "duration" : 9653
+      }
+    } ]
+  },
+  "f07d76d372f958114841a09fb4737dc5" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "74ac20200380d36a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1596822964295,
+        "stop" : 1596822982116,
+        "duration" : 17821
+      }
+    } ]
+  },
+  "465d9838a2b41e6fa39c3ee5697346f7" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "4a47e0799cc0a9bf",
+      "status" : "passed",
+      "time" : {
+        "start" : 1596821987286,
+        "stop" : 1596822046018,
+        "duration" : 58732
+      }
+    } ]
+  },
+  "c3bfdcd77e9a2f3ac2b98d7ee297dc8a" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "98dd7a075e86ba76",
+      "status" : "failed",
+      "statusDetails" : "expected [akudikakoko] but found [riorenaldibeng]",
+      "time" : {
+        "start" : 1596823020774,
+        "stop" : 1596823040601,
+        "duration" : 19827
+      }
+    } ]
+  },
+  "13e2c4607e8bbe995583a317e941fac3" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "6a6c27e1917023fd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1596824086903,
+        "stop" : 1596824109278,
+        "duration" : 22375
+      }
+    } ]
+  },
+  "d5d1fbfbc71adac9e6e4afc2e7d00697" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "11cbbb384d57c3d5",
+      "status" : "broken",
+      "statusDetails" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#popup\\-action\\-signin\"}\n  (Session info: chrome=83.0.4103.61)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'MNCTVN05589', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'\nDriver info: org.openqa.selenium.remote.RemoteWebDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.PzVx5v}, goog:chromeOptions: {debuggerAddress: localhost:44235}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: f49e424522fe861033e3fba16c9...}\nSession ID: f49e424522fe861033e3fba16c9b986c\n*** Element info: {Using=id, value=popup-action-signin}",
+      "time" : {
+        "start" : 1596822837619,
+        "stop" : 1596822866389,
+        "duration" : 28770
+      }
+    } ]
+  }
+}

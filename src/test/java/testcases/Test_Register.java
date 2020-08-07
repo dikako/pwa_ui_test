@@ -10,6 +10,8 @@ import org.testng.annotations.Test;
 import config.Setup;
 import config.Url;
 import io.qameta.allure.Description;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
 import object.Alert;
 import object.Button;
 import object.Dropdown;
@@ -62,13 +64,13 @@ public class Test_Register extends Setup {
 		return read.getCellData(path, "Register_List_Gender");
 	}
 
+	@Severity(SeverityLevel.CRITICAL)
 	@Description("Register Test - Validate Register Page 2 Fullname")
 	@Test(priority = 0, testName = "Register Test - Validate Register Page 2 Fullname")
 	public void register_page2_validate_fullname() throws InterruptedException {
 		Url url = new Url(driver);
 		Input input = PageFactory.initElements(driver, Input.class);
 		Button button = PageFactory.initElements(driver, Button.class);
-		Alert alert = PageFactory.initElements(driver, Alert.class);
 
 		System.out.println("Register Test - Validate Register Page 2 Fullname");
 
@@ -76,17 +78,15 @@ public class Test_Register extends Setup {
 		int randomInt = random.nextInt(10000);
 
 		url.urls("/register");
-		Thread.sleep(4000);
-		alert.byClass("header-nav-verif", "Register");
 		input.byId("email", "auieo" + randomInt + "@gmail.com");
 		input.byId("password", "password");
 		input.byId("password2", "password");
 		button.byId("button-next");
 		Thread.sleep(2000);
-		alert.byClass("header-nav-verif", "Verification");
 		input.byIdAttr("fullname", "maxlength", "25");
 	}
 
+	@Severity(SeverityLevel.CRITICAL)
 	@Description("Register Test - Validate Register Page 2 Birthday")
 	@Test(priority = 1, testName = "Register Test - Validate Register Page 2 Birthday")
 	public void register_page2_validate_birthday() throws InterruptedException {
@@ -101,24 +101,21 @@ public class Test_Register extends Setup {
 		int randomInt = random.nextInt(10000);
 
 		url.urls("/register");
-		Thread.sleep(4000);
-		alert.byClass("header-nav-verif", "Register");
 		input.byId("email", "auieo" + randomInt + "@gmail.com");
 		input.byId("password", "password");
 		input.byId("password2", "password");
 		button.byId("button-next");
 		Thread.sleep(5000);
-		alert.byClass("header-nav-verif", "Verification");
 		button.byId("BirthDate");
 		alert.byClassDisplay("datepicker-content", true);
 	}
 
+	@Severity(SeverityLevel.CRITICAL)
 	@Description("Register Test - Validate Register Page 2 Gender ")
 	@Test(priority = 2, testName = "Register Validate Gender", dataProvider = "register_list_gender")
 	public void register_page2_validate_gender_Male(String gender) throws InterruptedException {
 		Url url = new Url(driver);
 		Button button = PageFactory.initElements(driver, Button.class);
-		Alert alert = PageFactory.initElements(driver, Alert.class);
 		Input input = PageFactory.initElements(driver, Input.class);
 		Dropdown dropdown = PageFactory.initElements(driver, Dropdown.class);
 
@@ -128,20 +125,19 @@ public class Test_Register extends Setup {
 		int randomInt = random.nextInt(10000);
 
 		url.urls("/register");
-		Thread.sleep(4000);
-		alert.byClass("header-nav-verif", "Register");
 		input.byId("email", "auieo" + randomInt + "@gmail.com");
 		input.byId("password", "password");
 		input.byId("password2", "password");
 		button.byId("button-next");
 		Thread.sleep(2000);
-		alert.byClass("header-nav-verif", "Verification");
 		dropdown.dropdownByIdByVisibleText("gender", gender);
 	}
 
+	@Severity(SeverityLevel.MINOR)
 	@Description("Register Test - Alert Phone Number")
 	@Test(priority = 3, testName = "Register Phone Number Alert", dataProvider = "register_phone_alert")
-	public void register_alert_phone(String phone, String password, String rePassword, String alertText) throws InterruptedException {
+	public void register_alert_phone(String phone, String password, String rePassword, String alertText)
+			throws InterruptedException {
 		Url url = new Url(driver);
 		Input input = PageFactory.initElements(driver, Input.class);
 		Button button = PageFactory.initElements(driver, Button.class);
@@ -150,8 +146,6 @@ public class Test_Register extends Setup {
 		System.out.println("Register Test - Alert Phone Number");
 
 		url.urls("/register");
-		Thread.sleep(4000);
-		alert.byClass("header-nav-verif", "Register");
 		button.byId("register-phone");
 		input.byId("phone_number", phone);
 		input.byId("password", password);
@@ -160,9 +154,11 @@ public class Test_Register extends Setup {
 		alert.byId("invalid-phone-number", alertText);
 	}
 
+	@Severity(SeverityLevel.MINOR)
 	@Description("Register Test - Alert Phone Password Form 1")
 	@Test(priority = 4, testName = "Register Password1 Alert Phone", dataProvider = "register_password1_alert_phone")
-	public void register_phone_alert_password1(String phone, String password, String rePassword, String alertText) throws InterruptedException {
+	public void register_phone_alert_password1(String phone, String password, String rePassword, String alertText)
+			throws InterruptedException {
 		Url url = new Url(driver);
 		Input input = PageFactory.initElements(driver, Input.class);
 		Button button = PageFactory.initElements(driver, Button.class);
@@ -171,8 +167,6 @@ public class Test_Register extends Setup {
 		System.out.println("Register Test - Alert Phone Password Form 1");
 
 		url.urls("/register");
-		Thread.sleep(4000);
-		alert.byClass("header-nav-verif", "Register");
 		button.byId("register-phone");
 		input.byId("phone_number", phone);
 		input.byId("password", password);
@@ -181,9 +175,11 @@ public class Test_Register extends Setup {
 		alert.byId("invalid-password-num-chars", alertText);
 	}
 
+	@Severity(SeverityLevel.MINOR)
 	@Description("Register Test - Alert Phone Password Form 2")
 	@Test(priority = 5, testName = "Register Password 2Alert Phone", dataProvider = "register_password2_alert_phone")
-	public void register_phone_alert_password2(String phone, String password, String rePassword, String alertText) throws InterruptedException {
+	public void register_phone_alert_password2(String phone, String password, String rePassword, String alertText)
+			throws InterruptedException {
 		Url url = new Url(driver);
 		Input input = PageFactory.initElements(driver, Input.class);
 		Button button = PageFactory.initElements(driver, Button.class);
@@ -192,8 +188,6 @@ public class Test_Register extends Setup {
 		System.out.println("Register Test - Alert Phone Password Form 2");
 
 		url.urls("/register");
-		Thread.sleep(4000);
-		alert.byClass("header-nav-verif", "Register");
 		button.byId("register-phone");
 		input.byId("phone_number", phone);
 		input.byId("password", password);
@@ -202,9 +196,11 @@ public class Test_Register extends Setup {
 		alert.byId("invalid-password-not-match", alertText);
 	}
 
+	@Severity(SeverityLevel.MINOR)
 	@Description("Register Test - Alert Email")
-	@Test(priority = 0, testName = "Register Email Alert", dataProvider = "register_email_alert")
-	public void register_alert_email(String email, String password, String rePassword, String alertText) throws InterruptedException {
+	@Test(priority = 6, testName = "Register Email Alert", dataProvider = "register_email_alert")
+	public void register_alert_email(String email, String password, String rePassword, String alertText)
+			throws InterruptedException {
 		Url url = new Url(driver);
 		Input input = PageFactory.initElements(driver, Input.class);
 		Button button = PageFactory.initElements(driver, Button.class);
@@ -213,8 +209,6 @@ public class Test_Register extends Setup {
 		System.out.println("Register Test - Alert Email");
 
 		url.urls("/register");
-		Thread.sleep(4000);
-		alert.byClass("header-nav-verif", "Register");
 		input.byId("email", email);
 		input.byId("password", password);
 		input.byId("password2", rePassword);
@@ -222,9 +216,11 @@ public class Test_Register extends Setup {
 		alert.byId("invalid-email", alertText);
 	}
 
+	@Severity(SeverityLevel.MINOR)
 	@Description("Register Test - Alert Password Form 1")
-	@Test(priority = 6, testName = "Register Password1 Alert", dataProvider = "register_password1_alert_email")
-	public void register_email_alert_password1(String email, String password, String rePassword, String alertText) throws InterruptedException {
+	@Test(priority = 7, testName = "Register Password1 Alert", dataProvider = "register_password1_alert_email")
+	public void register_email_alert_password1(String email, String password, String rePassword, String alertText)
+			throws InterruptedException {
 		Url url = new Url(driver);
 		Input input = PageFactory.initElements(driver, Input.class);
 		Button button = PageFactory.initElements(driver, Button.class);
@@ -233,8 +229,6 @@ public class Test_Register extends Setup {
 		System.out.println("Register Test - Alert Password Form 1");
 
 		url.urls("/register");
-		Thread.sleep(4000);
-		alert.byClass("header-nav-verif", "Register");
 		input.byId("email", email);
 		input.byId("password", password);
 		input.byId("password2", rePassword);
@@ -242,9 +236,11 @@ public class Test_Register extends Setup {
 		alert.byId("invalid-password-num-chars", alertText);
 	}
 
+	@Severity(SeverityLevel.MINOR)
 	@Description("Register Test - Alert Password Form 2")
-	@Test(priority = 7, testName = "Register Password 2Alert", dataProvider = "register_password2_alert_email")
-	public void register_email_alert_password2(String email, String password, String rePassword, String alertText) throws InterruptedException {
+	@Test(priority = 8, testName = "Register Password 2Alert", dataProvider = "register_password2_alert_email")
+	public void register_email_alert_password2(String email, String password, String rePassword, String alertText)
+			throws InterruptedException {
 		Url url = new Url(driver);
 		Input input = PageFactory.initElements(driver, Input.class);
 		Button button = PageFactory.initElements(driver, Button.class);
@@ -253,8 +249,6 @@ public class Test_Register extends Setup {
 		System.out.println("Register Test - Alert Password Form 2");
 
 		url.urls("/register");
-		Thread.sleep(4000);
-		alert.byClass("header-nav-verif", "Register");
 		input.byId("email", email);
 		input.byId("password", password);
 		input.byId("password2", rePassword);

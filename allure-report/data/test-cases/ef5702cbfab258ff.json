@@ -1,0 +1,103 @@
+{
+  "uid" : "ef5702cbfab258ff",
+  "name" : "continue_watching_from_exclusive",
+  "fullName" : "testcases.Test_Continue_Watching.continue_watching_from_exclusive",
+  "historyId" : "465d9838a2b41e6fa39c3ee5697346f7",
+  "time" : {
+    "start" : 1596779850052,
+    "stop" : 1596779920160,
+    "duration" : 70108
+  },
+  "description" : "Continue Watching Test - From Exlcuisve",
+  "descriptionHtml" : "<p>Continue Watching Test - From Exlcuisve</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "set",
+    "time" : {
+      "start" : 1596779847333,
+      "stop" : 1596779849918,
+      "duration" : 2585
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "done",
+    "time" : {
+      "start" : 1596779920170,
+      "stop" : 1596779921059,
+      "duration" : 889
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "4f7595d1e8ba9e2f",
+      "name" : "captureScreenshot",
+      "source" : "4f7595d1e8ba9e2f.png",
+      "type" : "image/png",
+      "size" : 280550
+    } ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1,
+    "stepsCount" : 0,
+    "hasContent" : true
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "testcases.Test_Continue_Watching"
+  }, {
+    "name" : "testClass",
+    "value" : "testcases.Test_Continue_Watching"
+  }, {
+    "name" : "testMethod",
+    "value" : "continue_watching_from_exclusive"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Default suite"
+  }, {
+    "name" : "suite",
+    "value" : "Default test"
+  }, {
+    "name" : "subSuite",
+    "value" : "testcases.Test_Continue_Watching"
+  }, {
+    "name" : "host",
+    "value" : "MNCTVN05589"
+  }, {
+    "name" : "thread",
+    "value" : "17776@MNCTVN05589.main(1)"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "arg0",
+    "value" : "dikakoko04@gmail.com"
+  }, {
+    "name" : "arg1",
+    "value" : "dikakoko"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "ef5702cbfab258ff.json",
+  "parameterValues" : [ "dikakoko04@gmail.com", "dikakoko" ]
+}

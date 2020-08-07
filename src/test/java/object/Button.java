@@ -179,7 +179,13 @@ public class Button {
 	
 	public void byClassNotNull(String selector) {
 		List<WebElement> element = driver.findElements(By.className(selector));
-		Assert.assertEquals(element.size(), 1);
+		Assert.assertNotNull(element.size());
+		System.out.println("Element is Found");
+	}
+	
+	public void byClassNull(String selector) {
+		List<WebElement> element = driver.findElements(By.className(selector));
+		Assert.assertNull(element.size());
 		System.out.println("Element is Found");
 	}
 	
@@ -318,6 +324,11 @@ public class Button {
 		actions.build().perform();
 		System.out.println("Button is Enabled: " + btn);
 	}
+	
+	public int byClassReturnSize(String selector) {
+		List<WebElement> element = driver.findElements(By.className(selector));
+		return element.size();
+	}
 
 	// boolean display function
 	public Boolean isClassDisplay(String selector) {
@@ -326,9 +337,7 @@ public class Button {
 	
 	private void waitForVisible(WebDriver driver, WebElement element) {
 		try {
-			Thread.sleep(5000);
-			System.out.println("Waiting for element visibility");
-			WebDriverWait wait = new WebDriverWait(driver, 20);
+			WebDriverWait wait = new WebDriverWait(driver, 30);
 			wait.until(ExpectedConditions.visibilityOf(element));
 		} catch (Exception e) {
 			e.printStackTrace();

@@ -28,6 +28,17 @@ public class Input {
 		actions.build().perform();
 		System.out.println("Input Value: " + value);
 	}
+	
+	public void byIdNotClear(String selector, String value) {
+		WebElement element = driver.findElement(By.id(selector));
+		waitForVisible(driver, element);
+		Actions actions = new Actions(driver);
+		actions.moveToElement(element);
+		actions.click();
+		actions.sendKeys(value);
+		actions.build().perform();
+		System.out.println("Input Value: " + value);
+	}
 
 	public void byXpath(String selector, String value) {
 		WebElement element = driver.findElement(By.xpath(selector));
@@ -216,9 +227,7 @@ public class Input {
 
 	private void waitForVisible(WebDriver driver, WebElement element) {
 		try {
-			Thread.sleep(5000);
-			System.out.println("Waiting for element visibility");
-			WebDriverWait wait = new WebDriverWait(driver, 20);
+			WebDriverWait wait = new WebDriverWait(driver, 30);
 			wait.until(ExpectedConditions.visibilityOf(element));
 		} catch (Exception e) {
 			e.printStackTrace();

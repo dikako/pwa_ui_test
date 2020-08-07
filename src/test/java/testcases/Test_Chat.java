@@ -1,15 +1,12 @@
 package testcases;
 
 import java.io.IOException;
-
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import com.fasterxml.jackson.databind.exc.InvalidFormatException;
 import config.Setup;
 import config.Url;
-import object.Alert;
 import object.Button;
 import object.Input;
 import utility.ReadExcel;
@@ -51,9 +48,9 @@ public class Test_Chat extends Setup {
 		url.urls("/tv/" + urlLiveTv);
 		Thread.sleep(5000);
 		button.byId("btn-expand");
-		Thread.sleep(5000);
 		input.byIdDisplay("chat-input", true);
-		input.byId("chat-input", chatText + Keys.ENTER);
+		input.byId("chat-input", chatText);
+		button.byXpath("//button[@class='send-button btn btn-secondary']");
 		input.validateInputTextByClassByIndexone("username", nickname);
 		input.validateInputTextByClassByIndexone("message", chatText);
 	}
@@ -70,7 +67,6 @@ public class Test_Chat extends Setup {
 		System.out.println("Chat Test - Test Chatting After Login");
 
 		url.urls("/login");
-		Thread.sleep(4000);
 		input.byId("email", username);
 		input.byId("password", password);
 		button.byId("submit-login");
@@ -80,7 +76,8 @@ public class Test_Chat extends Setup {
 		Thread.sleep(5000);
 		button.byId("btn-expand");
 		input.byIdDisplay("chat-input", true);
-		input.byId("chat-input", chatText + Keys.ENTER);
+		input.byId("chat-input", chatText);
+		button.byXpath("//button[@class='send-button btn btn-secondary']");
 		input.validateInputTextByClassByIndexone("username", nickname);
 		input.validateInputTextByClassByIndexone("message", chatText);
 	}
@@ -93,29 +90,25 @@ public class Test_Chat extends Setup {
 		Url url = new Url(driver);
 		Button button = PageFactory.initElements(driver, Button.class);
 		Input input = PageFactory.initElements(driver, Input.class);
-		Alert alert = PageFactory.initElements(driver, Alert.class);
 
 		System.out.println("Chat Test Live Event - Test Chatting After Login");
 
 		url.urls("/login");
-		Thread.sleep(4000);
 		input.byId("email", username);
 		input.byId("password", password);
 		button.byId("submit-login");
 		Thread.sleep(5000);
 
 		button.byId("action-live-event");
-		Thread.sleep(5000);
-		alert.byClass("header-nav-verif", "Live Event");
 		
 		if (button.isClassDisplay("thumb-timer")) {
 			button.byClassByIndex("thumb-timer", 0);
 			Thread.sleep(5000);
 			button.byIdDisplay("btn-expand", true);
 			button.byId("btn-expand");
-			Thread.sleep(5000);
 			input.byIdDisplay("chat-input", true);
-			input.byId("chat-input", chatText + Keys.ENTER);
+			input.byIdNotClear("chat-input", chatText);
+			button.byXpath("//button[@class='send-button btn btn-secondary']");
 			input.validateInputTextByClassByIndexone("username", nickname);
 			input.validateInputTextByClassByIndexone("message", chatText);
 		} else {
@@ -131,15 +124,12 @@ public class Test_Chat extends Setup {
 		Url url = new Url(driver);
 		Button button = PageFactory.initElements(driver, Button.class);
 		Input input = PageFactory.initElements(driver, Input.class);
-		Alert alert = PageFactory.initElements(driver, Alert.class);
 
 		System.out.println("Chat Test Live Event - Test Chatting Before Login");
 
 		url.defaultUrl();
-		Thread.sleep(4000);
 		button.byId("action-live-event");
 		Thread.sleep(5000);
-		alert.byClass("header-nav-verif", "Live Event");
 		
 		if (button.isClassDisplay("thumb-timer")) {
 			button.byClassByIndex("thumb-timer", 0);
@@ -155,9 +145,8 @@ public class Test_Chat extends Setup {
 			button.byId("action-live-event");
 			Thread.sleep(5000);
 			button.byId("btn-expand");
-			Thread.sleep(5000);
-			input.byIdDisplay("chat-input", true);
-			input.byId("chat-input", chatText + Keys.ENTER);
+			input.byId("chat-input", chatText);
+			button.byXpath("//button[@class='send-button btn btn-secondary']");
 			input.validateInputTextByClassByIndexone("username", nickname);
 			input.validateInputTextByClassByIndexone("message", chatText);
 			

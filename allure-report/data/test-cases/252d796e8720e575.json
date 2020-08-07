@@ -1,0 +1,112 @@
+{
+  "uid" : "252d796e8720e575",
+  "name" : "chat_test_after_login",
+  "fullName" : "testcases.Test_Chat.chat_test_after_login",
+  "historyId" : "f07d76d372f958114841a09fb4737dc5",
+  "time" : {
+    "start" : 1596768800039,
+    "stop" : 1596768822113,
+    "duration" : 22074
+  },
+  "description" : "Chat Test - Test Chatting After Login",
+  "descriptionHtml" : "<p>Chat Test - Test Chatting After Login</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "set",
+    "time" : {
+      "start" : 1596768798560,
+      "stop" : 1596768800034,
+      "duration" : 1474
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "done",
+    "time" : {
+      "start" : 1596768822116,
+      "stop" : 1596768828185,
+      "duration" : 6069
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "76c29781d093ccd2",
+      "name" : "captureScreenshot",
+      "source" : "76c29781d093ccd2.png",
+      "type" : "image/png",
+      "size" : 183100
+    } ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1,
+    "stepsCount" : 0,
+    "hasContent" : true
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "testcases.Test_Chat"
+  }, {
+    "name" : "testClass",
+    "value" : "testcases.Test_Chat"
+  }, {
+    "name" : "testMethod",
+    "value" : "chat_test_after_login"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Default suite"
+  }, {
+    "name" : "suite",
+    "value" : "Default test"
+  }, {
+    "name" : "subSuite",
+    "value" : "testcases.Test_Chat"
+  }, {
+    "name" : "host",
+    "value" : "MNCTVN05589"
+  }, {
+    "name" : "thread",
+    "value" : "17276@MNCTVN05589.main(1)"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "arg0",
+    "value" : "inews"
+  }, {
+    "name" : "arg1",
+    "value" : "dikakoko04@gmail.com"
+  }, {
+    "name" : "arg2",
+    "value" : "dikakoko"
+  }, {
+    "name" : "arg3",
+    "value" : "akudikakoko"
+  }, {
+    "name" : "arg4",
+    "value" : "Selamat menonton semua!"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "252d796e8720e575.json",
+  "parameterValues" : [ "inews", "dikakoko04@gmail.com", "dikakoko", "akudikakoko", "Selamat menonton semua!" ]
+}

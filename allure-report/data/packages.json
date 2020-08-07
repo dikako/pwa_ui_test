@@ -1,5 +1,389 @@
 {
   "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
   "name" : "packages",
-  "children" : [ ]
+  "children" : [ {
+    "name" : "testcases",
+    "children" : [ {
+      "name" : "Test_Phone_Code",
+      "children" : [ {
+        "name" : "login_list_phone_code",
+        "uid" : "6c5ba5ef67a5a3e0",
+        "parentUid" : "d0be40aab8f045ea354f8932dc62835e",
+        "status" : "broken",
+        "time" : {
+          "start" : 1596426598670,
+          "stop" : 1596426668146,
+          "duration" : 69476
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "8227884", "5", "AI" ]
+      }, {
+        "name" : "login_list_phone_code_default",
+        "uid" : "5832818f410282e5",
+        "parentUid" : "d0be40aab8f045ea354f8932dc62835e",
+        "status" : "broken",
+        "time" : {
+          "start" : 1596426684733,
+          "stop" : 1596426758424,
+          "duration" : 73691
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "register_list_phone_code_default",
+        "uid" : "669bbc8aa03a7e8e",
+        "parentUid" : "d0be40aab8f045ea354f8932dc62835e",
+        "status" : "broken",
+        "time" : {
+          "start" : 1596426772457,
+          "stop" : 1596426855144,
+          "duration" : 82687
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "8227884", "5", "AI" ]
+      } ],
+      "uid" : "d0be40aab8f045ea354f8932dc62835e"
+    }, {
+      "name" : "Test_Continue_Watching",
+      "children" : [ {
+        "name" : "continue_watching_from_exclusive_delete",
+        "uid" : "4b861d74d7b7b67c",
+        "parentUid" : "63e3e725de8c4d5e156bc937bc47c392",
+        "status" : "broken",
+        "time" : {
+          "start" : 1596793526387,
+          "stop" : 1596793565699,
+          "duration" : 39312
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "dikakoko04@gmail.com", "dikakoko" ]
+      }, {
+        "name" : "continue_watching_from_exclusive",
+        "uid" : "4a47e0799cc0a9bf",
+        "parentUid" : "63e3e725de8c4d5e156bc937bc47c392",
+        "status" : "passed",
+        "time" : {
+          "start" : 1596821987286,
+          "stop" : 1596822046018,
+          "duration" : 58732
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "dikakoko04@gmail.com", "dikakoko" ]
+      }, {
+        "name" : "continue_watching_from_exclusive_cleared",
+        "uid" : "2698a9763a167628",
+        "parentUid" : "63e3e725de8c4d5e156bc937bc47c392",
+        "status" : "passed",
+        "time" : {
+          "start" : 1596822050089,
+          "stop" : 1596822083051,
+          "duration" : 32962
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "dikakoko04@gmail.com", "dikakoko" ]
+      }, {
+        "name" : "continue_watching_from_exclusive_home",
+        "uid" : "147d91c3417ae881",
+        "parentUid" : "63e3e725de8c4d5e156bc937bc47c392",
+        "status" : "broken",
+        "time" : {
+          "start" : 1596822437079,
+          "stop" : 1596822469667,
+          "duration" : 32588
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "dikakoko04@gmail.com", "dikakoko" ]
+      } ],
+      "uid" : "63e3e725de8c4d5e156bc937bc47c392"
+    }, {
+      "name" : "Test_Chat",
+      "children" : [ {
+        "name" : "chat_test_before_login",
+        "uid" : "f53cb8ffb707834d",
+        "parentUid" : "e70e129450925ef107133c99ac2b1390",
+        "status" : "broken",
+        "time" : {
+          "start" : 1596822777312,
+          "stop" : 1596822806018,
+          "duration" : 28706
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "rcti", "dikakoko04@gmail.com", "dikakoko", "akudikakoko", "Selamat menonton semua!" ]
+      }, {
+        "name" : "chat_test_before_login",
+        "uid" : "83d5f58f38ace75c",
+        "parentUid" : "e70e129450925ef107133c99ac2b1390",
+        "status" : "broken",
+        "time" : {
+          "start" : 1596822808027,
+          "stop" : 1596822835978,
+          "duration" : 27951
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "mnctv", "dikakoko04@gmail.com", "dikakoko", "akudikakoko", "Selamat menonton semua!" ]
+      }, {
+        "name" : "chat_test_before_login",
+        "uid" : "11cbbb384d57c3d5",
+        "parentUid" : "e70e129450925ef107133c99ac2b1390",
+        "status" : "broken",
+        "time" : {
+          "start" : 1596822837619,
+          "stop" : 1596822866389,
+          "duration" : 28770
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "gtv", "dikakoko04@gmail.com", "dikakoko", "akudikakoko", "Selamat menonton semua!" ]
+      }, {
+        "name" : "chat_test_before_login",
+        "uid" : "6d5c1bb6f69c19b5",
+        "parentUid" : "e70e129450925ef107133c99ac2b1390",
+        "status" : "broken",
+        "time" : {
+          "start" : 1596822868412,
+          "stop" : 1596822897365,
+          "duration" : 28953
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "inews", "dikakoko04@gmail.com", "dikakoko", "akudikakoko", "Selamat menonton semua!" ]
+      }, {
+        "name" : "chat_test_after_login",
+        "uid" : "ac30febd1332b901",
+        "parentUid" : "e70e129450925ef107133c99ac2b1390",
+        "status" : "passed",
+        "time" : {
+          "start" : 1596822899480,
+          "stop" : 1596822917860,
+          "duration" : 18380
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "rcti", "dikakoko04@gmail.com", "dikakoko", "akudikakoko", "Selamat menonton semua!" ]
+      }, {
+        "name" : "chat_test_after_login",
+        "uid" : "62d89272aaee9780",
+        "parentUid" : "e70e129450925ef107133c99ac2b1390",
+        "status" : "broken",
+        "time" : {
+          "start" : 1596822919952,
+          "stop" : 1596822936545,
+          "duration" : 16593
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "mnctv", "dikakoko04@gmail.com", "dikakoko", "akudikakoko", "Selamat menonton semua!" ]
+      }, {
+        "name" : "chat_test_after_login",
+        "uid" : "3b170369bc48e3c2",
+        "parentUid" : "e70e129450925ef107133c99ac2b1390",
+        "status" : "passed",
+        "time" : {
+          "start" : 1596822938408,
+          "stop" : 1596822962605,
+          "duration" : 24197
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "gtv", "dikakoko04@gmail.com", "dikakoko", "akudikakoko", "Selamat menonton semua!" ]
+      }, {
+        "name" : "chat_test_after_login",
+        "uid" : "74ac20200380d36a",
+        "parentUid" : "e70e129450925ef107133c99ac2b1390",
+        "status" : "passed",
+        "time" : {
+          "start" : 1596822964295,
+          "stop" : 1596822982116,
+          "duration" : 17821
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "inews", "dikakoko04@gmail.com", "dikakoko", "akudikakoko", "Selamat menonton semua!" ]
+      }, {
+        "name" : "chat_test_live_event_after_login",
+        "uid" : "24366423ef4b1ab7",
+        "parentUid" : "e70e129450925ef107133c99ac2b1390",
+        "status" : "broken",
+        "time" : {
+          "start" : 1596822983833,
+          "stop" : 1596822993486,
+          "duration" : 9653
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "rcti", "dikakoko04@gmail.com", "dikakoko", "akudikakoko", "Selamat menonton semua!" ]
+      }, {
+        "name" : "chat_test_live_event_after_login",
+        "uid" : "74bb99a000b88993",
+        "parentUid" : "e70e129450925ef107133c99ac2b1390",
+        "status" : "failed",
+        "time" : {
+          "start" : 1596822995165,
+          "stop" : 1596823018602,
+          "duration" : 23437
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "mnctv", "dikakoko04@gmail.com", "dikakoko", "akudikakoko", "Selamat menonton semua!" ]
+      }, {
+        "name" : "chat_test_live_event_after_login",
+        "uid" : "98dd7a075e86ba76",
+        "parentUid" : "e70e129450925ef107133c99ac2b1390",
+        "status" : "failed",
+        "time" : {
+          "start" : 1596823020774,
+          "stop" : 1596823040601,
+          "duration" : 19827
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "gtv", "dikakoko04@gmail.com", "dikakoko", "akudikakoko", "Selamat menonton semua!" ]
+      }, {
+        "name" : "chat_test_live_event_after_login",
+        "uid" : "f5db104132dbdb2b",
+        "parentUid" : "e70e129450925ef107133c99ac2b1390",
+        "status" : "failed",
+        "time" : {
+          "start" : 1596823042925,
+          "stop" : 1596823062541,
+          "duration" : 19616
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "inews", "dikakoko04@gmail.com", "dikakoko", "akudikakoko", "Selamat menonton semua!" ]
+      }, {
+        "name" : "test_chat_live_event__before_login",
+        "uid" : "729b215e9a6bca02",
+        "parentUid" : "e70e129450925ef107133c99ac2b1390",
+        "status" : "broken",
+        "time" : {
+          "start" : 1596823064580,
+          "stop" : 1596823110437,
+          "duration" : 45857
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "rcti", "dikakoko04@gmail.com", "dikakoko", "akudikakoko", "Selamat menonton semua!" ]
+      }, {
+        "name" : "test_chat_live_event__before_login",
+        "uid" : "b23d8390720fdda4",
+        "parentUid" : "e70e129450925ef107133c99ac2b1390",
+        "status" : "broken",
+        "time" : {
+          "start" : 1596823112648,
+          "stop" : 1596823158752,
+          "duration" : 46104
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "mnctv", "dikakoko04@gmail.com", "dikakoko", "akudikakoko", "Selamat menonton semua!" ]
+      }, {
+        "name" : "test_chat_live_event__before_login",
+        "uid" : "17813dfc760907ec",
+        "parentUid" : "e70e129450925ef107133c99ac2b1390",
+        "status" : "broken",
+        "time" : {
+          "start" : 1596823162356,
+          "stop" : 1596823209388,
+          "duration" : 47032
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "gtv", "dikakoko04@gmail.com", "dikakoko", "akudikakoko", "Selamat menonton semua!" ]
+      }, {
+        "name" : "test_chat_live_event__before_login",
+        "uid" : "5969c8522fc94b04",
+        "parentUid" : "e70e129450925ef107133c99ac2b1390",
+        "status" : "broken",
+        "time" : {
+          "start" : 1596823213018,
+          "stop" : 1596823259056,
+          "duration" : 46038
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "inews", "dikakoko04@gmail.com", "dikakoko", "akudikakoko", "Selamat menonton semua!" ]
+      } ],
+      "uid" : "e70e129450925ef107133c99ac2b1390"
+    }, {
+      "name" : "Test_Edit_Profile",
+      "children" : [ {
+        "name" : "edit_profile_success_edit_fullname",
+        "uid" : "6a6c27e1917023fd",
+        "parentUid" : "188fa78cdfc02ac24308463f1691b2c6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1596824086903,
+          "stop" : 1596824109278,
+          "duration" : 22375
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "paijo@mailinator.com", "dikakoko", "fullname", "myfullnameqcedit" ]
+      }, {
+        "name" : "edit_profile_form_field_alert",
+        "uid" : "841a05147854e4d4",
+        "parentUid" : "188fa78cdfc02ac24308463f1691b2c6",
+        "status" : "broken",
+        "time" : {
+          "start" : 1596824111352,
+          "stop" : 1596824176535,
+          "duration" : 65183
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "paijo@mailinator.com", "dikakoko", "nickname", "dikakoko", "Your Nickname Has Been Taken" ]
+      }, {
+        "name" : "edit_profile_form_field_alert",
+        "uid" : "794043af2affc4e9",
+        "parentUid" : "188fa78cdfc02ac24308463f1691b2c6",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1596824236604,
+          "stop" : 1596824236605,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "paijo@mailinator.com", "dikakoko", "email", "dikakoko04@gmail.com", "please try again, email has been taken" ]
+      }, {
+        "name" : "edit_profile_form_field_alert",
+        "uid" : "25c70cc0d4352ca6",
+        "parentUid" : "188fa78cdfc02ac24308463f1691b2c6",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1596824236609,
+          "stop" : 1596824236609,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "paijo@mailinator.com", "dikakoko", "email", "email.com", "Please Try Again Email Is Incorrect" ]
+      }, {
+        "name" : "edit_profile_phone_alert",
+        "uid" : "4e3e9120e8630b06",
+        "parentUid" : "188fa78cdfc02ac24308463f1691b2c6",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1596824236739,
+          "stop" : 1596824236739,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "paijo@mailinator.com", "dikakoko", "phone-number", "82278843303", "please try again, phone has been taken" ]
+      } ],
+      "uid" : "188fa78cdfc02ac24308463f1691b2c6"
+    } ],
+    "uid" : "141fa05f02bf329144b0086cf92149a8"
+  } ]
 }

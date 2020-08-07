@@ -8,6 +8,8 @@ import org.testng.annotations.Test;
 import config.Setup;
 import config.Url;
 import io.qameta.allure.Description;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
 import object.Button;
 import utility.ReadExcel;
 
@@ -27,7 +29,9 @@ public class Test_Exclusive extends Setup {
 		return read.getCellData(path, "List_Tab_Menu_Exclusive");
 	}
 
-	@Test(priority = 5, testName = "Validate Tab Menu", dataProvider = "list_tab_menu_exclusive")
+	@Severity(SeverityLevel.CRITICAL)
+	@Description("Validate Tab Menu")
+	@Test(priority = 0, testName = "Validate Tab Menu", dataProvider = "list_tab_menu_exclusive")
 	public void integration_exclusive_list_tab_menu_klik(String index, String textValue) throws InterruptedException {
 		Url url = new Url(driver);
 		Button button = PageFactory.initElements(driver, Button.class);
@@ -36,16 +40,15 @@ public class Test_Exclusive extends Setup {
 		System.out.println("Exclusive Test - Validate List Tab Menu");
 
 		url.defaultUrl();
-		Thread.sleep(4000);
 		button.byId("action-exclusive");
 		button.byClassesGetText("exclusive-item", indexToInteger, textValue);
 		button.byClassByIndex("exclusive-item", indexToInteger);
-		Thread.sleep(2000);
 		button.byClassByTagByAttrToString("exclusive-item", indexToInteger, "a", "class", "active nav-link");
 	}
-
+	
+	@Severity(SeverityLevel.CRITICAL)
 	@Description("Exclusive Test - Validate List Tab Menu Klik")
-	@Test(priority = 4, testName = "Validate Tab Menu", dataProvider = "list_tab_menu_exclusive")
+	@Test(priority = 1, testName = "Validate Tab Menu", dataProvider = "list_tab_menu_exclusive")
 	public void exclusive_list_tab_menu_klik(String index, String textValue) throws InterruptedException {
 		Url url = new Url(driver);
 		Button button = PageFactory.initElements(driver, Button.class);
@@ -54,15 +57,14 @@ public class Test_Exclusive extends Setup {
 		System.out.println("Exclusive Test - Validate List Tab Menu Klik");
 
 		url.urls("/exclusive");
-		Thread.sleep(4000);
 		button.byClassesGetText("exclusive-item", indexToInteger, textValue);
 		button.byClassByIndex("exclusive-item", indexToInteger);
-		Thread.sleep(2000);
 		button.byClassByTagByAttrToString("exclusive-item", indexToInteger, "a", "class", "active nav-link");
 	}
 
+	@Severity(SeverityLevel.CRITICAL)
 	@Description("Exclusive Test - Validate List Tab Menu")
-	@Test(priority = 3, testName = "Validate Tab Menu", dataProvider = "list_tab_menu_exclusive")
+	@Test(priority = 2, testName = "Validate Tab Menu", dataProvider = "list_tab_menu_exclusive")
 	public void exclusive_list_tab_menu(String index, String textValue) {
 		Url url = new Url(driver);
 		Button button = PageFactory.initElements(driver, Button.class);
@@ -74,8 +76,9 @@ public class Test_Exclusive extends Setup {
 		button.byClassesGetText("exclusive-item", indexToInteger, textValue);
 	}
 
+	@Severity(SeverityLevel.CRITICAL)
 	@Description("Exclusive Test - Validate Thumbnail")
-	@Test(priority = 0, testName = "Exclusive Test - Validate Thumbnail")
+	@Test(priority = 3, testName = "Exclusive Test - Validate Thumbnail")
 	public void exclusive_validate_thumbnail() throws InterruptedException {
 		Url url = new Url(driver);
 		Button button = PageFactory.initElements(driver, Button.class);
@@ -83,12 +86,12 @@ public class Test_Exclusive extends Setup {
 		System.out.println("Exclusive Test - Validate Thumbnail");
 
 		url.urls("/exclusive");
-		Thread.sleep(4000);
 		button.byClassDisplay("program-thumbnail", true);
 	}
 
+	@Severity(SeverityLevel.CRITICAL)
 	@Description("Exclusive Test Integration - Validate Thumbnail ")
-	@Test(priority = 1, testName = "Exclusive Test Integration - Validate Thumbnail")
+	@Test(priority = 4, testName = "Exclusive Test Integration - Validate Thumbnail")
 	public void integration_exclusive_validate_thumbnail() throws InterruptedException {
 		Url url = new Url(driver);
 		Button button = PageFactory.initElements(driver, Button.class);
@@ -96,13 +99,13 @@ public class Test_Exclusive extends Setup {
 		System.out.println("Exclusive Test Integration - Validate Thumbnail ");
 
 		url.defaultUrl();
-		Thread.sleep(4000);
 		button.byId("action-exclusive");
 		button.byClassDisplay("program-thumbnail", true);
 	}
 
+	@Severity(SeverityLevel.CRITICAL)
 	@Description("Exclusive Test - Validate List Share")
-	@Test(priority = 2, testName = "Validate List Share", dataProvider = "list_share")
+	@Test(priority = 5, testName = "Validate List Share", dataProvider = "list_share")
 	public void exclusive_validate_list_share(String index, String listShare) {
 		Url url = new Url(driver);
 		Button button = PageFactory.initElements(driver, Button.class);

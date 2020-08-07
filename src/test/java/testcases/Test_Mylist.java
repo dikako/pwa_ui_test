@@ -11,6 +11,8 @@ import org.testng.annotations.Test;
 import config.Setup;
 import config.Url;
 import io.qameta.allure.Description;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
 import object.Alert;
 import object.Button;
 import object.Input;
@@ -26,6 +28,7 @@ public class Test_Mylist extends Setup {
 		return read.getCellData(path, "Mylist");
 	}
 
+	@Severity(SeverityLevel.CRITICAL)
 	@Description("Mylis Test - After Login From Library")
 	@Test(priority = 0, testName = "Mylis Test - After Login From Library", dataProvider = "mylist")
 	public void mylist_after_login_library(String username, String password) throws InterruptedException {
@@ -37,14 +40,12 @@ public class Test_Mylist extends Setup {
 		System.out.println("Mylis Test - After Login From Library");
 
 		url.urls("/login");
-		Thread.sleep(4000);
 		input.byId("email", username);
 		input.byId("password", password);
 		button.byId("submit-login");
 		Thread.sleep(5000);
 
 		url.urls("/explores");
-		Thread.sleep(5000);
 		button.byClass("col-4");
 		String getTitleBeforeAddMylist = alert.byClassGetText("content-title");
 		System.out.println(getTitleBeforeAddMylist);
@@ -53,7 +54,6 @@ public class Test_Mylist extends Setup {
 
 		url.urls("/profile");
 		button.byId("action-mylist");
-		Thread.sleep(5000);
 		button.byXpath("//strong[contains(text(),'" + getTitleBeforeAddMylist + "')]");
 		Thread.sleep(5000);
 		String getTitleAfterAddMylist = alert.byClassGetText("content-title");
@@ -66,6 +66,7 @@ public class Test_Mylist extends Setup {
 		System.out.println("Un MyLIST");
 	}
 
+	@Severity(SeverityLevel.CRITICAL)
 	@Description("Mylis Test Integration - After Login From Library")
 	@Test(priority = 1, testName = "Mylis Test Integration - After Login From Library", dataProvider = "mylist")
 	public void integration_mylist_after_login_library(String username, String password) throws InterruptedException {
@@ -77,7 +78,6 @@ public class Test_Mylist extends Setup {
 		System.out.println("Mylis Test Integration - After Login From Library");
 
 		url.defaultUrl();
-		Thread.sleep(4000);
 		button.byId("action-account");
 		button.byId("button-login");
 		input.byId("email", username);
@@ -86,7 +86,6 @@ public class Test_Mylist extends Setup {
 		Thread.sleep(5000);
 
 		button.byId("action-library");
-		Thread.sleep(5000);
 		button.byClass("col-4");
 		Thread.sleep(5000);
 

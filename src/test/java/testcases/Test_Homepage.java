@@ -55,9 +55,7 @@ public class Test_Homepage extends Setup {
 		System.out.println("Hompage Test - Search Direct");
 
 		url.defaultUrl();
-		Thread.sleep(4000);
 		button.byClass("search-input");
-		Thread.sleep(5000);
 		alert.urlValidate("explores");
 		button.byClassDisplay("swiper-slide", true);
 		button.byClassDisplay("col-4", true);
@@ -73,8 +71,6 @@ public class Test_Homepage extends Setup {
 		System.out.println("Hompage Test - Validate STORY IS FOUND");
 
 		url.defaultUrl();
-		Thread.sleep(4000);
-		Thread.sleep(5000);
 		button.byClassDisplay("story", true);
 	}
 
@@ -88,7 +84,6 @@ public class Test_Homepage extends Setup {
 		System.out.println("Hompage Test - Validate Slider Is Found");
 
 		url.defaultUrl();
-		Thread.sleep(5000);
 		button.byClassDisplay("slide", true);
 	}
 
@@ -104,7 +99,6 @@ public class Test_Homepage extends Setup {
 		System.out.println("Hompage Test - validate Center Menu");
 
 		url.defaultUrl();
-		Thread.sleep(5000);
 		button.byClassesGetText("menu-item", indexToInt, textValue);
 	}
 
@@ -120,7 +114,6 @@ public class Test_Homepage extends Setup {
 		System.out.println("Hompage Test - validate Footer Menu");
 
 		url.defaultUrl();
-		Thread.sleep(5000);
 		button.byClassesGetText("footer-wrapper-list", indexToInt, textValue);
 	}
 
@@ -137,7 +130,6 @@ public class Test_Homepage extends Setup {
 		System.out.println("Hompage Test - validate Footer Menu Direct Url");
 
 		url.defaultUrl();
-		Thread.sleep(5000);
 		button.byClassesGetText("footer-wrapper-list", indexToInt, textValue);
 		button.byClassByIndex("footer-wrapper-list", indexToInt);
 		Thread.sleep(5000);
@@ -157,7 +149,6 @@ public class Test_Homepage extends Setup {
 		System.out.println("Hompage Test - validate Center Menu Direct Url");
 
 		url.defaultUrl();
-		Thread.sleep(5000);
 		button.byClassesGetText("menu-item", indexToInt, textValue);
 		button.byClassByIndex("menu-item", indexToInt);
 		Thread.sleep(5000);
