@@ -3,7 +3,20 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test verbose="2" name="Default test">
     <classes>
-      <class name="testcases.Test_Login_Phone_Code"/>
+      <class name="testcases.Test_Phone_Code"/>
     </classes>
   </test> <!-- Default test -->
+  <test name="Default test(failed)">
+    <classes>
+      <class name="testcases.Test_Phone_Code">
+        <methods>
+          <include name="login_list_phone_code_default"/>
+          <include name="register_list_phone_code_default" invocation-numbers="0"/>
+          <include name="login_list_phone_code" invocation-numbers="0"/>
+          <include name="done"/>
+          <include name="set"/>
+        </methods>
+      </class> <!-- testcases.Test_Phone_Code -->
+    </classes>
+  </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
