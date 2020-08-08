@@ -190,6 +190,7 @@ public class Test_Login extends Setup {
 		url.defaultUrl();
 		button.byId("action-account");
 		button.byId("action-history");
+		Thread.sleep(5000);
 		button.byId("pop-up-action-sign-in");
 		input.byId("email", username);
 		input.byId("password", password);
@@ -222,6 +223,7 @@ public class Test_Login extends Setup {
 		url.defaultUrl();
 		button.byId("action-account");
 		button.byId("action-mylist");
+		Thread.sleep(5000);
 		button.byId("pop-up-action-sign-in");
 		input.byId("email", username);
 		input.byId("password", password);
@@ -254,6 +256,7 @@ public class Test_Login extends Setup {
 		url.defaultUrl();
 		button.byId("action-account");
 		button.byId("action-continue-watching");
+		Thread.sleep(5000);
 		button.byId("pop-up-action-sign-in");
 		input.byId("email", username);
 		input.byId("password", password);
