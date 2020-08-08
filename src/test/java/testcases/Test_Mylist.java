@@ -46,7 +46,7 @@ public class Test_Mylist extends Setup {
 		Thread.sleep(5000);
 
 		url.urls("/explores");
-		button.byClass("col-4");
+		button.byClassByIndex("content-image", 1);
 		String getTitleBeforeAddMylist = alert.byClassGetText("content-title");
 		System.out.println(getTitleBeforeAddMylist);
 		button.byXpath("//h3[contains(text(),'My List')]");
@@ -86,7 +86,7 @@ public class Test_Mylist extends Setup {
 		Thread.sleep(5000);
 
 		button.byId("action-library");
-		button.byClass("col-4");
+		button.byClassByIndex("content-image", 1);
 		Thread.sleep(5000);
 
 		String getTitleBeforeAddMylist = alert.byClassGetText("content-title");

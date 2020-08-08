@@ -76,14 +76,15 @@ public class Test_Login extends Setup {
 		input.byId("password", password);
 		button.byId("submit-login");
 		Thread.sleep(5000);
-		
+
 		button.byId("action-account");
 		button.byIdGetText("action-profile", displayName);
 		button.byId("action-profile");
+		Thread.sleep(5000);
 		button.byId("action-three-dot");
 		button.byId("action-logout");
 		Thread.sleep(5000);
-		
+
 		button.byId("action-account");
 		button.byIdDisplay("button-login", true);
 	}
@@ -139,7 +140,7 @@ public class Test_Login extends Setup {
 		input.byId("password", password);
 		button.byId("submit-login");
 		Thread.sleep(5000);
-		
+
 		button.byId("action-account");
 		button.byIdGetText("action-profile", displayName);
 	}
@@ -162,14 +163,15 @@ public class Test_Login extends Setup {
 		input.byId("password", password);
 		button.byId("submit-login");
 		Thread.sleep(5000);
-		
+
 		button.byId("action-account");
 		button.byIdGetText("action-profile", displayName);
 		button.byId("action-profile");
+		Thread.sleep(5000);
 		button.byId("action-three-dot");
 		button.byId("action-logout");
 		Thread.sleep(5000);
-		
+
 		button.byId("action-account");
 		button.byIdDisplay("button-login", true);
 	}
@@ -193,14 +195,15 @@ public class Test_Login extends Setup {
 		input.byId("password", password);
 		button.byId("submit-login");
 		Thread.sleep(5000);
-		
+
 		button.byId("action-account");
 		button.byIdGetText("action-profile", displayName);
 		button.byId("action-profile");
+		Thread.sleep(5000);
 		button.byId("action-three-dot");
 		button.byId("action-logout");
 		Thread.sleep(5000);
-		
+
 		button.byId("action-account");
 		button.byIdDisplay("button-login", true);
 	}
@@ -224,14 +227,15 @@ public class Test_Login extends Setup {
 		input.byId("password", password);
 		button.byId("submit-login");
 		Thread.sleep(5000);
-		
+
 		button.byId("action-account");
 		button.byIdGetText("action-profile", displayName);
 		button.byId("action-profile");
+		Thread.sleep(5000);
 		button.byId("action-three-dot");
 		button.byId("action-logout");
 		Thread.sleep(5000);
-		
+
 		button.byId("action-account");
 		button.byIdDisplay("button-login", true);
 	}
@@ -255,14 +259,15 @@ public class Test_Login extends Setup {
 		input.byId("password", password);
 		button.byId("submit-login");
 		Thread.sleep(5000);
-		
+
 		button.byId("action-account");
 		button.byIdGetText("action-profile", displayName);
 		button.byId("action-profile");
+		Thread.sleep(5000);
 		button.byId("action-three-dot");
 		button.byId("action-logout");
 		Thread.sleep(5000);
-		
+
 		button.byId("action-account");
 		button.byIdDisplay("button-login", true);
 	}

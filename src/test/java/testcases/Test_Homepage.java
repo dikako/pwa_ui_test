@@ -56,6 +56,7 @@ public class Test_Homepage extends Setup {
 
 		url.defaultUrl();
 		button.byClass("search-input");
+		Thread.sleep(5000);
 		alert.urlValidate("explores");
 		button.byClassDisplay("swiper-slide", true);
 		button.byClassDisplay("col-4", true);

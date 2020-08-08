@@ -103,7 +103,7 @@ public class Test_Chat extends Setup {
 		
 		if (button.isClassDisplay("thumb-timer")) {
 			button.byClassByIndex("thumb-timer", 0);
-			Thread.sleep(5000);
+			Thread.sleep(10000);
 			button.byIdDisplay("btn-expand", true);
 			button.byId("btn-expand");
 			input.byIdDisplay("chat-input", true);
@@ -133,8 +133,7 @@ public class Test_Chat extends Setup {
 		
 		if (button.isClassDisplay("thumb-timer")) {
 			button.byClassByIndex("thumb-timer", 0);
-			Thread.sleep(5000);
-			button.byIdDisplay("btn-expand", true);
+			Thread.sleep(10000);
 			button.byId("btn-expand");
 			button.byId("popup-action-signin");
 			input.byId("email", username);

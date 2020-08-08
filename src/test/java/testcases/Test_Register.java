@@ -151,6 +151,7 @@ public class Test_Register extends Setup {
 		input.byId("password", password);
 		input.byId("password2", rePassword);
 		button.byId("button-next");
+		Thread.sleep(2000);
 		alert.byId("invalid-phone-number", alertText);
 	}
 
