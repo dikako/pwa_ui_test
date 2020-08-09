@@ -65,6 +65,7 @@ public class Test_Edit_Profile extends Setup {
 		Thread.sleep(5000);
 		
 		button.byId("action-account");
+		Thread.sleep(5000);
 		button.byId("action-profile");
 		Thread.sleep(10000);
 		button.byId(edit + "-input");
@@ -99,8 +100,9 @@ public class Test_Edit_Profile extends Setup {
 		Thread.sleep(5000);
 		
 		button.byId("action-account");
+		Thread.sleep(5000);
 		button.byId("action-profile");
-		Thread.sleep(10000);
+		Thread.sleep(5000);
 		button.byId(edit + "-input");
 		input.byId("form-field", inputEdit);
 		button.byId("save-edit");
@@ -126,6 +128,7 @@ public class Test_Edit_Profile extends Setup {
 		Thread.sleep(5000);
 		
 		button.byId("action-account");
+		Thread.sleep(5000);
 		button.byId("action-profile");
 		Thread.sleep(10000);
 		button.byId(edit + "-input");
