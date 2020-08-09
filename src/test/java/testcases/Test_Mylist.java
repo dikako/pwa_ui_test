@@ -54,6 +54,8 @@ public class Test_Mylist extends Setup {
 
 		url.urls("/profile");		
 		button.byId("action-mylist");
+		Thread.sleep(5000);
+		
 		button.byXpath("//strong[contains(text(),'" + getTitleBeforeAddMylist + "')]");
 		Thread.sleep(5000);
 		
