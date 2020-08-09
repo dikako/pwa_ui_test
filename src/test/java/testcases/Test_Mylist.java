@@ -52,10 +52,11 @@ public class Test_Mylist extends Setup {
 		button.byXpath("//h3[contains(text(),'My List')]");
 		Thread.sleep(5000);
 
-		url.urls("/profile");
+		url.urls("/profile");		
 		button.byId("action-mylist");
 		button.byXpath("//strong[contains(text(),'" + getTitleBeforeAddMylist + "')]");
 		Thread.sleep(5000);
+		
 		String getTitleAfterAddMylist = alert.byClassGetText("content-title");
 		Assert.assertEquals(getTitleBeforeAddMylist, getTitleAfterAddMylist);
 		System.out.println(getTitleAfterAddMylist);
@@ -79,6 +80,8 @@ public class Test_Mylist extends Setup {
 
 		url.defaultUrl();
 		button.byId("action-account");
+		Thread.sleep(5000);
+		
 		button.byId("button-login");
 		input.byId("email", username);
 		input.byId("password", password);
@@ -97,8 +100,10 @@ public class Test_Mylist extends Setup {
 		button.byId("action-account");
 		button.byId("action-mylist");
 		Thread.sleep(5000);
+		
 		button.byXpath("//strong[contains(text(),'" + getTitleBeforeAddMylist + "')]");
 		Thread.sleep(5000);
+		
 		String getTitleAfterAddMylist = alert.byClassGetText("content-title");
 		Assert.assertEquals(getTitleBeforeAddMylist, getTitleAfterAddMylist);
 		System.out.println(getTitleAfterAddMylist);
