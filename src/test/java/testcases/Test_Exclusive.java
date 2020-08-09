@@ -59,6 +59,7 @@ public class Test_Exclusive extends Setup {
 		url.urls("/exclusive");
 		button.byClassesGetText("exclusive-item", indexToInteger, textValue);
 		button.byClassByIndex("exclusive-item", indexToInteger);
+		Thread.sleep(5000);
 		button.byClassByTagByAttrToString("exclusive-item", indexToInteger, "a", "class", "active nav-link");
 	}
 
