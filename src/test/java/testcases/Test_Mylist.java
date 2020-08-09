@@ -90,6 +90,7 @@ public class Test_Mylist extends Setup {
 
 		button.byId("action-library");
 		Thread.sleep(5000);
+		
 		button.byClassByIndex("col-4", 1);
 		Thread.sleep(5000);
 
@@ -99,6 +100,8 @@ public class Test_Mylist extends Setup {
 		Thread.sleep(5000);
 
 		button.byId("action-account");
+		Thread.sleep(5000);
+		
 		button.byId("action-mylist");
 		Thread.sleep(5000);
 		
