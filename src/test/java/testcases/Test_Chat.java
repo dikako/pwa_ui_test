@@ -37,8 +37,11 @@ public class Test_Chat extends Setup {
 
 		url.urls("/tv/" + urlLiveTv);
 		Thread.sleep(5000);
+		
 		button.byIdDisplay("btn-expand", true);
 		button.byId("btn-expand");
+		Thread.sleep(5000);
+		
 		button.byId("popup-action-signin");
 		input.byId("email", username);
 		input.byId("password", password);
@@ -47,10 +50,13 @@ public class Test_Chat extends Setup {
 
 		url.urls("/tv/" + urlLiveTv);
 		Thread.sleep(5000);
+		
 		button.byId("btn-expand");
+		Thread.sleep(5000);
+		
 		input.byIdDisplay("chat-input", true);
 		input.byId("chat-input", chatText);
-		button.byXpath("//button[@class='send-button btn btn-secondary']");
+		button.byXpath("//button[@class='send-button btn btn-secondary']");		
 		input.validateInputTextByClassByIndexone("username", nickname);
 		input.validateInputTextByClassByIndexone("message", chatText);
 	}
@@ -74,10 +80,13 @@ public class Test_Chat extends Setup {
 
 		url.urls("/tv/" + urlLiveTv);
 		Thread.sleep(5000);
+		
 		button.byId("btn-expand");
+		Thread.sleep(5000);
+		
 		input.byIdDisplay("chat-input", true);
 		input.byId("chat-input", chatText);
-		button.byXpath("//button[@class='send-button btn btn-secondary']");
+		button.byXpath("//button[@class='send-button btn btn-secondary']");		
 		input.validateInputTextByClassByIndexone("username", nickname);
 		input.validateInputTextByClassByIndexone("message", chatText);
 	}
@@ -113,7 +122,7 @@ public class Test_Chat extends Setup {
 			input.byIdDisplay("chat-input", true);
 			input.byIdNotClear("chat-input", chatText);
 			button.byXpath("//button[@class='send-button btn btn-secondary']");
-			Thread.sleep(10000);
+			Thread.sleep(5000);
 			
 			input.validateInputTextByClassByIndexone("username", nickname);
 			input.validateInputTextByClassByIndexone("message", chatText);
@@ -155,7 +164,7 @@ public class Test_Chat extends Setup {
 			button.byId("btn-expand");
 			input.byId("chat-input", chatText);
 			button.byXpath("//button[@class='send-button btn btn-secondary']");
-			Thread.sleep(10000);
+			Thread.sleep(5000);
 			
 			input.validateInputTextByClassByIndexone("username", nickname);
 			input.validateInputTextByClassByIndexone("message", chatText);
