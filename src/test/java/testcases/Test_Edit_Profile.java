@@ -67,10 +67,13 @@ public class Test_Edit_Profile extends Setup {
 		button.byId("action-account");
 		Thread.sleep(5000);
 		button.byId("action-profile");
-		Thread.sleep(10000);
+		Thread.sleep(5000);
 		button.byId(edit + "-input");
+		Thread.sleep(5000);
 		input.byId("form-field", inputEdit);
 		button.byId("save-edit");
+		Thread.sleep(5000);
+		
 		input.byIdAttr(edit + "-input", "value", inputEdit);
 
 		// Back Change
@@ -101,9 +104,13 @@ public class Test_Edit_Profile extends Setup {
 		
 		button.byId("action-account");
 		Thread.sleep(5000);
+		
 		button.byId("action-profile");
 		Thread.sleep(5000);
+		
 		button.byId(edit + "-input");
+		Thread.sleep(5000);
+		
 		input.byId("form-field", inputEdit);
 		button.byId("save-edit");
 		alert.byIdByTag("invalid-feedback-top", "p", alertText);
@@ -129,9 +136,13 @@ public class Test_Edit_Profile extends Setup {
 		
 		button.byId("action-account");
 		Thread.sleep(5000);
+		
 		button.byId("action-profile");
-		Thread.sleep(10000);
+		Thread.sleep(5000);
+		
 		button.byId(edit + "-input");
+		Thread.sleep(5000);
+		
 		input.byId("phone_number", inputEdit);
 		button.byId("save-edit");
 		alert.byIdByTag("invalid-feedback-top", "p", alertText);
