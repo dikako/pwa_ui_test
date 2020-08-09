@@ -79,6 +79,7 @@ public class Test_Continue_Watching extends Setup {
 			for(int i = 0; size != i; i++) {
 				button.byClassByIndex("action-button", 0);
 				button.byClassNull("action-button");
+				Thread.sleep(5000);
 			}
 		} 
 	}

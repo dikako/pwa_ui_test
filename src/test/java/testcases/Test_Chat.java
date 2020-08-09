@@ -100,15 +100,21 @@ public class Test_Chat extends Setup {
 		Thread.sleep(5000);
 
 		button.byId("action-live-event");
+		Thread.sleep(5000);
 		
 		if (button.isClassDisplay("thumb-timer")) {
 			button.byClassByIndex("thumb-timer", 0);
 			Thread.sleep(10000);
+			
 			button.byIdDisplay("btn-expand", true);
 			button.byId("btn-expand");
+			Thread.sleep(5000);
+			
 			input.byIdDisplay("chat-input", true);
 			input.byIdNotClear("chat-input", chatText);
 			button.byXpath("//button[@class='send-button btn btn-secondary']");
+			Thread.sleep(10000);
+			
 			input.validateInputTextByClassByIndexone("username", nickname);
 			input.validateInputTextByClassByIndexone("message", chatText);
 		} else {
@@ -134,7 +140,10 @@ public class Test_Chat extends Setup {
 		if (button.isClassDisplay("thumb-timer")) {
 			button.byClassByIndex("thumb-timer", 0);
 			Thread.sleep(10000);
+			
 			button.byId("btn-expand");
+			Thread.sleep(5000);
+			
 			button.byId("popup-action-signin");
 			input.byId("email", username);
 			input.byId("password", password);
@@ -146,6 +155,8 @@ public class Test_Chat extends Setup {
 			button.byId("btn-expand");
 			input.byId("chat-input", chatText);
 			button.byXpath("//button[@class='send-button btn btn-secondary']");
+			Thread.sleep(10000);
+			
 			input.validateInputTextByClassByIndexone("username", nickname);
 			input.validateInputTextByClassByIndexone("message", chatText);
 			
