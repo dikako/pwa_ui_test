@@ -95,6 +95,7 @@ public class Test_List_Menu_Account extends Setup {
 		url.urls("/profile");
 		button.byIdDisplay("action-" + element, true);
 		button.byId("action-" + element);
+		Thread.sleep(5000);
 		alert.byClass("header-nav-verif", alertText);
 	}
 
