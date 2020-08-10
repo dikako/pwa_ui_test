@@ -80,15 +80,17 @@ public class Test_Continue_Watching extends Setup {
 		button.byId("action-continue-watching");
 		Thread.sleep(5000);
 
-		if (button.isClassDisplay("action-button")) {
-			int size = button.byClassReturnSize("action-button");
-			for (int i = 0; size != i; i++) {
-				button.byClassByIndex("action-button", 0);
-				Thread.sleep(5000);
+		int size = button.byClassReturnSize("action-button");
+		
+		for (int l = 0; size > l; l++) {
+			if (size == 0) {
+				System.out.println("Data Sudah Terhapus Semua");
+			} else {
+				for (int i = 0; size > i; i++) {
+					button.byClass("action-button");
+					Thread.sleep(5000);
+				}
 			}
-
-		} else {
-			System.out.println("Data Kosong");
 		}
 	}
 }
