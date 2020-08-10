@@ -36,7 +36,7 @@ public class Test_Radio extends Setup {
 
 		url.defaultUrl();
 		button.byId("action-radio");
-		Thread.sleep(5000);
+		Thread.sleep(10000);
 		String urlRadio = driver.getCurrentUrl();
 		assert urlRadio.contains("radio");
 		System.out.println(urlRadio);

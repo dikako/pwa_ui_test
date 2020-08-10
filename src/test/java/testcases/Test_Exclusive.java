@@ -41,11 +41,12 @@ public class Test_Exclusive extends Setup {
 
 		url.defaultUrl();
 		button.byId("action-exclusive");
+		Thread.sleep(5000);
 		button.byClassesGetText("exclusive-item", indexToInteger, textValue);
 		button.byClassByIndex("exclusive-item", indexToInteger);
 		button.byClassByTagByAttrToString("exclusive-item", indexToInteger, "a", "class", "active nav-link");
 	}
-	
+
 	@Severity(SeverityLevel.CRITICAL)
 	@Description("Exclusive Test - Validate List Tab Menu Klik")
 	@Test(priority = 1, testName = "Validate Tab Menu", dataProvider = "list_tab_menu_exclusive")
@@ -101,13 +102,14 @@ public class Test_Exclusive extends Setup {
 
 		url.defaultUrl();
 		button.byId("action-exclusive");
+		Thread.sleep(5000);
 		button.byClassDisplay("program-thumbnail", true);
 	}
 
 	@Severity(SeverityLevel.CRITICAL)
 	@Description("Exclusive Test - Validate List Share")
 	@Test(priority = 5, testName = "Validate List Share", dataProvider = "list_share")
-	public void exclusive_validate_list_share(String index, String listShare) {
+	public void exclusive_validate_list_share(String index, String listShare) throws InterruptedException {
 		Url url = new Url(driver);
 		Button button = PageFactory.initElements(driver, Button.class);
 		Integer indexToInteger = Integer.valueOf(index);
@@ -116,6 +118,7 @@ public class Test_Exclusive extends Setup {
 
 		url.urls("/exclusive");
 		button.byClass("program-share-button");
+		Thread.sleep(5000);
 		button.byClassByTagByAttrToString("sheet-action-button-share", indexToInteger, "div", "aria-label", listShare);
 	}
 }
