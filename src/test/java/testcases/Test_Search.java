@@ -12,6 +12,7 @@ import config.Url;
 import io.qameta.allure.Description;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
+import object.Alert;
 import object.Button;
 import object.Input;
 import utility.ReadExcel;
@@ -33,6 +34,7 @@ public class Test_Search extends Setup {
 		Url url = new Url(driver);
 		Button button = PageFactory.initElements(driver, Button.class);
 		Input input = PageFactory.initElements(driver, Input.class);
+		Alert alert = PageFactory.initElements(driver, Alert.class);
 
 		System.out.println("Test Search");
 		
@@ -44,5 +46,9 @@ public class Test_Search extends Setup {
 		
 		input.byXpath("//input[@placeholder='Search for a program, genre, etc.']", query);
 		Thread.sleep(5000);
+		
+		alert.byXpath("//div[@class='tab-pane active']//p[@class='title'][contains(text(),'Search Result')]", "Search Result");
+		
+		alert.byXpathByAttrValidateValueAttr("//div[@class='tab-pane active']//div[@class='content-list']//div[2]//img[1]", "alt", query);
 	}
 }

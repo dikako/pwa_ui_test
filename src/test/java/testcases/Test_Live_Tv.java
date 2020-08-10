@@ -22,7 +22,7 @@ public class Test_Live_Tv extends Setup {
 		ReadExcel read = new ReadExcel();
 		return read.getCellData(path, "Live_Tv_Active_Tab");
 	}
-	
+
 	@DataProvider
 	public String[][] tab_livetv_catchup() throws InvalidFormatException, IOException {
 		ReadExcel read = new ReadExcel();
@@ -45,7 +45,7 @@ public class Test_Live_Tv extends Setup {
 		Thread.sleep(5000);
 		button.byClassesGetText("text-center", indexToInt, textValue);
 	}
-	
+
 	@Severity(SeverityLevel.CRITICAL)
 	@Description("Live Tv Test - Validate Tab Live and Cacthup")
 	@Test(priority = 1, testName = "Validate Tab Live and Cacthup", dataProvider = "tab_livetv_catchup")
