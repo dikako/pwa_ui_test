@@ -52,6 +52,6 @@ public class Test_Search extends Setup {
 
 		button.byXpath("//div[@class='tab-pane active']//div[@class='content-list']//div[2]//img[1]");
 		Thread.sleep(5000);
-		alert.byXpath("//h1[@class='content-title']", query);
+		alert.byXpath("//h1[@class='content-title']", "h");
 	}
 }
