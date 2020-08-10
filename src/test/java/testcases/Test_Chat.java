@@ -1,8 +1,6 @@
 package testcases;
 
 import java.io.IOException;
-
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -122,8 +120,8 @@ public class Test_Chat extends Setup {
 			Thread.sleep(5000);
 
 			input.byIdDisplay("chat-input", true);
-			input.byIdNotClear("chat-input", chatText + Keys.ENTER);
-			//button.byXpath("//button[@class='send-button btn btn-secondary']");
+			input.byIdNotClear("chat-input", chatText);
+			button.byXpath("//button[@class='send-button btn btn-secondary']");
 
 			input.validateInputTextByClassByIndexone("username", nickname);
 			input.validateInputTextByClassByIndexone("message", chatText);
@@ -164,8 +162,8 @@ public class Test_Chat extends Setup {
 			Thread.sleep(5000);
 			button.byXpath("//section[@class='le-live']//div[@class='row']//div[1]//div[1]//img[1]");
 			button.byId("btn-expand");
-			input.byId("chat-input", chatText + Keys.ENTER);
-//			button.byXpath("//button[@class='send-button btn btn-secondary']");
+			input.byId("chat-input", chatText);
+			button.byXpath("//button[@class='send-button btn btn-secondary']");
 
 			input.validateInputTextByClassByIndexone("username", nickname);
 			input.validateInputTextByClassByIndexone("message", chatText);
