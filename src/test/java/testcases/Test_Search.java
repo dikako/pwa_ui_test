@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
 
 import com.fasterxml.jackson.databind.exc.InvalidFormatException;
 
@@ -29,6 +30,7 @@ public class Test_Search extends Setup {
 	
 	@Severity(SeverityLevel.CRITICAL)
 	@Description("Test Search")
+	@Test(priority = 0, testName = "Test Search", dataProvider = "datasearch")
 	public void search(String query) throws InterruptedException {
 
 		Url url = new Url(driver);
