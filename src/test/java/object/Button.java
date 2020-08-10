@@ -347,6 +347,11 @@ public class Button {
 		return driver.findElements(By.xpath(selector)).size() > 0;		
 	}
 	
+	// boolean null
+	public Boolean isClassNotDisplay(String selector) {
+		return driver.findElements(By.className(selector)).size() == 0;		
+	}
+	
 	private void waitForVisible(WebDriver driver, WebElement element) {
 		try {
 			WebDriverWait wait = new WebDriverWait(driver, 30);

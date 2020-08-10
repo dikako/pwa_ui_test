@@ -33,54 +33,62 @@ public class Test_Continue_Watching extends Setup {
 		Input input = PageFactory.initElements(driver, Input.class);
 		Button button = PageFactory.initElements(driver, Button.class);
 		Alert alert = PageFactory.initElements(driver, Alert.class);
-		
+
 		System.out.println("Continue Watching Test - From Exlcuisve");
-		
+
 		url.urls("/login");
 		input.byId("email", username);
 		input.byId("password", password);
 		button.byId("submit-login");
 		Thread.sleep(5000);
-			
+
 		button.byId("action-exclusive");
+		Thread.sleep(5000);
+
 		button.byXpath("//a[contains(text(),'Clip')]");
 		button.byXpath("//div[contains(@class,'tab-pane active')]//div[2]//div[1]//div[2]//img[1]");
 		Thread.sleep(40000);
-		
-		//Validate Continue Watching is Added
+
+		// Validate Continue Watching is Added
 		button.byId("action-account");
+		Thread.sleep(5000);
+
 		alert.byIdDisplay("action-profile", true);
 		button.byClassNotNull("list-item-thumbnail");
 	}
-	
+
 	@Severity(SeverityLevel.CRITICAL)
 	@Description("Continue Watching Test - From Exlcuisve")
 	@Test(priority = 1, testName = "Continue Watching Test - From Exlcuisve", dataProvider = "continue_watching")
-	public void continue_watching_from_exclusive_cleared	(String username, String password) throws InterruptedException {
+	public void continue_watching_from_exclusive_cleared(String username, String password) throws InterruptedException {
 		Url url = new Url(driver);
 		Input input = PageFactory.initElements(driver, Input.class);
 		Button button = PageFactory.initElements(driver, Button.class);
-		
+
 		System.out.println("Continue Watching Test - From Exlcuisve");
-		
+
 		url.urls("/login");
 		input.byId("email", username);
 		input.byId("password", password);
 		button.byId("submit-login");
 		Thread.sleep(5000);
-			
-		//Delete Continue Watching
+
+		// Delete Continue Watching
 		button.byId("action-account");
+		Thread.sleep(5000);
+
 		button.byId("action-continue-watching");
-		//alert.byClass("header-nav-verif", "Continue Watching");
-		
+		Thread.sleep(5000);
+
 		if (button.isClassDisplay("action-button")) {
 			int size = button.byClassReturnSize("action-button");
-			for(int i = 0; size != i; i++) {
+			for (int i = 0; size != i; i++) {
 				button.byClassByIndex("action-button", 0);
-				button.byClassNull("action-button");
 				Thread.sleep(5000);
 			}
-		} 
+
+		} else {
+			System.out.println("Data Kosong");
+		}
 	}
 }

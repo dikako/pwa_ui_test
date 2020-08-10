@@ -3,7 +3,7 @@
 <suite name="Suite">
 	<test name="Test">
 		<classes>
-			<class name="testcases.Test_List_Menu_Account" />
+			<class name="testcases.est_Continue_Watching" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->
