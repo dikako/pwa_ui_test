@@ -1,13 +1,10 @@
 package testcases;
 
 import java.io.IOException;
-
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-
 import com.fasterxml.jackson.databind.exc.InvalidFormatException;
-
 import config.Setup;
 import config.Url;
 import io.qameta.allure.Description;
@@ -47,6 +44,8 @@ public class Test_List_Menu_Account extends Setup {
 		url.urls("/profile");
 		button.byIdDisplay("button-login", true);
 		button.byId("button-login");
+		Thread.sleep(5000);
+		
 		input.byIdDisplay("email", true);
 		input.byIdDisplay("password", true);
 		button.byIdDisplay("submit-login", true);
@@ -78,6 +77,8 @@ public class Test_List_Menu_Account extends Setup {
 		url.urls("/profile");
 		button.byIdDisplay("action-" + element, true);
 		button.byId("action-" + element);
+		Thread.sleep(5000);
+		
 		alert.byId("pop-up-action-sign-up", alertPopup1);
 		alert.byId("pop-up-action-sign-in", alertPopup2);
 	}
@@ -94,8 +95,11 @@ public class Test_List_Menu_Account extends Setup {
 
 		url.urls("/profile");
 		button.byIdDisplay("action-" + element, true);
+		Thread.sleep(5000);
+		
 		button.byId("action-" + element);
 		Thread.sleep(5000);
+		
 		alert.byClass("header-nav-verif", alertText);
 	}
 
@@ -111,6 +115,8 @@ public class Test_List_Menu_Account extends Setup {
 		url.urls("/profile");
 		button.byIdDisplay("action-download", true);
 		button.byId("action-download");
+		Thread.sleep(5000);
+		
 		button.byIdDisplay("popup-action-openstore", true);
 		button.byIdDisplay("popup-action-cancel", true);
 	}
