@@ -46,7 +46,6 @@ public class Setup {
 		String name = result.getName();
 		if (ITestResult.FAILURE == result.getStatus()) {
 			TakeScreenshot.captureScreenshot(driver, "Error_" + name);
-
 			System.out.println("*** Test execution " + result.getMethod().getMethodName() + " failed!");
 			System.out.println(result.getMethod().getMethodName() + " failed!");
 			driver.quit();
