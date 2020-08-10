@@ -161,7 +161,9 @@ public class Test_Chat extends Setup {
 			button.byId("action-live-event");
 			Thread.sleep(5000);
 			button.byXpath("//section[@class='le-live']//div[@class='row']//div[1]//div[1]//img[1]");
+			Thread.sleep(5000);
 			button.byId("btn-expand");
+			Thread.sleep(5000);
 			input.byId("chat-input", chatText);
 			button.byXpaths("//button[@class='send-button btn btn-secondary']");
 
