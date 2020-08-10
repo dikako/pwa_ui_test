@@ -5,9 +5,7 @@ import java.io.IOException;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-
 import com.fasterxml.jackson.databind.exc.InvalidFormatException;
-
 import config.Setup;
 import config.Url;
 import io.qameta.allure.Description;
@@ -27,7 +25,7 @@ public class Test_Search extends Setup {
 		ReadExcel read = new ReadExcel();
 		return read.getCellData(path, "Search");
 	}
-	
+
 	@Severity(SeverityLevel.CRITICAL)
 	@Description("Test Search")
 	@Test(priority = 0, testName = "Test Search", dataProvider = "datasearch")
@@ -39,18 +37,21 @@ public class Test_Search extends Setup {
 		Alert alert = PageFactory.initElements(driver, Alert.class);
 
 		System.out.println("Test Search");
-		
+
 		url.defaultUrl();
 		Thread.sleep(5000);
-		
+
 		button.byXpath("//div[@class='search-input']");
 		Thread.sleep(5000);
-		
+
 		input.byXpath("//input[@placeholder='Search for a program, genre, etc.']", query);
 		Thread.sleep(5000);
-		
-		alert.byXpath("//div[@class='tab-pane active']//p[@class='title'][contains(text(),'Search Result')]", "Search Result");
-		
-		alert.byXpathByAttrValidateValueAttr("//div[@class='tab-pane active']//div[@class='content-list']//div[2]//img[1]", "alt", query);
+
+		alert.byXpath("//div[@class='tab-pane active']//p[@class='title'][contains(text(),'Search Result')]",
+				"Search Result");
+
+		button.byXpath("//div[@class='tab-pane active']//div[@class='content-list']//div[2]//img[1]");
+		Thread.sleep(5000);
+		alert.byXpath("//h1[@class='content-title']", query);
 	}
 }
