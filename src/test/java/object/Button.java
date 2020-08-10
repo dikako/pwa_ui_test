@@ -27,6 +27,14 @@ public class Button {
 		actions.build().perform();
 		System.out.println("Button is Clicked!");
 	}
+	
+	//aaaa
+	public void byXpaths(String selector) {
+		WebElement element = driver.findElement(By.xpath(selector));
+		element.click();
+		System.out.println("Button is Clicked!");
+	}
+	//aaaa
 
 	public void byXpath(String selector) {
 		WebElement element = driver.findElement(By.xpath(selector));
