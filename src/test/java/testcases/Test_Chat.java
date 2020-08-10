@@ -1,6 +1,8 @@
 package testcases;
 
 import java.io.IOException;
+
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -120,9 +122,8 @@ public class Test_Chat extends Setup {
 			Thread.sleep(5000);
 
 			input.byIdDisplay("chat-input", true);
-			input.byIdNotClear("chat-input", chatText);
-			button.byXpath("//button[@class='send-button btn btn-secondary']");
-			Thread.sleep(1000);
+			input.byIdNotClear("chat-input", chatText + Keys.ENTER);
+			//button.byXpath("//button[@class='send-button btn btn-secondary']");
 
 			input.validateInputTextByClassByIndexone("username", nickname);
 			input.validateInputTextByClassByIndexone("message", chatText);
@@ -157,14 +158,14 @@ public class Test_Chat extends Setup {
 			input.byId("email", username);
 			input.byId("password", password);
 			button.byId("submit-login");
-			Thread.sleep(5000);
+			Thread.sleep(10000);
 
 			button.byId("action-live-event");
 			Thread.sleep(5000);
+			button.byXpath("//section[@class='le-live']//div[@class='row']//div[1]//div[1]//img[1]");
 			button.byId("btn-expand");
-			input.byId("chat-input", chatText);
-			button.byXpath("//button[@class='send-button btn btn-secondary']");
-			Thread.sleep(1000);
+			input.byId("chat-input", chatText + Keys.ENTER);
+//			button.byXpath("//button[@class='send-button btn btn-secondary']");
 
 			input.validateInputTextByClassByIndexone("username", nickname);
 			input.validateInputTextByClassByIndexone("message", chatText);

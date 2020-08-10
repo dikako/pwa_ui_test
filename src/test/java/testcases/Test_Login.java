@@ -78,9 +78,12 @@ public class Test_Login extends Setup {
 		Thread.sleep(5000);
 
 		button.byId("action-account");
+		Thread.sleep(5000);
+		
 		button.byIdGetText("action-profile", displayName);
 		button.byId("action-profile");
 		Thread.sleep(5000);
+		
 		button.byId("action-three-dot");
 		button.byId("action-logout");
 		Thread.sleep(5000);
@@ -142,6 +145,8 @@ public class Test_Login extends Setup {
 		Thread.sleep(5000);
 
 		button.byId("action-account");
+		Thread.sleep(5000);
+		
 		button.byIdGetText("action-profile", displayName);
 	}
 
@@ -157,7 +162,11 @@ public class Test_Login extends Setup {
 		System.out.println("Login Test Integration - Login Success From Account -> Login");
 
 		url.defaultUrl();
+		Thread.sleep(5000);
+		
 		button.byId("action-account");
+		Thread.sleep(5000);
+		
 		button.byId("button-login");
 		input.byId("email", username);
 		input.byId("password", password);
@@ -165,14 +174,18 @@ public class Test_Login extends Setup {
 		Thread.sleep(5000);
 
 		button.byId("action-account");
+		Thread.sleep(5000);
+		
 		button.byIdGetText("action-profile", displayName);
 		button.byId("action-profile");
 		Thread.sleep(5000);
+		
 		button.byId("action-three-dot");
 		button.byId("action-logout");
 		Thread.sleep(5000);
 
 		button.byId("action-account");
+		Thread.sleep(5000);
 		button.byIdDisplay("button-login", true);
 	}
 
@@ -188,9 +201,14 @@ public class Test_Login extends Setup {
 		System.out.println("Login Test Integration - Login Success From Account -> History");
 
 		url.defaultUrl();
+		Thread.sleep(5000);
+		
 		button.byId("action-account");
+		Thread.sleep(5000);
+		
 		button.byId("action-history");
 		Thread.sleep(5000);
+		
 		button.byId("pop-up-action-sign-in");
 		input.byId("email", username);
 		input.byId("password", password);
@@ -198,9 +216,12 @@ public class Test_Login extends Setup {
 		Thread.sleep(5000);
 
 		button.byId("action-account");
+		Thread.sleep(5000);
+		
 		button.byIdGetText("action-profile", displayName);
 		button.byId("action-profile");
 		Thread.sleep(5000);
+		
 		button.byId("action-three-dot");
 		button.byId("action-logout");
 		Thread.sleep(5000);
@@ -222,8 +243,11 @@ public class Test_Login extends Setup {
 
 		url.defaultUrl();
 		button.byId("action-account");
+		Thread.sleep(5000);
+		
 		button.byId("action-mylist");
 		Thread.sleep(5000);
+		
 		button.byId("pop-up-action-sign-in");
 		input.byId("email", username);
 		input.byId("password", password);
@@ -231,9 +255,12 @@ public class Test_Login extends Setup {
 		Thread.sleep(5000);
 
 		button.byId("action-account");
+		Thread.sleep(5000);
+		
 		button.byIdGetText("action-profile", displayName);
 		button.byId("action-profile");
 		Thread.sleep(5000);
+		
 		button.byId("action-three-dot");
 		button.byId("action-logout");
 		Thread.sleep(5000);
@@ -254,9 +281,14 @@ public class Test_Login extends Setup {
 		System.out.println("Login Test Integration - Login Success From Account -> Continue Watching");
 
 		url.defaultUrl();
+		Thread.sleep(5000);
+		
 		button.byId("action-account");
+		Thread.sleep(5000);
+		
 		button.byId("action-continue-watching");
 		Thread.sleep(5000);
+		
 		button.byId("pop-up-action-sign-in");
 		input.byId("email", username);
 		input.byId("password", password);
@@ -264,9 +296,12 @@ public class Test_Login extends Setup {
 		Thread.sleep(5000);
 
 		button.byId("action-account");
+		Thread.sleep(5000);
+		
 		button.byIdGetText("action-profile", displayName);
 		button.byId("action-profile");
 		Thread.sleep(5000);
+		
 		button.byId("action-three-dot");
 		button.byId("action-logout");
 		Thread.sleep(5000);

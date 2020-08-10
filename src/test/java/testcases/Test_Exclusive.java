@@ -40,6 +40,7 @@ public class Test_Exclusive extends Setup {
 		System.out.println("Exclusive Test - Validate List Tab Menu");
 
 		url.defaultUrl();
+		Thread.sleep(5000);
 		button.byId("action-exclusive");
 		Thread.sleep(5000);
 		button.byClassesGetText("exclusive-item", indexToInteger, textValue);
