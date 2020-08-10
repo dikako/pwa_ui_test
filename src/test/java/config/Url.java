@@ -5,9 +5,9 @@ import org.openqa.selenium.WebDriver;
 public class Url {
 	private WebDriver driver;
 
-	 String baseUrl = "https://rc-webm.rctiplus.com";
+//	 String baseUrl = "https://rc-webm.rctiplus.com";
 
-//	String baseUrl = "https://m.rctiplus.com";
+	String baseUrl = "https://m.rctiplus.com";
 
 	public Url(WebDriver driver) {
 		this.driver = driver;
