@@ -42,6 +42,8 @@ public class Test_List_Menu_Account extends Setup {
 		System.out.println("Menu Account Test - Button Login Condition Not Login");
 
 		url.urls("/profile");
+		Thread.sleep(5000);
+		
 		button.byIdDisplay("button-login", true);
 		button.byId("button-login");
 		Thread.sleep(5000);
@@ -54,13 +56,15 @@ public class Test_List_Menu_Account extends Setup {
 	@Severity(SeverityLevel.CRITICAL)
 	@Description("Menu Account Test - Button Scan QR Code Condition Not Login")
 	@Test(priority = 1, testName = "Menu Account Test - Button Scan QR Code Condition Not Login")
-	public void menu_account_not_login_button_scan_qrcode() {
+	public void menu_account_not_login_button_scan_qrcode() throws InterruptedException {
 		Url url = new Url(driver);
 		Button button = PageFactory.initElements(driver, Button.class);
 
 		System.out.println("Menu Account Test - Button Scan QR Code Condition Not Login");
 
 		url.urls("/profile");
+		Thread.sleep(5000);
+		
 		button.byIdDisplay("action-qrcode", true);
 	}
 
@@ -75,6 +79,8 @@ public class Test_List_Menu_Account extends Setup {
 		System.out.println("Menu Account Test - Button History Condition Not Login");
 
 		url.urls("/profile");
+		Thread.sleep(5000);
+		
 		button.byIdDisplay("action-" + element, true);
 		button.byId("action-" + element);
 		Thread.sleep(5000);
@@ -94,6 +100,8 @@ public class Test_List_Menu_Account extends Setup {
 		System.out.println("Menu Account Test - Button List Menu Account Direct");
 
 		url.urls("/profile");
+		Thread.sleep(5000);
+		
 		button.byIdDisplay("action-" + element, true);
 		Thread.sleep(5000);
 		
@@ -113,6 +121,8 @@ public class Test_List_Menu_Account extends Setup {
 		System.out.println("Menu Account Test - Button Download Condition Not Login");
 
 		url.urls("/profile");
+		Thread.sleep(5000);
+		
 		button.byIdDisplay("action-download", true);
 		button.byId("action-download");
 		Thread.sleep(5000);
