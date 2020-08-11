@@ -82,7 +82,8 @@ public class Test_Register extends Setup {
 		input.byId("password", "password");
 		input.byId("password2", "password");
 		button.byId("button-next");
-		Thread.sleep(2000);
+		Thread.sleep(5000);
+		
 		input.byIdAttr("fullname", "maxlength", "25");
 	}
 
@@ -106,6 +107,7 @@ public class Test_Register extends Setup {
 		input.byId("password2", "password");
 		button.byId("button-next");
 		Thread.sleep(5000);
+		
 		button.byId("BirthDate");
 		alert.byClassDisplay("datepicker-content", true);
 	}
@@ -129,7 +131,8 @@ public class Test_Register extends Setup {
 		input.byId("password", "password");
 		input.byId("password2", "password");
 		button.byId("button-next");
-		Thread.sleep(2000);
+		Thread.sleep(5000);
+		
 		dropdown.dropdownByIdByVisibleText("gender", gender);
 	}
 
@@ -151,7 +154,8 @@ public class Test_Register extends Setup {
 		input.byId("password", password);
 		input.byId("password2", rePassword);
 		button.byId("button-next");
-		Thread.sleep(2000);
+		Thread.sleep(5000);
+		
 		alert.byId("invalid-phone-number", alertText);
 	}
 
@@ -173,6 +177,8 @@ public class Test_Register extends Setup {
 		input.byId("password", password);
 		input.byId("password2", rePassword);
 		button.byId("button-next");
+		Thread.sleep(5000);
+		
 		alert.byId("invalid-password-num-chars", alertText);
 	}
 
@@ -194,6 +200,8 @@ public class Test_Register extends Setup {
 		input.byId("password", password);
 		input.byId("password2", rePassword);
 		button.byId("button-next");
+		Thread.sleep(5000);
+		
 		alert.byId("invalid-password-not-match", alertText);
 	}
 
@@ -214,6 +222,8 @@ public class Test_Register extends Setup {
 		input.byId("password", password);
 		input.byId("password2", rePassword);
 		button.byId("button-next");
+		Thread.sleep(5000);
+		
 		alert.byId("invalid-email", alertText);
 	}
 
@@ -234,6 +244,8 @@ public class Test_Register extends Setup {
 		input.byId("password", password);
 		input.byId("password2", rePassword);
 		button.byId("button-next");
+		Thread.sleep(5000);
+		
 		alert.byId("invalid-password-num-chars", alertText);
 	}
 
@@ -254,6 +266,8 @@ public class Test_Register extends Setup {
 		input.byId("password", password);
 		input.byId("password2", rePassword);
 		button.byId("button-next");
+		Thread.sleep(5000);
+		
 		alert.byId("invalid-password-not-match", alertText);
 	}
 }
