@@ -2,7 +2,6 @@ package testcases;
 
 import java.io.IOException;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.ITestResult;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import com.fasterxml.jackson.databind.exc.InvalidFormatException;
@@ -10,7 +9,6 @@ import config.Setup;
 import config.Url;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
-import object.Alert;
 import object.Button;
 import utility.ReadExcel;
 
