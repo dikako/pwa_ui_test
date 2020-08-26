@@ -167,6 +167,13 @@ public class Alert {
 		actions.build().perform();
 		System.out.println("Text : " + text);
 	}
+	
+	// Get Text By Index
+	public void byTagGetTextIndex(String selector, int index, String expected) {
+		List<WebElement> element = driver.findElements(By.tagName(selector));
+		Assert.assertEquals(element.get(index).getText().replace(" ", "").toLowerCase(), expected.replace(" ", "").toLowerCase());
+		System.out.println(element.get(index).getText());
+	}
 
 	public void byIdGetText(String selector) {
 		WebElement element = driver.findElement(By.id(selector));
@@ -239,6 +246,13 @@ public class Alert {
 
 	// validate url
 
+	public boolean urlValidated(String url) {
+		boolean u = driver.getCurrentUrl().contains(url);
+		Assert.assertEquals(u, true);
+		System.out.println("Url: " + driver.getCurrentUrl());
+		return u;
+	}
+	
 	public void urlValidate(String url) {
 		boolean u = driver.getCurrentUrl().contains(url);
 		Assert.assertEquals(u, true);
