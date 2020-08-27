@@ -41,8 +41,10 @@ public class Test_Exclusive extends Setup {
 
 		url.defaultUrl();
 		Thread.sleep(5000);
+		
 		button.byId("action-exclusive");
 		Thread.sleep(5000);
+		
 		button.byClassesGetText("exclusive-item", indexToInteger, textValue);
 		button.byClassByIndex("exclusive-item", indexToInteger);
 		button.byClassByTagByAttrToString("exclusive-item", indexToInteger, "a", "class", "active nav-link");
@@ -62,6 +64,7 @@ public class Test_Exclusive extends Setup {
 		button.byClassesGetText("exclusive-item", indexToInteger, textValue);
 		button.byClassByIndex("exclusive-item", indexToInteger);
 		Thread.sleep(5000);
+		
 		button.byClassByTagByAttrToString("exclusive-item", indexToInteger, "a", "class", "active nav-link");
 	}
 
@@ -104,6 +107,7 @@ public class Test_Exclusive extends Setup {
 		url.defaultUrl();
 		button.byId("action-exclusive");
 		Thread.sleep(5000);
+		
 		button.byClassDisplay("program-thumbnail", true);
 	}
 
@@ -120,6 +124,7 @@ public class Test_Exclusive extends Setup {
 		url.urls("/exclusive");
 		button.byClass("program-share-button");
 		Thread.sleep(5000);
+		
 		button.byClassByTagByAttrToString("sheet-action-button-share", indexToInteger, "div", "aria-label", listShare);
 	}
 }
