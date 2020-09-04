@@ -17,15 +17,15 @@ public class Test_Pilar extends Setup {
 	public String path = "../pwa_ui_test/src/main/java/data/data_test.xlsx";
 
 	@DataProvider
-	public String[][] menu_pilar() throws InvalidFormatException, IOException {
+	public String[][] menu_footer_pilar_tampil() throws InvalidFormatException, IOException {
 		ReadExcel read = new ReadExcel();
 		return read.getCellData(path, "Menu_Pilar_Tampil");
 	}
 
 	@DataProvider
-	public String[][] menu_pilar_() throws InvalidFormatException, IOException {
+	public String[][] menu_footer_pilar_tak_tampil() throws InvalidFormatException, IOException {
 		ReadExcel read = new ReadExcel();
-		return read.getCellData(path, "Menu_Pilar_Not");
+		return read.getCellData(path, "Menu_Pilar_Tak_Tampil");
 	}
 
 	@DataProvider
@@ -41,7 +41,7 @@ public class Test_Pilar extends Setup {
 	}
 
 	@Severity(SeverityLevel.CRITICAL)
-	@Test(priority = 0, testName = "Pilar", dataProvider = "menu_pilar")
+	@Test(priority = 0, testName = "Pilar", dataProvider = "menu_footer_pilar_tampil")
 	public void test_pilar_tampil_menu_footer(String menu) throws InterruptedException {
 		Button button = PageFactory.initElements(driver, Button.class);
 		Url url = PageFactory.initElements(driver, Url.class);
@@ -52,18 +52,18 @@ public class Test_Pilar extends Setup {
 		button.byClassGetSize("img-menu-icon", 5);
 	}
 
-//	@Severity(SeverityLevel.CRITICAL)
-//	@Test(priority = 0, testName = "Pilar", dataProvider = "menu_pilar_")
-//	public void test_pilar_tak_tampil_menu_footer(String menu) throws InterruptedException {
-//		Button button = PageFactory.initElements(driver, Button.class);
-//		Url url = PageFactory.initElements(driver, Url.class);
-//
-//		url.defaultUrl();
-//		button.byId(menu);
-//		Thread.sleep(5000);
-//		button.byClassGetSize("img-menu-icon", 0);
-//	}
-//
+	@Severity(SeverityLevel.CRITICAL)
+	@Test(priority = 1, testName = "Pilar", dataProvider = "menu_footer_pilar_tak_tampil")
+	public void test_pilar_tak_tampil_menu_footer(String menu) throws InterruptedException {
+		Button button = PageFactory.initElements(driver, Button.class);
+		Url url = PageFactory.initElements(driver, Url.class);
+
+		url.defaultUrl();
+		button.byId(menu);
+		Thread.sleep(5000);
+		button.byClassGetSize("img-menu-icon", 0);
+	}
+
 //	@Severity(SeverityLevel.CRITICAL)
 //	@Test(priority = 0, testName = "Pilar", dataProvider = "menu_pilar")
 //	public void test_pilar_video(String menu) throws InterruptedException {
